@@ -18,12 +18,6 @@ editor: visual
 
 *For portuguese-br version [see the pdf file here.](https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf)
 
-```{=html}
-
-<embed src="https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf" type="application/pdf" width="100%" height="600px" />
-
-```
-
 
 # 📌 General Information
 

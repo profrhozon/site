@@ -4848,8 +4848,8 @@ vertical-align: -.125em;
   <li><a href="#configurar-o-ambiente" id="toc-configurar-o-ambiente" class="nav-link" data-scroll-target="#configurar-o-ambiente"><strong>2️⃣ Configurar o ambiente</strong></a>
   <ul class="collapse">
   <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio"><strong>🔹 RStudio</strong></a></li>
-  <li><a href="#vscode" id="toc-vscode" class="nav-link" data-scroll-target="#vscode"><strong>🔹 VSCode</strong></a></li>
   <li><a href="#positron" id="toc-positron" class="nav-link" data-scroll-target="#positron"><strong>🔹 Positron</strong></a></li>
+  <li><a href="#vscode" id="toc-vscode" class="nav-link" data-scroll-target="#vscode"><strong>🔹 VSCode</strong></a></li>
   </ul></li>
   <li><a href="#configurar-o-git-e-conectar-ao-github" id="toc-configurar-o-git-e-conectar-ao-github" class="nav-link" data-scroll-target="#configurar-o-git-e-conectar-ao-github"><strong>3️⃣ Configurar o Git e conectar ao GitHub</strong></a></li>
   <li><a href="#configurar-o-github-pages" id="toc-configurar-o-github-pages" class="nav-link" data-scroll-target="#configurar-o-github-pages"><strong>4️⃣ Configurar o GitHub Pages</strong></a></li>
@@ -4891,7 +4891,7 @@ vertical-align: -.125em;
 <li><strong>Clique no botão “New Repository”</strong> para criar um novo repositório.</li>
 <li><strong>Defina um nome para o repositório</strong> (exemplo: <code>portfolio</code>).</li>
 <li><strong>Defina o repositório como público</strong> para que o GitHub Pages possa acessá-lo.</li>
-<li><strong>⚠️ NÃO adicione <code>README.md</code>, <code>.gitignore</code> ou <code>LICENSE</code></strong>, pois isso pode causar conflitos.</li>
+<li><strong>⚠️ NÃO adicione <code>README.md</code>, <code>.gitignore</code> ou <code>LICENSE</code></strong>, pois isso pode causar conflitos pelo menos por agora.</li>
 <li><strong>Clique em “Create repository”</strong> e copie a URL do repositório para usarmos mais tarde.</li>
 </ol>
 </section>
@@ -4902,12 +4902,53 @@ vertical-align: -.125em;
 <ol type="1">
 <li><p><strong>Abra o RStudio</strong>.</p></li>
 <li><p>Vá para <strong>File</strong> &gt; <strong>New Project</strong> &gt; <strong>New Directory</strong> &gt; <strong>Quarto Website</strong>.</p></li>
-<li><p>Escolha um nome e um local para o projeto.</p></li>
+<li><p>Escolha um nome e um local para o projeto (local, OneDrive, Google Drive, …) e marque as opções <strong>Create a git repository</strong>, <strong>Use renv with this project</strong></p></li>
 <li><p>Clique em <strong>Create Project</strong>.</p></li>
-<li><p><strong>Instale os pacotes necessários</strong> no console do RStudio:</p>
+<li><p><strong>Instale os pacotes necessários</strong> no console do RStudio: (opcional)</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;quarto&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Edite o arquivo <code>quarto.yml</code> e da linha 1 a 3 copie e cole o codigo abaixo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">type:</span> website</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">output-dir:</span> <span class="st">&quot;.&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Para renderizar o site, rode:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>ou no Terminal execute</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ou simplesmente clique no botão <code>Render</code> quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.</p></li>
+</ol>
+<p>Obs.: Se encontrar alguma mensagem de erro como <code>- The project is out-of-sync -- use renv::status() for details.</code> em Background Jobs, no console do RStudio, digite:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">status</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Isso mostrará o que precisa ser atualizado.</p>
+<p>Em seguida, para sincronizar pacotes, rode:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se quiser atualizar todos os pacotes:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">update</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Depois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="positron" class="level2">
+<h2 class="anchored" data-anchor-id="positron"><strong>🔹 Positron</strong></h2>
+<ol type="1">
+<li><strong>Baixe e instale o Positron</strong>: <a href="https://positron.dev/">https://positron.dev/</a> ou em <a href="https://github.com/posit-dev/positron">https://github.com/posit-dev/positron</a></li>
+<li><strong>File &gt; New File &gt; Quarto Project &gt; Website Project</strong>.</li>
+<li><strong>Escolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive…crie um nome pro seu subdir em <code>Project Directory Name</code></strong></li>
+<li><strong>File &gt; Open Recent &gt; e abra o subdir que você acabou de criar</strong></li>
+<li>Note que vc terá no seu projeto os seguintes arquivos:</li>
+</ol>
+<ul>
+<li><code>_quarto.yml</code></li>
+<li><code>about.qmd</code></li>
+<li><code>index.qmd</code></li>
+<li><code>styles.css</code></li>
+</ul>
+<ol start="6" type="1">
+<li><p>Edite o arquivo <code>quarto.yml</code> e da linha 1 a 3 copie e cole o codigo abaixo:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">project:</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">type:</span> website</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">output-dir:</span> <span class="st">&quot;.&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Abra qualquer um dos dois .qmd e execute ele clicando em <code>Preview</code> ou usando o atalho <code>CTRL+Shift+K</code> (Windows)</p></li>
+<li><p><strong>Renderize o site</strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </section>
 <section id="vscode" class="level2">
@@ -4921,16 +4962,7 @@ vertical-align: -.125em;
 <li>Pesquise por “Quarto” e instale.</li>
 </ul></li>
 <li><p>Para renderizar o site, abra o <strong>terminal</strong> e rode:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-</ol>
-</section>
-<section id="positron" class="level2">
-<h2 class="anchored" data-anchor-id="positron"><strong>🔹 Positron</strong></h2>
-<ol type="1">
-<li><p><strong>Baixe e instale o Positron</strong>: <a href="https://positron.dev/">https://positron.dev/</a> ou em <a href="https://github.com/posit-dev/positron">https://github.com/posit-dev/positron</a></p></li>
-<li><p><strong>Abra o projeto Quarto no Positron</strong>.</p></li>
-<li><p><strong>Renderize o site</strong>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </section>
 </section>
@@ -4940,17 +4972,17 @@ vertical-align: -.125em;
 <ol type="1">
 <li><p><strong>Abra o terminal</strong> na sua IDE.</p></li>
 <li><p><strong>Inicialize o repositório Git no projeto</strong>:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Conecte o repositório local ao GitHub</strong> (substitua <code>SEU-USUARIO</code> pelo seu nome no GitHub):</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/SEU-USUARIO/portfolio.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/SEU-USUARIO/portfolio.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Adicione todos os arquivos ao Git</strong>:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Crie um commit inicial</strong>:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Primeira versão do portfolio ou site&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Primeira versão do portfolio ou site&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Defina a branch principal como <code>main</code></strong>:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Envie os arquivos para o GitHub</strong>:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb17"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </section>
 <section id="configurar-o-github-pages" class="level1">
@@ -4972,16 +5004,28 @@ vertical-align: -.125em;
 <ol type="1">
 <li><p><strong>Edite os arquivos do site</strong>.</p></li>
 <li><p><strong>No terminal, adicione as mudanças ao Git</strong>:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb19"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Crie um novo commit descrevendo as mudanças</strong>:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Atualização do site&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb20"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&quot;Atualização do site&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p><strong>Envie as alterações para o GitHub</strong>:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb21"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 </section>
 <section id="conclusão" class="level1">
 <h1><strong>🎯 Conclusão</strong></h1>
 <p>Agora seu site está publicado no <strong>GitHub Pages</strong> e pronto para ser atualizado sempre que necessário! 🚀</p>
+<p>Em seguida, recomendo que dê uma olhada no manual de referência do Quarto visitando o site oficial:</p>
+<ul>
+<li><a href="https://quarto.org/">https://quarto.org/</a></li>
+</ul>
+<p>Aqui você pode editar seu .yml pro design que preferir:</p>
+<ul>
+<li><a href="https://quarto.org/docs/websites/">https://quarto.org/docs/websites/</a></li>
+</ul>
+<p>Caso queira seguir um vídeo tutorial simples que faz uso de um template pronto veja:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=YN75YXaLFGM&amp;t=17s">How to create a web site using Quarto, RStudio, and GitHub Pages (w/ code template)</a></li>
+</ul>
 
 
 </section>

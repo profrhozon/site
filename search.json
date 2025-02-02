@@ -4,7 +4,7 @@
     "href": "introportfoliogithubpages.html#rstudio",
     "title": "Crie seu portfolio numa Github Page",
     "section": "🔹 RStudio",
-    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto.\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio:\ninstall.packages(\"quarto\")\nPara renderizar o site, rode:\nquarto::quarto_render()",
+    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto (local, OneDrive, Google Drive, …) e marque as opções Create a git repository, Use renv with this project\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio: (opcional)\ninstall.packages(\"quarto\")\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nPara renderizar o site, rode:\nquarto::quarto_render()\nou no Terminal execute\nquarto render\nOu simplesmente clique no botão Render quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.\n\nObs.: Se encontrar alguma mensagem de erro como - The project is out-of-sync -- use renv::status() for details. em Background Jobs, no console do RStudio, digite:\nrenv::status()\nIsso mostrará o que precisa ser atualizado.\nEm seguida, para sincronizar pacotes, rode:\nrenv::restore()\nSe quiser atualizar todos os pacotes:\nrenv::update()\nDepois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:\nquarto::quarto_render()",
     "crumbs": [
       "Big Data for Finance Project",
       "Criando seu portfolio numa Github page"
@@ -26,7 +26,7 @@
     "href": "introportfoliogithubpages.html#positron",
     "title": "Crie seu portfolio numa Github Page",
     "section": "🔹 Positron",
-    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nAbra o projeto Quarto no Positron.\nRenderize o site:\nquarto render",
+    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nFile &gt; New File &gt; Quarto Project &gt; Website Project.\nEscolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive…crie um nome pro seu subdir em Project Directory Name\nFile &gt; Open Recent &gt; e abra o subdir que você acabou de criar\nNote que vc terá no seu projeto os seguintes arquivos:\n\n\n_quarto.yml\nabout.qmd\nindex.qmd\nstyles.css\n\n\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nAbra qualquer um dos dois .qmd e execute ele clicando em Preview ou usando o atalho CTRL+Shift+K (Windows)\nRenderize o site:\nquarto render",
     "crumbs": [
       "Big Data for Finance Project",
       "Criando seu portfolio numa Github page"
