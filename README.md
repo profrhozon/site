@@ -4,6 +4,8 @@
 
 &nbsp;
 
+![](logo_FAE.png)
+
 &nbsp;
 
  [FAE Business School](https://fae.edu/) classes:
