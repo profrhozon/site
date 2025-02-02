@@ -1,0 +1,125 @@
+---
+title: "Crie seu portfolio numa Github Page"
+format:
+  html:
+    self-contained: true
+    toc: true
+    code-fold: true
+    df-print: paged
+editor: visual
+---
+
+---
+
+<left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
+
+---
+
+
+
+# **1️⃣ Criar um repositório no GitHub**
+Antes de começar, precisamos criar um repositório no **GitHub**:
+
+1. **Acesse o GitHub** ([https://github.com/](https://github.com/)) e faça login na sua conta.
+2. **Clique no botão "New Repository"** para criar um novo repositório.
+3. **Defina um nome para o repositório** (exemplo: `portfolio`).
+4. **Defina o repositório como público** para que o GitHub Pages possa acessá-lo.
+5. **⚠️ NÃO adicione `README.md`, `.gitignore` ou `LICENSE`**, pois isso pode causar conflitos.
+6. **Clique em "Create repository"** e copie a URL do repositório para usarmos mais tarde.
+
+# **2️⃣ Configurar o ambiente**
+## **🔹 RStudio**
+1. **Abra o RStudio**.
+2. Vá para **File** > **New Project** > **New Directory** > **Quarto Website**.
+3. Escolha um nome e um local para o projeto.
+4. Clique em **Create Project**.
+5. **Instale os pacotes necessários** no console do RStudio:
+   ```r
+   install.packages("quarto")
+   ```
+6. Para renderizar o site, rode:
+   ```r
+   quarto::quarto_render()
+   ```
+
+## **🔹 VSCode**
+1. **Baixe e instale o Quarto** se ainda não tiver: [https://quarto.org/](https://quarto.org/)
+2. **Abra a pasta do projeto** (`File > Open Folder`).
+3. **Instale a extensão do Quarto**:
+   - Vá em **Extensions** (Ctrl + Shift + X).
+   - Pesquise por "Quarto" e instale.
+4. Para renderizar o site, abra o **terminal** e rode:
+   ```sh
+   quarto render
+   ```
+
+## **🔹 Positron**
+1. **Baixe e instale o Positron**: [https://positron.dev/](https://positron.dev/) ou em [https://github.com/posit-dev/positron](https://github.com/posit-dev/positron)
+2. **Abra o projeto Quarto no Positron**.
+3. **Renderize o site**:
+   ```sh
+   quarto render
+   ```
+
+# **3️⃣ Configurar o Git e conectar ao GitHub**
+Agora, vamos configurar o **Git** para versionamento e conectar ao GitHub.
+
+1. **Abra o terminal** na sua IDE.
+2. **Inicialize o repositório Git no projeto**:
+   ```sh
+   git init
+   ```
+3. **Conecte o repositório local ao GitHub** (substitua `SEU-USUARIO` pelo seu nome no GitHub):
+   ```sh
+   git remote add origin https://github.com/SEU-USUARIO/portfolio.git
+   ```
+4. **Adicione todos os arquivos ao Git**:
+   ```sh
+   git add .
+   ```
+5. **Crie um commit inicial**:
+   ```sh
+   git commit -m "Primeira versão do portfolio ou site"
+   ```
+6. **Defina a branch principal como `main`**:
+   ```sh
+   git branch -M main
+   ```
+7. **Envie os arquivos para o GitHub**:
+   ```sh
+   git push -u origin main
+   ```
+
+# **4️⃣ Configurar o GitHub Pages**
+Agora que os arquivos estão no GitHub, vamos ativar o **GitHub Pages**.
+
+1. **Acesse o repositório no GitHub**.
+2. Vá até **Settings** > **Pages**.
+3. **Em "Build and deployment"**, escolha "Deploy from a branch".
+4. **Selecione a branch `main` e defina `/ (root)` como diretório de origem**.
+5. **Clique em "Save"**.
+
+Após alguns minutos, seu site estará disponível no link:
+```
+https://SEU-USUARIO.github.io/portfolio/
+```
+
+# **5️⃣ Atualizar o site**
+Se você quiser modificar o site/portfolio no futuro, basta seguir os passos abaixo para atualizar:
+
+1. **Edite os arquivos do site**.
+2. **No terminal, adicione as mudanças ao Git**:
+   ```sh
+   git add .
+   ```
+3. **Crie um novo commit descrevendo as mudanças**:
+   ```sh
+   git commit -m "Atualização do site"
+   ```
+4. **Envie as alterações para o GitHub**:
+   ```sh
+   git push origin main
+   ```
+
+# **🎯 Conclusão**
+Agora seu site está publicado no **GitHub Pages** e pronto para ser atualizado sempre que necessário! 🚀

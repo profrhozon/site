@@ -1,0 +1,126 @@
+---
+title: "Ementa Big Data for Finance Project"
+format:
+  html:
+    self-contained: true
+    toc: true
+    code-fold: true
+    df-print: paged
+editor: visual
+---
+
+---
+
+<left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
+
+---
+
+
+*For portuguese-br version [see the pdf file here.](https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf)
+
+```{=html}
+
+<embed src="https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf" type="application/pdf" width="100%" height="600px" />
+
+```
+
+
+# 📌 General Information
+
+- **Course:** [Data Science for Business](https://fae.edu/cursos/182302806/ciencia-de-dados-para-negocios.htm)  
+- **Subject:** Big Data for Finance Project  
+- **Workload:** 90 hours  
+- **Programming Languages:** R or Python  
+
+---
+
+# 🎯 Course Description
+
+The **Big Data for Finance Project** course aims to equip students with the necessary skills to develop applied financial projects using **big data analytics techniques**.  
+Students will be encouraged to work with **R or Python** to build analytical models and visualizations, implementing solutions applicable to real-world contexts.  
+By the end of the course, each student will have created a **GitHub Pages site** to publish their projects, forming an individual portfolio for the job market.
+
+---
+
+# 🎯 Objectives
+
+- Apply **Big Data concepts** to real financial projects.
+- Develop **hands-on skills** in R or Python for financial data analysis.
+- Create **analytical and visualization solutions** for financial problems.
+- Build an **online portfolio** with posts on GitHub Pages.
+
+---
+
+# 🔥 Skills Developed
+
+- Handling and analyzing **large-scale financial data**.
+- Constructing **predictive and diagnostic models**.
+- **Data visualization** for decision-making.
+- **Presenting results professionally**.
+
+---
+
+# 📚 Course Syllabus
+
+## **1️⃣ Creating GitHub Pages with Quarto**
+- Setting up Quarto
+- Publishing pages on GitHub Pages
+
+## **2️⃣ Generating Synthetic Data**
+- Introduction to synthetic data
+- Methods and tools for simulated data creation
+
+## **3️⃣ Feature Engineering & Key Metrics for Financial Time Series**
+- Building **differentiated variables**
+- Techniques for **stationarity analysis**
+
+## **4️⃣ Forecasting Price Series in Basic Economic Theory**
+- **Forecasting fundamentals**
+- Practical applications in **price prediction**
+
+## **5️⃣ Markowitz Theory & Multi-Objective Modeling**
+- Introduction to **Markowitz model**
+- Implementing a **bi-objective model** for risk-return balance
+
+## **6️⃣ Considering Investor Profiles in Decision Making**
+- Adjustments based on **investor risk profiles**
+- Strategies for **personalized financial decisions**
+
+---
+
+# 🏆 Teaching Methodology
+
+This course will be **practical**, including:
+✔ Lectures and **case studies**.  
+✔ Hands-on **lab sessions** using R/Python.  
+✔ **Individual and group projects**.  
+✔ **Guidance on publishing** results in GitHub Pages.
+
+---
+
+# 📝 Evaluation Criteria
+
+| Activity                     | Weight |
+|------------------------------|--------|
+| Participation & practical exercises  | **30%** |
+| Intermediate project deliveries  | **30%** |
+| Final project published on GitHub Pages | **40%** |
+
+---
+
+# 📖 Recommended References
+
+- **Angrist, J. D., & Pischke, J. S. (2009).** *Mostly Harmless Econometrics: An Empiricist's Companion.* Princeton University Press.  
+- **Caetano, M. A. L. (2021).** *Python e Mercado Financeiro: Programação Para Estudantes, Investidores e Analistas.* Editora Blucher.  
+- **Hilpisch, Y. (2019).** *Python for Finance: Mastering Data-Driven Finance.* O'Reilly Media.  
+- **James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013).** *An Introduction to Statistical Learning: with Applications in R.*  
+- **Provost, F., & Fawcett, T. (2013).** *Data Science for Business: What You Need to Know About Data Mining and Data-Analytic Thinking.*  
+
+More readings and **documentation of R/Python libraries** will be provided throughout the course.
+
+---
+
+
+
+
+

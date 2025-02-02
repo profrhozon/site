@@ -1,11 +1,106 @@
 ---
-title: "site"
+title: ""
+format:
+  html:
+    self-contained: true
+    toc: true
+    code-fold: true
+    df-print: paged
+editor: visual
 ---
 
-This is a Quarto website.
+---
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
 
-```{r}
-1 + 1
+---
+
+# About the Professor
+
+Welcome to my academic page at FAE Business School! Here, you will find information about my background, the courses I teach, and learning materials for students.
+
+## **Rodrigo Hermont Ozon**
+
+<right> ![](https://rhozon.github.io/site/me.jpg){width="8%"} </right>
+
+---
+
+### **📌 Academic Profile**
+- Economist and Master in Economic Development (UFPR) 
+- Ph.D. Candidate in Industrial and Systems Engineering (PUCPR) 
+- Professor of Finance, Data Science & Computational Programming at FAE Business School 
+- Research Interests: Econometrics and Machine Learning, Financial Risk, Multiobjective Optim. in Finance, Financial Time Series Forecasting 
+
+---
+
+## **📚 Courses and Materials**
+Here are the available courses and learning materials:
+
+::: panel-tabset
+### 📊 Big Data for Finance Project
+- [Ementa e Conteúdo Programático](EmentaBigDataFinProj.qmd)
+- [Crie sua Github Page como Portfolio](introportfoliogithubpages.qmd)
+
+### 📉 Risk Management
+- [Ementa](EmentaRiskMng.qmd)
+
+### 🖥️ Programação Computacional
+- [Ementa](EmentaProgComp.qmd)
+
+:::
+
+---
+
+
+## **📢 Contact and Networks**
+You can find me on the following platforms:
+
+{{< fa thumbs >}}
+
+```{=html}
+
+<div style="margin-top: 10px; text-align: left;">
+
+    <!-- LinkedIn (azul) -->
+    <a href="https://www.linkedin.com/in/rodrigohermontozon/" target="_blank" style="margin-right: 15px;">
+        <i class="fa-brands fa-linkedin" style="font-size: 12px; color: #0077b5;"></i>
+    </a>
+
+    <!-- GitHub (preto) -->
+    <a href="https://github.com/rhozon" target="_blank" style="margin-right: 15px;">
+        <i class="fa-brands fa-github" style="font-size: 12px; color: #000;"></i>
+    </a>
+
+    <!-- Google Scholar (substituído por ícone de graduation-cap) -->
+    <a href="https://scholar.google.com/citations?user=hPcIR9oAAAAJ&hl=en" target="_blank" style="margin-right: 15px;">
+        <i class="fa fa-graduation-cap" style="font-size: 12px; color: #4285F4;"></i>
+    </a>
+
+    <!-- ORCID (verde) -->
+    <a href="https://orcid.org/my-orcid?orcid=0000-0001-8003-4849" target="_blank" style="margin-right: 15px;">
+        <i class="fa-brands fa-orcid" style="font-size: 12px; color: #A6CE39;"></i>
+    </a>
+
+    <!-- Curriculum Lattes (ícone de documento) -->
+    <a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=CAE59CF7D29E4B95B7C13C648C78B21F#" target="_blank" style="margin-right: 15px;">
+        <i class="fa fa-user-graduate" style="font-size: 12px; color: #000;"></i>
+    </a>
+
+
+    <!-- R Project (azul) -->
+    <a href="https://rhozon.github.io/selecaodeprodutosnor/index.html" target="_blank" style="margin-right: 15px;">
+        <i class="fa-brands fa-r-project" style="font-size: 12px; color: #276DC3;"></i>
+    </a>
+    
+    <!-- Email (vermelho) -->
+    <a href="mailto:rodrigo.hermont@pucpr.edu.br" target="_blank" style="margin-right: 15px;">
+        <i class="fa fa-envelope" style="font-size: 12px; color: #D44638;"></i>
+    </a>
+
+</div>
+  
 ```
+
+
+
+

@@ -1,10 +1,113 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "site",
+    "objectID": "introportfoliogithubpages.html#rstudio",
+    "href": "introportfoliogithubpages.html#rstudio",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 RStudio",
+    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto.\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio:\ninstall.packages(\"quarto\")\nPara renderizar o site, rode:\nquarto::quarto_render()",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#vscode",
+    "href": "introportfoliogithubpages.html#vscode",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 VSCode",
+    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#positron",
+    "href": "introportfoliogithubpages.html#positron",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 Positron",
+    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nAbra o projeto Quarto no Positron.\nRenderize o site:\nquarto render",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html",
+    "href": "EmentaBigDataFinProj.html",
+    "title": "Ementa Big Data for Finance Project",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "*For portuguese-br version see the pdf file here.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
+    "href": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "1️⃣ Creating GitHub Pages with Quarto",
+    "text": "1️⃣ Creating GitHub Pages with Quarto\n\nSetting up Quarto\nPublishing pages on GitHub Pages",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#generating-synthetic-data",
+    "href": "EmentaBigDataFinProj.html#generating-synthetic-data",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "2️⃣ Generating Synthetic Data",
+    "text": "2️⃣ Generating Synthetic Data\n\nIntroduction to synthetic data\nMethods and tools for simulated data creation",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
+    "href": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series",
+    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nBuilding differentiated variables\nTechniques for stationarity analysis",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
+    "href": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "4️⃣ Forecasting Price Series in Basic Economic Theory",
+    "text": "4️⃣ Forecasting Price Series in Basic Economic Theory\n\nForecasting fundamentals\nPractical applications in price prediction",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
+    "href": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "5️⃣ Markowitz Theory & Multi-Objective Modeling",
+    "text": "5️⃣ Markowitz Theory & Multi-Objective Modeling\n\nIntroduction to Markowitz model\nImplementing a bi-objective model for risk-return balance",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
+    "href": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "6️⃣ Considering Investor Profiles in Decision Making",
+    "text": "6️⃣ Considering Investor Profiles in Decision Making\n\nAdjustments based on investor risk profiles\nStrategies for personalized financial decisions",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
   },
   {
     "objectID": "about.html",
@@ -12,5 +115,26 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#rodrigo-hermont-ozon",
+    "href": "index.html#rodrigo-hermont-ozon",
+    "title": "About the Professor",
+    "section": "Rodrigo Hermont Ozon",
+    "text": "Rodrigo Hermont Ozon\n  \n\n\n📌 Academic Profile\n\nEconomist and Master in Economic Development (UFPR)\nPh.D. Candidate in Industrial and Systems Engineering (PUCPR)\nProfessor of Finance, Data Science & Computational Programming at FAE Business School\nResearch Interests: Econometrics and Machine Learning, Financial Risk, Multiobjective Optim. in Finance, Financial Time Series Forecasting"
+  },
+  {
+    "objectID": "index.html#courses-and-materials",
+    "href": "index.html#courses-and-materials",
+    "title": "About the Professor",
+    "section": "📚 Courses and Materials",
+    "text": "📚 Courses and Materials\nHere are the available courses and learning materials:\n\n📊 Big Data for Finance Project📉 Risk Management🖥️ Programação Computacional\n\n\n\nEmenta e Conteúdo Programático\nCrie sua Github Page como Portfolio\n\n\n\n\nEmenta\n\n\n\n\nEmenta"
+  },
+  {
+    "objectID": "index.html#contact-and-networks",
+    "href": "index.html#contact-and-networks",
+    "title": "About the Professor",
+    "section": "📢 Contact and Networks",
+    "text": "📢 Contact and Networks\nYou can find me on the following platforms:"
   }
 ]

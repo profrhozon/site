@@ -3,12 +3,27 @@ project:
   output-dir: "."
 
 website:
-  title: "site"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  title: "Finance & Computing"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Big Data for Finance Project"
+        contents:
+          - href: EmentaBigDataFinProj.qmd
+            text: "Ementa"
+          - href: introportfoliogithubpages.qmd
+            text: "Criando seu portfolio numa Github page"
+
+      - section: "Risk Management"
+        contents:
+          - href: EmentaRiskMng.qmd
+            text: "Ementa"
+
+      - section: "Programação Computacional"
+        contents:
+          - href: EmentaProgComp.qmd
+            text: "Ementa"
 
 format:
   html:
