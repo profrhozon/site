@@ -4,7 +4,7 @@
 
 &nbsp;
 
-<center> ![](fae_building.jpg)){width="15%"} </center> 
+<center> ![](fae_building.jpg)) </center> 
 
 &nbsp;
 
