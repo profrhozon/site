@@ -4,7 +4,7 @@
 
 &nbsp;
 
-![]([logo_FAE.png](https://revistaensinosuperior.com.br/wp-content/uploads/2019/06/fae-700x420.jpg))
+![](fae_building.jpg))
 
 &nbsp;
 
