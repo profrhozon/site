@@ -8,9 +8,11 @@
 
 &nbsp;
 
+ ***
+ 
  [FAE Business School](https://fae.edu/) classes:
 
- ***
+
  
   - Risk Management
   - Big Data for Finance Project
