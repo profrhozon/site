@@ -119,7 +119,7 @@ Depois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:
    ```sh
    quarto render
    ```
-
+Maiores infos podem ser obtidas nesse [link oficial do quarto.org](https://quarto.org/docs/get-started/hello/vscode.html) ou p. ex. nesse vídeo [aqui](https://www.youtube.com/watch?v=ynMsYWTCtKA&t=49s) e [aqui](https://www.youtube.com/watch?v=z9WmmoSV_T4)
 
 # **3️⃣ Configurar o Git e conectar ao GitHub**
 Agora, vamos configurar o **Git** para versionamento e conectar ao GitHub.

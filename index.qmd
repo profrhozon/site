@@ -38,8 +38,8 @@ Here are the available courses and learning materials:
 
 ::: panel-tabset
 ### 📊 Big Data for Finance Project
-- [Ementa e Conteúdo Programático](EmentaBigDataFinProj.qmd)
-- [Crie sua Github Page como Portfolio](introportfoliogithubpages.qmd)
+- [Ementa e Conteúdo Programático](https://profrhozon.github.io/site/EmentaBigDataFinProj.html)
+- [Crie sua Github Page como Portfolio](https://profrhozon.github.io/site/introportfoliogithubpages.html)
 
 ### 📉 Risk Management
 - [Ementa](EmentaRiskMng.qmd)
@@ -93,7 +93,7 @@ You can find me on the following platforms:
     </a>
     
     <!-- Email (vermelho) -->
-    <a href="mailto:rodrigo.hermont@pucpr.edu.br" target="_blank" style="margin-right: 15px;">
+    <a href="mailto:rodrigo.ozon@fae.edu" target="_blank" style="margin-right: 15px;">
         <i class="fa fa-envelope" style="font-size: 12px; color: #D44638;"></i>
     </a>
 

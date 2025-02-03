@@ -56,6 +56,11 @@ By the end of the course, each student will have created a **GitHub Pages site**
 
 # 📚 Course Syllabus
 
+## **️Our first meeting**
+ - Didatic contract
+ - Content of course presentation
+ - Justificative for financial ML/DS/Econometrics portfolio
+
 ## **1️⃣ Creating GitHub Pages with Quarto**
 - Setting up Quarto
 - Publishing pages on GitHub Pages

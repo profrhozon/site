@@ -15,7 +15,7 @@
     "href": "introportfoliogithubpages.html#vscode",
     "title": "Crie seu portfolio numa Github Page",
     "section": "🔹 VSCode",
-    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render",
+    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render\nMaiores infos podem ser obtidas nesse link oficial do quarto.org ou p. ex. nesse vídeo aqui e aqui",
     "crumbs": [
       "Big Data for Finance Project",
       "Criando seu portfolio numa Github page"
@@ -136,5 +136,16 @@
     "title": "About the Professor",
     "section": "📢 Contact and Networks",
     "text": "📢 Contact and Networks\nYou can find me on the following platforms:"
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#our-first-meeting",
+    "href": "EmentaBigDataFinProj.html#our-first-meeting",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "️Our first meeting",
+    "text": "️Our first meeting\n\nDidatic contract\nContent of course presentation\nJustificative for financial ML/DS/Econometrics portfolio",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
   }
 ]
