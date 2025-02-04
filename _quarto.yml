@@ -14,6 +14,8 @@ website:
             text: "Ementa"
           - href: introportfoliogithubpages.qmd
             text: "Criando seu portfolio numa Github page"
+          - href: presFAE.qmd
+            text: "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
 
       - section: "Risk Management"
         contents:
