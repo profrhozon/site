@@ -9,191 +9,240 @@ format:
 editor: visual
 ---
 
----
+------------------------------------------------------------------------
 
 <left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
 
----
-
-
+------------------------------------------------------------------------
 
 # **1️⃣ Criar um repositório no GitHub**
+
 Antes de começar, precisamos criar um repositório no **GitHub**:
 
-1. **Acesse o GitHub** ([https://github.com/](https://github.com/)) e faça login na sua conta.
-2. **Clique no botão "New Repository"** para criar um novo repositório.
-3. **Defina um nome para o repositório** (exemplo: `portfolio`).
-4. **Defina o repositório como público** para que o GitHub Pages possa acessá-lo.
-5. **⚠️ NÃO adicione `README.md`, `.gitignore` ou `LICENSE`**, pois isso pode causar conflitos pelo menos por agora.
-6. **Clique em "Create repository"** e copie a URL do repositório para usarmos mais tarde.
+1.  **Acesse o GitHub** (<https://github.com/>) e faça login na sua conta.
+2.  **Clique no botão "New Repository"** para criar um novo repositório.
+3.  **Defina um nome para o repositório** (exemplo: `portfolio`).
+4.  **Defina o repositório como público** para que o GitHub Pages possa acessá-lo.
+5.  **⚠️ NÃO adicione `README.md`, `.gitignore` ou `LICENSE`**, pois isso pode causar conflitos pelo menos por agora.
+6.  **Clique em "Create repository"** e copie a URL do repositório para usarmos mais tarde.
 
 # **2️⃣ Configurar o ambiente**
+
 ## **🔹 RStudio**
-1. **Abra o RStudio**.
-2. Vá para **File** > **New Project** > **New Directory** > **Quarto Website**.
-3. Escolha um nome e um local para o projeto (local, OneDrive, Google Drive, ...) e marque as opções **Create a git repository**, **Use renv with this project** 
-4. Clique em **Create Project**.
-5. **Instale os pacotes necessários** no console do RStudio: (opcional)
-   ```r
-   install.packages("quarto")
-   ```
-6. Edite o arquivo ``quarto.yml`` e da linha 1 a 3 copie e cole o codigo abaixo:
 
-   ```sh
-   project:
-     type: website
-     output-dir: "."
-   ```
+1.  **Abra o RStudio**.
 
-7. Para renderizar o site, rode:
-   ```r
-   quarto::quarto_render()
-   ```
-ou no Terminal execute 
+2.  Vá para **File** \> **New Project** \> **New Directory** \> **Quarto Website**.
 
-   ```sh
-   quarto render
-   ```
-Ou simplesmente clique no botão ``Render`` quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.
+3.  Escolha um nome e um local para o projeto (local, OneDrive, Google Drive, ...) e marque as opções **Create a git repository**, **Use renv with this project**
 
-Obs.: Se encontrar alguma mensagem de erro como ``- The project is out-of-sync -- use renv::status() for details.`` em Background Jobs, no console do RStudio, digite:
+4.  Clique em **Create Project**.
 
-   ```r
-   renv::status()
-   ```
-   
+5.  **Instale os pacotes necessários** no console do RStudio: (opcional)
+
+    ``` r
+    install.packages("quarto")
+    ```
+
+6.  Edite o arquivo `quarto.yml` e da linha 1 a 3 copie e cole o codigo abaixo:
+
+    ``` sh
+    project:
+      type: website
+      output-dir: "."
+    ```
+
+7.  Para renderizar o site, rode:
+
+    ``` r
+    quarto::quarto_render()
+    ```
+
+    ou no Terminal execute
+
+    ``` sh
+    quarto render
+    ```
+
+    Ou simplesmente clique no botão `Render` quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.
+
+Obs.: Se encontrar alguma mensagem de erro como `- The project is out-of-sync -- use renv::status() for details.` em Background Jobs, no console do RStudio, digite:
+
+``` r
+renv::status()
+```
+
 Isso mostrará o que precisa ser atualizado.
 
 Em seguida, para sincronizar pacotes, rode:
- 
-   ```r
-   renv::restore()
-   ```
+
+``` r
+renv::restore()
+```
 
 Se quiser atualizar todos os pacotes:
 
-   ```r
-  renv::update()
-  ```
+``` r
+renv::update()
+```
 
 Depois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:
- 
-   ```r
-   quarto::quarto_render()
-   ```
- 
- 
+
+``` r
+quarto::quarto_render()
+```
+
 ## **🔹 Positron**
 
-1. **Baixe e instale o Positron**: [https://positron.dev/](https://positron.dev/) ou em [https://github.com/posit-dev/positron](https://github.com/posit-dev/positron)
-2. **File > New File > Quarto Project > Website Project**.
-3. **Escolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive...crie um nome pro seu subdir em ``Project Directory Name``**
-4. **File > Open Recent > e abra o subdir que você acabou de criar**
-5. Note que vc terá no seu projeto os seguintes arquivos:
- - ``_quarto.yml``
- - ``about.qmd``
- - ``index.qmd``
- - ``styles.css``
-6. Edite o arquivo ``quarto.yml`` e da linha 1 a 3 copie e cole o codigo abaixo:
+1.  **Baixe e instale o Positron**: <https://positron.dev/> ou em <https://github.com/posit-dev/positron>
+2.  **File \> New File \> Quarto Project \> Website Project**.
+3.  **Escolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive...crie um nome pro seu subdir em `Project Directory Name`**
+4.  **File \> Open Recent \> e abra o subdir que você acabou de criar**
+5.  Note que vc terá no seu projeto os seguintes arquivos:
 
-   ```sh
-   project:
-     type: website
-     output-dir: "."
-   ```  
-7. Abra qualquer um dos dois .qmd e execute ele clicando em ``Preview`` ou usando o atalho ``CTRL+Shift+K`` (Windows)
+-   `_quarto.yml`
+-   `about.qmd`
+-   `index.qmd`
+-   `styles.css`
 
-5. **Renderize o site**:
-   ```sh
-   quarto render
-   ```
-   
- 
+6.  Edite o arquivo `quarto.yml` e da linha 1 a 3 copie e cole o codigo abaixo:
+
+    ``` sh
+    project:
+      type: website
+      output-dir: "."
+    ```
+
+7.  Abra qualquer um dos dois .qmd e execute ele clicando em `Preview` ou usando o atalho `CTRL+Shift+K` (Windows)
+
+8.  **Renderize o site**:
+
+    ``` sh
+    quarto render
+    ```
+
 ## **🔹 VSCode**
-1. **Baixe e instale o Quarto** se ainda não tiver: [https://quarto.org/](https://quarto.org/)
-2. **Abra a pasta do projeto** (`File > Open Folder`).
-3. **Instale a extensão do Quarto**:
-   - Vá em **Extensions** (Ctrl + Shift + X).
-   - Pesquise por "Quarto" e instale.
-4. Para renderizar o site, abra o **terminal** e rode:
-   ```sh
-   quarto render
-   ```
-Maiores infos podem ser obtidas nesse [link oficial do quarto.org](https://quarto.org/docs/get-started/hello/vscode.html) ou p. ex. nesse vídeo [aqui](https://www.youtube.com/watch?v=ynMsYWTCtKA&t=49s) e [aqui](https://www.youtube.com/watch?v=z9WmmoSV_T4)
+
+1.  **Baixe e instale o Quarto** se ainda não tiver: <https://quarto.org/>
+
+2.  **Abra a pasta do projeto** (`File > Open Folder`).
+
+3.  **Instale a extensão do Quarto**:
+
+    -   Vá em **Extensions** (Ctrl + Shift + X).
+    -   Pesquise por "Quarto" e instale.
+
+4.  Para renderizar o site, abra o **terminal** e rode:
+
+    ``` sh
+    quarto render
+    ```
+
+    Maiores infos podem ser obtidas nesse [link oficial do quarto.org](https://quarto.org/docs/get-started/hello/vscode.html) ou p. ex. nesse vídeo [aqui](https://www.youtube.com/watch?v=ynMsYWTCtKA&t=49s) e [aqui](https://www.youtube.com/watch?v=z9WmmoSV_T4)
 
 # **3️⃣ Configurar o Git e conectar ao GitHub**
+
 Agora, vamos configurar o **Git** para versionamento e conectar ao GitHub.
 
-1. **Abra o terminal** na sua IDE.
-2. **Inicialize o repositório Git no projeto**:
-   ```sh
-   git init
-   ```
-3. **Conecte o repositório local ao GitHub** (substitua `SEU-USUARIO` pelo seu nome no GitHub):
-   ```sh
-   git remote add origin https://github.com/SEU-USUARIO/portfolio.git
-   ```
-4. **Adicione todos os arquivos ao Git**:
-   ```sh
-   git add .
-   ```
-5. **Crie um commit inicial**:
-   ```sh
-   git commit -m "Primeira versão do portfolio ou site"
-   ```
-6. **Defina a branch principal como `main`**:
-   ```sh
-   git branch -M main
-   ```
-7. **Envie os arquivos para o GitHub**:
-   ```sh
-   git push -u origin main
-   ```
+1.  **Abra o terminal** na sua IDE.
+
+2.  **Inicialize o repositório Git no projeto**:
+
+    ``` sh
+    git init
+    ```
+
+3.  **Conecte o repositório local ao GitHub** (substitua `SEU-USUARIO` pelo seu nome no GitHub):
+
+    ``` sh
+    git remote add origin https://github.com/SEU-USUARIO/portfolio.git
+    ```
+
+4.  **Adicione todos os arquivos ao Git**:
+
+    ``` sh
+    git add .
+    ```
+
+5.  **Crie um commit inicial**:
+
+    ``` sh
+    git commit -m "Primeira versão do portfolio ou site"
+    ```
+
+6.  **Defina a branch principal como `main`**:
+
+    ``` sh
+    git branch -M main
+    ```
+
+7.  **Envie os arquivos para o GitHub**:
+
+    ``` sh
+    git push -u origin main
+    ```
 
 # **4️⃣ Configurar o GitHub Pages**
+
 Agora que os arquivos estão no GitHub, vamos ativar o **GitHub Pages**.
 
-1. **Acesse o repositório no GitHub**.
-2. Vá até **Settings** > **Pages**.
-3. **Em "Build and deployment"**, escolha "Deploy from a branch".
-4. **Selecione a branch `main` e defina `/ (root)` como diretório de origem**.
-5. **Clique em "Save"**.
+1.  **Acesse o repositório no GitHub**.
+2.  Vá até **Settings** \> **Pages**.
+3.  **Em "Build and deployment"**, escolha "Deploy from a branch".
+4.  **Selecione a branch `main` e defina `/ (root)` como diretório de origem**.
+5.  **Clique em "Save"**.
 
 Após alguns minutos, seu site estará disponível no link:
-```
+
+```         
 https://SEU-USUARIO.github.io/portfolio/
 ```
 
 # **5️⃣ Atualizar o site**
+
 Se você quiser modificar o site/portfolio no futuro, basta seguir os passos abaixo para atualizar:
 
-1. **Edite os arquivos do site**.
-2. **No terminal, adicione as mudanças ao Git**:
-   ```sh
-   git add .
-   ```
-3. **Crie um novo commit descrevendo as mudanças**:
-   ```sh
-   git commit -m "Atualização do site"
-   ```
-4. **Envie as alterações para o GitHub**:
-   ```sh
-   git push origin main
-   ```
+1.  **Edite os arquivos do site**.
+
+2.  **No terminal, adicione as mudanças ao Git**:
+
+    ``` sh
+    git add .
+    ```
+
+3.  **Crie um novo commit descrevendo as mudanças**:
+
+    ``` sh
+    git commit -m "Atualização do site"
+    ```
+
+4.  **Envie as alterações para o GitHub**:
+
+    ``` sh
+    git push origin main
+    ```
 
 # **🎯 Conclusão**
+
 Agora seu site está publicado no **GitHub Pages** e pronto para ser atualizado sempre que necessário! 🚀
 
 Em seguida, recomendo que dê uma olhada no manual de referência do Quarto visitando o site oficial:
 
- - [https://quarto.org/](https://quarto.org/)
- 
-Aqui você pode editar seu .yml pro design que preferir:
+-   <https://quarto.org/>
 
- - [https://quarto.org/docs/websites/](https://quarto.org/docs/websites/)
- 
+Aqui você pode encontrar dicas úteis de como editar seu .yml pro design que preferir:
+
+-   <https://quarto.org/docs/websites/>
 
 Caso queira seguir um vídeo tutorial simples que faz uso de um template pronto veja:
 
- - [How to create a web site using Quarto, RStudio, and GitHub Pages (w/ code template)](https://www.youtube.com/watch?v=YN75YXaLFGM&t=17s)
+-   [How to create a web site using Quarto, RStudio, and GitHub Pages (w/ code template)](https://www.youtube.com/watch?v=YN75YXaLFGM&t=17s)
+
+Ou então você poderia ver um bom vídeo tutorial de uso do Python no Quarto:
+
+- [How to Build a Data Science Portfolio Website with Python & Quarto!](https://www.youtube.com/watch?v=TbegWSPETs0&t=1938s)
+
+
+
+
 

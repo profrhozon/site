@@ -9,11 +9,11 @@ format:
 editor: visual
 ---
 
----
+------------------------------------------------------------------------
 
 <left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
 
----
+------------------------------------------------------------------------
 
 # About the Professor
 
@@ -23,36 +23,77 @@ Welcome to my academic page at FAE Business School! Here, you will find informat
 
 <right> ![](https://rhozon.github.io/site/me.jpg){width="8%"} </right>
 
----
+------------------------------------------------------------------------
 
 ### **📌 Academic Profile**
-- Economist and Master in Economic Development (UFPR) 
-- Ph.D. Candidate in Industrial and Systems Engineering (PUCPR) 
-- Professor of Finance, Data Science & Computational Programming at FAE Business School 
-- Research Interests: Econometrics and Machine Learning, Financial Risk, Multiobjective Optim. in Finance, Financial Time Series Forecasting 
 
----
+-   Economist and Master in Economic Development (UFPR)
+-   Ph.D. Candidate in Industrial and Systems Engineering (PUCPR)
+-   Professor of Finance, Data Science & Computational Programming at FAE Business School
+-   Research Interests: Econometrics and Machine Learning, Financial Risk, Multiobjective Optim. in Finance, Financial Time Series Forecasting
+
+------------------------------------------------------------------------
 
 ## **📚 Courses and Materials**
+
 Here are the available courses and learning materials:
+
+::: {.callout-note appearance="simple"}
+## Pay Attention
+
+For complete materials, presentations, scripts and other, please see Google Classroom !
+:::
 
 ::: panel-tabset
 ### 📊 Big Data for Finance Project
-- [Ementa e Conteúdo Programático](https://profrhozon.github.io/site/EmentaBigDataFinProj.html)
-- [Crie sua Github Page como Portfolio](https://profrhozon.github.io/site/introportfoliogithubpages.html)
+
+-   [Ementa e Conteúdo Programático](https://profrhozon.github.io/site/EmentaBigDataFinProj.html)
+-   [Crie sua Github Page como Portfolio](https://profrhozon.github.io/site/introportfoliogithubpages.html)
+
+
+$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjM0Mzc2NDU3)  
+
+**Note:** You must be logged in with your `@fae.edu` account to access this class.
 
 ### 📉 Risk Management
-- [Ementa](EmentaRiskMng.qmd)
+
+-   [Ementa](EmentaRiskMng.qmd)
+
+
+$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjMzOTUxMzg2)  
+
+**Note:** You must be logged in with your `@fae.edu` account to access this class.
 
 ### 🖥️ Programação Computacional
-- [Ementa](EmentaProgComp.qmd)
 
+-   [Ementa](EmentaProgComp.qmd)
+
+
+$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjM0ODA2NDUx)  
+
+**Note:** You must be logged in with your `@fae.edu` account to access this class.
 :::
 
----
+------------------------------------------------------------------------
+
+## **My Availability**
+
+Below is my current availability. Feel free to check the calendar for open slots.
+
+```{=html}
+
+<div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+  <iframe src="https://calendar.google.com/calendar/embed?src=rodrigo.ozon%40fae.edu&ctz=America%2FSao_Paulo" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+          frameborder="0" scrolling="no">
+  </iframe>
+</div>
+
+```
 
 
 ## **📢 Contact and Networks**
+
 You can find me on the following platforms:
 
 {{< fa thumbs >}}
@@ -100,6 +141,14 @@ You can find me on the following platforms:
 </div>
   
 ```
+
+
+***
+
+
+
+
+
 
 
 

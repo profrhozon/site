@@ -9,117 +9,221 @@ format:
 editor: visual
 ---
 
----
+------------------------------------------------------------------------
 
 <left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
 
----
+------------------------------------------------------------------------
 
-
-*For portuguese-br version [see the pdf file here.](https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf)
-
+\*For portuguese-br version [see the pdf file here.](https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf)
 
 # 📌 General Information
 
-- **Course:** [Data Science for Business](https://fae.edu/cursos/182302806/ciencia-de-dados-para-negocios.htm)  
-- **Subject:** Big Data for Finance Project  
-- **Workload:** 90 hours  
-- **Programming Languages:** R or Python  
+-   **Course:** [Data Science for Business](https://fae.edu/cursos/182302806/ciencia-de-dados-para-negocios.htm)\
+-   **Subject:** Big Data for Finance Project\
+-   **Workload:** 90 hours\
+-   **Programming Languages:** R or Python
 
----
+------------------------------------------------------------------------
 
 # 🎯 Course Description
 
-The **Big Data for Finance Project** course aims to equip students with the necessary skills to develop applied financial projects using **big data analytics techniques**.  
-Students will be encouraged to work with **R or Python** to build analytical models and visualizations, implementing solutions applicable to real-world contexts.  
+The **Big Data for Finance Project** course aims to equip students with the necessary skills to develop applied financial projects using **big data analytics techniques**.\
+Students will be encouraged to work with **R or Python** to build analytical models and visualizations, implementing solutions applicable to real-world contexts.\
 By the end of the course, each student will have created a **GitHub Pages site** to publish their projects, forming an individual portfolio for the job market.
 
----
+------------------------------------------------------------------------
 
 # 🎯 Objectives
 
-- Apply **Big Data concepts** to real financial projects.
-- Develop **hands-on skills** in R or Python for financial data analysis.
-- Create **analytical and visualization solutions** for financial problems.
-- Build an **online portfolio** with posts on GitHub Pages.
+-   Apply **Big Data concepts** to real financial projects.
+-   Develop **hands-on skills** in R or Python for financial data analysis.
+-   Create **analytical and visualization solutions** for financial problems.
+-   Build an **online portfolio** with posts on GitHub Pages.
 
----
+------------------------------------------------------------------------
 
 # 🔥 Skills Developed
 
-- Handling and analyzing **large-scale financial data**.
-- Constructing **predictive and diagnostic models**.
-- **Data visualization** for decision-making.
-- **Presenting results professionally**.
+-   Handling and analyzing **large-scale financial data**.
+-   Constructing **predictive and diagnostic models**.
+-   **Data visualization** for decision-making.
+-   **Presenting results professionally**.
 
----
+------------------------------------------------------------------------
 
 # 📚 Course Syllabus
 
 ## **️Our first meeting**
- - Didatic contract
- - Content of course presentation
- - Justificative for financial ML/DS/Econometrics portfolio
+
+-   Didatic contract
+-   Content of course presentation
+-   Justificative for financial ML/DS/Econometrics portfolio
 
 ## **1️⃣ Creating GitHub Pages with Quarto**
-- Setting up Quarto
-- Publishing pages on GitHub Pages
+
+-   Setting up Quarto
+-   Publishing pages on GitHub Pages
 
 ## **2️⃣ Generating Synthetic Data**
-- Introduction to synthetic data
-- Methods and tools for simulated data creation
+
+-   Introduction to synthetic data
+-   Methods and tools for simulated data creation
 
 ## **3️⃣ Feature Engineering & Key Metrics for Financial Time Series**
-- Building **differentiated variables**
-- Techniques for **stationarity analysis**
+
+-   Dimensionality reduction techniques
+-   Building **differentiated variables**
+-   Techniques for **stationarity analysis**
 
 ## **4️⃣ Forecasting Price Series in Basic Economic Theory**
-- **Forecasting fundamentals**
-- Practical applications in **price prediction**
+
+-   **Forecasting fundamentals**
+-   Practical applications in **price prediction**
 
 ## **5️⃣ Markowitz Theory & Multi-Objective Modeling**
-- Introduction to **Markowitz model**
-- Implementing a **bi-objective model** for risk-return balance
+
+-   Introduction to **Markowitz model**
+-   Implementing a **bi-objective model** for risk-return balance
 
 ## **6️⃣ Considering Investor Profiles in Decision Making**
-- Adjustments based on **investor risk profiles**
-- Strategies for **personalized financial decisions**
 
----
+-   Adjustments based on **investor risk profiles**
+-   Strategies for **personalized financial decisions**
+
+------------------------------------------------------------------------
 
 # 🏆 Teaching Methodology
 
-This course will be **practical**, including:
-✔ Lectures and **case studies**.  
-✔ Hands-on **lab sessions** using R/Python.  
-✔ **Individual and group projects**.  
+This course will be **practical**, including: ✔ Lectures and **case studies**.\
+✔ Hands-on **lab sessions** using R/Python.\
+✔ **Individual and group projects**.\
 ✔ **Guidance on publishing** results in GitHub Pages.
 
----
+------------------------------------------------------------------------
 
 # 📝 Evaluation Criteria
 
-| Activity                     | Weight |
-|------------------------------|--------|
-| Participation & practical exercises  | **30%** |
-| Intermediate project deliveries  | **30%** |
+| Activity                                | Weight  |
+|-----------------------------------------|---------|
+| Participation & practical exercises     | **30%** |
+| Intermediate project deliveries         | **30%** |
 | Final project published on GitHub Pages | **40%** |
 
----
+------------------------------------------------------------------------
+
+# Course grapho
+
+```{mermaid}
+
+mindmap
+  root((Big Data for Finance Project))
+    subtopic Introduction ["Creating GitHub Pages with Quarto"]
+      subsubtopic ["Initial Quarto setup"]
+      subsubtopic ["Publishing pages on GitHub Pages"]
+    subtopic Synthetic Data ["Generating Synthetic Data"]
+      subsubtopic ["Introduction to synthetic data"]
+      subsubtopic ["Methods and tools for generating simulated data"]
+    subtopic Feature Engineering ["Feature Generation for Financial Time Series"]
+      subsubtopic ["Building differentiated variables"]
+      subsubtopic ["Techniques for analyzing stationarity"]
+    subtopic Forecasting ["Forecasting Price Series in Economic Theory"]
+      subsubtopic ["Fundamentals of forecasting"]
+      subsubtopic ["Practical applications in price forecasting"]
+    subtopic Markowitz ["Basic Markowitz Theory and Multi-objective Modeling"]
+      subsubtopic ["Introduction to Markowitz Model"]
+      subsubtopic ["Bi-objective modeling for return and risk"]
+    subtopic Decision Making ["Considering Investor Profile in Decision-Making"]
+      subsubtopic ["Adjustments based on investor profile"]
+      subsubtopic ["Strategies for personalized decisions"]
+      
+```
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA) # Remove todos os coments # dos outputs do R
+knitr::opts_chunk$set(warning = FALSE) # Remove todos os warnings # dos outputs do R
+knitr::opts_chunk$set(message = FALSE) # Remove todas as mensagens # dos outputs do R
+
+```
+
+```{r}
+
+# Load required libraries
+library(igraph)
+library(networkD3)
+library(dplyr)
+
+# Create dataset following the structure of the Mermaid mindmap
+data <- data_frame(
+  from = c(
+    "Big Data for Finance Project", "Big Data for Finance Project", "Big Data for Finance Project",
+    "Big Data for Finance Project", "Big Data for Finance Project", "Big Data for Finance Project"
+  ),
+  to = c(
+    "Creating GitHub Pages with Quarto", "Generating Synthetic Data", 
+    "Feature Generation for Financial Time Series", "Forecasting Price Series in Economic Theory",
+    "Basic Markowitz Theory and Multi-objective Modeling", "Considering Investor Profile in Decision-Making"
+  )
+)
+
+# Expand the dataset to include subtopics
+subtopics <- data_frame(
+  from = c(
+    "Creating GitHub Pages with Quarto", "Creating GitHub Pages with Quarto",
+    "Generating Synthetic Data", "Generating Synthetic Data",
+    "Feature Generation for Financial Time Series", "Feature Generation for Financial Time Series",
+    "Forecasting Price Series in Economic Theory", "Forecasting Price Series in Economic Theory",
+    "Basic Markowitz Theory and Multi-objective Modeling", "Basic Markowitz Theory and Multi-objective Modeling",
+    "Considering Investor Profile in Decision-Making", "Considering Investor Profile in Decision-Making"
+  ),
+  to = c(
+    "Initial Quarto setup", "Publishing pages on GitHub Pages",
+    "Introduction to synthetic data", "Methods and tools for generating simulated data",
+    "Building differentiated variables", "Techniques for analyzing stationarity",
+    "Fundamentals of forecasting", "Practical applications in price forecasting",
+    "Introduction to Markowitz Model", "Bi-objective modeling for return and risk",
+    "Adjustments based on investor profile", "Strategies for personalized decisions"
+  )
+)
+
+# Combine both datasets
+full_data <- bind_rows(data, subtopics)
+
+# Plot the interactive network graph
+p <- simpleNetwork(full_data, height = "600px", width = "100%",        
+                   Source = 1,                # Source column
+                   Target = 2,                # Target column
+                   linkDistance = 80,         # Distance between nodes
+                   charge = -500,             # Repulsion/attraction strength
+                   fontSize = 14,             # Font size of nodes
+                   fontFamily = "serif",      # Font type
+                   linkColour = "#666",       # Edge color
+                   nodeColour = "#69b3a2",    # Node color
+                   opacity = 0.9,             # Node transparency
+                   zoom = TRUE                # Enable zooming
+)
+
+p
+
+
+```
 
 # 📖 Recommended References
 
-- **Angrist, J. D., & Pischke, J. S. (2009).** *Mostly Harmless Econometrics: An Empiricist's Companion.* Princeton University Press.  
-- **Caetano, M. A. L. (2021).** *Python e Mercado Financeiro: Programação Para Estudantes, Investidores e Analistas.* Editora Blucher.  
-- **Hilpisch, Y. (2019).** *Python for Finance: Mastering Data-Driven Finance.* O'Reilly Media.  
-- **James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013).** *An Introduction to Statistical Learning: with Applications in R.*  
-- **Provost, F., & Fawcett, T. (2013).** *Data Science for Business: What You Need to Know About Data Mining and Data-Analytic Thinking.*  
+-   **Angrist, J. D., & Pischke, J. S. (2009).** *Mostly Harmless Econometrics: An Empiricist's Companion.* Princeton University Press.\
+-   **Caetano, M. A. L. (2021).** *Python e Mercado Financeiro: Programação Para Estudantes, Investidores e Analistas.* Editora Blucher.\
+-   **Hilpisch, Y. (2019).** *Python for Finance: Mastering Data-Driven Finance.* O'Reilly Media.\
+-   **James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013).** *An Introduction to Statistical Learning: with Applications in R.*\
+-   **Provost, F., & Fawcett, T. (2013).** *Data Science for Business: What You Need to Know About Data Mining and Data-Analytic Thinking.*
+-   **Scavetta, R., J., & Angelov, B.** *Python e R para o Cientista de Dados Moderno: O melhor de dois mundos*. O´relly novatec, 1ª ed., Set. 2022.
 
 More readings and **documentation of R/Python libraries** will be provided throughout the course.
 
----
-
-
-
-
-
+------------------------------------------------------------------------

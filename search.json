@@ -81,7 +81,7 @@
     "href": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
     "title": "Ementa Big Data for Finance Project",
     "section": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series",
-    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nBuilding differentiated variables\nTechniques for stationarity analysis",
+    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nDimensionality reduction techniques\nBuilding differentiated variables\nTechniques for stationarity analysis",
     "crumbs": [
       "Big Data for Finance Project",
       "Ementa"
@@ -139,7 +139,7 @@
     "href": "index.html#courses-and-materials",
     "title": "About the Professor",
     "section": "📚 Courses and Materials",
-    "text": "📚 Courses and Materials\nHere are the available courses and learning materials:\n\n📊 Big Data for Finance Project📉 Risk Management🖥️ Programação Computacional\n\n\n\nEmenta e Conteúdo Programático\nCrie sua Github Page como Portfolio\n\n\n\n\nEmenta\n\n\n\n\nEmenta"
+    "text": "📚 Courses and Materials\nHere are the available courses and learning materials:\n\n\n\n\n\n\nPay Attention\n\n\n\nFor complete materials, presentations, scripts and other, please see Google Classroom !\n\n\n\n📊 Big Data for Finance Project📉 Risk Management🖥️ Programação Computacional\n\n\n\nEmenta e Conteúdo Programático\nCrie sua Github Page como Portfolio\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class.\n\n\n\nEmenta\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class.\n\n\n\nEmenta\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class."
   },
   {
     "objectID": "index.html#contact-and-networks",
@@ -290,5 +290,40 @@
       "Big Data for Finance Project",
       "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
     ]
+  },
+  {
+    "objectID": "mindmap_test.html",
+    "href": "mindmap_test.html",
+    "title": "Mindmap Interativo no Quarto",
+    "section": "",
+    "text": "Markmap Test"
+  },
+  {
+    "objectID": "mindmap_test.html#meu-mindmap-com-markmap",
+    "href": "mindmap_test.html#meu-mindmap-com-markmap",
+    "title": "Mindmap Interativo no Quarto",
+    "section": "",
+    "text": "import 'https://cdn.jsdelivr.net/npm/markmap@0.14.1/lib/browser/index.js';\n\nconst mindmapData = `\n# Ideia Principal\n## Subtópico 1\n- Detalhe 1\n- Detalhe 2\n## Subtópico 2\n- Outro detalhe\n`;\n\nconst container = document.createElement(\"div\");\ncontainer.style.width = \"100%\";\ncontainer.style.height = \"500px\";\ndocument.currentScript.parentElement.appendChild(container);\n\nconst mm = markmap.Markmap.create(container);\nmm.setData(markmap.transform(mindmapData));"
+  },
+  {
+    "objectID": "mindmap_test.html#mindmap-com-markmap",
+    "href": "mindmap_test.html#mindmap-com-markmap",
+    "title": "Mindmap Interativo no Quarto",
+    "section": "",
+    "text": "Markmap Test"
+  },
+  {
+    "objectID": "index.html#my-avaiabilityes",
+    "href": "index.html#my-avaiabilityes",
+    "title": "About the Professor",
+    "section": "My avaiabilityes",
+    "text": "My avaiabilityes"
+  },
+  {
+    "objectID": "index.html#my-availability",
+    "href": "index.html#my-availability",
+    "title": "About the Professor",
+    "section": "My Availability",
+    "text": "My Availability\nBelow is my current availability. Feel free to check the calendar for open slots."
   }
 ]
