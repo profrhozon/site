@@ -242,7 +242,32 @@ Ou então você poderia ver um bom vídeo tutorial de uso do Python no Quarto:
 
 - [How to Build a Data Science Portfolio Website with Python & Quarto!](https://www.youtube.com/watch?v=TbegWSPETs0&t=1938s)
 
+Veja alguns exemplos de alguns portfólios hospedados em GitHub Pages feitas por alguns Data Scientists ....
 
+- **Natassha's Portfolio** – Um portfólio interativo que destaca projetos, artigos e habilidades em Data Science.  
+  [Natassha's Portfolio](https://natassha.github.io/natasshaselvaraj/) :contentReference[oaicite:0]{index=0}
 
+- **Haruka Takagi's Data Science Portfolio** – Apresenta projetos acadêmicos e experiências profissionais com ênfase em machine learning e NLP.  
+  [Haruka Takagi's Portfolio](https://haruka-takagi-datascience.github.io/) :contentReference[oaicite:1]{index=1}
+
+- **6 Examples | Developing Your Data Science Portfolio** – Uma coleção de portfólios de Data Science, útil para ter ideias sobre estrutura e conteúdo.  
+  [6 Examples](https://ucdavisdatalab.github.io/workshop_portfolios/examples.html) :contentReference[oaicite:2]{index=2}
+
+- **Joanna Khek's Portfolio** – Portfólio que foca em projetos de IA, com links para aplicações interativas e repositórios de código.  
+  [Joanna Khek's Portfolio](https://joanna-khek.github.io/) :contentReference[oaicite:3]{index=3}
+
+- **Hannah Yan's Portfolio** – Combina projetos de Data Science com arte generativa e visualizações de dados, mostrando diversidade de habilidades.  
+  [Hannah Yan's Portfolio](https://yanhann10.github.io/) :contentReference[oaicite:4]{index=4}
+
+- **Ajay Gurav's Portfolio** – Um exemplo de portfólio que apresenta tanto projetos técnicos quanto experiências profissionais em Data Science e desenvolvimento.  
+  [Ajay Gurav's Portfolio](https://ajaygurav16.github.io/) :contentReference[oaicite:5]{index=5}
+
+Além desses exemplos, há também tutoriais — como o de Chris Tran — que ensinam a criar um portfólio minimalista usando GitHub Pages, o que pode ser uma ótima inspiração para montar o seu próprio:
+
+- [Tutorial do Chris Tran: Create a Minimalism GitHub Page for Your Data Science Portfolio](https://chriskhanhtran.github.io/_posts/2020-01-13-portfolio-tutorial/) 
+
+Lembre-se que a nossa intenção nessa disciplina de _Big Data for finance project_ é que vocês trabalham em colaboração para a criação de uma Github Page ÚNICA pro projeto do seu grupo!
+
+Aproveite os conhecimentos práticos aqui obtidos pra futuramente criar a sua própria Github Page, se inspirar nas páginas com os templates oferecidos pelo quarto.org (pra ganhar bastante tempo) e nesses links desses portfolios de alguns desses Data Scientists que postei aqui pra que em breve você crie a sua própria page de portfolio de quaisquer outros projetos de Data Science que forem fazer!
 
 
