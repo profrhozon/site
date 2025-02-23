@@ -116,10 +116,8 @@ A disciplina será ministrada de forma prática, com aulas expositivas, exercíc
 
 # 📊 Critérios de Avaliação
 
-- **Provas teóricas e práticas:** 30%  
-- **Projetos práticos:** 40%  
-- **Participação e atividades em sala:** 20%  
-- **Apresentação do projeto final:** 10%  
+- **Provas teóricas e práticas:** 60%  
+- **Exercícios computacionais e listas de exercícios:** 40%  
 
 ---
 

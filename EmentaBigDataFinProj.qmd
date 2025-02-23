@@ -17,6 +17,8 @@ editor: visual
 
 \*For portuguese-br version [see the pdf file here.](https://github.com/profrhozon/site/blob/main/Ementa_FAE_Projetos_DS_FinMkt.pdf)
 
+$\Rightarrow$ [Preencha o Forms do Perfil dos Estudantes aqui!](https://docs.google.com/forms/d/e/1FAIpQLSfd2CwZRI-2WNxFGu5yrcqfbCdrsEDMwBkTmI-v8bDPPT3WAg/viewform?usp=sharing)
+
 # 📌 General Information
 
 -   **Course:** [Data Science for Business](https://fae.edu/cursos/182302806/ciencia-de-dados-para-negocios.htm)\
@@ -95,7 +97,6 @@ By the end of the course, each student will have created a **GitHub Pages site**
 
 [Obtenha a planilha (sujeita a alterações no decorrer do curso) aqui](https://github.com/profrhozon/site/raw/refs/heads/main/Planilha%20de%20Cronograma%20Disciplinas%20FAE.xlsx)
 
-# Cronograma de Aulas 2025
 
 | Data             | Conteúdo Programado | Entrega Associada | Horas/Aula | Observações |
 |-----------------|--------------------|------------------|------------|-------------|
@@ -130,6 +131,19 @@ By the end of the course, each student will have created a **GitHub Pages site**
 | **12/09/2025**  | Revisão geral do projeto. | Sprint Review dos alunos com o professor. | 4 |  |
 | **19/09/2025**  | Apresentação final dos projetos. | Composição da PFinal (vide calendário). | 4 |  |
 
+Instruções básicas:
+
+- Cada aluno será avaliado individual e coletivamente $\Rightarrow$ Após o primeiro encontro que cada aluno criar sua GitHub Page e postar como tarefa concluída no Classroom, no nosso terceiro encontro, teremos a apresentação dos grupos e das paginas criadas por cada um. Como cada grupo elegerá um "Scrum Master" e todos atuarão como "Data Scientist" é importante que o scrum master mostre o histórico de commits e o git onde fique claro a boa distribuição dos trabalhos e entregas e contribuições de cada um dom time!
+
+- Cada grupo poderá montar seu portfólio com tickers que estejam disponíveis pra download e uso free. Caso o grupo opte por utilizar algum outro dataset recomendado pelo professor e que faça uso de séries temporais de preços, o problema geral que será passível de avaliação e construção consistirá sempre na construção de uma carteira que será otimizada pra negociações de curto prazo de compra, venda ou espera.
+
+- Caso o grupo opte por "artificializar o dataset", precisará demonstrar claramente e fornecer os códigos pra replicação em seu post;
+
+- Pode-se utilizar as linguagens R, Python Julia livremente ou combinamente caso seja necessário. Cada grupo é livre pra utilizar quaisquer uma das linguagens abertas do Data Science;
+
+- O ideal é que cada grupo seja composto por 4 alunos, com uma certa flexibilidade pra mudarmos.
+
+Fique atento para o nosso cronograma de entregas e postagens para que possamos ser capazes de alcançar os objetivos finais da disciplina. Em alguns casos, poderemos reajustar o cronograma, mas os posts e a geração das análises e códigos não deverão ser muito extenuantes em termos de consumir muito seu tempo!
 
 
 ------------------------------------------------------------------------
