@@ -9,8 +9,169 @@ format:
 editor: visual
 ---
 
----
+------------------------------------------------------------------------
 
 <left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
 
----
+------------------------------------------------------------------------
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA) # Remove todos os coments # dos outputs do R
+knitr::opts_chunk$set(warning = FALSE) # Remove todos os warnings # dos outputs do R
+knitr::opts_chunk$set(message = FALSE) # Remove todas as mensagens # dos outputs do R
+
+```
+
+```{r, echo=FALSE}
+
+# Carregar pacotes
+library(readxl)
+library(DT)
+library(httr)
+
+```
+
+# Ementa da Disciplina: Programação Computacional
+
+\*Veja no nosso Drive do Classroom a Ementa no formato .pdf
+
+## MindMap da Disciplina
+
+Veja o MindMap dessa Ementa e programação [aqui](https://whimsical.com/ementa-e-cronograma-programacao-computacional-G3zRGPRUSZqVY2PjoJYjtU)
+
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/G3zRGPRUSZqVY2PjoJYjtU">
+
+</iframe>
+
+## Informações Gerais
+
+-   **Curso:** Ciência de Dados para Negócios\
+-   **Disciplina:** Programação Computacional\
+-   **Carga Horária:** 72 horas (21 encontros de 3,5 horas cada)\
+-   **Período:** Fevereiro a Junho de 2025\
+-   **Horário:** Quintas-feiras, das 19h às 22h30\
+-   **Início das aulas:** 20 de fevereiro de 2025\
+-   **Término previsto:** 26 de junho de 2025\
+-   **Linguagens Utilizadas:** Portugol e Python
+
+## Objetivo
+
+Capacitar os alunos nos fundamentos da lógica de programação, algoritmos e desenvolvimento de códigos/scripts utilizando **Portugol (Visualg)** para introdução aos conceitos básicos e **Python** para a programação aplicada.
+
+Os alunos desenvolverão habilidades para resolver problemas computacionais, criar algoritmos eficientes e implementar soluções utilizando boas práticas de desenvolvimento de software.
+
+## Ementa
+
+-   Introdução à lógica de programação e algoritmos\
+-   Estruturas de controle: sequência, decisão e repetição\
+-   Desenvolvimento de algoritmos com **Portugol (Visualg)**\
+-   Introdução ao **Python**: sintaxe e paradigmas básicos\
+-   Estruturas de dados: listas, tuplas, dicionários e conjuntos\
+-   Modularização e funções em Python\
+-   Manipulação de arquivos e entrada/saída de dados\
+-   Estruturas condicionais e de repetição em Python\
+-   Programação Orientada a Objetos (POO) com Python\
+-   Manipulação de exceções e depuração de código\
+-   Introdução a bibliotecas científicas: NumPy e Pandas\
+-   Aplicações práticas e desenvolvimento de pequenos projetos
+
+## Metodologia
+
+O curso será ministrado por meio de aulas expositivas, práticas laboratoriais, exercícios individuais e em grupo.\
+Será utilizado o software **Visualg** para introdução à lógica de programação e o **Jupyter Notebook** para implementação dos conceitos em Python.
+
+Os alunos serão incentivados a desenvolver pequenos projetos para aplicar os conceitos aprendidos, incluindo desafios semanais de programação.
+
+## Critérios de Avaliação
+
+### **1º Bimestre (Fevereiro a Abril)**
+
+-   **Prova 1 – Lógica de Programação e Estruturas de Controle** (60%)\
+-   **Listas de Exercícios Individuais – Portugol e Python** (40%)
+
+### **2º Bimestre (Abril a Junho)**
+
+-   **Prova 2 – Estruturas de Dados e Programação Orientada a Objetos** (60%)\
+-   **Listas de Exercícios Individuais – Python** (40%)
+
+**Cálculo da Nota Final:**\
+A nota final será a média das avaliações dos dois bimestres, sendo necessário atingir no mínimo **7,0** para aprovação.
+
+**Presença:** Igual ou superior a **75%** das aulas ministradas.
+
+------------------------------------------------------------------------
+
+## **Bibliografia**
+
+### **Bibliografia Básica**
+
+-   MENEZES, Nilo Ney Coutinho. **Introdução à Programação com Python**. Novatec, 2019.\
+-   DOWNEY, Allen B. **Pense em Python: pense como um cientista da computação**. Novatec, 2016.\
+-   RAMALHO, Luciano. **Python Fluente: Programação Clara, Concisa e Eficaz**. Novatec, 2018.
+    -   📖 Disponível online: [Python Fluente](https://pythonfluente.com/)\
+-   FORBELONE, André L. V.; EBERSPACHER, Henri F. **Lógica de Programação**. Pearson, 2000.\
+-   ASCENCIO, A. F. G.; CAMPOS, E. A. V. **Fundamentos da Programação de Computadores: Algoritmos e Lógica de Programação**. Prentice Hall, 2002.\
+-   MALHEIROS, Marcelo. **Scratch: Introdução à Programação para Crianças e Adolescentes**. Novatec, 2018.
+
+### **Bibliografia Complementar**
+
+-   MATTHES, Eric. **Curso Intensivo de Python**. Novatec, 2016.\
+-   SEDGEWICK, Robert. **Algoritmos em Python**. Pearson, 2018.\
+-   ASCENCIO, A. F. G.; CAMPOS, E. A. V. **Fundamentos da Programação de Computadores**. Prentice Hall, 2002.\
+-   RESNICK, Mitchel. **Juntando os Pedaços: Programação com Scratch para Todos**. MIT Press, 2017.\
+-   BARBOSA, José Augusto N. **Lógica de Programação: Crie seus primeiros programas**. Érica, 2012.\
+-   📖 **Curso de Scratch no Code.org:** [Studio Code](https://studio.code.org/s/express-2021)
+
+### **Curso Online Recomendado**
+
+-   📖 **Curso Introdutório de Python no DataCamp:**
+    -   [Introdução ao Python para Ciência de Dados - DataCamp](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+
+------------------------------------------------------------------------
+
+## **Cronograma de Aulas 2025**
+
+[Obtenha a planilha (sujeita a alterações no decorrer do curso) aqui](https://github.com/profrhozon/site/raw/refs/heads/main/Planilha%20de%20Cronograma%20Disciplinas%20FAE.xlsx)
+
+| Data | Conteúdo |
+|--------------------------------|----------------------------------------|
+| 27/02 | Apresentação do curso e do plano de ensino. Aplicação do Forms sobre o perfil dos alunos. Introdução à lógica de programação e ao ambiente Portugol. Estrutura de um algoritmo, conceitos de entrada, processamento e saída. |
+| 06/03 | Variáveis, constantes, tipos de dados e operadores no Portugol. Prática de leitura e escrita de dados. |
+| 13/03 | Estruturas de controle de fluxo (if/else, switch/case) no Portugol. Introdução a laços de repetição (while, for). |
+| 20/03 | Exercícios práticos de consolidação de Portugol. Resolução de problemas que combinem condições e loops. |
+| 27/03 | Transição para Python. Introdução ao Python (Uso do Colab); Sintaxe básica, tipos de dados (numéricos, strings) e operadores. |
+| 03/04 | Estruturas de decisão (if/elif/else) e loops (for, while) em Python. Boas práticas de formatação e indentação. |
+| 10/04 | **Prova P1 – Lógica de Programação (Portugol e Python)** |
+| 17/04 | **Recesso (quinta-feira santa)** |
+| 24/04 | Python: listas, tuplas e introdução à manipulação de coleções; Métodos básicos de listas (append, insert, remove, slicing). |
+| 01/05 | **Feriado – Dia do Trabalho** |
+| 08/05 | Python: manipulação de strings (fatiamento, métodos como split, replace, etc.); Exercícios de formatação e validação de dados. |
+| 15/05 | Python: criação de funções, parâmetros, escopo de variáveis; Boas práticas e organização de código em funções. |
+| 22/05 | Python: leitura e gravação de arquivos (I/O), tratamento de exceções (try/except); Exemplos práticos de manipulação de arquivos CSV. |
+| 29/05 | Python: módulos e bibliotecas padrão (math, random, datetime, etc.); Como importar e utilizar bibliotecas externas. |
+| 05/06 | Python para análise de dados: introdução ao NumPy e Pandas; Estruturas de dados em Pandas (Series, DataFrames). |
+| 12/06 | **Prova P2 – Python (Estruturas, Funções e Arquivos)** |
+| 19/06 | **Feriado – Corpus Christi** |
+| 26/06 | Operações de limpeza, transformação e estatística básica em DataFrames; Funções como groupby, describe, merge, etc. |
+| 03/07 | Aplicação da substitutiva P3. |
+| 10/07 | **Recesso** |
+| 17/07 | **Recesso** |
+
+------------------------------------------------------------------------
+
+## **Considerações Finais**
+
+A disciplina de **Fundamentos de Programação** desempenha um papel fundamental na formação dos alunos, fornecendo conhecimento teórico e prático para o desenvolvimento de soluções computacionais.
+
+Dúvidas e suporte serão fornecidos via [e-mail](mailto:rodrigoozon@yahoo.com.br) e fóruns de discussão no [Google Classroom](https://classroom.google.com/u/0/c/NzQzMjM0ODA2NDUx).
+
+------------------------------------------------------------------------
+
+-   [Acesse o forms do perfil dos estudantes aqui $\Rightarrow$](https://docs.google.com/forms/d/e/1FAIpQLSd3HciFcPGT_EHiAziUfDweV1O6xb0XInKtDtbayI_J16VCdQ/viewform?usp=header)
