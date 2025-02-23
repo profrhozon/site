@@ -9,8 +9,149 @@ format:
 editor: visual
 ---
 
----
+------------------------------------------------------------------------
 
 <left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
 
+------------------------------------------------------------------------
+
+
+
+# 📌 Informações Gerais
+
+- **Curso:** Mercado Financeiro  
+- **Disciplina:** Risk Management  
+- **Carga Horária:** 72 horas-aula (24 encontros de 3,5 horas cada)  
+- **Horário:** Quartas-feiras, das 19h às 22h30  
+- **Ferramentas Utilizadas:** Excel e Python/R  
+
 ---
+
+# 📖 Descrição da Disciplina
+
+A disciplina **Risk Management** tem como objetivo capacitar os alunos a desenvolverem projetos práticos de análise e gestão de riscos financeiros, utilizando principalmente o Excel e introdução ao Python ou R para cálculos mais avançados. Os alunos irão explorar medidas de risco, modelagem de portfólios e simulação de cenários, aplicando conceitos fundamentais em casos reais.
+
+---
+
+# 🎯 Objetivos
+
+- Aplicar conceitos de Risk Management para medir e gerenciar riscos financeiros  
+- Desenvolver habilidades práticas no Excel para análise de dados e simulação  
+- Utilizar Excel, Python/R para simulação de Monte Carlo e modelagem de portfólios  
+- Construir dashboards interativos e relatórios gerenciais de risco  
+
+---
+
+# 🏆 Competências Desenvolvidas
+
+- Identificação e mensuração de riscos de mercado, crédito e operacional  
+- Modelagem de portfólios e cálculo de métricas ajustadas ao risco  
+- Simulação de Monte Carlo para projeções de risco  
+- Comunicação e apresentação de resultados analíticos  
+
+---
+
+# 📚 Conteúdo Programático
+
+## 🔹 Fundamentos de Risk Management  
+- Introdução ao conceito de risco  
+- Tipos de risco: mercado, crédito, operacional e liquidez  
+
+## 🔹 Medidas de Risco  
+- Value at Risk (VaR), Expected Shortfall (ES)  
+- Backtesting e stress testing  
+
+## 🔹 Análise de Portfólios  
+- Cálculo de risco e retorno esperado  
+- Fronteira eficiente e diversificação  
+
+## 🔹 Simulação de Monte Carlo  
+- Aplicação prática no Excel e Python  
+- Cenários de risco e projeções  
+
+## 🔹 Hedging e Mitigação de Riscos  
+## 🔹 Avaliação de Performance Ajustada ao Risco  
+
+---
+
+# 🗓️ **Cronograma de Aulas 2025**
+
+[Obtenha a planilha (sujeita a alterações no decorrer do curso) aqui](https://github.com/profrhozon/site/raw/refs/heads/main/Planilha%20de%20Cronograma%20Disciplinas%20FAE.xlsx)
+
+| **Data** | **Conteúdo Programado** | **Entrega Associada** | **Horas/Aula (encontros)** | **Obs.** |
+|----------|-------------------------|------------------------|---------------------------|----------|
+| 26/02/2025 | Apresentação da disciplina e programação do conteúdo. Aplicação de um forms/questionário do perfil dos alunos. Introdução aos conceitos de risco x incerteza; Risco em Perspectiva (risco x aleatoriedade); Risco Financeiro; Uma breve história da Gestão de Risco; Por quê Gerenciar Riscos?; Gestão Quant de Riscos e seus desafios | Forms respondido do perfil dos alunos | 4 | |
+| 05/03/2025 | **Feriado - Quarta-feira de cinzas** | | | **Feriado** |
+| 12/03/2025 | Avaliação de projetos de investimento em condições de risco x incerteza; Distribuição Normal usos e suas limitações; Métodos de Avaliação considerando o risco | Lista 0: Exercícios teórico-práticos sobre a discussão pertinente do conteúdo do curso | 4 | |
+| 12/03/2025 | Análise Estática e Análise de Sensibilidade; Análise de Cenários; Simulação de Monte Carlo | Exercícios Computacionais (Excel): Lista 1 sobre risco em projetos de investimento | 4 | |
+| 19/03/2025 | Decision Making considerando Risco; Tabela de Retorno (payoff) e Árvore de Decisão; Teorema de Bayes; Critérios de Decisão (Maximax, Maximin); Valor Monetário Esperado; Perda de Oportunidade Esperada; Relação Risco/Retorno; Decision Making com Informações da Amostra; Utilidade | Exercícios Computacionais (Excel): Lista 2 sobre risco em projetos de investimento | 4 | |
+| 26/03/2025 | Intro a séries temporais financeiras. Investimentos Univariados e seus riscos e retornos; Log-Retornos de séries de preços; Distribuições; Média, Variância e Dist. Normal; Assimetria e Curtose; Testes Estatísticos de Normalidade | Exercícios Computacionais (Excel): Lista 3 sobre Decision Making | 4 | |
+| 02/04/2025 | Portfolio Investing; Calculando os retornos do portfólio; Portfólio com pesos idênticos; Correlação e Covariância dos ativos do portfólio; O Desvio-Padrão da Carteira | Exercícios Computacionais (Excel): Lista 4 sobre séries financeiras | 4 | |
+| 09/04/2025 | Intro ao modelo de Markowitz. Seleção de Carteiras e Teoria de Markowitz; Risco de uma Carteira; Efeitos da Correlação sobre o Risco do Portfólio | Exercícios Computacionais (Excel): Lista 5 sobre portfolio investing | 4 | |
+| 16/04/2025 | Composição e aplicação da P1 | Exercícios Computacionais (Excel): Lista 6 sobre modelo de Markowitz básico | 4 | |
+| 23/04/2025 | Determinação do Retorno Esperado e do Risco de um Portfólio; Ativos com correlação nula; Conjunto de Combinações de Carteiras; Fronteira Eficiente | Exercícios Computacionais (Excel): Lista 7 sobre modelo de Markowitz e Fronteira Eficiente | 4 | |
+| 30/04/2025 | Índice de Sharpe, Sortino, Entropia de Shannon; Portfólio do Máximo Sharpe; Portfólio de volatilidade mínima global | | 4 | **Sem entrega associada** |
+| 07/05/2025 | Novas Medidas de Risco-Retorno: Razão de Treynor; Alfa de Jensen; Razão de Informação ou Tracking Error; M² (Medida de Modigliani-Modigliani) | Exercícios Computacionais (Excel): Lista 8 sobre o uso dos índices de Sharpe, Sortino, Entropia de Shannon | 4 | |
+| 14/05/2025 | Avaliação de performance do portfólio (backtesting); Restrições Avançadas na Otimização; Backtesting de Estratégias de Portfólio (rolling windows) | | 4 | **Sem entrega associada** |
+| 21/05/2025 | Factor Investing: O CAPM; Excesso de Retornos; Cálculo do beta com a covariância; Beta com CAPM | Exercícios Computacionais (Excel): Lista 9 sobre avaliação da performance do portfólio | 4 | |
+| 28/05/2025 | Fama-French 3-factor model; O Alfa e Eficiência de Mercado | | 4 | **Sem entrega associada** |
+| 04/06/2025 | Value-at-Risk: Estimando o risco de cauda; Drawdown histórico; VaR histórico; Expected Shortfall histórico; VaR dinâmico e CVar quantílico | Exercícios teóricos sobre o modelo de Fama-French, Eficiência de Mercado e Alfa | 4 | |
+| 11/06/2025 | VaR paramétrico; Estimativas de Riscos Escaláveis; Random Walks e o Andar do Bêbado; Simulando Random Walks; Monte Carlo VaR | | 4 | **Sem entrega associada** |
+| 18/06/2025 | Composição e aplicação da P2 | 60% P2 + 40% Mini projetos/exercícios computacionais | 4 | |
+| 25/06/2025 | Aula de Revisão do Conteúdo, feedbacks e devolutivas. Resumo para caso necessite de prova substitutiva | Entrega da última lista sobre VaR e Random Walks; Monte Carlo | 4 | |
+| 02/07/2025 | Aplicação Substitutiva | | | |
+| 09/07/2025 | **Recesso do corpo docente** | **Recesso do corpo docente** | | |
+| 16/07/2025 | **Recesso do corpo docente** | **Recesso do corpo docente** | | |
+
+
+
+
+---
+
+# 🎓 Metodologia
+
+A disciplina será ministrada de forma prática, com aulas expositivas, exercícios computacionais e estudos de caso. O uso do Excel será prioritário para a maioria das análises, com introdução ao Python ou o R para cálculos avançados ou muito trabalhosos no Excel.
+
+---
+
+# 📊 Critérios de Avaliação
+
+- **Provas teóricas e práticas:** 30%  
+- **Projetos práticos:** 40%  
+- **Participação e atividades em sala:** 20%  
+- **Apresentação do projeto final:** 10%  
+
+---
+
+# 📖 Referências Bibliográficas
+
+- **Benninga, Simon.** *Financial Modeling*. MIT Press, 2014.  
+- **Daróczi, Gergely; Berlinger, Edina.** *Introduction to R for Quantitative Finance*. Packt Publishing, 2013.  
+- **Glasserman, Paul.** *Monte Carlo Methods in Financial Engineering*. Springer, 2003.  
+- **Hilpisch, Yves.** *Python for Finance: Analyze Big Financial Data*. O'Reilly Media, 2018.  
+- **Hull, John C.** *Risk Management and Financial Institutions*. Wiley, 2018.  
+- **Jorion, Philippe.** *Value at Risk: The New Benchmark for Managing Financial Risk*. McGraw-Hill, 2006.  
+- **McNeil, Alexander J.; Frey, Rüdiger; Embrechts, Paul.** *Quantitative Risk Management: Concepts, Techniques, and Tools*. Princeton University Press, 2015.  
+
+---
+
+📌 **Mapa Mental da Disciplina:**  
+🔗 [Risk Management Mind Map](https://whimsical.com/risk-management-mind-map-5X2jrXK5stNpYzeQkmHFoY)
+
+
+
+# Questionário a respeito do perfil dos alunos
+
+- [Preencha o formulário aqui!](https://docs.google.com/forms/d/e/1FAIpQLSeLHVGwem5w8t_uv9cgST6r7UhviNYTEuVZ1Ac9Eqqutm3u-w/viewform?usp=dialog)
+
+
+```{=html}
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLHVGwem5w8t_uv9cgST6r7UhviNYTEuVZ1Ac9Eqqutm3u-w/viewform?embedded=true" width="640" height="4392" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+```
+
+
+
+
+

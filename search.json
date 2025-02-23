@@ -432,5 +432,71 @@
       "Programação Computacional",
       "Ementa"
     ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#fundamentos-de-risk-management",
+    "href": "EmentaRiskMng.html#fundamentos-de-risk-management",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Fundamentos de Risk Management",
+    "text": "🔹 Fundamentos de Risk Management\n\nIntrodução ao conceito de risco\n\nTipos de risco: mercado, crédito, operacional e liquidez",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#medidas-de-risco",
+    "href": "EmentaRiskMng.html#medidas-de-risco",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Medidas de Risco",
+    "text": "🔹 Medidas de Risco\n\nValue at Risk (VaR), Expected Shortfall (ES)\n\nBacktesting e stress testing",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#análise-de-portfólios",
+    "href": "EmentaRiskMng.html#análise-de-portfólios",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Análise de Portfólios",
+    "text": "🔹 Análise de Portfólios\n\nCálculo de risco e retorno esperado\n\nFronteira eficiente e diversificação",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#simulação-de-monte-carlo",
+    "href": "EmentaRiskMng.html#simulação-de-monte-carlo",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Simulação de Monte Carlo",
+    "text": "🔹 Simulação de Monte Carlo\n\nAplicação prática no Excel e Python\n\nCenários de risco e projeções",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#hedging-e-mitigação-de-riscos",
+    "href": "EmentaRiskMng.html#hedging-e-mitigação-de-riscos",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Hedging e Mitigação de Riscos",
+    "text": "🔹 Hedging e Mitigação de Riscos",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#avaliação-de-performance-ajustada-ao-risco",
+    "href": "EmentaRiskMng.html#avaliação-de-performance-ajustada-ao-risco",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Avaliação de Performance Ajustada ao Risco",
+    "text": "🔹 Avaliação de Performance Ajustada ao Risco",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
   }
 ]

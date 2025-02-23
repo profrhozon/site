@@ -91,13 +91,57 @@ By the end of the course, each student will have created a **GitHub Pages site**
 -   Adjustments based on **investor risk profiles**
 -   Strategies for **personalized financial decisions**
 
+# **Cronograma de Aulas 2025**
+
+[Obtenha a planilha (sujeita a alterações no decorrer do curso) aqui](https://github.com/profrhozon/site/raw/refs/heads/main/Planilha%20de%20Cronograma%20Disciplinas%20FAE.xlsx)
+
+# Cronograma de Aulas 2025
+
+| Data             | Conteúdo Programado | Entrega Associada | Horas/Aula | Observações |
+|-----------------|--------------------|------------------|------------|-------------|
+| **28/02/2025**  | Apresentação do curso e do projeto final. Configuração inicial do GitHub Pages e criação da primeira página usando Quarto. Formação de grupos para criação da GitHub Page colaborativa. | Criar uma GitHub Page simples seguindo o roteiro disponível em [GitHub Pages](https://profrhozon.github.io/site/introportfoliogithubpages.html) | 4 |  |
+| **07/03/2025**  | Geração de Dados Sintéticos e Datasets Públicos: introdução a dados sintéticos e exploração de datasets reais para modelos de séries temporais. |  | 4 |  |
+| **14/03/2025**  | Feature Engineering em séries temporais financeiras. Log-retornos e variâncias condicionais (GARCH). | Primeira página criada de cada grupo e apresentação dos grupos formados. | 4 | Sem entrega associada nesse dia. |
+| **21/03/2025**  | Técnicas de redução de dimensionalidade em séries temporais financeiras. O impacto do Big Data na decisão humana. | Post com o planejamento do projeto de cada grupo e apresentação da GitHub Page do grupo. | 4 |  |
+| **28/03/2025**  | Modelos causais vs. modelos de Machine Learning (black-box) na previsão de séries temporais. Comparação de performance de modelos. | Post e apresentação da Análise Exploratória de Dados (AED) do conjunto de dados selecionado. | 4 |  |
+| **04/04/2025**  | Simulação de cenários vs. forecasting. Estratégias de compra, venda e espera baseadas no perfil do investidor. Trade-off risco vs. retorno. | Post e apresentação do feature engineering dos dados financeiros. | 4 |  |
+| **11/04/2025**  | Decisão Multicritério em Cenários Econômicos. Modelos de hierarquização e gestão da incerteza. | Composição da P1 (10 a 16 de Abril). | 4 |  |
+| **18/04/2025**  | **Feriado - Páscoa (Sem Aula)** |  |  |  |
+| **25/04/2025**  | Risco vs. Retorno vs. Incerteza. O impacto de eventos inesperados no mercado financeiro (The Black Swan). | Post apresentando previsões de retornos, volatilidades e janelas de oportunidade identificadas. | 4 |  |
+| **02/05/2025**  | Introdução à Teoria de Alocação de Portfólio (Markowitz, Black-Litterman). Cálculo de retornos cumulativos dos ativos. | Post com matriz de decisão multicritério para cada portfólio. | 4 |  |
+| **09/05/2025**  | Modelo de Markowitz: pesos dos ativos, fronteira eficiente, cálculo de risco e retornos esperados. | Post com valores projetados e métricas de retorno anualizados/mensalizados. | 4 |  |
+| **16/05/2025**  | Efeitos da diversificação, entropia de Shannon, estatísticas do portfólio, avaliação de riscos (Sharpe Ratio, Sortino Ratio, Drawdown). | Post construindo a Fronteira Eficiente baseada nas previsões de retorno e risco. | 4 |  |
+| **23/05/2025**  | Avaliação de Performance do Portfólio (Fama-French Factor Model). Benchmarks e fatores de risco. | Post sobre distribuições de retornos dos ativos (Histogramas vs. Kernel Density). | 4 |  |
+| **30/05/2025**  | Drivers de Performance e risco do portfólio. Abordagem matricial e otimização orçamentária. | Post com indicadores de performance do portfólio (Sharpe, Sortino, Drawdown, assimetria, curtose). | 4 |  |
+| **06/06/2025**  | Backtest da otimização de portfólio e comparação de estratégias. | Post sobre performance do modelo Fama-French. | 4 | Sem entrega associada. |
+| **13/06/2025**  | Teoria Moderna de Portfólio e Portfólio Ótimo: Sharpe Máximo, volatilidade mínima, Equal Weighted Risk. | Composição da P2 (12 a 18 de junho). | 4 |  |
+| **20/06/2025**  | **Feriado (Sem Aula)** |  |  |  |
+| **27/06/2025**  | Dinâmica de preços e inflação. Como a inflação afeta a precificação de ativos? | Post sobre portfólio otimizado vs. benchmark. | 4 |  |
+| **04/07/2025**  | **Prazo de entrega substitutiva (Sem Aula)** |  |  |  |
+| **11/07/2025**  | **Recesso do Corpo Docente (Sem Aula)** |  |  |  |
+| **18/07/2025**  | **Recesso do Corpo Docente (Sem Aula)** |  |  |  |
+| **25/07/2025**  | **Sem Aula** |  |  |  |
+| **01/08/2025**  | **Sem Aula** |  |  |  |
+| **08/08/2025**  | Algoritmos de Otimização Multiobjetivo para portfólio. | Post reflexivo sobre o impacto da inflação nos ativos do portfólio. | 4 |  |
+| **15/08/2025**  | Métodos de Otimização Multiobjetivo para portfólios. |  | 4 | Post opcional. |
+| **22/08/2025**  | Modelos econométricos vs. Machine Learning para previsão de inflação. | Post sobre otimização do portfólio. | 4 |  |
+| **29/08/2025**  | Impacto da inflação nos preços de ativos e commodities. | Post opcional sobre NSGA-II/III ou DEOptim aplicado aos dados. | 4 |  |
+| **05/09/2025**  | Medidas de inflação e juros. Matemática financeira aplicada ao portfólio. | Post reflexivo sobre impacto da inflação no portfólio. | 4 |  |
+| **12/09/2025**  | Revisão geral do projeto. | Sprint Review dos alunos com o professor. | 4 |  |
+| **19/09/2025**  | Apresentação final dos projetos. | Composição da PFinal (vide calendário). | 4 |  |
+
+
+
 ------------------------------------------------------------------------
 
 # 🏆 Teaching Methodology
 
 This course will be **practical**, including: ✔ Lectures and **case studies**.\
+
 ✔ Hands-on **lab sessions** using R/Python.\
+
 ✔ **Individual and group projects**.\
+
 ✔ **Guidance on publishing** results in GitHub Pages.
 
 ------------------------------------------------------------------------
