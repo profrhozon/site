@@ -42,299 +42,6 @@
     "text": "📢 Contact and Networks\nYou can find me on the following platforms:"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html",
-    "href": "EmentaBigDataFinProj.html",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "",
-    "text": "*For portuguese-br version see the pdf file here.\n\\(\\Rightarrow\\) Preencha o Forms do Perfil dos Estudantes aqui!",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#our-first-meeting",
-    "href": "EmentaBigDataFinProj.html#our-first-meeting",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "️Our first meeting",
-    "text": "️Our first meeting\n\nDidatic contract\nContent of course presentation\nJustificative for financial ML/DS/Econometrics portfolio",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
-    "href": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "1️⃣ Creating GitHub Pages with Quarto",
-    "text": "1️⃣ Creating GitHub Pages with Quarto\n\nSetting up Quarto\nPublishing pages on GitHub Pages",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#generating-synthetic-data",
-    "href": "EmentaBigDataFinProj.html#generating-synthetic-data",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "2️⃣ Generating Synthetic Data",
-    "text": "2️⃣ Generating Synthetic Data\n\nIntroduction to synthetic data\nMethods and tools for simulated data creation",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
-    "href": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series",
-    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nDimensionality reduction techniques\nBuilding differentiated variables\nTechniques for stationarity analysis",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
-    "href": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "4️⃣ Forecasting Price Series in Basic Economic Theory",
-    "text": "4️⃣ Forecasting Price Series in Basic Economic Theory\n\nForecasting fundamentals\nPractical applications in price prediction",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
-    "href": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "5️⃣ Markowitz Theory & Multi-Objective Modeling",
-    "text": "5️⃣ Markowitz Theory & Multi-Objective Modeling\n\nIntroduction to Markowitz model\nImplementing a bi-objective model for risk-return balance",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
-    "href": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "6️⃣ Considering Investor Profiles in Decision Making",
-    "text": "6️⃣ Considering Investor Profiles in Decision Making\n\nAdjustments based on investor risk profiles\nStrategies for personalized financial decisions",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "introportfoliogithubpages.html#rstudio",
-    "href": "introportfoliogithubpages.html#rstudio",
-    "title": "Crie seu portfolio numa Github Page",
-    "section": "🔹 RStudio",
-    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto (local, OneDrive, Google Drive, …) e marque as opções Create a git repository, Use renv with this project\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio: (opcional)\ninstall.packages(\"quarto\")\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nPara renderizar o site, rode:\nquarto::quarto_render()\nou no Terminal execute\nquarto render\nOu simplesmente clique no botão Render quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.\n\nObs.: Se encontrar alguma mensagem de erro como - The project is out-of-sync -- use renv::status() for details. em Background Jobs, no console do RStudio, digite:\nrenv::status()\nIsso mostrará o que precisa ser atualizado.\nEm seguida, para sincronizar pacotes, rode:\nrenv::restore()\nSe quiser atualizar todos os pacotes:\nrenv::update()\nDepois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:\nquarto::quarto_render()",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Criando seu portfolio numa Github page"
-    ]
-  },
-  {
-    "objectID": "introportfoliogithubpages.html#positron",
-    "href": "introportfoliogithubpages.html#positron",
-    "title": "Crie seu portfolio numa Github Page",
-    "section": "🔹 Positron",
-    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nFile &gt; New File &gt; Quarto Project &gt; Website Project.\nEscolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive…crie um nome pro seu subdir em Project Directory Name\nFile &gt; Open Recent &gt; e abra o subdir que você acabou de criar\nNote que vc terá no seu projeto os seguintes arquivos:\n\n\n_quarto.yml\nabout.qmd\nindex.qmd\nstyles.css\n\n\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nAbra qualquer um dos dois .qmd e execute ele clicando em Preview ou usando o atalho CTRL+Shift+K (Windows)\nRenderize o site:\nquarto render",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Criando seu portfolio numa Github page"
-    ]
-  },
-  {
-    "objectID": "introportfoliogithubpages.html#vscode",
-    "href": "introportfoliogithubpages.html#vscode",
-    "title": "Crie seu portfolio numa Github Page",
-    "section": "🔹 VSCode",
-    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render\nMaiores infos podem ser obtidas nesse link oficial do quarto.org ou p. ex. nesse vídeo aqui e aqui",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Criando seu portfolio numa Github page"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#introdução",
-    "href": "presFAE.html#introdução",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "",
-    "text": "Mercado financeiro:\n\nÉ um ambiente dinâmico onde decisões baseadas em dados podem otimizar resultados.\n\nData driven decision making:\n\nComo tomar uma decisão econômica de maneira rápida, ótima e eficiente ?\n\n\n\n\n\n\n\n\nPor que Big Data é relevante ?\n\n\n\n\n\n\nVolume de Dados: A análise do mercado de commodities envolve um enorme volume de dados financeiros e econômicos que cresce rapidamente, especialmente considerando históricos de preços diários, transações e eventos externos que influenciam os mercados.\nVariabilidade e Velocidade: As séries de preços de commodities possuem mudanças rápidas e variações, exigindo a capacidade de processar e analisar dados em tempo hábil para garantir insights relevantes.\nAnálises em Profundidade: Necessidade de descobrir padrões ocultos que requerem recursos computacionais consideráveis para manipular e analisar um volume grande e complexo de dados.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#problemática-de-pesquisa",
-    "href": "presFAE.html#problemática-de-pesquisa",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Problemática de Pesquisa",
-    "text": "Problemática de Pesquisa\n\n\n\n\n\n\n\nSource: Data extraction from Yahoo!Finances API ploted by using Plotly",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#problemática-de-pesquisa-1",
-    "href": "presFAE.html#problemática-de-pesquisa-1",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Problemática de Pesquisa",
-    "text": "Problemática de Pesquisa\n \n\n\n\n\n\n\n\nPerguntas\n\n\n\n\nQuais as causas ou desencadeadores desses movimentos repentinos de inversão de tendência nas séries de preços ?\nÉ possível estimar/medir o quanto essas mudanças bruscas de tendência geram de impacto na economia e no mercado de commodities agrícolas ?\nComo podemos antecipar/prever o acontecimento dessas “quebras” nas séries temporais de preços no futuro ?\nPode-se otimizar o processo decisório de compra e venda de grãos recomendando as melhores alocações de portfólio de commodities em condições de risco e incerteza ?\nComo decidir ou facilitar o processo decisório humano dentro de um contexto de massivo volume e velocidade de informações ?\nQual o volume de dados ou tamanho de série histórica necessária pra construir um modelo eficiente ?",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#teorias-de-base",
-    "href": "presFAE.html#teorias-de-base",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Teorias de Base",
-    "text": "Teorias de Base\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÁrea de Ciência\nTeoria\nPensadores\n\n\n\n\nMicroeconomia\nTeoria da Demanda e do Consumidor\nWalrás, Pareto, Arrow, Debreu, Samuelson, Hicks\n\n\nMicroeconomia\nEstruturas de Mercado\nPorter, Chamberlin, Joan Robinson, Bain\n\n\nMicroeconomia\nFinanças Comportamentais\nDaniel Kahneman, Amos Tversky, Robert Shiller\n\n\nMicroeconomia\nEficiência de Mercado\nEugene Fama, Fischer Black e Myron Scholes, Jensen\n\n\nMicroeconomia\nTeoria do Portfólio\nHarry Markowitz, Milton Friedman, Keynes\n\n\nFinanças\nTeoria dos Ciclos Financeiros\nHyman Minsky, Irving Fischer, Joseph Schumpeter e Kondratiev\n\n\nFinanças\nTeoria do Mais Tolo (ou Teoria do Toque de Midas Reverso)\nJohn Kenneth Galbraith, Nassim Taleb\n\n\nEconometria Financeira\nBayesian GARCH with Markov Regime Switching\nDavid Ardia, Robert Engle, Tim Bollerslev, Gary Koop\n\n\nMacroeconomia\nTeoria da Formação das Expectativas\nRobert Lucas, Milton Friedman, Edmund Phelps, Franco Modigliani\n\n\nNeuroeconomia\nTeoria da Hipótese da Antecipação de Recompensa\nWolfram Schultz, Antonio Rangel, Paul Glimcher\n\n\nMicroeconomia\nTeoria da Seleção Adversa\nGeorge Akerlof, Michael Spence, Stiglitz\n\n\nComplexidade (Física de redes)\nSistemas Dinâmicos Adpatativos não-lineares\nArthur Ávila, Brian Arthur, Robert May",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#hipóteses-científicas",
-    "href": "presFAE.html#hipóteses-científicas",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Hipóteses Científicas",
-    "text": "Hipóteses Científicas\n\n\n\n\n\n\n\nInsights\n\n\n\n\nVolatility Clustering e mudanças estruturais\n\n \n\nAnálise de Intervenção Causal em Séries Temporais nas quebras e “efeito disseminação”\n\n \n\nDesenvolvimentos do modelo de otimização de portfolio de Markowitz (CAPM, B&S, Merton, Black-Litterman …)\n\n \n\nMúltiplos Objetivos variando conforme o contexto de mercado e as expectativas percebidas (risco e incerteza)",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#justificativa-e-relevância",
-    "href": "presFAE.html#justificativa-e-relevância",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Justificativa e relevância",
-    "text": "Justificativa e relevância\n \n\n\n\n\n\n\n\nContribuições teóricas\n\n\n\n\n\n\nIdentificação dos drivers dos preços auxilia na investigação da causa dos movimentos repentinos nas séries de preços (Teoria da Demanda do Consumidor, Estruturas de Mercado e Teoria do Portfólio [motivo transação, especulação ou precaução]) pode ser utilizada em conjunto com a técnica Econométrica de Análise de Intervenção em Séries Temporais [Angrist e Imbens, Brodersen et. alli (2015)] para avaliar seu impacto causal na série de preço estudada;\nA Teoria dos Ciclos Financeiros ajuda a compreender em qual contexto econômico a disseminação de efeito econômico-financeiro nocivo ou positivo está inserida frente a quebra repentina da tendência da trajetória de preços de alimentos (commodities)\nO uso das técnicas pertinentes dentro da teoria da Econometria Financeira com o uso do modelo Bayesiano GARCH com mudanças de regime markovianos se mostra aderente à realidade dos dados e condizente com os últimos desenvolvimentos teóricos a respeito do fenômeno da dinâmica complexa dos preços dessas commodities;\nA teoria de alocação de portfólio desde Markowitz pode ser melhor elaborada combinando as ferramentas de otimização multiobjetivo multiperíodo de maneira dinâmica em consonância com modelos econométricos que consigam incorporar com maior clareza a “incerteza” percebida pelos players de mercado na sua aferição de risco x retorno. Assim, os processos decisórios de compra e venda em momentos oportunos se tornariam mais claros.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#big-data-na-análise-de-commodities",
-    "href": "presFAE.html#big-data-na-análise-de-commodities",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Big Data na Análise de Commodities",
-    "text": "Big Data na Análise de Commodities\n \n\n\n\n\n\n\n\nAmostragem de Dados Significativa\n\n\n\n\nEstratégia de Amostragem: Utilizar amostragem estratificada para garantir que a variabilidade ao longo do tempo seja capturada de forma adequada (como choques econômicos ou eventos climáticos que impactam os preços).\nRedução de Dimensionalidade: Utilizar técnicas de PCA (Principal Component Analysis) para reduzir o número de variáveis sem perder informações importantes, permitindo uma análise mais eficiente dos dados.\nUso de Dados Representativos: A seleção de um subconjunto representativo de dados pode ser feita para capturar as tendências de mercado de diferentes períodos, garantindo que os insights gerados sejam válidos e aplicáveis.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#big-data-na-análise-de-commodities-1",
-    "href": "presFAE.html#big-data-na-análise-de-commodities-1",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Big Data na Análise de Commodities",
-    "text": "Big Data na Análise de Commodities\n \n\n\n\n\n\n\n\nFerramentas e Bibliotecas Utilizadas (alguns exemplos)\n\n\n\nPython:\n\nPySpark: Uma ferramenta poderosa para processamento distribuído e análise de grandes volumes de dados, ideal para trabalhar com dados de commodities de históricos extensivos.\nDask: Alternativa à biblioteca Pandas, que facilita o processamento de grandes datasets que não cabem na memória. Dask permite a execução de operações paralelas, otimizando análises.\n\nR:\n\nsparklyr e SparkR: Integração do Spark no ambiente R, possibilitando o processamento distribuído e a manipulação eficiente de datasets gigantescos, com foco em análises financeiras.\nvroom e data.table: Utilizadas para leitura rápida e manipulação de grandes volumes de dados armazenados em arquivos CSV, permitindo o carregamento de arquivos grandes em poucos segundos.\n\n*Existem algumas outras pra R e Python que poderiam ser mencionadas aqui, mas por questões de parcimônia limitaremos a pequenos exemplos.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#big-data-com-r",
-    "href": "presFAE.html#big-data-com-r",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Big Data com R",
-    "text": "Big Data com R\n \n\nAnálise de Commodities com sparklyr e vroom\n\nlibrary(sparklyr)\nlibrary(dplyr)\nlibrary(vroom)\n\n# Conectar ao Spark\nsc &lt;- spark_connect(master = \"local[*]\") # Você pode rodar também no Databricks, Azure, AWS, Google Colab...\n\n# Ler grandes volumes de dados usando vroom\nfile_list &lt;- list.files(\"data\", pattern = \"*_data.csv\", full.names = TRUE)\ncombined_data &lt;- vroom(file_list, col_types = list(\n  Date = col_date(),\n  Open = col_double(),\n  High = col_double(),\n  Low = col_double(),\n  Close = col_double(),\n  Volume = col_double(),\n  Adj.Close = col_double(),\n  Ticker = col_character()\n))\n\n# Copiar os dados para o Spark\nspark_data &lt;- copy_to(sc, combined_data, \"commodities_data\", overwrite = TRUE)\n\n# Executar análise no Spark: calcular a média de fechamento ajustado por commodity\naverage_close &lt;- spark_data |&gt;\n  group_by(Ticker) |&gt;\n  summarise(Average_Close = mean(Adj.Close, na.rm = TRUE)) |&gt;\n  collect()\n\nprint(average_close)\n\n# Desconectar do Spark\nspark_disconnect(sc)",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#big-data-com-python",
-    "href": "presFAE.html#big-data-com-python",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Big Data com Python",
-    "text": "Big Data com Python\n \n\nAnálise de Commodities com PySpark e Dask\n\nfrom pyspark.sql import SparkSession\nimport dask.dataframe as dd\n\n# Inicializar a sessão Spark\nspark = SparkSession.builder.master(\"local\").appName(\"Commodities Analysis\").getOrCreate()\n\n# Carregar dados grandes de commodities usando Dask\nfile_list = [\"data/ZC=F_data.csv\", \"data/ZO=F_data.csv\", \"data/KE=F_data.csv\"]\ndf_dask = dd.read_csv(file_list)\n\n# Converter o DataFrame Dask para Spark\ndf_spark = spark.createDataFrame(df_dask.compute())\n\n# Analisar os dados no Spark\ndf_spark.createOrReplaceTempView(\"commodities_data\")\nresult = spark.sql(\"SELECT Ticker, AVG(Adj_Close) as Average_Close FROM commodities_data GROUP BY Ticker\")\nresult.show()\n\n# Finalizar a sessão Spark\nspark.stop()",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#exercícios-rápidos",
-    "href": "presFAE.html#exercícios-rápidos",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Exercícios rápidos",
-    "text": "Exercícios rápidos\n \n\n\nA partir das instruções contidas no post em como ler com o Sparklyr Big Data localmente, leia e processe usando o pacote do R sparklyr localmente o conjunto de dados vix-daily.csv (menor) e o .rds gbt-model-responses. 1.a) Agora leia eles usando o Dask (Python), data.table e vroom (R) localmente e as reporte num documento Quarto\nComo você analisaria o conjunto de dados de hipotecas (mortgages) ou outra fonte aqui no repo ? Ele contém dados fictícios ou anonimizados sobre empréstimos imobiliários, fornecendo informações que podem ser usadas para estudar padrões de empréstimos, análise de risco de crédito ou previsões de inadimplência. Elabore uma proposta de projeto a partir desse dataset em R ou em Python utilizando o report utilizando o quarto.org pra ganhar velocidade!\nE quando o Spark, data.table, vroom, Dask e etc. não derem mais conta do recado ? Pesquise alternativas e sugira algumas estratégias pra lidar com grandes volumes de dados e modelá-los ! Lembre-se de citar as fontes, pacotes, métodos e referências necessárias. (Algumas sugestões de uso de dados brasileiros via extração por API em Repo Doc. gitHub)\nExpanda o exemplo do portfólio de commodities, utilizando uma extração de séries temporais mais longas no tempo, inserindo mais ativos no portfólio (utilize o pacote do R quantmod ou do Python yfinance) utilizando a sintaxe do Spark e experimente os pacotes do R úteis pra isso como a sintaxe do data.table ou a leitura do conjunto de dados com o vroom localmente. Como poderemos analisar tendências desses dados utilizando um modelo de médias móveis simples ?",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#mais-informações-e-referências",
-    "href": "presFAE.html#mais-informações-e-referências",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Mais informações e referências",
-    "text": "Mais informações e referências\n \n\n\n\n\n\n\n\n\nEnvie esses reports nos formatos .qmd e .html num arquivo .zip para rodrigo.ozon@fae.edu.br\nPrazo de envio (1 e 2 até o final da próxima semana) e 3 e 4 (até o final da semana subsequente)\nMaiores detalhes a respeito de fontes, referências, recomendações de cursos online, pacotes e libs, consulte por favor o Plano de Aula de hoje",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html#obrigado",
-    "href": "presFAE.html#obrigado",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "Obrigado!",
-    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os membros da banca examinadora e demais ouvintes:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "presFAE.html",
-    "href": "presFAE.html",
-    "title": "Análise de Dados do Mercado Financeiro:",
-    "section": "",
-    "text": "Mercado financeiro:\n\nÉ um ambiente dinâmico onde decisões baseadas em dados podem otimizar resultados.\n\nData driven decision making:\n\nComo tomar uma decisão econômica de maneira rápida, ótima e eficiente ?\n\n\n\n\n\n\n\n\nPor que Big Data é relevante ?\n\n\n\n\n\n\nVolume de Dados: A análise do mercado de commodities envolve um enorme volume de dados financeiros e econômicos que cresce rapidamente, especialmente considerando históricos de preços diários, transações e eventos externos que influenciam os mercados.\nVariabilidade e Velocidade: As séries de preços de commodities possuem mudanças rápidas e variações, exigindo a capacidade de processar e analisar dados em tempo hábil para garantir insights relevantes.\nAnálises em Profundidade: Necessidade de descobrir padrões ocultos que requerem recursos computacionais consideráveis para manipular e analisar um volume grande e complexo de dados.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
-    ]
-  },
-  {
-    "objectID": "EmentaProgComp.html",
-    "href": "EmentaProgComp.html",
-    "title": "Ementa Programação Computacional",
-    "section": "",
-    "text": "Acesse o forms aqui \\(\\Rightarrow\\)\n\n\nCarregando…",
-    "crumbs": [
-      "Programação Computacional",
-      "Ementa"
-    ]
-  },
-  {
     "objectID": "EmentaProgComp.html#mindmap-da-disciplina",
     "href": "EmentaProgComp.html#mindmap-da-disciplina",
     "title": "Ementa Programação Computacional",
@@ -434,6 +141,101 @@
     ]
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html",
+    "href": "EmentaBigDataFinProj.html",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "",
+    "text": "*For portuguese-br version see the pdf file here.\n\\(\\Rightarrow\\) Preencha o Forms do Perfil dos Estudantes aqui!",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#our-first-meeting",
+    "href": "EmentaBigDataFinProj.html#our-first-meeting",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "️Our first meeting",
+    "text": "️Our first meeting\n\nDidatic contract\nContent of course presentation\nJustificative for financial ML/DS/Econometrics portfolio",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
+    "href": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "1️⃣ Creating GitHub Pages with Quarto",
+    "text": "1️⃣ Creating GitHub Pages with Quarto\n\nSetting up Quarto\nPublishing pages on GitHub Pages",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#generating-synthetic-data",
+    "href": "EmentaBigDataFinProj.html#generating-synthetic-data",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "2️⃣ Generating Synthetic Data",
+    "text": "2️⃣ Generating Synthetic Data\n\nIntroduction to synthetic data\nMethods and tools for simulated data creation",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
+    "href": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series",
+    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nDimensionality reduction techniques\nBuilding differentiated variables\nTechniques for stationarity analysis",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
+    "href": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "4️⃣ Forecasting Price Series in Basic Economic Theory",
+    "text": "4️⃣ Forecasting Price Series in Basic Economic Theory\n\nForecasting fundamentals\nPractical applications in price prediction",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
+    "href": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "5️⃣ Markowitz Theory & Multi-Objective Modeling",
+    "text": "5️⃣ Markowitz Theory & Multi-Objective Modeling\n\nIntroduction to Markowitz model\nImplementing a bi-objective model for risk-return balance",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
+    "href": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "6️⃣ Considering Investor Profiles in Decision Making",
+    "text": "6️⃣ Considering Investor Profiles in Decision Making\n\nAdjustments based on investor risk profiles\nStrategies for personalized financial decisions",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
     "objectID": "EmentaRiskMng.html#fundamentos-de-risk-management",
     "href": "EmentaRiskMng.html#fundamentos-de-risk-management",
     "title": "Ementa Risk Management",
@@ -497,6 +299,182 @@
     "crumbs": [
       "Risk Management",
       "Ementa"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#rstudio",
+    "href": "introportfoliogithubpages.html#rstudio",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 RStudio",
+    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto (local, OneDrive, Google Drive, …) e marque as opções Create a git repository, Use renv with this project\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio: (opcional)\ninstall.packages(\"quarto\")\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nPara renderizar o site, rode:\nquarto::quarto_render()\nou no Terminal execute\nquarto render\nOu simplesmente clique no botão Render quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.\n\nObs.: Se encontrar alguma mensagem de erro como - The project is out-of-sync -- use renv::status() for details. em Background Jobs, no console do RStudio, digite:\nrenv::status()\nIsso mostrará o que precisa ser atualizado.\nEm seguida, para sincronizar pacotes, rode:\nrenv::restore()\nSe quiser atualizar todos os pacotes:\nrenv::update()\nDepois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:\nquarto::quarto_render()",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#positron",
+    "href": "introportfoliogithubpages.html#positron",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 Positron",
+    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nFile &gt; New File &gt; Quarto Project &gt; Website Project.\nEscolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive…crie um nome pro seu subdir em Project Directory Name\nFile &gt; Open Recent &gt; e abra o subdir que você acabou de criar\nNote que vc terá no seu projeto os seguintes arquivos:\n\n\n_quarto.yml\nabout.qmd\nindex.qmd\nstyles.css\n\n\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nAbra qualquer um dos dois .qmd e execute ele clicando em Preview ou usando o atalho CTRL+Shift+K (Windows)\nRenderize o site:\nquarto render",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#vscode",
+    "href": "introportfoliogithubpages.html#vscode",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 VSCode",
+    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render\nMaiores infos podem ser obtidas nesse link oficial do quarto.org ou p. ex. nesse vídeo aqui e aqui",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#introdução",
+    "href": "presFAE.html#introdução",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Introdução",
+    "text": "Introdução\n \n\n\nMercado financeiro:\n\nÉ um ambiente dinâmico onde decisões baseadas em dados podem otimizar resultados.\n\nData driven decision making:\n\nComo tomar uma decisão econômica de maneira rápida, ótima e eficiente ?\n\n\n\n\n\n\n\n\nPor que Big Data é relevante ?\n\n\n\nVolume de Dados: A análise do mercado de commodities envolve um enorme volume de dados financeiros e econômicos que cresce rapidamente, especialmente considerando históricos de preços diários, transações e eventos externos que influenciam os mercados.\nVariabilidade e Velocidade: As séries de preços de commodities possuem mudanças rápidas e variações, exigindo a capacidade de processar e analisar dados em tempo hábil para garantir insights relevantes.\nAnálises em Profundidade: Necessidade de descobrir padrões ocultos que requerem recursos computacionais consideráveis para manipular e analisar um volume grande e complexo de dados.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#problemática-de-pesquisa",
+    "href": "presFAE.html#problemática-de-pesquisa",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Problemática de Pesquisa",
+    "text": "Problemática de Pesquisa\n\n\n\n\n\n\n\nSource: Data extraction from Yahoo!Finances API ploted by using Plotly",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#problemática-de-pesquisa-1",
+    "href": "presFAE.html#problemática-de-pesquisa-1",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Problemática de Pesquisa",
+    "text": "Problemática de Pesquisa\n \n\n\n\n\nPerguntas\n\n\n\nQuais as causas ou desencadeadores desses movimentos repentinos de inversão de tendência nas séries de preços ?\nÉ possível estimar/medir o quanto essas mudanças bruscas de tendência geram de impacto na economia e no mercado de commodities agrícolas ?\nComo podemos antecipar/prever o acontecimento dessas “quebras” nas séries temporais de preços no futuro ?\nPode-se otimizar o processo decisório de compra e venda de grãos recomendando as melhores alocações de portfólio de commodities em condições de risco e incerteza ?\nComo decidir ou facilitar o processo decisório humano dentro de um contexto de massivo volume e velocidade de informações ?\nQual o volume de dados ou tamanho de série histórica necessária pra construir um modelo eficiente ?",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#teorias-de-base",
+    "href": "presFAE.html#teorias-de-base",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Teorias de Base",
+    "text": "Teorias de Base\n\n\n\n\n\n\n\n\n\n\n\n\nÁrea de Ciência\nTeoria\nPensadores\n\n\n\n\nMicroeconomia\nTeoria da Demanda e do Consumidor\nWalrás, Pareto, Arrow, Debreu, Samuelson, Hicks\n\n\nMicroeconomia\nEstruturas de Mercado\nPorter, Chamberlin, Joan Robinson, Bain\n\n\nMicroeconomia\nFinanças Comportamentais\nDaniel Kahneman, Amos Tversky, Robert Shiller\n\n\nMicroeconomia\nEficiência de Mercado\nEugene Fama, Fischer Black e Myron Scholes, Jensen\n\n\nMicroeconomia\nTeoria do Portfólio\nHarry Markowitz, Milton Friedman, Keynes\n\n\nFinanças\nTeoria dos Ciclos Financeiros\nHyman Minsky, Irving Fischer, Joseph Schumpeter e Kondratiev\n\n\nFinanças\nTeoria do Mais Tolo (ou Teoria do Toque de Midas Reverso)\nJohn Kenneth Galbraith, Nassim Taleb\n\n\nEconometria Financeira\nBayesian GARCH with Markov Regime Switching\nDavid Ardia, Robert Engle, Tim Bollerslev, Gary Koop\n\n\nMacroeconomia\nTeoria da Formação das Expectativas\nRobert Lucas, Milton Friedman, Edmund Phelps, Franco Modigliani\n\n\nNeuroeconomia\nTeoria da Hipótese da Antecipação de Recompensa\nWolfram Schultz, Antonio Rangel, Paul Glimcher\n\n\nMicroeconomia\nTeoria da Seleção Adversa\nGeorge Akerlof, Michael Spence, Stiglitz\n\n\nComplexidade (Física de redes)\nSistemas Dinâmicos Adpatativos não-lineares\nArthur Ávila, Brian Arthur, Robert May",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#hipóteses-científicas",
+    "href": "presFAE.html#hipóteses-científicas",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Hipóteses Científicas",
+    "text": "Hipóteses Científicas\n\n\n\n\n\n\n\nInsights\n\n\n\nVolatility Clustering e mudanças estruturais\n\n \n\nAnálise de Intervenção Causal em Séries Temporais nas quebras e “efeito disseminação”\n\n \n\nDesenvolvimentos do modelo de otimização de portfolio de Markowitz (CAPM, B&S, Merton, Black-Litterman …)\n\n \n\nMúltiplos Objetivos variando conforme o contexto de mercado e as expectativas percebidas (risco e incerteza)",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#justificativa-e-relevância",
+    "href": "presFAE.html#justificativa-e-relevância",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Justificativa e relevância",
+    "text": "Justificativa e relevância\n \n\n\n\n\n\n\n\nContribuições teóricas\n\n\n\nIdentificação dos drivers dos preços auxilia na investigação da causa dos movimentos repentinos nas séries de preços (Teoria da Demanda do Consumidor, Estruturas de Mercado e Teoria do Portfólio [motivo transação, especulação ou precaução]) pode ser utilizada em conjunto com a técnica Econométrica de Análise de Intervenção em Séries Temporais [Angrist e Imbens, Brodersen et. alli (2015)] para avaliar seu impacto causal na série de preço estudada;\nA Teoria dos Ciclos Financeiros ajuda a compreender em qual contexto econômico a disseminação de efeito econômico-financeiro nocivo ou positivo está inserida frente a quebra repentina da tendência da trajetória de preços de alimentos (commodities)\nO uso das técnicas pertinentes dentro da teoria da Econometria Financeira com o uso do modelo Bayesiano GARCH com mudanças de regime markovianos se mostra aderente à realidade dos dados e condizente com os últimos desenvolvimentos teóricos a respeito do fenômeno da dinâmica complexa dos preços dessas commodities;\nA teoria de alocação de portfólio desde Markowitz pode ser melhor elaborada combinando as ferramentas de otimização multiobjetivo multiperíodo de maneira dinâmica em consonância com modelos econométricos que consigam incorporar com maior clareza a “incerteza” percebida pelos players de mercado na sua aferição de risco x retorno. Assim, os processos decisórios de compra e venda em momentos oportunos se tornariam mais claros.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#big-data-na-análise-de-commodities",
+    "href": "presFAE.html#big-data-na-análise-de-commodities",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Big Data na Análise de Commodities",
+    "text": "Big Data na Análise de Commodities\n \n\n\n\n\nAmostragem de Dados Significativa\n\n\n\nEstratégia de Amostragem: Utilizar amostragem estratificada para garantir que a variabilidade ao longo do tempo seja capturada de forma adequada (como choques econômicos ou eventos climáticos que impactam os preços).\nRedução de Dimensionalidade: Utilizar técnicas de PCA (Principal Component Analysis) para reduzir o número de variáveis sem perder informações importantes, permitindo uma análise mais eficiente dos dados.\nUso de Dados Representativos: A seleção de um subconjunto representativo de dados pode ser feita para capturar as tendências de mercado de diferentes períodos, garantindo que os insights gerados sejam válidos e aplicáveis.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#big-data-na-análise-de-commodities-1",
+    "href": "presFAE.html#big-data-na-análise-de-commodities-1",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Big Data na Análise de Commodities",
+    "text": "Big Data na Análise de Commodities\n \n\n\n\n\nFerramentas e Bibliotecas Utilizadas (alguns exemplos)\n\n\nPython:\n\nPySpark: Uma ferramenta poderosa para processamento distribuído e análise de grandes volumes de dados, ideal para trabalhar com dados de commodities de históricos extensivos.\nDask: Alternativa à biblioteca Pandas, que facilita o processamento de grandes datasets que não cabem na memória. Dask permite a execução de operações paralelas, otimizando análises.\n\nR:\n\nsparklyr e SparkR: Integração do Spark no ambiente R, possibilitando o processamento distribuído e a manipulação eficiente de datasets gigantescos, com foco em análises financeiras.\nvroom e data.table: Utilizadas para leitura rápida e manipulação de grandes volumes de dados armazenados em arquivos CSV, permitindo o carregamento de arquivos grandes em poucos segundos.\n\n*Existem algumas outras pra R e Python que poderiam ser mencionadas aqui, mas por questões de parcimônia limitaremos a pequenos exemplos.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#big-data-com-r",
+    "href": "presFAE.html#big-data-com-r",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Big Data com R",
+    "text": "Big Data com R\n \n\nAnálise de Commodities com sparklyr e vroom\n\nlibrary(sparklyr)\nlibrary(dplyr)\nlibrary(vroom)\n\n# Conectar ao Spark\nsc &lt;- spark_connect(master = \"local[*]\") # Você pode rodar também no Databricks, Azure, AWS, Google Colab...\n\n# Ler grandes volumes de dados usando vroom\nfile_list &lt;- list.files(\"data\", pattern = \"*_data.csv\", full.names = TRUE)\ncombined_data &lt;- vroom(file_list, col_types = list(\n  Date = col_date(),\n  Open = col_double(),\n  High = col_double(),\n  Low = col_double(),\n  Close = col_double(),\n  Volume = col_double(),\n  Adj.Close = col_double(),\n  Ticker = col_character()\n))\n\n# Copiar os dados para o Spark\nspark_data &lt;- copy_to(sc, combined_data, \"commodities_data\", overwrite = TRUE)\n\n# Executar análise no Spark: calcular a média de fechamento ajustado por commodity\naverage_close &lt;- spark_data |&gt;\n  group_by(Ticker) |&gt;\n  summarise(Average_Close = mean(Adj.Close, na.rm = TRUE)) |&gt;\n  collect()\n\nprint(average_close)\n\n# Desconectar do Spark\nspark_disconnect(sc)",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#big-data-com-python",
+    "href": "presFAE.html#big-data-com-python",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Big Data com Python",
+    "text": "Big Data com Python\n \n\nAnálise de Commodities com PySpark e Dask\n\nfrom pyspark.sql import SparkSession\nimport dask.dataframe as dd\n\n# Inicializar a sessão Spark\nspark = SparkSession.builder.master(\"local\").appName(\"Commodities Analysis\").getOrCreate()\n\n# Carregar dados grandes de commodities usando Dask\nfile_list = [\"data/ZC=F_data.csv\", \"data/ZO=F_data.csv\", \"data/KE=F_data.csv\"]\ndf_dask = dd.read_csv(file_list)\n\n# Converter o DataFrame Dask para Spark\ndf_spark = spark.createDataFrame(df_dask.compute())\n\n# Analisar os dados no Spark\ndf_spark.createOrReplaceTempView(\"commodities_data\")\nresult = spark.sql(\"SELECT Ticker, AVG(Adj_Close) as Average_Close FROM commodities_data GROUP BY Ticker\")\nresult.show()\n\n# Finalizar a sessão Spark\nspark.stop()",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#exercícios-rápidos",
+    "href": "presFAE.html#exercícios-rápidos",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Exercícios rápidos",
+    "text": "Exercícios rápidos\n \n\n\nA partir das instruções contidas no post em como ler com o Sparklyr Big Data localmente, leia e processe usando o pacote do R sparklyr localmente o conjunto de dados vix-daily.csv (menor) e o .rds gbt-model-responses. 1.a) Agora leia eles usando o Dask (Python), data.table e vroom (R) localmente e as reporte num documento Quarto\nComo você analisaria o conjunto de dados de hipotecas (mortgages) ou outra fonte aqui no repo ? Ele contém dados fictícios ou anonimizados sobre empréstimos imobiliários, fornecendo informações que podem ser usadas para estudar padrões de empréstimos, análise de risco de crédito ou previsões de inadimplência. Elabore uma proposta de projeto a partir desse dataset em R ou em Python utilizando o report utilizando o quarto.org pra ganhar velocidade!\nE quando o Spark, data.table, vroom, Dask e etc. não derem mais conta do recado ? Pesquise alternativas e sugira algumas estratégias pra lidar com grandes volumes de dados e modelá-los ! Lembre-se de citar as fontes, pacotes, métodos e referências necessárias. (Algumas sugestões de uso de dados brasileiros via extração por API em Repo Doc. gitHub)\nExpanda o exemplo do portfólio de commodities, utilizando uma extração de séries temporais mais longas no tempo, inserindo mais ativos no portfólio (utilize o pacote do R quantmod ou do Python yfinance) utilizando a sintaxe do Spark e experimente os pacotes do R úteis pra isso como a sintaxe do data.table ou a leitura do conjunto de dados com o vroom localmente. Como poderemos analisar tendências desses dados utilizando um modelo de médias móveis simples ?",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#mais-informações-e-referências",
+    "href": "presFAE.html#mais-informações-e-referências",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Mais informações e referências",
+    "text": "Mais informações e referências\n \n\n\n\n\n\n\n\n\nEnvie esses reports nos formatos .qmd e .html num arquivo .zip para rodrigo.ozon@fae.edu.br\nPrazo de envio (1 e 2 até o final da próxima semana) e 3 e 4 (até o final da semana subsequente)\nMaiores detalhes a respeito de fontes, referências, recomendações de cursos online, pacotes e libs, consulte por favor o Plano de Aula de hoje",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+    ]
+  },
+  {
+    "objectID": "presFAE.html#obrigado",
+    "href": "presFAE.html#obrigado",
+    "title": "Análise de Dados do Mercado Financeiro:",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os membros da banca examinadora e demais ouvintes:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
     ]
   }
 ]
