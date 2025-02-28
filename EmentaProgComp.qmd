@@ -44,7 +44,7 @@ library(httr)
 
 ## MindMap da Disciplina
 
-Veja o MindMap dessa Ementa e programação [aqui](https://whimsical.com/ementa-e-cronograma-programacao-computacional-G3zRGPRUSZqVY2PjoJYjtU)
+Veja o MindMap dessa Ementa e programação [aqui](https://whimsical.com/ementa-e-cronograma-programacao-computacional-G3zRGPRUSZqVY2PjoJYjtU) ou [baixe ele por aqui](https://github.com/profrhozon/site/blob/main/Ementa%20e%20Cronograma%20-%20Programa%C3%A7%C3%A3o%20Computacional.png?raw=true)
 
 <iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/G3zRGPRUSZqVY2PjoJYjtU">
 

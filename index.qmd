@@ -50,9 +50,9 @@ For complete materials, presentations, scripts and other, please see Google Clas
 -   [Ementa e Conteúdo Programático](https://profrhozon.github.io/site/EmentaBigDataFinProj.html)
 -   [Crie sua Github Page como Portfolio](https://profrhozon.github.io/site/introportfoliogithubpages.html)
 
-$\Rightarrow$ [Fill my survey for students profile]()
+$\Rightarrow$ [Fill my survey for students profile](https://docs.google.com/forms/d/e/1FAIpQLSfd2CwZRI-2WNxFGu5yrcqfbCdrsEDMwBkTmI-v8bDPPT3WAg/viewform)
 
-$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjM0Mzc2NDU3)  
+$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjM0Mzc2NDU3)
 
 **Note:** You must be logged in with your `@fae.edu` account to access this class.
 
@@ -60,8 +60,7 @@ $\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/
 
 -   [Ementa](EmentaRiskMng.qmd)
 
-
-$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjMzOTUxMzg2)  
+$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjMzOTUxMzg2)
 
 **Note:** You must be logged in with your `@fae.edu` account to access this class.
 
@@ -69,8 +68,7 @@ $\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/
 
 -   [Ementa](EmentaProgComp.qmd)
 
-
-$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjM0ODA2NDUx)  
+$\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/NzQzMjM0ODA2NDUx)
 
 **Note:** You must be logged in with your `@fae.edu` account to access this class.
 :::
@@ -89,9 +87,7 @@ Below is my current availability. Feel free to check the calendar for open slots
           frameborder="0" scrolling="no">
   </iframe>
 </div>
-
 ```
-
 
 ## **📢 Contact and Networks**
 
@@ -143,14 +139,4 @@ You can find me on the following platforms:
   
 ```
 
-
-***
-
-
-
-
-
-
-
-
-
+------------------------------------------------------------------------

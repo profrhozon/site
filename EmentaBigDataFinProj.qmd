@@ -97,54 +97,52 @@ By the end of the course, each student will have created a **GitHub Pages site**
 
 [Obtenha a planilha (sujeita a alterações no decorrer do curso) aqui](https://github.com/profrhozon/site/raw/refs/heads/main/Planilha%20de%20Cronograma%20Disciplinas%20FAE.xlsx)
 
-
-| Data             | Conteúdo Programado | Entrega Associada | Horas/Aula | Observações |
-|-----------------|--------------------|------------------|------------|-------------|
-| **28/02/2025**  | Apresentação do curso e do projeto final. Configuração inicial do GitHub Pages e criação da primeira página usando Quarto. Formação de grupos para criação da GitHub Page colaborativa. | Criar uma GitHub Page simples seguindo o roteiro disponível em [GitHub Pages](https://profrhozon.github.io/site/introportfoliogithubpages.html) | 4 |  |
-| **07/03/2025**  | Geração de Dados Sintéticos e Datasets Públicos: introdução a dados sintéticos e exploração de datasets reais para modelos de séries temporais. |  | 4 |  |
-| **14/03/2025**  | Feature Engineering em séries temporais financeiras. Log-retornos e variâncias condicionais (GARCH). | Primeira página criada de cada grupo e apresentação dos grupos formados. | 4 | Sem entrega associada nesse dia. |
-| **21/03/2025**  | Técnicas de redução de dimensionalidade em séries temporais financeiras. O impacto do Big Data na decisão humana. | Post com o planejamento do projeto de cada grupo e apresentação da GitHub Page do grupo. | 4 |  |
-| **28/03/2025**  | Modelos causais vs. modelos de Machine Learning (black-box) na previsão de séries temporais. Comparação de performance de modelos. | Post e apresentação da Análise Exploratória de Dados (AED) do conjunto de dados selecionado. | 4 |  |
-| **04/04/2025**  | Simulação de cenários vs. forecasting. Estratégias de compra, venda e espera baseadas no perfil do investidor. Trade-off risco vs. retorno. | Post e apresentação do feature engineering dos dados financeiros. | 4 |  |
-| **11/04/2025**  | Decisão Multicritério em Cenários Econômicos. Modelos de hierarquização e gestão da incerteza. | Composição da P1 (10 a 16 de Abril). | 4 |  |
-| **18/04/2025**  | **Feriado - Páscoa (Sem Aula)** |  |  |  |
-| **25/04/2025**  | Risco vs. Retorno vs. Incerteza. O impacto de eventos inesperados no mercado financeiro (The Black Swan). | Post apresentando previsões de retornos, volatilidades e janelas de oportunidade identificadas. | 4 |  |
-| **02/05/2025**  | Introdução à Teoria de Alocação de Portfólio (Markowitz, Black-Litterman). Cálculo de retornos cumulativos dos ativos. | Post com matriz de decisão multicritério para cada portfólio. | 4 |  |
-| **09/05/2025**  | Modelo de Markowitz: pesos dos ativos, fronteira eficiente, cálculo de risco e retornos esperados. | Post com valores projetados e métricas de retorno anualizados/mensalizados. | 4 |  |
-| **16/05/2025**  | Efeitos da diversificação, entropia de Shannon, estatísticas do portfólio, avaliação de riscos (Sharpe Ratio, Sortino Ratio, Drawdown). | Post construindo a Fronteira Eficiente baseada nas previsões de retorno e risco. | 4 |  |
-| **23/05/2025**  | Avaliação de Performance do Portfólio (Fama-French Factor Model). Benchmarks e fatores de risco. | Post sobre distribuições de retornos dos ativos (Histogramas vs. Kernel Density). | 4 |  |
-| **30/05/2025**  | Drivers de Performance e risco do portfólio. Abordagem matricial e otimização orçamentária. | Post com indicadores de performance do portfólio (Sharpe, Sortino, Drawdown, assimetria, curtose). | 4 |  |
-| **06/06/2025**  | Backtest da otimização de portfólio e comparação de estratégias. | Post sobre performance do modelo Fama-French. | 4 | Sem entrega associada. |
-| **13/06/2025**  | Teoria Moderna de Portfólio e Portfólio Ótimo: Sharpe Máximo, volatilidade mínima, Equal Weighted Risk. | Composição da P2 (12 a 18 de junho). | 4 |  |
-| **20/06/2025**  | **Feriado (Sem Aula)** |  |  |  |
-| **27/06/2025**  | Dinâmica de preços e inflação. Como a inflação afeta a precificação de ativos? | Post sobre portfólio otimizado vs. benchmark. | 4 |  |
-| **04/07/2025**  | **Prazo de entrega substitutiva (Sem Aula)** |  |  |  |
-| **11/07/2025**  | **Recesso do Corpo Docente (Sem Aula)** |  |  |  |
-| **18/07/2025**  | **Recesso do Corpo Docente (Sem Aula)** |  |  |  |
-| **25/07/2025**  | **Sem Aula** |  |  |  |
-| **01/08/2025**  | **Sem Aula** |  |  |  |
-| **08/08/2025**  | Algoritmos de Otimização Multiobjetivo para portfólio. | Post reflexivo sobre o impacto da inflação nos ativos do portfólio. | 4 |  |
-| **15/08/2025**  | Métodos de Otimização Multiobjetivo para portfólios. |  | 4 | Post opcional. |
-| **22/08/2025**  | Modelos econométricos vs. Machine Learning para previsão de inflação. | Post sobre otimização do portfólio. | 4 |  |
-| **29/08/2025**  | Impacto da inflação nos preços de ativos e commodities. | Post opcional sobre NSGA-II/III ou DEOptim aplicado aos dados. | 4 |  |
-| **05/09/2025**  | Medidas de inflação e juros. Matemática financeira aplicada ao portfólio. | Post reflexivo sobre impacto da inflação no portfólio. | 4 |  |
-| **12/09/2025**  | Revisão geral do projeto. | Sprint Review dos alunos com o professor. | 4 |  |
-| **19/09/2025**  | Apresentação final dos projetos. | Composição da PFinal (vide calendário). | 4 |  |
+| Data | Conteúdo Programado | Entrega Associada | Horas/Aula | Observações |
+|---------------|---------------|---------------|---------------|---------------|
+| **28/02/2025** | Apresentação do curso e do projeto final. Configuração inicial do GitHub Pages e criação da primeira página usando Quarto. Formação de grupos para criação da GitHub Page colaborativa. | Criar uma GitHub Page simples seguindo o roteiro disponível em [GitHub Pages](https://profrhozon.github.io/site/introportfoliogithubpages.html) | 4 |  |
+| **07/03/2025** | Geração de Dados Sintéticos e Datasets Públicos: introdução a dados sintéticos e exploração de datasets reais para modelos de séries temporais. |  | 4 |  |
+| **14/03/2025** | Feature Engineering em séries temporais financeiras. Log-retornos e variâncias condicionais (GARCH). | Primeira página criada de cada grupo e apresentação dos grupos formados. | 4 | Sem entrega associada nesse dia. |
+| **21/03/2025** | Técnicas de redução de dimensionalidade em séries temporais financeiras. O impacto do Big Data na decisão humana. | Post com o planejamento do projeto de cada grupo e apresentação da GitHub Page do grupo. | 4 |  |
+| **28/03/2025** | Modelos causais vs. modelos de Machine Learning (black-box) na previsão de séries temporais. Comparação de performance de modelos. | Post e apresentação da Análise Exploratória de Dados (AED) do conjunto de dados selecionado. | 4 |  |
+| **04/04/2025** | Simulação de cenários vs. forecasting. Estratégias de compra, venda e espera baseadas no perfil do investidor. Trade-off risco vs. retorno. | Post e apresentação do feature engineering dos dados financeiros. | 4 |  |
+| **11/04/2025** | Decisão Multicritério em Cenários Econômicos. Modelos de hierarquização e gestão da incerteza. | Composição da P1 (10 a 16 de Abril). | 4 |  |
+| **18/04/2025** | **Feriado - Páscoa (Sem Aula)** |  |  |  |
+| **25/04/2025** | Risco vs. Retorno vs. Incerteza. O impacto de eventos inesperados no mercado financeiro (The Black Swan). | Post apresentando previsões de retornos, volatilidades e janelas de oportunidade identificadas. | 4 |  |
+| **02/05/2025** | Introdução à Teoria de Alocação de Portfólio (Markowitz, Black-Litterman). Cálculo de retornos cumulativos dos ativos. | Post com matriz de decisão multicritério para cada portfólio. | 4 |  |
+| **09/05/2025** | Modelo de Markowitz: pesos dos ativos, fronteira eficiente, cálculo de risco e retornos esperados. | Post com valores projetados e métricas de retorno anualizados/mensalizados. | 4 |  |
+| **16/05/2025** | Efeitos da diversificação, entropia de Shannon, estatísticas do portfólio, avaliação de riscos (Sharpe Ratio, Sortino Ratio, Drawdown). | Post construindo a Fronteira Eficiente baseada nas previsões de retorno e risco. | 4 |  |
+| **23/05/2025** | Avaliação de Performance do Portfólio (Fama-French Factor Model). Benchmarks e fatores de risco. | Post sobre distribuições de retornos dos ativos (Histogramas vs. Kernel Density). | 4 |  |
+| **30/05/2025** | Drivers de Performance e risco do portfólio. Abordagem matricial e otimização orçamentária. | Post com indicadores de performance do portfólio (Sharpe, Sortino, Drawdown, assimetria, curtose). | 4 |  |
+| **06/06/2025** | Backtest da otimização de portfólio e comparação de estratégias. | Post sobre performance do modelo Fama-French. | 4 | Sem entrega associada. |
+| **13/06/2025** | Teoria Moderna de Portfólio e Portfólio Ótimo: Sharpe Máximo, volatilidade mínima, Equal Weighted Risk. | Composição da P2 (12 a 18 de junho). | 4 |  |
+| **20/06/2025** | **Feriado (Sem Aula)** |  |  |  |
+| **27/06/2025** | Dinâmica de preços e inflação. Como a inflação afeta a precificação de ativos? | Post sobre portfólio otimizado vs. benchmark. | 4 |  |
+| **04/07/2025** | **Prazo de entrega substitutiva (Sem Aula)** |  |  |  |
+| **11/07/2025** | **Recesso do Corpo Docente (Sem Aula)** |  |  |  |
+| **18/07/2025** | **Recesso do Corpo Docente (Sem Aula)** |  |  |  |
+| **25/07/2025** | **Sem Aula** |  |  |  |
+| **01/08/2025** | **Sem Aula** |  |  |  |
+| **08/08/2025** | Algoritmos de Otimização Multiobjetivo para portfólio. | Post reflexivo sobre o impacto da inflação nos ativos do portfólio. | 4 |  |
+| **15/08/2025** | Métodos de Otimização Multiobjetivo para portfólios. |  | 4 | Post opcional. |
+| **22/08/2025** | Modelos econométricos vs. Machine Learning para previsão de inflação. | Post sobre otimização do portfólio. | 4 |  |
+| **29/08/2025** | Impacto da inflação nos preços de ativos e commodities. | Post opcional sobre NSGA-II/III ou DEOptim aplicado aos dados. | 4 |  |
+| **05/09/2025** | Medidas de inflação e juros. Matemática financeira aplicada ao portfólio. | Post reflexivo sobre impacto da inflação no portfólio. | 4 |  |
+| **12/09/2025** | Revisão geral do projeto. | Sprint Review dos alunos com o professor. | 4 |  |
+| **19/09/2025** | Apresentação final dos projetos. | Composição da PFinal (vide calendário). | 4 |  |
 
 Instruções básicas:
 
-- Cada aluno será avaliado individual e coletivamente $\Rightarrow$ Após o primeiro encontro que cada aluno criar sua GitHub Page e postar como tarefa concluída no Classroom, no nosso terceiro encontro, teremos a apresentação dos grupos e das paginas criadas por cada um. Como cada grupo elegerá um "Scrum Master" e todos atuarão como "Data Scientist" é importante que o scrum master mostre o histórico de commits e o git onde fique claro a boa distribuição dos trabalhos e entregas e contribuições de cada um dom time!
+-   Cada aluno será avaliado individual e coletivamente $\Rightarrow$ Após o primeiro encontro que cada aluno criar sua GitHub Page e postar como tarefa concluída no Classroom, no nosso terceiro encontro, teremos a apresentação dos grupos e das paginas criadas por cada um. Como cada grupo elegerá um "Scrum Master" e todos atuarão como "Data Scientist" é importante que o scrum master mostre o histórico de commits e o git onde fique claro a boa distribuição dos trabalhos e entregas e contribuições de cada um dom time!
 
-- Cada grupo poderá montar seu portfólio com tickers que estejam disponíveis pra download e uso free. Caso o grupo opte por utilizar algum outro dataset recomendado pelo professor e que faça uso de séries temporais de preços, o problema geral que será passível de avaliação e construção consistirá sempre na construção de uma carteira que será otimizada pra negociações de curto prazo de compra, venda ou espera.
+-   Cada grupo poderá montar seu portfólio com tickers que estejam disponíveis pra download e uso free. Caso o grupo opte por utilizar algum outro dataset recomendado pelo professor e que faça uso de séries temporais de preços, o problema geral que será passível de avaliação e construção consistirá sempre na construção de uma carteira que será otimizada pra negociações de curto prazo de compra, venda ou espera.
 
-- Caso o grupo opte por "artificializar o dataset", precisará demonstrar claramente e fornecer os códigos pra replicação em seu post;
+-   Caso o grupo opte por "artificializar o dataset", precisará demonstrar claramente e fornecer os códigos pra replicação em seu post;
 
-- Pode-se utilizar as linguagens R, Python Julia livremente ou combinamente caso seja necessário. Cada grupo é livre pra utilizar quaisquer uma das linguagens abertas do Data Science;
+-   Pode-se utilizar as linguagens R, Python Julia livremente ou combinamente caso seja necessário. Cada grupo é livre pra utilizar quaisquer uma das linguagens abertas do Data Science;
 
-- O ideal é que cada grupo seja composto por 4 alunos, com uma certa flexibilidade pra mudarmos.
+-   O ideal é que cada grupo seja composto por 4 alunos, com uma certa flexibilidade pra mudarmos.
 
 Fique atento para o nosso cronograma de entregas e postagens para que possamos ser capazes de alcançar os objetivos finais da disciplina. Em alguns casos, poderemos reajustar o cronograma, mas os posts e a geração das análises e códigos não deverão ser muito extenuantes em termos de consumir muito seu tempo!
-
 
 ------------------------------------------------------------------------
 
