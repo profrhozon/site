@@ -1,0 +1,1809 @@
+---
+title: "Geração de dados sintéticos x datasets de séries de preços conhecidos"
+format:
+  html:
+    self-contained: true
+    toc: true
+    code-fold: true
+    df-print: paged
+editor: visual
+---
+
+------------------------------------------------------------------------
+
+<left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
+
+------------------------------------------------------------------------
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA)    # Remove all coments # of R outputs
+knitr::opts_chunk$set(warning = FALSE) # Remove all warnings # of R outputs
+knitr::opts_chunk$set(message = FALSE) # Remove all messages # of R outputs
+
+```
+
+::: callout-note
+## Resumo
+
+Nesta aula veremos um pouco de alguns assuntos fundamentais e úteis que nos auxiliarão a "destravar" em nosso processo de utilização de dados para nossos propósitos de atuação como Cientistas de Dados. Os tópicos que abordaremos hoje permearão:
+
+-   O uso de conjuntos de dados de séries temporais financeiras conhecidos na comunidade;
+-   O uso de API´s para download de dados de séries de preços livremente
+-   Algumas técnicas extremamente úteis de geração de dados sintéticos
+:::
+
+<center>![](https://cdn.prod.website-files.com/65264f6bf54e751c3a776db1/6530058c5159f040612deed1_continuous-training.gif){width="50%"}</center>
+
+<small>
+
+**Fonte:** [zeml.io](https://www.zenml.io/blog/how-to-painlessly-deploy-your-ml-models-with-zenml)
+
+</small>
+
+## **📌 Introdução: Conjuntos de Dados Públicos e Seleção de Portfólio**
+
+```{=html}
+<!-- 
+Escrever a intro do documento aqui ....
+-->
+```
+
+Nesta aula, abordaremos um dos pilares fundamentais da modelagem quantitativa em finanças: a utilização de **dados financeiros** para a construção e análise de portfólios.
+
+Para tal, exploraremos três grandes abordagens no uso de **séries temporais financeiras**:
+
+1.  **Uso de datasets conhecidos**
+    -   Algumas bases de dados amplamente utilizadas na literatura e disponíveis dentro de pacotes do **R** e outras fontes confiáveis como o **Kaggle** e **ScienceDirect**.
+    -   Exemplos incluem o **dataset `oil` (preços de contratos futuros de petróleo), `EuStockMarkets` (índices europeus), `edhec` (retornos de hedge funds), e `LPP2005REC` (retornos de ativos financeiros europeus)**.
+2.  **Obtenção de dados reais via APIs**
+    -   Demonstramos como utilizar APIs públicas, como a do **Yahoo Finance**, para baixar dados históricos de ações e commodities, diretamente para o R ou Python.
+    -   O objetivo é capacitar os alunos a construir **portfólios reais**, utilizando fontes públicas de dados financeiros.
+3.  **Geração de dados sintéticos**
+    -   Introduzimos métodos para gerar **dados sintéticos**, como o **Movimento Browniano Geométrico (MGB)**, **distribuições lognormais**, **caminhos aleatórios com ruído gaussiano** e **redes adversariais generativas (GANs)**.
+    -   O propósito desses métodos é fornecer alternativas para análise de portfólios quando não há dados reais disponíveis ou quando há restrições de privacidade e confidencialidade.
+
+💡 **Por que isso é importante?**\
+- Muitas vezes, dados reais são **incompletos, inconsistentes ou indisponíveis**, tornando essencial o conhecimento de técnicas de **simulação e modelagem de séries temporais**. - O aprendizado dessas abordagens permite aos alunos **tomar decisões informadas** sobre quais métodos utilizar na modelagem de portfólios financeiros, seja para análise de risco, previsão de preços ou otimização de carteiras.
+
+🚀 **Objetivo da aula**\
+- Compreender as **vantagens e limitações** de cada uma dessas abordagens.\
+- Desenvolver habilidades práticas na **obtenção e manipulação de dados financeiros**.\
+- Implementar técnicas para **análise e simulação de portfólios**, combinando ferramentas do R e Python.
+
+::: panel-tabset
+## Datasets públicos
+
+Vamos começar com alguns datasets que vem dentro de alguns pacotes do R:
+
+-   <mark>O dataset `oil`disponível no pacote GAMLSS do R $\Downarrow$</mark>
+
+```{r}
+
+library(gamlss) # Uso do dataset ´oil´ disponibilizado dentro do pacote gamlss do R
+
+data(oil)
+
+dplyr::glimpse(oil)
+
+```
+
+**Cada variável nas colunas denota o seguinte sentido** (Stasinopoulos *et al.* 2017, p. 413):
+
+-   **`OILPRICE`**\
+    ⇒ o logaritmo do preço do contrato de petróleo WTI de vencimento mais próximo negociado na NYMEX – em termos financeiros, este é o CL1. Essa é a variável resposta.
+
+-   **`CL2_log, CL3_log, CL4_log, CL5_log, CL6_log, CL7_log, CL8_log, CL9_log, CL10_log, CL11_log, CL12_log, CL13_log, CL14_log, CL15_log`**\
+    ⇒ são os logaritmos dos preços dos contratos de petróleo WTI para vencimentos de 2 a 15 meses à frente negociados na NYMEX. Por exemplo, para o dia de negociação de 2 de junho de 2016, o CL2 corresponde ao contrato de petróleo WTI para entrega em agosto de 2016.
+
+-   **`BDIY_log`**\
+    ⇒ o Baltic Dry Index, que é uma avaliação do preço para transportar as principais matérias-primas por via marítima.
+
+-   **`SPX_log`**\
+    ⇒ o índice S&P 500.
+
+-   **`DX1_log`**\
+    ⇒ o índice do dólar americano.
+
+-   **`GC1_log`**\
+    ⇒ o logaritmo do preço do contrato de ouro com vencimento mais próximo negociado na NYMEX.
+
+-   **`HO1_log`**\
+    ⇒ o logaritmo do preço do contrato de óleo de aquecimento (heating oil) de vencimento mais próximo negociado na NYMEX.
+
+-   **`USCI_log`**\
+    ⇒ o índice de commodities dos Estados Unidos.
+
+-   **`GNR_log`**\
+    ⇒ o índice S&P Global Natural Resources.
+
+-   **`SHCOMP_log`**\
+    ⇒ o índice composto da Bolsa de Valores de Xangai.
+
+-   **`FTSE_log`**\
+    ⇒ o índice FTSE 100.
+
+-   **`respLAG`**\
+    ⇒ o defasagem 1 de `OILPRICE` – ou seja, a versão defasada da variável resposta.
+
+------------------------------------------------------------------------
+
+Vamos vendo outros conjuntos de dados:
+
+**Para os demais datasets, consulte a documentação do pacote para maiores detalhamentos**.
+
+-   <mark>Dataset `EuStockMarkets` do pacote `tseries` $\Downarrow$</mark>
+
+```{r}
+
+library(tseries)
+
+data(EuStockMarkets)            # Carrega o dataset EuStockMarkets 
+dplyr::glimpse(EuStockMarkets)  # Visualiza uma prévia dos dados
+
+```
+
+*EuStockMarkets* é um dataset clássico do R (disponível via `data("EuStockMarkets")`) que agrega dados diários dos principais índices de ações europeus.
+
+**Significado das colunas do dataset `EuStockMarkets` (pacote tseries):**
+
+-   **DAX**\
+    ⇒ Índice de ações da bolsa alemã, que reflete o desempenho das maiores empresas negociadas na Alemanha.
+
+-   **SMI**\
+    ⇒ Índice do mercado suíço, representando o comportamento das principais ações da Suíça.
+
+-   **CAC**\
+    ⇒ Índice francês (CAC 40), que mede o desempenho das 40 maiores empresas da bolsa de Paris.
+
+-   **FTSE**\
+    ⇒ Índice do mercado do Reino Unido (FTSE 100), representando as 100 maiores empresas listadas na bolsa de Londres.
+
+*Observação:* O dataset `EuStockMarkets` contém cotações diárias (preços de fechamento) desses quatro índices durante um período específico.
+
+------------------------------------------------------------------------
+
+-   <mark>Dataset `edhec` do pacote `PerformanceAnalytics` $\Downarrow$</mark>
+
+```{r}
+
+library(PerformanceAnalytics)
+
+data(edhec)                # Carrega o dataset 'edhec'
+dplyr::glimpse(edhec)      # Visualiza uma prévia dos dados
+
+```
+
+**Significado das colunas do dataset `edhec` (do pacote PerformanceAnalytics):**
+
+-   **Convertible Arbitrage**\
+    Retornos mensais de fundos que operam com estratégias de arbitragem conversível, buscando lucrar com as discrepâncias entre os preços das ações e dos títulos conversíveis.
+
+-   **CTA Global**\
+    Retornos mensais de fundos que seguem estratégias de Commodity Trading Advisor (CTA) globais, operando em diversos mercados – como commodities, moedas e índices – com a ideia de capturar tendências sistemáticas.
+
+-   **Emerging Markets**\
+    Retornos mensais de fundos que investem em mercados emergentes, aproveitando oportunidades (e riscos) associados a economias em desenvolvimento.
+
+-   **Event Driven**\
+    Retornos mensais de fundos que buscam explorar oportunidades decorrentes de eventos corporativos (como fusões, aquisições, reestruturações, etc.) que possam gerar dislocações temporárias nos preços dos ativos.
+
+-   **Long/Short Equity**\
+    Retornos mensais de fundos que adotam estratégias de compra (long) e venda (short) de ações, visando capturar ganhos tanto com movimentos de alta quanto de baixa dos preços das ações.
+
+-   **Macro**\
+    Retornos mensais de fundos macro, que investem com base em grandes tendências e eventos macroeconômicos, utilizando informações econômicas globais para orientar suas posições.
+
+-   **Relative Value**\
+    Retornos mensais de fundos que exploram discrepâncias de preços entre ativos relacionados, utilizando estratégias de arbitragem para capturar ganhos quando os preços se reequilibram.
+
+-   **Equity Market Neutral**\
+    Retornos mensais de fundos que buscam neutralizar a exposição ao mercado geral de ações, focando na captura de ganhos relativos entre pares de ações, independentemente da direção do mercado.
+
+-   **Fixed Income Arbitrage**\
+    Retornos mensais de fundos que utilizam estratégias de arbitragem no mercado de renda fixa, explorando ineficiências entre os preços dos títulos e suas taxas de juros.
+
+-   **Multi-Strategy**\
+    Retornos mensais de fundos que combinam diversas estratégias (por exemplo, long/short, arbitragem, macro, etc.) em uma única carteira, visando diversificação dos riscos e das fontes de retorno.
+
+-   **All Hedge Funds**\
+    Um índice composto que agrega os retornos de múltiplas estratégias de hedge funds, servindo como uma referência global do desempenho dos fundos de hedge.
+
+**Lembrando que preferencialmente o conjunto de dados escolhido pelo seu grupo deverá ser como uma carteira de ativos financeiros, geralmente regidos por séries de preços e consequentemente seus retornos e volatilidades.**
+
+------------------------------------------------------------------------
+
+-   <mark>`LPP2005REC` (Pacote `fPortfolio`) $\Downarrow$ </mark>
+
+O dataset `LPP2005REC` contém os retornos mensais de carteiras de ativos financeiros europeus, sendo ideal para análises de desempenho, retorno e risco.
+
+```{r}
+
+library(fPortfolio)
+data(LPP2005REC)           # Carrega o dataset 'LPP2005REC'
+dplyr::glimpse(LPP2005REC) # Visualiza uma prévia dos dados
+
+```
+
+**Significado das colunas no dataset `edhec` (pacote PerformanceAnalytics):**
+
+-   **Convertible Arbitrage**\
+    ⇒ Retornos mensais de fundos que exploram discrepâncias de preços entre títulos conversíveis e suas ações subjacentes, buscando lucrar com a arbitragem entre esses instrumentos.
+
+-   **CTA Global**\
+    ⇒ Retornos mensais de consultores de negociação de commodities (Commodity Trading Advisors) que operam globalmente, utilizando estratégias sistemáticas ou discricionárias em mercados de futuros e de câmbio.
+
+-   **Distressed Securities**\
+    ⇒ Retornos mensais de fundos que investem em títulos de empresas em dificuldades financeiras ou em situação de falência, visando lucrar com a recuperação ou reestruturação dessas empresas.
+
+-   **Emerging Markets**\
+    ⇒ Retornos mensais de fundos que investem em mercados emergentes, buscando oportunidades de crescimento em economias em desenvolvimento.
+
+-   **Equity Market Neutral**\
+    ⇒ Retornos mensais de fundos que buscam neutralizar a exposição ao mercado acionário, equilibrando posições compradas e vendidas para isolar ganhos relativos entre ações.
+
+-   **Event Driven**\
+    ⇒ Retornos mensais de fundos que exploram oportunidades decorrentes de eventos corporativos específicos, como fusões, aquisições ou reestruturações.
+
+-   **Fixed Income Arbitrage**\
+    ⇒ Retornos mensais de fundos que buscam lucrar com ineficiências nos mercados de renda fixa, explorando discrepâncias de preços entre títulos e suas taxas de juros.
+
+-   **Global Macro**\
+    ⇒ Retornos mensais de fundos que utilizam estratégias baseadas em tendências macroeconômicas globais, investindo em uma variedade de ativos para capitalizar mudanças econômicas amplas.
+
+-   **Long/Short Equity**\
+    ⇒ Retornos mensais de fundos que adotam posições compradas e vendidas em ações, visando lucrar tanto com a valorização quanto com a desvalorização de ativos específicos.
+
+-   **Merger Arbitrage**\
+    ⇒ Retornos mensais de fundos que exploram oportunidades de arbitragem em operações de fusão e aquisição, buscando lucrar com as diferenças de preço entre a oferta e o valor de mercado das empresas envolvidas.
+
+-   **Relative Value**\
+    ⇒ Retornos mensais de fundos que buscam explorar discrepâncias de preços entre ativos relacionados, utilizando estratégias de arbitragem para capturar ganhos quando os preços se ajustam.
+
+-   **Short Selling**\
+    ⇒ Retornos mensais de fundos que se especializam em vender ativos a descoberto, apostando na queda de preços para obter lucro.
+
+-   **Funds of Funds**\
+    ⇒ Retornos mensais de fundos que investem em uma carteira diversificada de outros fundos hedge, buscando reduzir o risco através da diversificação entre diferentes estratégias e gestores.
+
+*Observação:* O dataset `edhec` contém os retornos mensais dessas 13 estratégias de fundos hedge, fornecendo uma visão abrangente do desempenho de diferentes abordagens de investimento ao longo do tempo.
+
+------------------------------------------------------------------------
+
+O [Kaggle](https://www.kaggle.com/) oferece diversos datasets relacionados ao mercado financeiro. Por exemplo:
+
+-   **Time Series Financial Portfolio Data**\
+    Este dataset contém dados históricos de preços de ações, permitindo análises de séries temporais no contexto financeiro. Disponível em: <https://www.kaggle.com/datasets/karunyaronith/time-series-financial-portfolio-data>
+
+$\Rightarrow$ 📂 Dataset Adicional: FAANG Complete Stock Data (Kaggle)
+
+Além dos conjuntos de dados mencionados anteriormente, um dataset relevante para análises financeiras é o **FAANG Complete Stock Data**, disponível no Kaggle:
+
+🔗 [**FAANG Complete Stock Data**](https://www.kaggle.com/datasets/aayushmishra1512/faang-complete-stock-data)
+
+📌 **Descrição**:
+
+Este conjunto de dados contém informações completas sobre os preços das ações das cinco maiores empresas de tecnologia conhecidas como **FAANG**:
+
+-   **Facebook (agora Meta - META)**
+-   **Apple (AAPL)**
+-   **Amazon (AMZN)**
+-   **Netflix (NFLX)**
+-   **Google (agora Alphabet - GOOGL)**
+
+🗂 **Colunas disponíveis**:
+
+-   `Date`: Data da negociação.
+-   `Open`: Preço de abertura da ação.
+-   `High`: Preço máximo do dia.
+-   `Low`: Preço mínimo do dia.
+-   `Close`: Preço de fechamento ajustado.
+-   `Volume`: Volume negociado no dia.
+-   `Company`: Empresa correspondente ao dado.
+
+📊 **Possíveis Aplicações**:
+
+-   Análise comparativa do desempenho das empresas FAANG ao longo do tempo.
+-   Modelagem de séries temporais financeiras para previsão de preços.
+-   Simulações de carteiras de investimentos baseadas em grandes empresas do setor de tecnologia.
+
+💡 **Dica**: Para carregar os dados diretamente no R ou Python, o arquivo pode ser baixado em formato CSV e importado para análise, facilitando a aplicação de modelos de previsão e análise de risco.
+
+------------------------------------------------------------------------
+
+O [ScienceDirect](https://www.sciencedirect.com/) disponibiliza um artigo que acompanha um conjunto de dados real abrangente para avaliação de estratégias de portfólio. O dataset pode ser útil para análises de séries temporais financeiras. Disponível em: <https://www.sciencedirect.com/science/article/pii/S2352340916303997>
+
+**Nota:** Ao utilizar dados de fontes públicas, é importante verificar a qualidade e a atualização das informações, garantindo que elas sejam adequadas para os objetivos específicos de análise.
+
+## O uso de API´s
+
+<center>![](https://raw.githubusercontent.com/profrhozon/site/main/meme_datasets.jpg){width="50%"}</center>
+
+Existe uma outra forma de fazer nosso conjunto de dados, que consiste em montarmos nossa carteira, utilizando algumas fontes free públicas:
+
+Abaixo estão algumas fontes confiáveis onde você pode baixar dados históricos de preços de ações e commodities, ideais para a construção e análise de portfólios financeiros.
+
+------------------------------------------------------------------------
+
+### 1. Yahoo Finance
+
+-   **Descrição:**\
+    O Yahoo Finance oferece dados históricos de preços de ações e commodities, que podem ser baixados diretamente via API (código mais a frente) ou via download direto do csv.
+
+-   **Como baixar:**
+
+    1.  Acesse o [Yahoo Finanças](https://finance.yahoo.com/).
+    2.  Insira o ticker do ativo desejado na barra de pesquisa (por exemplo, "AAPL" para Apple).
+    3.  Na página do ativo, clique na aba "Historical Data" (Dados Históricos).
+    4.  Selecione o período e a frequência dos dados.
+    5.  Clique em "Download" para obter o arquivo CSV.
+
+-   **Referência:**\
+    [Como baixar dados históricos no Yahoo Finanças](https://br.ajuda.yahoo.com/kb/SLN2311.html)
+
+<mark> **Me parece que essa opção de donwload do csv foi desabiitada** </mark>
+
+------------------------------------------------------------------------
+
+### 2. ADVFN Brasil
+
+-   **Descrição:**\
+    A ADVFN Brasil disponibiliza dados históricos de ações, índices e commodities negociados na B3 (Bolsa de Valores do Brasil) e em outras bolsas internacionais, que podem ser baixados em formato CSV.
+
+-   **Como baixar:**
+
+    1.  Acesse a seção de [Downloads de Dados Históricos](https://br.advfn.com/ferramentas-de-investimento/data-downloads) no site da ADVFN.
+    2.  Escolha o ativo desejado e o período de interesse.
+    3.  Baixe o arquivo CSV correspondente.
+
+-   **Referência:**\
+    [Downloads de dados históricos - ADVFN](https://br.advfn.com/ferramentas-de-investimento/data-downloads)
+
+<mark> Me parece que exige que você crie uma conta antes </mark>
+
+------------------------------------------------------------------------
+
+### 3. Investing.com
+
+-   **Descrição:**\
+    O Investing.com oferece dados históricos de diversos ativos, incluindo ações e commodities, que podem ser baixados em formato CSV.
+
+-   **Como baixar:**
+
+    1.  Acesse o [Investing.com](https://br.investing.com/).
+    2.  Utilize a barra de pesquisa para encontrar o ativo desejado.
+    3.  Na página do ativo, vá para a seção de dados históricos.
+    4.  Selecione o período e clique em "Baixar dados" para obter o arquivo CSV.
+
+-   **Exemplo:**\
+    [Histórico de Preços - Futuros Mini Ibovespa](https://br.investing.com/indices/bovespa-win-futures-historical-data)
+
+------------------------------------------------------------------------
+
+**Nota:** Ao utilizar esses dados, é importante verificar a qualidade e a atualização das informações, garantindo que elas sejam adequadas para os objetivos específicos de análise.
+
+### Montando sua carteira usando libs do Python e pacotes do R via Yahoo!Finance
+
+Aqui poderemos selecionar os tickers (códigos de empresas) que desejarmos pesquisando os nomes delas diretamente na barra de busca do Yahoo!Finance e simplesmente inserindo elas no código Python ou R:
+
+### Python
+
+```{python}
+
+# Importa as libs
+
+from yahooquery import Ticker
+import pandas as pd
+from plotnine import ggplot, aes, geom_line, facet_wrap, labs, theme, element_text, theme_minimal
+
+```
+
+A carteira de tech companies que escolhi contém os seguintes preços:
+
+-   Apple
+-   Microsoft
+-   Amazon
+-   Google
+-   Meta
+
+Definindo os tickers da carteira:
+
+```{python}
+
+# Definindo os tickers das ações
+TICKERS = [
+    "AAPL",  # Apple Inc.
+    "MSFT",  # Microsoft Corporation
+    "AMZN",  # Amazon.com Inc.
+    "GOOGL", # Alphabet Inc. (Google)
+    "META"   # Meta Platforms Inc. (Facebook)
+]
+
+```
+
+Baixando os dados do Yahoo Finance
+
+```{python}
+
+# Baixar os dados históricos com yahooquery
+tickers = Ticker(TICKERS)
+data = tickers.history(period="5y")
+
+# Resetar o índice corretamente
+data = data.reset_index()
+
+# Exibir as primeiras linhas para verificar a estrutura
+print(data.head())
+
+# O yahooquery retorna um MultiIndex, então é preciso garantir que a coluna "date" exista corretamente
+if "date" not in data.columns:
+    raise ValueError("A coluna 'date' não foi encontrada no dataset! Verifique a estrutura do DataFrame.")
+
+# Selecionar apenas as colunas de interesse e reformatar
+portfolio_prices = data.pivot(index="date", columns="symbol", values="close").reset_index()
+
+# Garantir que não há valores ausentes
+portfolio_prices.dropna(inplace=True)
+
+```
+
+Vamos gerar um preview do nosso dataset (carteira ou portfolio) criado:
+
+```{r}
+
+library(DT)
+library(reticulate)
+
+# Importar a variável do Python para o R
+portfolio_prices <- py$portfolio_prices
+
+# Visualizar com DT
+datatable(portfolio_prices, options = list(pageLength = 10, scrollX = TRUE))
+
+```
+
+Visualizando as séries temporais dos preços lado a lado
+
+```{r fig.width=9, fig.height=9}
+
+library(dplyr)
+library(tidyverse)
+library(timetk)
+
+# Importar os dados do Python para o R
+portfolio_prices <- py$portfolio_prices
+
+# Converter a coluna "date" para formato Date no R
+portfolio_prices <- portfolio_prices |> 
+  mutate(date = as.Date(unlist(date), format = "%Y-%m-%d"))
+
+#glimpse(portfolio_prices) # Preview do dataset com o R (muito melhor que o Python ...heheheh)
+
+portfolio_prices |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Empresa",
+    values_to = "Valor"
+  ) |> 
+  group_by(Empresa) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+```
+
+### Carteira de commodities no R
+
+Monto uma carteira só com commodities (grãos) usando o R:
+
+```{r}
+
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+#library(plotly)
+library(timeSeries)
+library(fPortfolio)
+library(quantmod)
+library(cowplot) # devtools::install_github("wilkelab/cowplot/")
+library(lattice)
+library(timetk)
+
+```
+
+```{r}
+
+tickers <- c(
+         "ZC=F", # Corn Futures
+         "ZO=F", # Wheat Futures
+         "KE=F", # Futuros KC HRW Wheat Futures
+         "ZR=F", # Rough Rice Futures
+         "GF=F", # Feeder Cattle Futures
+         "ZS=F", # SoyMeal Futures 
+         "ZM=F", # Futuros farelo soja
+         "ZL=F"  # SoyBeans Futures
+)
+
+```
+
+Então baixo os dados via Yahoo!Finance:
+
+```{r}
+
+portfolioPrices <- NULL
+  for ( Ticker in tickers )
+    portfolioPrices <- cbind(
+      portfolioPrices, 
+      getSymbols.yahoo(
+        Ticker,
+        from = "2019-01-01",
+        auto.assign = FALSE
+      )[,4]
+    )
+
+portfolioPrices <- portfolioPrices[apply(portfolioPrices, 1, function(x) all(!is.na(x))),]
+
+colnames(portfolioPrices) <- c(
+  "corn_fut",
+  "wheat_fut",
+  "KCWheat_fut",
+  "rice_fut",
+  "Feeder_Cattle",
+  "soymeal_fut",
+  "soyF_fut",
+  "soybeans_fut"
+)
+
+# Visualizar com DT
+datatable(tail(portfolioPrices), options = list(pageLength = 10, scrollX = TRUE)) 
+
+```
+
+Visualizando os dados, temos:
+
+```{r fig.width=9, fig.height=9}
+
+portfolioPrices |> as.data.frame() |>
+  mutate(
+    time = seq_along( corn_fut )
+  ) |>
+  pivot_longer(
+    !time,
+    names_to = "Variables",
+    values_to = "Value"  
+      ) |>
+  group_by(Variables) |>
+  plot_time_series(
+    time,
+    Value,
+    .interactive = F, # Change for TRUE for better visualization
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+```
+:::
+
+# Geração de dados sintéticos
+
+Geração de dados sintéticos refere-se ao processo de criar artificialmente dados que simulam características estatísticas ou simulações que refletem os padrões de um conjunto de dados real.
+
+<center>![](https://raw.githubusercontent.com/profrhozon/site/main/hype_sintdata.png){width="60%"}</center>
+
+
+Esses dados podem ser totalmente fictícios ou derivados de dados reais com modificações, garantindo anonimato e privacidade.
+
+[Segundo o prof. Leandro Coelho](https://www.gazetadopovo.com.br/parana/parana-tem-47-pesquisadores-mais-influentes-do-mundo/) podemos citar algumas potencialidades e limitações de geração de dados sintéticos:
+
+$\Rightarrow$ *Algumas potencialidades da geração de dados sintéticos:*
+
+-   Preservação de privacidade: dados sintéticos eliminam a necessidade de compartilhar informações sensíveis ou pessoais. Permitem a conformidade com regulamentos como GDPR e LGPD ao substituir dados reais por versões anonimizadas.
+
+-   Aumento de dados: Aumenta o volume de dados em cenários onde há dados limitados. Melhora o desempenho de modelos de aprendizado de máquina/profundo ao enriquecer o conjunto de treinamento com variações "realistas".
+
+-   Simulação de cenários raros: Permite criar dados para eventos raros, como falhas em equipamentos, fraudes financeiras ou doenças raras.
+
+-   Redução de custos: Diminui a necessidade de coletar grandes quantidades de dados reais, que podem ser caros ou difíceis de obter.
+
+-   Flexibilidade para testes: Facilita o desenvolvimento e teste de sistemas em ambientes controlados antes de serem implantados no mundo real.
+
+-   Customização de cenários: Permite gerar dados com características específicas, ajustados às necessidades do projeto.
+
+-   Melhoria na qualidade dos dados: Corrige problemas de dados reais, tais como valores ausentes, erros ou enviesamento.
+
+$\Rightarrow$ *Algumas limitações da geração de dados sintéticos:*
+
+-   Falta de complexidade do "mundo real": Dados sintéticos podem não capturar completamente a complexidade e as nuances dos dados do mundo real, o que pode resultar em modelos que apresentam bom desempenho em simulações, mas têm dificuldades com dados reais.
+
+-   Questões de qualidade e precisão: Dados sintéticos podem introduzir seus próprios vieses ou falhar em representar com precisão determinados grupos minoritários ou casos extremos, o que pode levar a modelos tendenciosos.
+
+-   Complexidade na geração: Gerar dados sintéticos de alta qualidade, especialmente usando técnicas avançadas de aprendizado profundo como redes geradoras adversárias (GANs) ou autoencoders variacionais (VAEs), pode ser computacionalmente caro e exigir um nível significativo de expertise.
+
+<center>![](https://raw.githubusercontent.com/profrhozon/site/main/synt_data.png){width="80%"}</center>
+
+::: panel-tabset
+## Movimento Browniano Geométrico (MGB)
+
+Uma abordagem robusta para gerar dados artificiais de séries temporais financeiras é utilizar o **Movimento Browniano Geométrico (MGB)**. Este método é amplamente empregado para modelar a evolução dos preços de ativos, pois reproduz características importantes observadas em mercados reais, como:
+
+-   **Distribuição Log-Normal dos Preços:** Os preços gerados pelo MGB seguem uma distribuição log-normal, o que é compatível com a observação empírica de que os retornos dos ativos se distribuem normalmente.
+-   **Drift (Tendência):** Representa o retorno médio esperado do ativo.
+-   **Volatilidade:** Mede a dispersão dos retornos e a incerteza no comportamento dos preços.
+-   **Crescimento Exponencial:** A fórmula incorpora um componente exponencial, essencial para refletir a acumulação de retornos ao longo do tempo.
+
+Mesmo sem um conjunto de dados históricos, você pode definir parâmetros teóricos ou baseados em médias de mercado (por exemplo, um drift anual de 10% e uma volatilidade anual de 20%) para simular séries que se comportam de forma realista.
+
+O MGB é descrito pela seguinte equação diferencial estocástica:
+
+$$
+dS_t = \mu S_t\, dt + \sigma S_t\, dW_t
+$$
+
+onde: - $S_t$ é o preço do ativo no tempo $t$; - $\mu$ é o drift (retorno médio); - $\sigma$ é a volatilidade do ativo; - $W_t$ representa o movimento browniano padrão (processo de Wiener).
+
+A solução analítica dessa equação é dada por:
+
+$$
+S_t = S_0 \exp\left\{ \left(\mu - \frac{1}{2}\sigma^2\right)t + \sigma W_t \right\}
+$$
+
+Para simulações numéricas, considerando um intervalo de tempo discreto \$ \Delta t \$, a formulação discreta do MGB é:
+
+$$
+S_{t+\Delta t} = S_t \exp\left\{ \left(\mu - \frac{1}{2}\sigma^2\right)\Delta t + \sigma \sqrt{\Delta t}\,\epsilon_t \right\}
+$$
+
+onde $\epsilon_t$ é uma variável aleatória com distribuição normal padrão, ou seja, $\epsilon_t \sim \mathcal{N}(0,1)$.
+
+### Por que o MGB é útil?
+
+-   **Simulação Realista:** Ao utilizar parâmetros que refletem a média do mercado, o MGB gera trajetórias de preços que imitam o comportamento real dos ativos.
+-   **Flexibilidade para Múltiplos Ativos:** Pode ser facilmente adaptado para simular uma carteira de ações. Se for necessário, é possível incluir correlações entre os ativos utilizando técnicas como a decomposição de Cholesky.
+-   **Base para Testes e Análises:** Os dados sintéticos gerados podem ser usados para testar estratégias de trading, avaliar risco e realizar simulações em portfólios, mesmo quando dados históricos reais não estão disponíveis.
+
+### Implementação Básica do MGB em Python
+
+A seguir, um exemplo de como gerar uma série temporal sintética para uma carteira de ações utilizando o MGB:
+
+```{python}
+
+import numpy as np
+import pandas as pd
+
+# Parâmetros da simulação
+n_steps = 252  # Número de dias de negociação (aproximadamente um ano)
+n_assets = 5   # Número de ativos na carteira
+dt = 1/252     # Intervalo de tempo diário
+
+# Parâmetros teóricos (ou baseados em médias de mercado)
+mu = 0.1       # Retorno anual médio (10%)
+sigma = 0.2    # Volatilidade anual (20%)
+S0 = 100       # Preço inicial para cada ativo
+
+# Ancorando a semente para reprodutibilidade
+np.random.seed(42)
+
+# Gerando ruídos aleatórios (assumindo independência entre os ativos)
+epsilon = np.random.normal(0, 1, (n_steps, n_assets))
+
+# Inicializando a matriz de preços
+prices = np.zeros((n_steps + 1, n_assets))
+prices[0] = S0
+
+# Simulação do MGB para cada ativo
+for t in range(1, n_steps + 1):
+    prices[t] = prices[t-1] * np.exp((mu - 0.5 * sigma**2) * dt + sigma * np.sqrt(dt) * epsilon[t-1])
+
+# Criação de um DataFrame com os resultados
+dates = pd.date_range(start='2020-01-01', periods=n_steps + 1, freq='B')
+df = pd.DataFrame(prices, index=dates, columns=[f'Ativo_{i+1}' for i in range(n_assets)])
+
+# Exibindo as primeiras linhas do DataFrame
+print(df.head())
+
+```
+
+Para simular uma carteira onde os ativos possuem comportamentos correlacionados (mundo real, lembre-se que eu havia comentado que na realidade é muito difícil montar um portfólio com ativos com covariância inversa), você pode:
+
+1.  Definir uma Matriz de Correlação: Especificar como os ativos se correlacionam entre si.
+
+2.  Gerar Choques Correlacionados: Usar a decomposição de Cholesky para transformar ruídos independentes em ruídos correlacionados.
+
+```{python}
+
+# Exemplo de matriz de correlação (matriz simétrica e definida positiva)
+corr_matrix = np.array([
+    [1.0, 0.8, 0.5, 0.3, 0.2],
+    [0.8, 1.0, 0.6, 0.4, 0.3],
+    [0.5, 0.6, 1.0, 0.7, 0.5],
+    [0.3, 0.4, 0.7, 1.0, 0.6],
+    [0.2, 0.3, 0.5, 0.6, 1.0]
+])
+
+# Decomposição de Cholesky para gerar uma matriz de transformação
+L = np.linalg.cholesky(corr_matrix)
+
+# Gerando ruídos independentes
+epsilon_indep = np.random.normal(0, 1, (n_steps, n_assets))
+
+# Transformando os ruídos independentes em ruídos correlacionados
+epsilon_corr = epsilon_indep @ L.T
+
+# Simulação do MGB utilizando os ruídos correlacionados
+prices_corr = np.zeros((n_steps + 1, n_assets))
+prices_corr[0] = S0
+
+for t in range(1, n_steps + 1):
+    prices_corr[t] = prices_corr[t-1] * np.exp((mu - 0.5 * sigma**2) * dt + sigma * np.sqrt(dt) * epsilon_corr[t-1])
+
+# Criação de um DataFrame com os preços correlacionados
+df_corr = pd.DataFrame(prices_corr, index=dates, columns=[f'Ativo_{i+1}' for i in range(n_assets)])
+
+# Exibindo as primeiras linhas do DataFrame com correlação
+print(df_corr.head())
+
+```
+
+Visualmente temos:
+
+```{r fig.width=9, fig.height=9}
+
+# Importar os dados do Python para o R
+df_corr <- py$df_corr
+
+# Converter o índice para uma coluna de data
+df_corr <- df_corr |> 
+  tibble::rownames_to_column(var = "date") |> 
+  mutate(date = as.Date(date))
+
+df_corr |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+```
+
+O Movimento Browniano Geométrico (MGB) é uma ferramenta poderosa para gerar dados sintéticos que asseguram os padrões comuns de comportamento dos preços de ativos financeiros. Ao utilizar esse método, é possível:
+
+-   Simular trajetórias de preços realistas baseadas em parâmetros teóricos (drift e volatilidade).
+-   Estender a simulação para múltiplos ativos, incorporando correlações por meio da decomposição de Cholesky.
+-   Fornecer uma base robusta para testes de estratégias, avaliações de risco e simulações de portfólio mesmo na ausência de dados históricos.
+-   Essa abordagem garante que o conjunto de dados artificial gerado mantém as características essenciais dos mercados reais, permitindo análises consistentes e confiáveis.
+
+## Simulação de Processos Estocásticos
+
+📊 Melhor para: Capturar padrões realistas de volatilidade e impacto de eventos externos.
+
+💡 Vantagem: Modela propriedades empíricas observadas nos preços dos ativos financeiros.
+
+**Processo de Heston**: Extensão do MGB que incorpora variabilidade na volatilidade ao longo do tempo, melhorando a modelagem de risco e retornos extremos.
+
+**Processo de Ornstein-Uhlenbeck**: Modela reversão à média, útil para séries financeiras que exibem tendências estacionárias.
+
+**Processo Hawkes:** Modela eventos que influenciam fortemente o mercado (ex: "Efeito Manada" e choques de liquidez).
+
+
+```{python}
+
+import numpy as np
+import pandas as pd
+import sdeint  # Biblioteca para simulação de processos estocásticos no Python
+
+# Definições gerais
+np.random.seed(42)
+dias = 252  # 1 ano de pregão
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]
+datas = pd.date_range(start="2025-01-01", periods=dias, freq="B")
+
+# ---------------------------
+# 1️⃣ PROCESSO DE HESTON (VOLATILIDADE ESTOCÁSTICA)
+# ---------------------------
+
+def heston_simulacao(S0, v0, mu, kappa, theta, sigma, rho, T, N):
+    dt = T / N
+    S = np.zeros(N)
+    v = np.zeros(N)
+    S[0], v[0] = S0, v0
+
+    for t in range(1, N):
+        dW_S = np.random.normal(0, np.sqrt(dt))
+        dW_v = rho * dW_S + np.sqrt(1 - rho**2) * np.random.normal(0, np.sqrt(dt))
+
+        v[t] = np.abs(v[t-1] + kappa * (theta - v[t-1]) * dt + sigma * np.sqrt(v[t-1]) * dW_v)
+        S[t] = S[t-1] * np.exp((mu - 0.5 * v[t-1]) * dt + np.sqrt(v[t-1]) * dW_S)
+
+    return S
+
+df_heston = pd.DataFrame({"Data": datas})
+for i, ativo in enumerate(ativos):
+    df_heston[ativo] = heston_simulacao(precos_iniciais[i], 0.04, 0.1, 2, 0.04, 0.3, -0.7, 1, dias)
+
+# ---------------------------
+# 2️⃣ PROCESSO DE ORNSTEIN-UHLENBECK (REVERSÃO À MÉDIA)
+# ---------------------------
+
+def ornstein_uhlenbeck_simulacao(S0, theta, mu, sigma, T, N):
+    dt = T / N
+    S = np.zeros(N)
+    S[0] = S0
+    for t in range(1, N):
+        dW = np.random.normal(0, np.sqrt(dt))
+        S[t] = S[t-1] + theta * (mu - S[t-1]) * dt + sigma * dW
+    return S
+
+df_ou = pd.DataFrame({"Data": datas})
+for i, ativo in enumerate(ativos):
+    df_ou[ativo] = ornstein_uhlenbeck_simulacao(precos_iniciais[i], 0.5, precos_iniciais[i] * 1.05, 1.5, 1, dias)
+
+# ---------------------------
+# 3️⃣ PROCESSO DE HAWKES (EVENTOS QUE IMPACTAM O MERCADO)
+# ---------------------------
+
+def hawkes_process(T, mu, alpha, beta):
+    times = []
+    t = 0
+    while t < T:
+        lambda_t = mu + alpha * sum(np.exp(-beta * (t - np.array(times))))
+        w = np.random.exponential(1 / lambda_t)
+        t += w
+        if t < T:
+            times.append(t)
+    return times
+
+df_hawkes = pd.DataFrame({"Data": datas})
+for i, ativo in enumerate(ativos):
+    eventos = hawkes_process(dias, mu=0.5, alpha=0.8, beta=1.2)
+    impactos = np.zeros(dias)
+    for evento in eventos:
+        idx = min(int(evento), dias - 1)
+        impactos[idx] += np.random.uniform(-2, 2)
+    df_hawkes[ativo] = precos_iniciais[i] + np.cumsum(impactos)
+
+
+```
+
+Graficamente temos:
+
+```{r fig.width=9, fig.height=9}
+
+library(tidyverse)
+library(timetk)
+
+# Importar os dados gerados no Python
+df_heston <- py$df_heston
+df_ou <- py$df_ou
+df_hawkes <- py$df_hawkes
+
+# Converter a coluna "Data" para formato Date no R
+df_heston <- df_heston |> mutate(Data = as.Date(Data))
+df_ou <- df_ou |> mutate(Data = as.Date(Data))
+df_hawkes <- df_hawkes |> mutate(Data = as.Date(Data))
+
+# Função para plotar séries temporais
+plot_series <- function(df, title) {
+  df |> 
+    pivot_longer(cols = -Data, names_to = "Ativo", values_to = "Valor") |> 
+    group_by(Ativo) |> 
+    plot_time_series(
+      .date_var = Data,
+      .value = Valor,
+      .interactive = FALSE,
+      .facet_ncol = 2,
+      .smooth = FALSE
+    ) +
+    labs(title = title) +
+    theme(strip.background = element_rect(fill = "white", colour = "white"))
+}
+
+# 📊 Plotar os diferentes modelos
+plot_series(df_heston, "📈 Simulação de Preços com Processo de Heston")
+plot_series(df_ou, "📉 Simulação com Processo de Ornstein-Uhlenbeck (Reversão à Média)")
+plot_series(df_hawkes, "💥 Simulação com Processo de Hawkes (Eventos Impactantes)")
+
+```
+
+🚀 Bibliotecas:
+
+📦 ``sdeint`` (Simulação de processos estocásticos no Python)
+
+## Usando uma distribuição log-normal
+
+Na prática podemos fazer uso de diversas técnicas estatísticas para gerar dados sintéticos, incluindo geração de distribuições como normal, exponencial, uniforme, binomial, Poisson, beta, gama, lognormal e geométrica. E assim, obviamente adaptarmos para geração de dados sintéticos de séries temporais de diferentes padrões.
+
+Para gerar dados sintéticos de séries temporais financeiras com técnicas relacionadas ao que encontramos na literatura especializada, você pode:
+
+$\Rightarrow$ Usar a Distribuição Lognormal:
+
+-   Muitas séries temporais financeiras, como retornos de ativos e preços de ações, seguem distribuições muito próximas a lognormais.
+-   Você pode gerar dados sintéticos de retornos diários e, a partir disso, reconstruir preços sintéticos.
+
+```{python}
+
+# Parâmetros
+np.random.seed(42)  # Ancorando a semente para reprodutibilidade
+dias = 252  # Um ano de pregão
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]  # Preço inicial de cada ativo
+
+# Parâmetros individuais para cada ativo
+mu = [0.0005, 0.0003, 0.0007, 0.0002, 0.0006]  # Retorno médio diário
+sigma = [0.02, 0.025, 0.015, 0.03, 0.018]  # Volatilidade diária
+
+# Criando DataFrame
+datas = pd.date_range(start="2020-01-01", periods=dias, freq="B")
+df_sintetico = pd.DataFrame({"Data": datas})
+
+# Gerando séries temporais sintéticas para cada ativo
+for i, ativo in enumerate(ativos):
+    retornos = np.random.lognormal(mean=mu[i], sigma=sigma[i], size=dias) - 1
+    precos = precos_iniciais[i] * np.cumprod(1 + retornos)
+    df_sintetico[ativo] = precos
+
+```
+
+Graficamente temos:
+
+```{r fig.width=9, fig.height=9}
+
+# Importar os dados gerados no Python
+df_sintetico <- py$df_sintetico
+
+# Converter a coluna "Data" para formato Date no R
+df_sintetico <- df_sintetico |> 
+  rename(date = Data) |> 
+  mutate(date = as.Date(date))
+
+df_sintetico |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+```
+
+## Gerar Séries Temporais com Ruído Gaussiano
+
+Para simular séries temporais financeiras de forma simples, você pode modelar um processo de passeio aleatório com tendência, mais conhecido como Random Walk with drift:
+
+```{python}
+
+# Parâmetros
+np.random.seed(42)  # Ancorando a semente para reprodutibilidade
+dias = 252  # Um ano de pregão
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]  # Preço inicial de cada ativo
+
+# Parâmetros individuais para cada ativo
+tendencias = [0.0003, 0.0001, 0.0005, -0.0002, 0.0004]  # Tendência para Random Walk
+sigma = [0.02, 0.025, 0.015, 0.03, 0.018]  # Volatilidade diária
+
+# Criando DataFrame
+datas = pd.date_range(start="2020-01-01", periods=dias, freq="B")
+df_gaussiano = pd.DataFrame({"Data": datas})
+
+# Gerando séries temporais sintéticas para cada ativo
+for i, ativo in enumerate(ativos):
+    ruido = np.random.normal(loc=0, scale=sigma[i], size=dias)
+    precos_gaussiano = np.cumsum(tendencias[i] + ruido) + precos_iniciais[i]
+    df_gaussiano[ativo] = precos_gaussiano
+
+```
+
+Gráficamente, temos:
+
+```{r fig.width=9, fig.height=9}
+
+# Importar os dados gerados no Python
+df_gaussiano <- py$df_gaussiano
+
+# Converter a coluna "Data" para formato Date no R
+df_gaussiano <- df_gaussiano |> 
+  rename(date = Data) |> 
+  mutate(date = as.Date(date))
+
+df_gaussiano |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+```
+
+## Gerando dataset com GAN
+
+As Redes Adversariais Generativas (GANs) são uma abordagem mais sofisticada para gerar séries temporais sintéticas. Para séries temporais financeiras, pode-se usar TimeGAN, que preserva padrões temporais complexos.
+
+Aqui está um código básico usando PyTorch para treinar uma GAN simples em dados financeiros sintéticos.
+
+Código GAN para Séries Temporais
+
+Aqui, treinamos uma GAN para gerar séries temporais financeiras sintéticas para os 5 ativos.
+
+```{python}
+
+import torch
+import torch.nn as nn
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Parâmetros
+dias = 252
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]
+z_dim = 100
+lr = 0.001
+epochs = 1000
+batch_size = 32
+
+# Criando dataset sintético com GAN
+df_carteira_gan = pd.DataFrame({"Data": pd.date_range(start="2020-01-01", periods=dias, freq="B")})
+
+# Criando Gerador e Discriminador
+class Generator(nn.Module):
+    def __init__(self, input_dim, output_dim):
+        super(Generator, self).__init__()
+        self.model = nn.Sequential(
+            nn.Linear(input_dim, 128),
+            nn.ReLU(),
+            nn.Linear(128, 256),
+            nn.ReLU(),
+            nn.Linear(256, output_dim)
+        )
+    
+    def forward(self, x):
+        return self.model(x)
+
+class Discriminator(nn.Module):
+    def __init__(self, input_dim):
+        super(Discriminator, self).__init__()
+        self.model = nn.Sequential(
+            nn.Linear(input_dim, 256),
+            nn.ReLU(),
+            nn.Linear(256, 128),
+            nn.ReLU(),
+            nn.Linear(128, 1),
+            nn.Sigmoid()
+        )
+    
+    def forward(self, x):
+        return self.model(x)
+
+# Criando GAN para cada ativo
+for ativo, preco_inicial in zip(ativos, precos_iniciais):
+    print(f"Treinando GAN para {ativo}...")
+    
+    # Criando dados reais simulados (caminho aleatório com tendência)
+    tendencia = np.random.uniform(-0.0005, 0.0008)
+    ruido = np.random.normal(0, 0.02, dias)
+    serie_real = np.cumsum(tendencia + ruido) + preco_inicial
+    serie_torch = torch.tensor(serie_real, dtype=torch.float32).view(-1, 1)
+
+    # Instanciando modelos
+    generator = Generator(z_dim, 1)
+    discriminator = Discriminator(1)
+
+    # Função de perda e otimizadores
+    criterion = nn.BCELoss()
+    optimizer_G = torch.optim.Adam(generator.parameters(), lr=lr)
+    optimizer_D = torch.optim.Adam(discriminator.parameters(), lr=lr)
+
+    # Treinamento da GAN
+    for epoch in range(epochs):
+        noise = torch.randn((batch_size, z_dim))
+        fake_data = generator(noise)
+        real_samples = serie_torch[torch.randint(0, len(serie_torch), (batch_size,))]
+
+        optimizer_D.zero_grad()
+        real_loss = criterion(discriminator(real_samples), torch.ones((batch_size, 1)))
+        fake_loss = criterion(discriminator(fake_data.detach()), torch.zeros((batch_size, 1)))
+        d_loss = real_loss + fake_loss
+        d_loss.backward()
+        optimizer_D.step()
+
+        optimizer_G.zero_grad()
+        g_loss = criterion(discriminator(fake_data), torch.ones((batch_size, 1)))
+        g_loss.backward()
+        optimizer_G.step()
+
+        if epoch % 200 == 0:
+            print(f"{ativo} | Epoch {epoch}: Loss D={d_loss.item():.4f}, Loss G={g_loss.item():.4f}")
+
+    # Gerando Série Sintética
+    noise = torch.randn((dias, z_dim))
+    serie_sintetica = generator(noise).detach().numpy().flatten()
+    df_carteira_gan[ativo] = serie_sintetica
+
+# Plotando os ativos gerados por GAN
+#plt.figure(figsize=(12,6))
+#for ativo in ativos:
+#    plt.plot(df_carteira_gan["Data"], df_carteira_gan[ativo], label=ativo)
+#plt.legend()
+#plt.title("Séries Temporais Sintéticas para 5 Ativos (GAN)")
+#plt.xlabel("Data")
+#plt.ylabel("Preço")
+#plt.show()
+
+```
+
+```{r fig.width=9, fig.height=9}
+
+# Importar os dados gerados pela GAN do Python para o R
+df_carteira_gan <- py$df_carteira_gan
+
+# Converter a coluna "Data" para formato Date no R
+df_carteira_gan <- df_carteira_gan |> 
+  rename(date = Data) |> 
+  mutate(date = as.Date(date))
+
+df_carteira_gan |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+
+```
+
+## AutoEncoders Variacionais (VAE)
+
+<mark> Desativado nas células em função do tempo de execução </mark>
+
+-   O VAE aprende a codificar séries temporais em um espaço latente e gera novas séries a partir dessa distribuição.
+-   Ele é útil para gerar dados sintéticos que preservam padrões temporais complexos sem depender de distribuições pré-definidas.
+
+```{python}
+#| eval: false
+
+# O comando abaixo da célula Python #| eval: false desativa a execução da célula em questão
+
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.layers import Input, Dense, Lambda
+from tensorflow.keras.models import Model
+from tensorflow.keras import backend as K
+import matplotlib.pyplot as plt
+
+# Ancorando a semente para reprodutibilidade
+np.random.seed(42)
+tf.random.set_seed(42)
+
+# Parâmetros
+dias = 252  # Um ano de pregão
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]
+tendencias = [0.0005, 0.0002, 0.0008, -0.0003, 0.0006]
+volatilidades = [0.02, 0.03, 0.015, 0.025, 0.018]
+
+# Criando dataset inicial de séries reais simuladas
+datas = pd.date_range(start="2025-01-01", periods=dias, freq="B")
+df_real = pd.DataFrame({"Data": datas})
+
+series_real = []
+for i in range(len(ativos)):
+    ruido = np.random.normal(loc=0, scale=volatilidades[i], size=dias)
+    serie = np.cumsum(tendencias[i] + ruido) + precos_iniciais[i]
+    series_real.append(serie)
+    df_real[ativos[i]] = serie
+
+# Normalizando os dados para o intervalo [0,1]
+series_real = np.array(series_real)
+series_min = series_real.min(axis=1, keepdims=True)
+series_max = series_real.max(axis=1, keepdims=True)
+series_real_norm = (series_real - series_min) / (series_max - series_min)
+
+# Definindo o VAE
+original_dim = dias  # Número de dias de negociação
+latent_dim = 2  # Dimensão do espaço latente
+intermediate_dim = 64  # Camada oculta intermediária
+
+# Encoder
+inputs = Input(shape=(original_dim,))
+h = Dense(intermediate_dim, activation="relu")(inputs)
+z_mean = Dense(latent_dim)(h)
+z_log_var = Dense(latent_dim)(h)
+
+# Amostragem usando reparametrização
+def sampling(args):
+    z_mean, z_log_var = args
+    batch = K.shape(z_mean)[0]
+    dim = K.int_shape(z_mean)[1]
+    epsilon = K.random_normal(shape=(batch, dim), mean=0., stddev=1.0)
+    return z_mean + K.exp(0.5 * z_log_var) * epsilon
+
+z = Lambda(sampling)([z_mean, z_log_var])
+
+# Decoder
+decoder_h = Dense(intermediate_dim, activation="relu")
+decoder_mean = Dense(original_dim, activation="sigmoid")
+h_decoded = decoder_h(z)
+outputs = decoder_mean(h_decoded)
+
+# Definição do modelo VAE
+vae = Model(inputs, outputs)
+
+# Função de perda correta
+reconstruction_loss = keras.losses.mean_squared_error(inputs, outputs)
+reconstruction_loss = K.sum(reconstruction_loss)  # Evita NoneType Error
+kl_loss = -0.5 * K.sum(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
+
+vae_loss = K.mean(reconstruction_loss + kl_loss)
+vae.add_loss(vae_loss)  # Adiciona corretamente ao modelo
+vae.compile(optimizer="adam")
+
+# Treinamento do VAE
+vae.fit(series_real_norm, epochs=300, batch_size=5, verbose=1)
+
+# Gerando novas séries sintéticas
+latent_samples = np.random.normal(size=(len(ativos), latent_dim))
+decoder_input = keras.Input(shape=(latent_dim,))
+_h_decoded = decoder_h(decoder_input)
+_x_decoded_mean = decoder_mean(_h_decoded)
+generator = Model(decoder_input, _x_decoded_mean)
+
+series_sinteticas_norm = generator.predict(latent_samples)
+
+# Convertendo de volta para a escala original
+series_sinteticas = series_sinteticas_norm * (series_max - series_min) + series_min
+
+# Criando DataFrame com os dados gerados
+df_vae = pd.DataFrame(series_sinteticas.T, index=datas, columns=ativos)
+df_vae.reset_index(inplace=True)
+df_vae.rename(columns={"index": "Data"}, inplace=True)
+
+
+```
+
+Graficamente ele fica:
+
+```{r fig.width=9, fig.height=9, eval=FALSE}
+
+# O comando , eval=FALSE desativa a execução da célula R em questão
+
+library(tidyverse)
+library(timetk)
+
+# Importar os dados gerados no Python
+df_vae <- py$df_vae
+
+# Converter a coluna "Data" para formato Date no R
+df_vae <- df_vae |> 
+  rename(date = Data) |> 
+  mutate(date = as.Date(date))
+
+# Visualizar os dados sintéticos do VAE
+df_vae |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+```
+
+
+## TimeGAN
+
+O Time-Series Generative Adversarial Network (TimeGAN) é um modelo de redes neurais profundas projetado especificamente para geração de séries temporais sintéticas. Ele combina autoencoders, redes adversariais generativas (GANs) e redes recorrentes (RNNs/LSTMs) para aprender e gerar dados sintéticos que preservam tanto as distribuições estatísticas quanto as dependências temporais dos dados reais.
+
+```{python}
+#| eval: false
+
+
+import tensorflow as tf
+from tensorflow.keras.models import Model
+import matplotlib.pyplot as plt
+
+from timegan import TimeGAN
+
+# Ancorando a semente para reprodutibilidade
+np.random.seed(42)
+tf.random.set_seed(42)
+
+# Parâmetros
+dias = 252  # Um ano de pregão
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]
+tendencias = [0.0005, 0.0002, 0.0008, -0.0003, 0.0006]
+volatilidades = [0.02, 0.03, 0.015, 0.025, 0.018]
+
+# Criando dataset inicial de séries reais simuladas
+datas = pd.date_range(start="2025-01-01", periods=dias, freq="B")
+df_real = pd.DataFrame({"Data": datas})
+
+series_real = []
+for i in range(len(ativos)):
+    ruido = np.random.normal(loc=0, scale=volatilidades[i], size=dias)
+    serie = np.cumsum(tendencias[i] + ruido) + precos_iniciais[i]
+    series_real.append(serie)
+    df_real[ativos[i]] = serie
+
+# Normalizando os dados para o intervalo [0,1]
+series_real = np.array(series_real).T  # Transpor para (dias, ativos)
+series_min = series_real.min(axis=0, keepdims=True)
+series_max = series_real.max(axis=0, keepdims=True)
+series_real_norm = (series_real - series_min) / (series_max - series_min)
+
+# Configuração do TimeGAN
+timegan = TimeGAN(epochs=500, batch_size=32, latent_dim=5)
+
+# Treinando o TimeGAN com os dados normalizados
+timegan.fit(series_real_norm)
+
+# Gerando dados sintéticos com TimeGAN
+series_sinteticas_norm = timegan.generate(n_samples=dias)
+
+# Convertendo de volta para a escala original
+series_sinteticas = series_sinteticas_norm * (series_max - series_min) + series_min
+
+# Criando DataFrame com os dados gerados
+df_timegan = pd.DataFrame(series_sinteticas, index=datas, columns=ativos)
+df_timegan.reset_index(inplace=True)
+df_timegan.rename(columns={"index": "Data"}, inplace=True)
+
+
+```
+
+
+Graficamente
+
+```{r fig.width=9, fig.height=9, eval=FALSE}
+
+library(tidyverse)
+library(timetk)
+
+# Importar os dados gerados no Python
+df_timegan <- py$df_timegan
+
+# Converter a coluna "Data" para formato Date no R
+df_timegan <- df_timegan |> 
+  rename(date = Data) |> 
+  mutate(date = as.Date(date))
+
+# Visualizar os dados sintéticos do TimeGAN
+df_timegan |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+
+```
+
+
+## RNNs, LSTMs e GRUs
+
+- Treinaremos um modelo de LSTM para aprender padrões de séries temporais financeiras.
+- Depois, geramos novas séries sintéticas com a LSTM treinada.
+
+```{python}
+#| eval: false
+
+# Celula inativada com o comando no #| eval: false no incio pelo tempo demorado de execução
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, TensorDataset
+
+# 📌 Fixando a semente para reprodutibilidade
+np.random.seed(42)
+torch.manual_seed(42)
+
+# 📌 Parâmetros
+dias = 500  
+ativos = ["Ativo A", "Ativo B", "Ativo C", "Ativo D", "Ativo E"]
+precos_iniciais = [100, 50, 200, 30, 150]
+seq_length = 50  # 🔥 Aumentando para capturar mais padrões
+num_simulacoes = 5  # 🔥 Geraremos múltiplas séries e tiramos a média
+
+# 🔥 Simulação de séries financeiras com mais variação
+tendencias = [0.0005, 0.0002, 0.0008, -0.0003, 0.0006]
+volatilidades = [0.02, 0.03, 0.015, 0.025, 0.018]
+
+# Criando DataFrame de séries reais simuladas
+datas = pd.date_range(start="2025-01-01", periods=dias, freq="B")
+df_real = pd.DataFrame({"Data": datas})
+
+series_real = []
+for i in range(len(ativos)):
+    ruido = np.random.normal(loc=0, scale=volatilidades[i], size=dias)
+    serie = np.cumsum(tendencias[i] + ruido) + precos_iniciais[i]
+    series_real.append(serie)
+    df_real[ativos[i]] = serie
+
+# 📌 Normalizando os dados entre 0 e 1
+series_real = np.array(series_real).T
+series_min = series_real.min(axis=0)
+series_max = series_real.max(axis=0)
+series_real_norm = (series_real - series_min) / (series_max - series_min)
+
+# Criando dados para treino (janelas de tempo)
+def create_sequences(data, seq_length):
+    sequences, targets = [], []
+    for i in range(len(data) - seq_length):
+        sequences.append(data[i : i + seq_length])
+        targets.append(data[i + seq_length])
+    return np.array(sequences), np.array(targets)
+
+X, y = create_sequences(series_real_norm, seq_length)
+
+# Convertendo para tensores PyTorch
+X_tensor = torch.tensor(X, dtype=torch.float32)
+y_tensor = torch.tensor(y, dtype=torch.float32)
+
+# Criando DataLoader
+dataset = TensorDataset(X_tensor, y_tensor)
+dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+
+# 📌 Modelo LSTM Melhorado 🔥
+class AdvancedLSTM(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim, num_layers, dropout):
+        super(AdvancedLSTM, self).__init__()
+        self.lstm = nn.LSTM(input_dim, hidden_dim, num_layers, batch_first=True, dropout=dropout, bidirectional=True)
+        self.fc = nn.Linear(hidden_dim * 2, output_dim)  # Multiplicado por 2 por ser bidirectional
+        self.dropout = nn.Dropout(dropout)
+
+    def forward(self, x):
+        lstm_out, _ = self.lstm(x)
+        out = self.dropout(lstm_out[:, -1])
+        return self.fc(out)
+
+# 📌 Ajustando hiperparâmetros 🔥
+input_dim = len(ativos)
+hidden_dim = 256  # 🔥 Aumentando capacidade
+output_dim = len(ativos)
+num_layers = 4  # 🔥 Aumentando camadas
+dropout = 0.3  # 🔥 Dropout mais alto
+
+# Criando modelo
+model = AdvancedLSTM(input_dim, hidden_dim, output_dim, num_layers, dropout)
+
+# 📌 Treinamento com mais épocas e regularização 🔥
+criterion = nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=0.0005)  # 🔥 Taxa de aprendizado menor
+epochs = 300  # 🔥 Aumentando epochs
+
+for epoch in range(epochs):
+    total_loss = 0
+    for batch_X, batch_y in dataloader:
+        optimizer.zero_grad()
+        output = model(batch_X)
+        loss = criterion(output, batch_y)
+        loss.backward()
+        optimizer.step()
+        total_loss += loss.item()
+    
+    if (epoch + 1) % 25 == 0:
+        print(f"Epoch {epoch+1}/{epochs}, Loss: {total_loss:.4f}")
+
+# 📌 Gerando múltiplas simulações 🔥
+def generate_synthetic_data(model, initial_seq, num_steps=252, num_sim=5):
+    model.eval()
+    all_sims = []
+    for _ in range(num_sim):
+        generated_data = []
+        input_seq = torch.tensor(initial_seq, dtype=torch.float32).unsqueeze(0)
+
+        for _ in range(num_steps):
+            with torch.no_grad():
+                next_step = model(input_seq).detach().numpy()
+            generated_data.append(next_step)
+            input_seq = torch.cat([input_seq[:, 1:], torch.tensor(next_step).unsqueeze(0)], dim=1)
+
+        all_sims.append(np.array(generated_data).squeeze())
+
+    return np.mean(all_sims, axis=0)  # 🔥 Tiramos a média das simulações para suavizar padrões
+
+# Pegando a última janela de dados reais para iniciar a geração
+initial_seq = series_real_norm[-seq_length:]
+generated_series_norm = generate_synthetic_data(model, initial_seq)
+
+# 📌 Convertendo de volta para a escala original
+generated_series = generated_series_norm * (series_max - series_min) + series_min
+
+# Criando DataFrame com os dados gerados
+df_lstm_advanced = pd.DataFrame(generated_series, index=datas[:len(generated_series)], columns=ativos)
+df_lstm_advanced.reset_index(inplace=True)
+df_lstm_advanced.rename(columns={"index": "Data"}, inplace=True)
+
+
+```
+
+
+Graficamente:
+
+```{r fig.width=9, fig.height=9, eval=FALSE}
+
+# Se quiser executar essa celula retire do chunk o argumento ,eval=FALSE
+
+# Importar os dados gerados no Python
+df_lstm <- py$df_lstm
+
+# Converter a coluna "Data" para formato Date no R
+df_lstm <- df_lstm |> 
+  rename(date = Data) |> 
+  mutate(date = as.Date(date))
+
+# 📊 Visualizar os dados sintéticos da LSTM
+df_lstm |> 
+  pivot_longer(
+    cols = -date,  # Todas as colunas, exceto "date"
+    names_to = "Ativo",
+    values_to = "Valor"
+  ) |> 
+  group_by(Ativo) |> 
+  plot_time_series(
+    .date_var = date,
+    .value = Valor,
+    .interactive = FALSE,  # Mude para TRUE para visualização interativa
+    .facet_ncol = 2,
+    .smooth = FALSE
+  ) +
+  theme(
+    strip.background = element_rect(fill = "white", colour = "white")
+  )
+
+
+```
+
+
+
+:::
+
+# 📊 Comparação dos Métodos de Geração de Dados Sintéticos
+
+Cada uma das abordagens apresentadas para a geração de séries temporais sintéticas possui vantagens e desvantagens. A tabela a seguir compara os métodos discutidos:
+
+| Método | Características | Vantagens | Desvantagens | Melhor Uso |
+|--------|---------------|-----------|--------------|------------|
+| **Movimento Browniano Geométrico (MGB)** | Baseado em um processo estocástico com retorno e volatilidade constantes | Simples de implementar e amplamente utilizado | Não captura mudanças de volatilidade e choques de mercado | Modelagem básica de preços de ativos financeiros |
+| **Distribuição Log-normal** | Gera retornos diários e reconstrói preços sintéticos | Captura a distribuição empírica dos retornos | Não incorpora dependências temporais | Simulação de séries financeiras individuais |
+| **Ruído Gaussiano** | Modela séries como processos de ruído branco com tendência | Fácil de calibrar | Não reflete efeitos de autocorrelação | Simulações de séries estacionárias e processos aleatórios |
+| **Processo de Heston** | Modela volatilidade estocástica ao longo do tempo | Captura dinâmica realista de volatilidade | Complexidade computacional elevada | Precificação de opções e avaliação de risco |
+| **Processo de Ornstein-Uhlenbeck** | Modela reversão à média | Adequado para ativos estacionários | Não reflete grandes variações de mercado | Modelagem de taxas de juros e commodities |
+| **Processo de Hawkes** | Modela impactos repentinos e eventos exógenos | Captura choques de liquidez e "efeito manada" | Requer calibração cuidadosa | Análise de impacto de notícias no mercado |
+| **GANs (Redes Adversariais Generativas)** | Redes neurais adversárias geram séries temporais | Capacidade de aprender padrões temporais complexos | Treinamento complexo e propenso a instabilidade | Geração de séries realistas para testes de modelos de trading |
+| **Autoencoders Variacionais (VAE)** | Compacta séries no espaço latente e reconstrói | Captura padrões de longo prazo | Pode perder variabilidade estocástica | Geração de séries sintéticas para análise de risco |
+| **TimeGAN** | Aprendizagem profunda com memória temporal | Mantém padrões estatísticos e temporais | Alto custo computacional e necessidade de grande volume de dados | Modelagem realista de séries financeiras complexas |
+| **RNNs, LSTMs e GRUs** | Modelos baseados em redes neurais recorrentes | Capturam dependências temporais e padrões ocultos | Treinamento complexo e demanda muitos dados | Simulação de séries financeiras com memória temporal |
+
+---
+
+
+### 📌 Escolhendo o Método Adequado
+
+A escolha do método ideal para gerar dados sintéticos depende do objetivo da análise:
+
+-   **Se o foco for replicar padrões estatísticos gerais do mercado**, o **MGB** pode ser suficiente.
+-   **Se for necessário capturar efeitos de retornos assimétricos e volatilidade variável**, a **distribuição lognormal** pode ser uma boa alternativa.
+-   **Se for apenas um teste de modelagem sem preocupação com estruturação realista**, um **random walk com drift** pode funcionar.
+-   **Se a necessidade for criar séries sintéticas que preservem as propriedades temporais e padrões estruturais reais dos mercados financeiros**, então **GANs** são a melhor escolha.
+
+📌 **Resumo:**
+- Métodos estocásticos como **MGB, Heston e OU** são ideais para modelagem financeira teórica.
+- **TimeGAN e RNNs** são mais realistas, mas exigem alto poder computacional.
+- **GANs e VAEs** são boas alternativas para replicar padrões complexos.
+- **Processos Hawkes** são ideais para capturar eventos exógenos como choques de mercado.
+
+### 🔥 Conclusão
+
+Os métodos de geração de dados sintéticos apresentados oferecem ferramentas poderosas para análise e modelagem de séries temporais financeiras. Dependendo da aplicação, pode ser necessário combinar diferentes abordagens ou escolher aquela que melhor se adapta ao problema. A capacidade de gerar dados sintéticos não apenas permite a experimentação sem a necessidade de dados históricos reais, mas também abre novas possibilidades para pesquisa, desenvolvimento de algoritmos e análise de risco no mercado financeiro.
+
+:::
+
+## 📢 Notícias e Publicações sobre Dados Sintéticos
+
+### 🗓️ 04/07/2024 - Gartner Revela o Futuro da IA Generativa
+
+-   Até 2026, **75% das empresas** usarão IA generativa para criar dados sintéticos de clientes.\
+-   Segundo a consultoria **McKinsey**, o uso de dados sintéticos pode acelerar o desenvolvimento de IA em **até 50%**.\
+-   A **PwC** estima que o uso de dados sintéticos pode reduzir os custos de desenvolvimento de software em **até 30%**.\
+    🔗 [Leia mais](https://imasters.com.br/generative-ai/gartner-revela-o-futuro-da-ia-generativa)
+
+------------------------------------------------------------------------
+
+### 🗓️ 23/01/2023 - MIT Management Sloan School: O que são dados sintéticos — e como podem ajudar competitivamente?
+
+-   **Dados sintéticos**, que se assemelham a conjuntos de dados reais, **não comprometem a privacidade**, permitindo que empresas compartilhem dados e criem algoritmos com mais facilidade.\
+    🔗 [Leia mais](https://mitsloan.mit.edu/ideas-made-to-matter/what-synthetic-data-and-how-can-it-help-you-competitively)
+
+------------------------------------------------------------------------
+
+### 🏛️ EDPS - European Data Protection Supervisor
+
+-   **Synthetic Dice**: estudo sobre o impacto dos dados sintéticos na privacidade e segurança dos dados na Europa.\
+    🔗 [Leia mais](https://www.edps.europa.eu/press-publications/publications/techsonar/synthetic-data_en)
+
+### 📑 Publicação EDPS – Multipurpose Synthetic Population for Policy Applications
+
+-   **Autores**: Hradec, J., Craglia, M., Di Leo, M., De Nigris, S., Ostlaender, N. e Nicholson, N.\
+-   **Publicação**: EUR 31116 EN, Publications Office of the European Union, 2022\
+-   **Resumo**: Uso de populações sintéticas para formulação de políticas públicas.\
+    🔗 [Leia o estudo](https://publications.jrc.ec.europa.eu/repository/handle/JRC128595)
+
+------------------------------------------------------------------------
+
+### 🗓️ 19/02/2024 - EUA: Synthetic Data na Legislação dos EUA e da UE
+
+-   **Discussão legal** sobre o papel dos dados sintéticos nas regulamentações de privacidade e proteção de dados nos Estados Unidos e União Europeia.\
+    🔗 [Leia mais](https://jipel.law.nyu.edu/what-is-the-place-of-synthetic-data-in-us-and-eu-laws/)
+
+### 🗓️ 15/03/2024 - Iowa Law Review: Implicações Legais da Revolução dos Dados Sintéticos
+
+-   **Exploração do impacto jurídico** da geração de dados sintéticos no cenário regulatório internacional.\
+    🔗 [Leia mais](https://ilr.law.uiowa.edu/volume-109-issue-3/2024/03/synthetic-data-legal-implications-data-generation-revolution)
+
+------------------------------------------------------------------------
+
+### 🗓️ 22/06/2022 - Gartner: Dados Sintéticos são o Futuro da IA?
+
+-   **Gartner** explora como os dados sintéticos podem se tornar a **principal fonte de treinamento** para IA nos próximos anos.\
+    🔗 [Leia mais](https://www.gartner.com/en/newsroom/press-releases/2022-06-22-is-synthetic-data-the-future-of-ai)
+
+### 🗓️ 14/10/2022 - MIT Technology Review: Dados Sintéticos e a Nova Fronteira da IA
+
+-   **Adoção crescente** de dados sintéticos e seu papel fundamental no avanço da **inteligência artificial**.\
+    🔗 [Leia mais](https://mittechreview.com.br/dados-sinteticos-a-nova-fronteira-da-inteligencia-artificial/)
+
+### 🗓️ 18/06/2022 - Forbes: Dados Sintéticos Transformando a Inteligência Artificial
+
+-   Como os **dados sintéticos** podem revolucionar o treinamento de modelos de **machine learning**.\
+    🔗 [Leia mais](https://forbes.com.br/forbes-tech/2022/06/dados-sinteticos-estao-prestes-a-transformar-a-inteligencia-artificial/)
+
+### 🗓️ 12/08/2022 - Já ouviu falar em Dados Sintéticos?
+
+-   Segundo o **Gartner**, até 2024, **60% dos dados** utilizados no desenvolvimento de IA e analytics serão **gerados sinteticamente**.\
+    🔗 [Leia mais](https://www.eucapacito.com.br/tecnologia/ja-ouviu-falar-em-dados-sinteticos/)
+
+### Acesse o notebook criado pelo prof. Leandro Coelho sobre dados sintéticos
+
+-   [Aqui em nosso Drive é possível acessar o notebook do prof. Leandro sobre geração de dados sintéticos, sem necessariamente ficarmos limitados a séries temporais financeiras](https://drive.google.com/file/d/1XpqoCJ_fbqDRex2XRSvik7uq0BePcrXw/view?usp=drive_link)
+
+# Próximos passos
+
+Após selecionar com seu grupo (de até no máximo 4 integrantes) se vão utilizar:
+
+-   dados de datasets conhecidos,
+-   dataset obtido a partir de dados reais via APIs
+-   conjunto de dados (portfolio ou carteira) artificializada com alguma técnica de geração de dados sintéticos
+
+[Preencha a planilha a seguir no nosso Google Sheets aqui](https://docs.google.com/spreadsheets/d/11zM480JTGnJuDgGZIXadHUrZQb4CmSyRVNQIwLkQGS0/edit?usp=sharing)
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFbeodBeMyHsSjHVNVEWvgl7qaz7v8ji5ixK66Oi_tfLuX0VuE05xHClrS_dxrEK5jKbwTNlhIUzx4/pubhtml?widget=true&amp;headers=false">
+
+</iframe>
+
+$\Rightarrow$ e acompanhe [nosso cronograma da disciplina e do projeto](https://profrhozon.github.io/site/EmentaBigDataFinProj.html) em para evoluirem e apresentarem em cada encontro cada entrega que for solicitada.
+
+ 
+
+ 
+
+------------------------------------------------------------------------
+
+# References
+
+------------------------------------------------------------------------
+
+Coelho, L., S. 
+
+Stasinopoulos, D. M., Rigby, R. A., Heller, G. Z., & Lovell, D. (2017). **Generalized Additive Models for Location, Scale and Shape (GAMLSS) in R: The gamlss package.** The R Journal, 9(2), 288–300.
+
+Lo, A. W. & MacKinlay, A. C. (2011). **A Non-Random Walk Down Wall Street.** Princeton University Press.
+
+Cont, R. (2001). **Empirical properties of asset returns: stylized facts and statistical issues.** Quantitative Finance, 1(2), 223–236.\
+[DOI: 10.1088/1469-7688/1/2/304](https://doi.org/10.1088/1469-7688/1/2/304)
+
+Goodfellow, I., Bengio, Y., & Courville, A. (2016). **Deep Learning.** MIT Press.
+
+Brockwell, P. J., & Davis, R. A. (2016). **Introduction to Time Series and Forecasting.** Springer.
+
+McKinney, W. (2017). **Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython.** O'Reilly Media.
+
+Kingma, D. P., & Welling, M. (2013). **Auto-Encoding Variational Bayes.** arXiv preprint arXiv:1312.6114.\
+[Link para o paper](https://arxiv.org/abs/1312.6114)
+
+Radford, A., Metz, L., & Chintala, S. (2015). **Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks.** arXiv preprint arXiv:1511.06434.\
+[Link para o paper](https://arxiv.org/abs/1511.06434)
+
+**Cuenca, P., Passos, A., Sanseviero, O., Whitaker, J. (2023)**. [Hands-On generative AI with transformers and diffusion models](https://www.oreilly.com/library/view/hands-on-generative-ai/9781098149239/), O'Reilly Media.
+
+**El Eman, K., Mosquera, L., Hoptroff, R. (2020)**. [Practical synthetic data generation: Balancing privacy and the broad availability of data](https://www.oreilly.com/library/view/practical-synthetic-data/9781492072737/), O'Reilly Media.
+
+**Gürsakal, N., Çelik, S., Birişçi, E. (2022)**. [Synthetic data for deep learning: Generate synthetic data for decision making and applications with Python and R](https://link.springer.com/book/10.1007/978-1-4842-8587-9), Apress. [Code](https://github.com/Apress/synthetic-data-deep-learning)
+
+**Mao, X., Li, Q. (2021)**. [Generative adversarial networks for image generation](https://link.springer.com/book/10.1007/978-981-33-6048-8), Springer, Berlin, Germany.
+
+ 
+
+ 

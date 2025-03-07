@@ -16,6 +16,8 @@ website:
             text: "Criando seu portfolio numa Github page"
           - href: presFAE.qmd
             text: "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
+          - href: Apres_encontro2.qmd
+            text: "To do list segundo encontro"
 
       - section: "Risk Management"
         contents:
