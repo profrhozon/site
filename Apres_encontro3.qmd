@@ -1,0 +1,133 @@
+---
+title: "Big Data for Finance Project"
+subtitle: "***Terceiro encontro***"
+author: <a href="https://rhozon.github.io/selecaodeprodutosnor/index.html">Rodrigo Hermont Ozon</a>
+author-meta: "<a href='https://rhozon.github.io/selecaodeprodutosnor/index.html'>Rodrigo Hermont Ozon</a>"
+date: "14-mar-2025"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png"
+    data-background-size: contain
+    data-background-opacity: "number"
+format:
+  revealjs:
+    incremental: true   
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    css: stylespres.css
+    subtitle-font-size: 8
+---
+
+```{css, include=FALSE}
+
+.title {
+  font-size: 60px !important;
+  color: red !important;
+}
+
+.author {
+  font-size: 50px;
+  color: blue;
+}
+
+.date {
+  font-size: 50px;
+  color: green;
+}
+
+```
+
+```{r setup, include=FALSE}
+
+start_time <- Sys.time()
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA)    # Remove all coments # of R outputs
+knitr::opts_chunk$set(warning = FALSE) # Remove all warnings # of R outputs
+knitr::opts_chunk$set(message = FALSE) # Remove all messages # of R outputs
+
+```
+
+## Objetivos de hoje {background-color="white" background-image="https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png" background-size="1500px" background-repeat="no-repeat"}
+
+ 
+
+<font size = 5>
+
+-   **Feature Engineering** 
+  - Básico para uma análise risco x retorno de uma carteira de ativos financeiros;
+
+- **EDA**
+  - Inicial pra avaliarmos como deveremos lidar com valores extremos e padrões distribucionais
+  
+- **Modelagem de Volatilidade**
+  - O uso de log-retornos dia-a-dia
+  - O uso de desvio-padrão dos retornos (range de dias $\Rightarrow$ incompatível com os retornos diários)
+  - O uso de modelos da família GARCH pra modelar volatilidade (risco) dia a dia x retornos dia-a-dia
+
+</font>
+
+
+
+## Agenda (to do de hoje) {background-color="white" background-image="https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png" background-size="1500px" background-repeat="no-repeat"}
+
+<font size = 4>
+
+1. **Acessar o [Google Drive da FAE](https://drive.google.com/drive/folders/1Oz_oeqgPpAyqHHjupmfnqkTICGa7kJks?usp=sharing)** e baixar, na pasta do nosso terceiro encontro, os arquivos:  
+   - `FeatEngFinancial.qmd` (código-fonte)  
+   - `.html` correspondente (para visualização rápida)  
+
+2. **Rodar o arquivo `.qmd`** na sua IDE (instalar pacotes e bibliotecas do **R** e **Python**, se necessário).  
+3. **Formar grupos** de até **4 integrantes** para trabalharem juntos ao longo da disciplina de projetos.  
+
+4. **Apresentação**: Prof. Rodrigo introduz o conteúdo do `.qmd`.  
+
+5. **Adaptar esse código do .qmd** pra rodar num notebook do Colab em sala de aula sobre feature eng. e preparar pra upar o próximo post deste conteúdo na github page do seu grupo durante a semana;
+
+6. **Apresentações rápidas por grupo**: Apresentar o site do grupo publicado na GitHub page e mostrar o conjunto de dados da carteira montada (15 mins por grupo)
+
+7. 🚀 **Para o próximo encontro**:  
+<mark>Cada grupo deverá apresentar sua página no GitHub e publicar um post (usando **R** ou **Python**) mostrando como fez a feature eng pra carteira de ativos selecionada.</mark>  
+
+</font>
+
+## Obrigado! {background-color="white" background-image="https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png" background-size="1500px" background-repeat="no-repeat"}
+
+ 
+
+<font size = 6>
+
+::: {.callout-note appearance="simple"}
+## Rodrigo Hermont Ozon
+
+$\Rightarrow$ Agradecimentos à todos os alunos, futuros Data Scientists:
+
+-   Meu perfil no [Google Scholar](https://scholar.google.com/citations?user=hPcIR9oAAAAJ&hl=en)
+-   Meu [CV Lattes](http://lattes.cnpq.br/3532649625879285)
+-   Meu [site com posts, tutoriais e artigos](https://rhozon.github.io/selecaodeprodutosnor/index.html)
+-   Meu [perfil no LinkeDin](https://www.linkedin.com/in/rodrigohermontozon/)
+:::
+
+ 
+
+ 
+
+```{=html}
+
+<p style="font-family: times, serif; font-size:11pt; font-style:italic"; class="quote">
+
+"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.
+
+[... Capitalism requires] the perennial gale of Creative Destruction." Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011. 
+
+</p>
+```
+
+</font>
+

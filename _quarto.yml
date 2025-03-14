@@ -18,6 +18,8 @@ website:
             text: "Análise de Dados do Mercado Financeiro: utilizando R ou Python com ferramentas de Big Data"
           - href: Apres_encontro2.qmd
             text: "To do list segundo encontro"
+          - href: Apres_encontro3.qmd
+            text: "To do list terceiro encontro"
 
       - section: "Risk Management"
         contents:
