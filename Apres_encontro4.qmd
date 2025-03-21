@@ -1,0 +1,113 @@
+---
+title: "Big Data for Finance Project"
+subtitle: "***Quarto encontro***"
+author: <a href="https://rhozon.github.io/selecaodeprodutosnor/index.html">Rodrigo Hermont Ozon</a>
+author-meta: "<a href='https://rhozon.github.io/selecaodeprodutosnor/index.html'>Rodrigo Hermont Ozon</a>"
+date: "21-mar-2025"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png"
+    data-background-size: contain
+    data-background-opacity: "number"
+format:
+  revealjs:
+    incremental: true   
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    css: stylespres.css
+    subtitle-font-size: 8
+---
+
+```{css, include=FALSE}
+
+.title {
+  font-size: 60px !important;
+  color: red !important;
+}
+
+.author {
+  font-size: 50px;
+  color: blue;
+}
+
+.date {
+  font-size: 50px;
+  color: green;
+}
+
+```
+
+```{r setup, include=FALSE}
+
+start_time <- Sys.time()
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA)    # Remove all coments # of R outputs
+knitr::opts_chunk$set(warning = FALSE) # Remove all warnings # of R outputs
+knitr::opts_chunk$set(message = FALSE) # Remove all messages # of R outputs
+
+```
+
+## Objetivos de hoje {background-color="white" background-image="https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png" background-size="1500px" background-repeat="no-repeat"}
+
+ 
+
+<font size = 5>
+
+-   **Técnicas de redução de dimensionalidade em séries temporais financeiras. O impacto do Big Data na decisão humana.** 
+  - Case de aplicação de uso de redução de dimensionalidade em dados financeiros complexos em grande volume
+
+
+</font>
+
+
+
+## Agenda (to do de hoje) {background-color="white" background-image="https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png" background-size="1500px" background-repeat="no-repeat"}
+
+<font size = 4>
+
+1. **Prof. Rodrigo H. Ozon** apresenta o case
+
+2. Grupos apresentam o post de feature engineering e análises preliminares (15 mins por grupo)
+
+</font>
+
+## Obrigado! {background-color="white" background-image="https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png" background-size="1500px" background-repeat="no-repeat"}
+
+ 
+
+<font size = 6>
+
+::: {.callout-note appearance="simple"}
+## Rodrigo Hermont Ozon
+
+$\Rightarrow$ Agradecimentos à todos os alunos, futuros Data Scientists:
+
+-   Meu perfil no [Google Scholar](https://scholar.google.com/citations?user=hPcIR9oAAAAJ&hl=en)
+-   Meu [CV Lattes](http://lattes.cnpq.br/3532649625879285)
+-   Meu [site com posts, tutoriais e artigos](https://rhozon.github.io/selecaodeprodutosnor/index.html)
+-   Meu [perfil no LinkeDin](https://www.linkedin.com/in/rodrigohermontozon/)
+:::
+
+ 
+
+ 
+
+```{=html}
+
+<p style="font-family: times, serif; font-size:11pt; font-style:italic"; class="quote">
+
+"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.
+
+[... Capitalism requires] the perennial gale of Creative Destruction." Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011. 
+
+</p>
+```
+
+</font>
