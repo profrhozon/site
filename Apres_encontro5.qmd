@@ -1,0 +1,185 @@
+---
+title: "Big Data for Finance Project"
+subtitle: "***Quinto encontro***"
+author: <a href="https://rhozon.github.io/selecaodeprodutosnor/index.html">Rodrigo Hermont Ozon</a>
+author-meta: "<a href='https://rhozon.github.io/selecaodeprodutosnor/index.html'>Rodrigo Hermont Ozon</a>"
+date: "28-mar-2025"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png"
+    data-background-size: contain
+    data-background-opacity: "number"
+format:
+  revealjs:
+    incremental: true   
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    css: stylespres.css
+    subtitle-font-size: 8
+---
+
+```{css, include=FALSE}
+
+.title {
+  font-size: 60px !important;
+  color: red !important;
+}
+
+.author {
+  font-size: 50px;
+  color: blue;
+}
+
+.date {
+  font-size: 50px;
+  color: green;
+}
+
+```
+
+```{r setup, include=FALSE}
+
+start_time <- Sys.time()
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA)    # Remove all coments # of R outputs
+knitr::opts_chunk$set(warning = FALSE) # Remove all warnings # of R outputs
+knitr::opts_chunk$set(message = FALSE) # Remove all messages # of R outputs
+
+```
+
+
+## Objetivos de hoje {background-color=\"white\" background-image=\"https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png\" background-size=\"1500px\" background-repeat=\"no-repeat\"}
+
+<font size = 5>
+
+-   **Mostrar a importância de compreendermos umm pouco sobre Modelos causais vs. modelos de Machine Learning (black-box) na previsão de séries temporais de preços de ativos financeiros. Comparação de performance de modelos.**
+
+- Avançarmos na análise da performance básica do nosso portfólio selecionado (forneço um .qmd no Drive)
+
+</font>
+
+## Agenda (to do de hoje) {background-color=\"white\" background-image=\"https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png\" background-size=\"1500px\" background-repeat=\"no-repeat\"}
+
+<font size = 4>
+
+1. Introdução ao tema
+
+2. Modelos causais vs. Modelos de Machine Learning
+    - Definições e conceitos
+    - Aplicações práticas
+    - Comparação de performance
+    
+3. Apresentação do nosso .qmd para vocês adaptarem pra carteira de vocês e apresentarem com o Colab. Até a próxima sexta, vocês postam no site do grupo essa análise e apresentam.    
+
+4. Grupos apresentam as análises obtidas com Colab em sala
+
+</font>
+
+## Introdução ao tema
+
+<font size=4>
+
+- Importância da previsão precisa de séries temporais financeiras.
+- Diferenças fundamentais entre modelos interpretáveis (causais) e modelos \"black-box\" (machine learning).
+- Necessidade crescente de técnicas eficientes no contexto do Big Data Financeiro.
+
+Referência inicial:
+
+> Varian, H. R. (2014). Big Data: New Tricks for Econometrics. *Journal of Economic Perspectives*, 28(2), 3–28.
+
+</font>
+
+## Modelos causais: Definição e Conceitos
+
+<font size=4>
+
+- Enfatizam relações explícitas de causa e efeito.
+- Modelos comuns:
+    - **Modelos VAR estruturais** (Vector AutoRegression)
+    - **Modelos ARDL** (AutoRegressive Distributed Lag)
+    - **Modelos estruturais com equações simultâneas**
+
+### Importância dos Modelos Causais
+
+- **Interpretabilidade clara**: Facilitam entender exatamente como variáveis econômicas e financeiras influenciam umas às outras.
+- **Decisões baseadas em insights econômicos**: Permitem políticas econômicas e estratégias financeiras direcionadas.
+- **Robustez em mudanças estruturais**: São mais resilientes frente a mudanças de contexto, regime econômico ou eventos inesperados, por possuírem embasamento econômico explícito.
+
+### Por que são mais úteis no contexto financeiro?
+
+- Decisões financeiras exigem clareza sobre os efeitos das ações tomadas.
+- Entender os mecanismos causais evita decisões baseadas em correlações espúrias.
+- A previsibilidade estrutural proporciona segurança adicional em períodos de alta volatilidade econômica.
+
+Citação relevante:
+
+> Angrist, J., & Pischke, J. (2009). *Mostly Harmless Econometrics: An Empiricist's Companion*. Princeton University Press.
+
+</font>
+
+## Modelos de Machine Learning (black-box)
+
+<font size=4>
+
+- Baseiam-se em complexidade computacional, sem exigir uma estrutura causal explícita.
+- Exemplos típicos:
+    - **Redes Neurais Profundas (Deep Learning)**
+    - **Random Forests**
+    - **Gradient Boosting Machines (XGBoost, LightGBM)**
+
+Vantagens:
+- Alta capacidade preditiva.
+- Lida eficientemente com grandes volumes e alta dimensionalidade de dados.
+
+Citação relevante:
+
+> Gu, S., Kelly, B., & Xiu, D. (2020). Empirical asset pricing via machine learning. *The Review of Financial Studies*, 33(5), 2223–2273.
+
+</font>
+
+## Comparação de Performance
+
+<font size=4>
+
+Critérios usuais de comparação:
+
+- **Precisão de Previsão (RMSE, MAE)**
+- **Estabilidade temporal dos resultados**
+- **Capacidade de generalização (Out-of-sample)**
+
+Conclusões frequentes na literatura:
+
+- Modelos ML geralmente têm desempenho preditivo superior.
+- Modelos causais são preferidos quando interpretabilidade é crucial.
+
+Artigo sugerido para referência:
+
+> Makridakis, S., Spiliotis, E., & Assimakopoulos, V. (2018). Statistical and Machine Learning forecasting methods: Concerns and ways forward. *PloS One*, 13(3).
+
+</font>
+
+## Obrigado! {background-color=\"white\" background-image=\"https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png\" background-size=\"1500px\" background-repeat=\"no-repeat\"}
+
+<font size = 6>
+
+::: {.callout-note appearance=\"simple\"}
+## Rodrigo Hermont Ozon
+
+$\Rightarrow$ Agradecimentos à todos os alunos, futuros Data Scientists:
+
+-   Meu perfil no [Google Scholar](https://scholar.google.com/citations?user=hPcIR9oAAAAJ&hl=en)
+-   Meu [CV Lattes](http://lattes.cnpq.br/3532649625879285)
+-   Meu [site com posts, tutoriais e artigos](https://rhozon.github.io/selecaodeprodutosnor/index.html)
+-   Meu [perfil no LinkedIn](https://www.linkedin.com/in/rodrigohermontozon/)
+:::
+
+</font>
+
+
