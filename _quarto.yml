@@ -8,6 +8,16 @@ website:
     style: "docked"
     search: true
     contents:
+      - section: "Econometria"
+        contents:
+          - href: Econometria.qmd
+            text: "Ementa e demais infos"
+            
+      - section: "Análise e Elaboração de Projetos de Investimento"
+        contents:
+          - href: EAPI.qmd
+            text: "Ementa e demais infos"
+            
       - section: "Big Data for Finance Project"
         contents:
           - href: EmentaBigDataFinProj.qmd
@@ -24,6 +34,7 @@ website:
             text: "Agenda quarto encontro"
           - href: Apres_encontro5.qmd
             text: "Agenda quinto encontro"
+            
       - section: "Risk Management"
         contents:
           - href: EmentaRiskMng.qmd

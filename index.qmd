@@ -45,6 +45,25 @@ For complete materials, presentations, scripts and other, please see Google Clas
 :::
 
 ::: panel-tabset
+
+### Econometria
+
+- [Ementa e Conteúdo Progrmático]()
+
+- [Sala no Classroom]()
+
+**Atenção:** Você precisa estar logado na sua conta `@fae.edu` para acessar o Classroom.
+
+### Análise e Elaboração de Projetos de Investimento
+
+- [Ementa e Conteúdo Progrmático]()
+
+- [Sala no Classroom]()
+
+**Atenção:** Você precisa estar logado na sua conta `@fae.edu` para acessar o Classroom.
+
+
+
 ### 📊 Big Data for Finance Project
 
 -   [Ementa e Conteúdo Programático](https://profrhozon.github.io/site/EmentaBigDataFinProj.html)
@@ -75,19 +94,9 @@ $\Rightarrow$ [Click here to join the class](https://classroom.google.com/u/0/c/
 
 ------------------------------------------------------------------------
 
-## **My Availability**
+&nbsp;
 
-Below is my current availability. Feel free to check the calendar for open slots.
-
-```{=html}
-
-<div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
-  <iframe src="https://calendar.google.com/calendar/embed?src=rodrigo.ozon%40fae.edu&ctz=America%2FSao_Paulo" 
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-          frameborder="0" scrolling="no">
-  </iframe>
-</div>
-```
+&nbsp;
 
 ## **📢 Contact and Networks**
 

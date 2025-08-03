@@ -1,0 +1,165 @@
+---
+title: "Curriculum Vitae - Rodrigo Hermont Ozon"
+author: "Rodrigo Hermont Ozon"
+date: "Atualizado: Março 2025"
+format:
+  html:
+    theme: flatly
+    css: |
+      /* Estilos personalizados */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fafafa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #f8f9fa;
+        padding: 30px;
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+      }
+      .header h2 {
+        margin: 10px 0 0;
+        font-weight: normal;
+        color: #666;
+      }
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        gap: 20px;
+      }
+      .col {
+        flex: 1;
+        min-width: 280px;
+      }
+      .section-title {
+        border-bottom: 2px solid #ddd;
+        margin-top: 40px;
+        padding-bottom: 5px;
+        font-size: 1.5rem;
+        color: #555;
+      }
+      .job-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #333;
+        margin-top: 10px;
+      }
+      .job-date {
+        font-style: italic;
+        color: #999;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      ul li::before {
+        content: "• ";
+        color: #007bff;
+        margin-right: 5px;
+      }
+---
+
+<div class="header">
+  <h1>Rodrigo Hermont Ozon</h1>
+  <h2>Economista (Econometria) e Data Scientist</h2>
+</div>
+
+<div class="grid">
+  
+  <!-- Coluna da esquerda -->
+  <div class="col">
+  
+### Contato
+
+- **E-mail:** [rodrigoozon@yahoo.com.br](mailto:rodrigoozon@yahoo.com.br)
+- **Whatsapp:** +55 (41) 98838-2904
+- **LinkedIn:** [rodrigohermontozon](https://www.linkedin.com/in/rodrigohermontozon/)
+- **Google Scholar:** [Perfil](https://scholar.google.com/citations?hl=en&user=hPcIR9oAAAAJ)
+- **Portfólio:** [rhozon.github.io](https://rhozon.github.io/)
+
+### Habilidades
+
+- Análise de Dados & Econometria
+- Data Science & Machine Learning
+- Market Intelligence & Precificação
+- Planejamento Estratégico e Gerenciamento de Projetos
+
+### Competências Técnicas
+
+- **Linguagens:** R, Python, SQL, VBA, DAX, LaTeX, HTML/CSS
+- **Ferramentas:** Eviews, Stata, Power BI, Tableau, Google Data Studio
+
+### Idiomas
+
+- **Português:** Nativo
+- **Inglês:** Avançado
+- **Espanhol:** Intermediário
+
+  </div>
+  
+  <!-- Coluna da direita -->
+  <div class="col">
+  
+### Perfil Profissional
+
+Econometrista e pesquisador Ph.D. com experiência em análise de dados, modelagem e apresentação de informações para apoiar decisões estratégicas. Atuante nos setores público e privado, com expertise em soluções digitais e liderança de projetos de inteligência analítica.
+
+### Experiência Profissional
+
+#### Data Engineer Professional | VOLVO GROUP DIGITAL & IT  
+<span class="job-date">Curitiba, PR – Jan 2025 a Presente</span>
+
+- Criação e gerenciamento de pipelines e processos de dados.
+- Desenvolvimento de algoritmos customizados e modelos preditivos.
+- Colaboração com times de Data Science para otimização de estratégias.
+
+#### Data Scientist Area Coordinator | LAB.PR  
+<span class="job-date">Curitiba, PR – Out 2024 a Dez 2024</span>
+
+- Coordenação de operações em inteligência pública e integração de sistemas.
+- Liderança em iniciativas de desenvolvimento tecnológico e parcerias institucionais.
+
+#### Data Science Consultant | CASE NEW HOLLAND  
+<span class="job-date">Curitiba, PR – Abr 2023 a Out 2024</span>
+
+- Consultoria em análises preditivas e inferências estatísticas.
+- Suporte ao desenvolvimento de modelos de machine learning e estratégias de negócio.
+
+*Outras experiências relevantes fazem parte da trajetória profissional.*
+
+### Formação Acadêmica
+
+- **Ph.D. em Sistemas e Produção** – PUCPR (2022-2027)
+- **Mestrado em Desenvolvimento Econômico** – UFPR (2011)
+- **Bacharelado em Economia** – UFPR (2007)
+- **TechGrad em Data Science** – Univ. Cruzeiro do Sul (2022)
+- **Licenciatura em Matemática** – UNESPAR (2002)
+
+### Certificações e Cursos
+
+- Certificações Datacamp (2024 – Atual)
+- Data Science Professional Certificate – IBM (2020-2021)
+- Econometrics: Methods and Applications – Erasmus University Rotterdam (2020)
+- Data Science Math Skills – Duke University (2020)
+- Microsoft Power BI para Data Science (2020)
+
+### Publicações & Palestras
+
+Diversas publicações e palestras em eventos acadêmicos e corporativos.  
+[Confira mais detalhes no Lattes](http://lattes.cnpq.br/3532649625879285).
+
+  </div>
+  
+</div>
+
+

@@ -1,0 +1,72 @@
+---
+title: "Econometria"
+subtitle: "Ementa e demais informações"
+comments:
+  hypothesis: true
+language:
+  en:
+    title-block-published: "Updated"
+  pt:
+    title-block-published: "Atualizado"
+author:
+  - name: "Rodrigo Hermont Ozon"
+    roles: [investigation, data curation, teaching, lecturing]
+    id: RHO
+    affiliation:
+      - name: "FAE Business School"
+        city: Curitiba
+        state: PR
+        url: "https://fae.edu/cursos/66710715/ciencias-economicas.htm"
+citation:
+  url: "https://fae.edu/cursos/66710715/ciencias-economicas.htm"
+copyright:
+  holder: "Rodrigo Hermont Ozon"
+  year: 2025
+funding:
+  statement: "The author(s) received specific funding for this work."
+format:
+  html:
+    citations-hover: true
+    footnotes-hover: true
+    crossrefs-hover: true
+    anchor-sections: true
+    self-contained: true
+    toc: true
+    code-tools: true
+    code-fold: false
+    df-print: paged
+editor: visual
+bibliography: references.bib
+---
+
+------------------------------------------------------------------------
+
+<left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
+
+------------------------------------------------------------------------
+
+::: panel-tabset 
+
+[Questionário de perfil da turma aqui](link pro forms aqui)
+
+# Ementa
+
+## Avaliações
+
+
+
+# Cronograma
+
+
+:::
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+
+

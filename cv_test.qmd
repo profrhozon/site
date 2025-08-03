@@ -1,0 +1,116 @@
+---
+title: "Curriculum Vitae - Rodrigo Hermont Ozon"
+author: "Rodrigo Hermont Ozon"
+date: "Atualizado: Março 2025"
+---
+
+# Rodrigo Hermont Ozon
+_Economista (Econometria) e Data Scientist_
+
+---
+
+## Contato
+
+- **E-mail:** [rodrigoozon@yahoo.com.br](mailto:rodrigoozon@yahoo.com.br)
+- **Whatsapp:** +55 (41) 98838-2904
+- **LinkedIn:** [rodrigohermontozon](https://www.linkedin.com/in/rodrigohermontozon/)
+- **Google Scholar:** [Perfil](https://scholar.google.com/citations?hl=en&user=hPcIR9oAAAAJ)
+- **Portfólio:** [rhozon.github.io](https://rhozon.github.io/)
+
+---
+
+## Habilidades
+
+- Análise de Dados & Econometria
+- Data Science & Machine Learning
+- Market Intelligence & Precificação
+- Planejamento Estratégico e Gerenciamento de Projetos
+
+---
+
+## Competências Técnicas
+
+- **Linguagens:** R, Python, SQL, VBA, DAX, LaTeX, HTML/CSS
+- **Ferramentas:** Eviews, Stata, Power BI, Tableau, Google Data Studio
+
+---
+
+## Idiomas
+
+- **Português:** Nativo
+- **Inglês:** Avançado
+- **Espanhol:** Intermediário
+
+---
+
+## Perfil Profissional
+
+Econometrista e pesquisador Ph.D. com experiência em análise de dados, modelagem e apresentação de informações para apoiar decisões estratégicas. Atuou nos setores público e privado, com expertise em soluções digitais e liderança de projetos de inteligência analítica.
+
+---
+
+## Experiência Profissional
+
+### Data Engineer Professional | VOLVO GROUP DIGITAL & IT  
+_Curitiba, PR – Jan 2025 a Presente_
+
+- Criação e gerenciamento de pipelines e processos de dados.
+- Desenvolvimento de algoritmos customizados e modelos preditivos.
+- Colaboração com times de Data Science para otimização de estratégias.
+
+### Data Scientist Area Coordinator | LAB.PR  
+_Curitiba, PR – Out 2024 a Dez 2024_
+
+- Coordenação de operações em inteligência pública e integração de sistemas.
+- Liderança em iniciativas de desenvolvimento tecnológico e parcerias institucionais.
+
+### Data Science Consultant | CASE NEW HOLLAND  
+_Curitiba, PR – Abr 2023 a Out 2024_
+
+- Consultoria em análises preditivas e inferências estatísticas.
+- Suporte ao desenvolvimento de modelos de machine learning e estratégias de negócio.
+
+*Outras experiências relevantes fazem parte da trajetória profissional.*
+
+---
+
+## Formação Acadêmica
+
+- **Ph.D. em Sistemas e Produção** – PUCPR (2022-2027)
+- **Mestrado em Desenvolvimento Econômico** – UFPR (2011)
+- **Bacharelado em Economia** – UFPR (2007)
+- **TechGrad em Data Science** – Univ. Cruzeiro do Sul (2022)
+- **Licenciatura em Matemática** – UNESPAR (2002)
+
+---
+
+## Certificações e Cursos
+
+- Certificações Datacamp (2024 – Atual)
+- Data Science Professional Certificate – IBM (2020-2021)
+- Econometrics: Methods and Applications – Erasmus University Rotterdam (2020)
+- Data Science Math Skills – Duke University (2020)
+- Microsoft Power BI para Data Science (2020)
+
+---
+
+## Publicações & Palestras
+
+Diversas publicações e palestras em eventos acadêmicos e corporativos.  
+Confira mais detalhes no [Lattes](http://lattes.cnpq.br/3532649625879285).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
