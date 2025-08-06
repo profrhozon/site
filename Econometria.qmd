@@ -45,28 +45,107 @@ bibliography: references.bib
 
 ------------------------------------------------------------------------
 
-::: panel-tabset 
+# Perfil dos alunos {#perfil}
 
-[Questionário de perfil da turma aqui](link pro forms aqui)
+→ **[Questionário de perfil da turma](https://docs.google.com/forms/d/e/1FAIpQLSe-TDEK3pnh7qziEziUb6yFQEETSwnuMFQKXRJ01aik_r5Nhw/viewform?usp=header)**
 
-# Ementa
+::: panel-tabset
 
-## Avaliações
+## Ementa {#ementa}
+
+A disciplina apresenta os **fundamentos teóricos e práticos da Econometria**, capacitando o estudante a:
+
+* Formular, estimar e interpretar **modelos de regressão linear e não-linear** aplicados a problemas econômicos;  
+* Diagnosticar e corrigir falhas clássicas (multicolinearidade, heterocedasticidade, autocorrelação);  
+* Utilizar **variáveis binárias**, transformações funcionais e modelos polinomiais;  
+* Avaliar a qualidade dos modelos por meio de testes de hipóteses, intervalos de confiança, $R^2$ (ajustado) e ANOVA;  
+* Implementar procedimentos de **previsão** e **simulação** com fins de apoio à decisão;  
+* Compreender a lógica de **sistemas de equações simultâneas** e métodos de estimação em dois estágios.
+
+> _As aulas expositivo-dialogadas serão intercaladas com exercícios em laboratório de informática utilizando Excel, R e/ou Python._
+
+## Objetivos
+
+1. **Conceituar Econometria** e situá-la na análise econômica aplicada.  
+2. **Modelar relações econômicas** usando técnicas de regressão simples e múltipla.  
+3. **Analisar criticamente** pressupostos, limitações e melhorias dos modelos.  
+4. **Estimular o uso de linguagens de programação e IA generativa pra códigos** para estimação e validação empírica.  
+5. **Desenvolver capacidade de previsão** e construção de cenários para tomada de decisão.
+
+## Avaliações {#avaliacoes}
 
 
+Cada **etapa** da disciplina reúne:
 
-# Cronograma
+1. **Listas de exercícios em Excel** (iniciadas em laboratório e entregues até a aula anterior à prova) – **40 %**  
+2. **Provas sem consulta** – interpretativa, sem acesso à internet ou computador – **60 %**
+
+| Componente | Estrutura | Data&nbsp;-&nbsp;referência | Peso na nota |
+|------------|-----------|----------------------------|--------------|
+| **N1** | • Listas de exercícios (4 pts)<br>• Avaliação bimestral (6 pts) | **25 / 09 / 2025** | 10 pts |
+| **N2** | • Listas (4 pts)<br>• Avaliação bimestral (6 pts) | **27 / 11 / 2025** | 10 pts |
+| **N3 (Substitutiva)** | Prova única abrangendo todo o conteúdo | **11 / 12 / 2025** | 10 pts • (substitui menor nota entre N1 ou N2) |
+
+*Todas as avaliações são **individuais e sem consulta**.*
+
+## Cronograma {#cronograma}
+
+| Encontro | Data  | Tema principal                                                                                     | Local |
+|:---: |:----: |----------------------------------------------------------------------------------------------------|:----:|
+| 1 | 07/08 | Introdução à Econometria: definições, método e especificação de modelos                               | 304 |
+| 2 | 14/08 | Natureza da análise de regressão: relações estatísticas × determinísticas                              | 304 |
+| 3 | 21/08 | Regressão bivariada: Função de Regressão Populacional (FRP) e estocasticidade                          | 304 |
+| 4 | 28/08 | MQO no modelo de duas variáveis, Teorema de Gauss-Markov e $R^2$                                     | 304 |
+| 5 | 04/09 | Intervalos de confiança e testes de hipóteses nos coeficientes                                         | 304 |
+| 6 | 11/09 | Extensões do modelo: formas funcionais e elasticidades                                                 | 304 |
+| 7 | 18/09 | Regressão múltipla: estimação e interpretação dos coeficientes                                         | 304 |
+| 8 | 25/09 | Regressão múltipla: inferência, teste $F$, Chow e previsões                                          | 304 |
+| 9 | 02/10 | Modelos com variáveis binárias: ANOVA, ANCOVA e efeitos de interação                                   | 304 |
+| 10 | 09/10 | Multicolinearidade: detecção e estratégias de correção                                                | 304 |
+| 11 | 16/10 | Heterocedasticidade: testes de White, Park, Glejser e MQG                                             | 304 |
+| 12 | 23/10 | Autocorrelação: testes Durbin-Watson, Breusch-Godfrey e correções                                     | 304 |
+| 13 | 30/10 | Sistemas de equações simultâneas: identificação e MQ2E                                               | 304 |
+| **14** | **06/11** | **Prova N1** (conteúdo Aulas 1–13)                                                             | 304 |
+| 15 | 13/11 | Seminários &nbsp;/ Apresentações de trabalhos aplicados                                              | 304 |
+| **16** | **27/11** | **Prova N2** (conteúdo Aulas 1–15)                                                             | 304 |
+| 17 | 04/12 | Revisão geral & devolutiva                                                                            | 304 |
+| **18** | **11/12** | **Prova Substitutiva N3**                                                                     | 304 |
+
+> _Ressaltamos que o conteúdo e a velocidade das atividades ensino pedagógicas poderão adaptadas conforme especificidades de conhecimentos prévios dos alunos da turma._
+
+Nosso intervalo vai das 20:40 às 20:50 !
+
+## Metodologia
+
+* **Aulas expositivo-dialogadas** com resolução de exemplos na lousa.  
+* **Laboratórios práticos** semanais (R / Python) focados na estimação dos modelos abordados.  
+* **Estudos de caso reais** envolvendo dados macroeconômicos e financeiros.  
+* Uso intensivo de **Google Classroom** para entrega de atividades, fóruns e feedback.
+
+## Disponibilização de conteúdo e interações {#classroom}
+
+> <mark>Todas as interações aluno-professor ocorrerão via **Google Classroom**:<br>
+> <https://classroom.google.com/u/1/c/Nzg5MDgzNDE5NTQ4></mark>
+
+## Bibliografia básica {#referencias}
+
+- Gujarati (mais indicada) $\Rightarrow$ [@Gujarati2006]  
+- [@LevineBerensonStephan2008] — excelente para aplicações no Excel e reforço dos conceitos fundamentais  
+- [@PindyckRubinfeld2004]  
+- [@HillGriffithsJudge2003]
+
+### Bibliografia complementar
+
+- [@Maddala2003]  
+- [@StockWatson2004]  
+- [@Morettin2008]  
+- [@Vasconcelos2000]
 
 
 :::
 
-&nbsp;
+<!-- Fim do documento (referências no arquivo .bib anexado) -->
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 
 
