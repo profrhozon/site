@@ -45,20 +45,94 @@ bibliography: references.bib
 
 ------------------------------------------------------------------------
 
-::: panel-tabset 
 
-[Questionário de perfil da turma aqui](link pro forms aqui)
+# Perfil dos alunos {#perfil}
 
-# Ementa
+→ **[Questionário de perfil da turma](https://docs.google.com/forms/d/e/1FAIpQLSfbfmVNrgUNKH2EaexVY-jzUM6y5d7QDfxPkHg2NPTwTochuQ/viewform?usp=header)**
 
-## Avaliações
+::: panel-tabset
+## Ementa {#ementa}
+
+A disciplina aborda todo o **ciclo de vida de um projeto de investimento**, desde a concepção da ideia até a decisão final de implementação. Os principais tópicos incluem:
+
+* Conceitos fundamentais de investimentos empresariais  
+* Estudos de mercado e projeções de demanda  
+* Estimativas de custos, receitas e estrutura de capital  
+* Construção do fluxo de caixa livre do projeto  
+* Critérios de decisão econômica: VPL, TIR, Payback, Índice de Lucratividade  
+* Análise de sensibilidade, cenários e simulação Monte Carlo  
+* Avaliação de riscos e incertezas  
+* Aspectos contábeis, tributários e de financiamento  
+* Elaboração do relatório de viabilidade (business case)
+
+Aulas expositivas serão intercaladas com **exercícios práticos em Excel em todos os encontros**. No segundo horário de cada sexta-feira (laboratório 03, 7º andar) o aluno iniciará a lista da semana, que deverá ser finalizada e **entregue até o próximo encontro**.
+
+> _Ressaltamos que o conteúdo e a velocidade das atividades ensino pedagógicas poderão adaptadas conforme especificidades de conhecimentos prévios dos alunos da turma._
 
 
 
-# Cronograma
+## Avaliações {#avaliacoes}
 
+
+Cada **etapa** da disciplina reúne:
+
+1. **Listas de exercícios em Excel** (iniciadas em laboratório e entregues até a aula anterior à prova) – **40 %**  
+2. **Provas sem consulta** – interpretativa, sem acesso à internet ou computador – **60 %**
+
+| Etapa | Período das Listas | Instrumento | Data | Peso |
+|-------|-------------------|-------------|------|------|
+| **Módulo 1** | Listas  | Prova 1 (P1) | **26 / 09 / 2025** | **Listas 40 % + P1 60 %** |
+| **Módulo 2** | Listas  | Prova 2 (P2) | **28 / 11 / 2025** | **Listas 40 % + P2 60 %** |
+| **Substitutiva** | — | Prova 3 (P3)¹ | **12 / 12 / 2025** | — |
+
+¹ **P3** é opcional e serve para **substituir a menor nota** obtida entre P1 ou P2 (nota composta da etapa completa, já considerando listas + prova).  
+
+Para um bom desempenho em cada prova, todas as listas correspondentes à etapa devem ter sido entregues dentro do prazo e feitas de acordo com o esperado e recomendado previamente.
+
+## Cronograma {#cronograma}
+
+| Encontro | Data   | Tema principal                                                      | Atividades / Entregas |
+|:-------: |:-----: |--------------------------------------------------------------------|-----------------------|
+| 01 | 08/08 | Fundamentos de avaliação de projetos; apresentação da disciplina          | Lista #1 (valor do dinheiro no tempo – Excel) |
+| 02 | 15/08 | Tipos de projetos de investimento e ciclo de vida                         | Lista #2 |
+| 03 | 22/08 | Estimativas de custos, receitas e construção do FCL                       | Lista #3 |
+| 04 | 29/08 | **Método do Valor Presente Líquido (VPL)**                                | Lista #4 |
+| 05 | 05/09 | **Método da Taxa Interna de Retorno (TIR)**                               | Lista #5 |
+| 06 | 12/09 | Payback, Índice de Lucratividade e comparação de métodos                  | Lista #6 |
+| 07 | 19/09 | Análise de sensibilidade e cenários                                       | Lista #7 |
+| **08** | **26/09** | **PROVA 1 (P1)** – Capítulos 1 – 7 *(Listas 40 % + P1 60 %)*         | — |
+| 09 | 03/10 | **Simulação de Monte Carlo** aplicada a projetos                          | Lista #8 |
+| 10 | 10/10 | Custo de capital, WACC e taxa mínima de atratividade (TMA)                | Lista #9 |
+| 11 | 17/10 | Financiamento do projeto, estrutura de capital e alavancagem              | Lista #10 |
+| 12 | 24/10 | Projetos independentes, mutuamente excludentes e racionamento de capital  | Lista #11 |
+| 13 | 31/10 | Estudos de caso integrados (Capítulos 1 – 11)                             | Lista #12 |
+| **14** | **28/11** | **PROVA 2 (P2)** – Capítulos 8 – 11 *(Listas 40 % + P2 60 %)*         | — |
+| 15 | 05/12 | Revisão geral em laboratório aberto                                       | Lista #13 (revisão) |
+| **16** | **12/12** | **PROVA 3 (P3) – Substitutiva** *(troca a menor nota entre P1/P2)*   | Entrega final |
+
+
+## Disponibilização de conteúdo e interações {#classroom}
+
+> <mark>Todas as interações aluno–professor ocorrerão via **Google Classroom**:<br>
+> <https://classroom.google.com/u/1/c/Nzg5MTE0MTEyMDU5></mark>
+
+
+## Bibliografia básica {#referencias}
+
+- Lapponi (mais indicada) $\Rightarrow$ [@lapponi2007projetos]
+
+- [@CasarottoFilho2002],
+- [@Holanda1986],
+- [@WoilerMathias2008],
+- [@Caloba2002],
+- [@Helfert2000],
+- [@Kotler2012],
+- [@RossEtAl2015],
+- [@Santos2012]
 
 :::
+
+<!-- fim do documento e insercao das referencias, ver arquivo .bib na pasta anexo -->
 
 &nbsp;
 
