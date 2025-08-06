@@ -1,25 +1,160 @@
+
+
+/* =========================================================
+   ESTILOS GERAIS
+   =========================================================*/
 #nextsteps {
-   color: blue;
+  color: blue;
 }
 
 body {
- background-image: url("capa_ppt_Felipe.png");
- background-color: #cccccc;
+  background-image: url("capa_ppt_Felipe.png");
+  background-color: #cccccc;
 }
 
 .emphasized {
-   font-size: .5em;
+  font-size: .5em;
 }
 
-.reveal h1 { font-size: 1em; }
-.reveal h2 { font-size: 1em; }
-.reveal h3 { font-size: .8em; }
+/* =========================================================
+   FUNDO COM LOGO/BARRA PARA TODOS OS SLIDES (inclusive capa)
+   =========================================================*/
 
-.test h3 {
-  text-align: center;
+/* Força estilo da capa para fundo correto */
+.reveal .slides section.title-slide {
+  background-image: url('https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-size: contain !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  overflow: hidden !important;
+  position: relative !important;
 }
 
-.panel-tabset .nav-item {
-  font-size: 5px;
-  font-style: italic
+/* Ajuste preciso dos demais slides */
+.reveal .slide-background {
+  background-image: url('https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-size: contain !important;
 }
+
+/* Deslocamento fixo (margem à direita) para o conteúdo de todos os slides */
+.reveal .slides section {
+  padding-right: 100px !important; /* Força espaço extra à direita e evita sobreposição */
+}
+
+/* Centralização limpa e correta do bloco de título */
+.reveal .slides section.title-slide .quarto-title-block {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* =========================================================
+   CAPA – TAMANHOS TIPOGRÁFICOS PROPORCIONAIS
+   =========================================================*/
+#title-slide h1.title,
+.reveal .title-slide h1,
+h1.title {
+  font-size: 0.75em !important;
+  line-height: 1.8 !important;
+  font-weight: normal !important;
+  margin-bottom: 0.8em !important;
+}
+
+#title-slide p.subtitle,
+.reveal .title-slide p.subtitle,
+p.subtitle {
+  font-size: 0.75em !important;
+  font-style: italic !important;
+  margin: 0.8em 0 !important;
+}
+
+#title-slide p.author,
+.quarto-title-author-name,
+p.author {
+  font-size: 0.65em !important;
+  margin-bottom: 0.8em !important;
+}
+
+#title-slide p.date,
+.quarto-title-meta {
+  font-size: 0.55em !important;
+  margin-top: 0.8em !important;
+}
+
+#title-slide a,
+.reveal .title-slide a {
+  font-size: inherit !important;
+  color: #0066cc !important;
+}
+
+#title-slide * {
+  max-width: 100% !important;
+  text-align: center !important;
+}
+
+/* =========================================================
+   TÍTULOS DOS DEMAIS SLIDES – TAMANHOS
+   =========================================================*/
+.reveal h2 {
+  font-size: 0.75em !important;
+  font-weight: bold !important;
+  margin-bottom: 0.3em !important;
+}
+
+.reveal h1 { font-size: 0.6em !important; }
+.reveal h3 { font-size: 0.45em !important; }
+.reveal h4 { font-size: 0.4em !important; }
+
+/* Painel tabset */
+.panel-tabset .nav-item { font-size: 5px; font-style: italic; }
+
+/* Tamanho base do texto geral */
+.reveal .slides { font-size: 1em; }
+
+/* Espaçamento no título da capa */
+.title-slide .title,
+#title-slide h1 { margin-top: 15% !important; }
+
+/* Padding interno padrão (com padding-right já ajustado acima) */
+.reveal .slides section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Callout boxes em slides Reveal */
+.reveal .callout-note { font-size: 0.9em; }
+
+/* =========================================================
+   ESCALAS NUCLEARES (comentadas para evitar conflitos)
+   =========================================================*/
+/*
+.reveal-viewport h1.title,
+.quarto-title h1.title { font-size: 0.6em !important; }
+
+.reveal-viewport p.subtitle,
+.quarto-title p.subtitle { font-size: 0.4em !important; }
+
+.reveal-viewport .quarto-title-meta,
+.quarto-title-meta { font-size: 0.3em !important; }
+
+.reveal .slides section.section h2 { font-size: 0.5em !important; }
+
+.reveal .slides section.title-slide > * {
+  transform: scale(0.6) !important;
+  transform-origin: center !important;
+}
+.reveal div.quarto-title-block {
+  transform: scale(0.7) !important;
+  transform-origin: center top !important;
+}
+*/
+
+

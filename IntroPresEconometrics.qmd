@@ -1,0 +1,537 @@
+---
+title: "Introdução à Econometria"
+subtitle: "***Primeiro encontro***"
+author: <a href="https://rhozon.github.io/portcv/cv.html">Rodrigo Hermont Ozon</a>
+author-meta: "<a href='https://rhozon.github.io/portcv/cv.html'>Rodrigo Hermont Ozon</a>"
+date: "07-08-2025"
+title-slide-attributes:
+#    data-background-image: "https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png"
+    data-background-size: contain
+    data-background-opacity: "number"
+format:
+  revealjs:
+    incremental: true   
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    css: stylespres.css
+    subtitle-font-size: 8
+bibliography: references2.bib       # <-- aqui
+nocite: |
+  @*
+---
+
+
+```{r setup, include=FALSE}
+
+start_time <- Sys.time()
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA)    # Remove all coments # of R outputs
+knitr::opts_chunk$set(warning = FALSE) # Remove all warnings # of R outputs
+knitr::opts_chunk$set(message = FALSE) # Remove all messages # of R outputs
+
+```
+
+## Plano de Estudo 
+ 
+
+<font size = 5>
+
+**Pré-Requisitos de conhecimento**
+
+Vamos começar com o que **você NÃO precisa saber:**
+
+::: incremental
+- <span style="color:red"><strong>NÃO</strong></span> será necessário o conhecimento de nenhuma linguagem de programação para o Excel (como VBA, macros, etc.).
+- <span style="color:red"><strong>NÃO</strong></span> será preciso saber com muita profundidade as provas das formulações matemáticas ou matriciais.
+- <span style="color:red"><strong>NÃO</strong></span> será necessário que você colete, limpe e monte os conjuntos de dados para analisá-los — as planilhas serão fornecidas.
+:::
+
+<span style="color:blue"><strong>O que você deve conhecer previamente:</strong></span>
+
+::: incremental
+- Espera-se um <span style="color:blue"><strong>conhecimento básico de MS Excel</strong></span>: inserir dados, utilizar menus e criar tabelas.
+- Quando formos avançando no conteúdo, teremos que recorrer ao Google Colab, quando o Excel ficar extensivamente trabalhoso e pra isso, utilizaremos o Python ou o R! Mas fiquem tranquilos, não é necessário ser um expert nessas linguagens praquilo que precisaremos aqui!
+- Conhecimentos prévios <span style="color:blue"><strong> de teorias e conceitos de Economia e Negócios</strong></span> ajudam a gerar excelentes *insights*.
+:::
+
+</font>
+
+
+
+
+## Plano de Estudo 
+
+<font size = 5>
+
+**Como funciona?**
+
+::: incremental
+- Aula expositiva com passagem de alguns conceitos brevemente teóricos.
+- A cada avanço, você exercita no seu computador (**Excel** preferencialmente; também pode usar Google Sheets ou LibreOffice Calc) e quando avançarmos mais você poderá um Google Colab com o Python ou R !
+- Todas as fontes e citações serão mencionadas no material; você é livre para consultá-las e se aprofundar.
+- Recomenda-se dedicar **pelo menos 30 minutos por dia** para estudar por aqui.
+- Para dúvidas, críticas, contribuições e sugestões, meus contatos estão no *slide* final desta apresentação. **Interaja comigo!**
+- Faça todos os exercícios e assista a todas as aulas para obter a melhor experiência de aprendizado!
+:::
+
+</font>
+
+## Plano de Estudo: Material de apoio 
+
+<font size = 5>
+
+::: incremental
+- Todo o nosso conteúdo srá disponibilizado no Google Classroom, como descrito e instruído na [Github Page do professor](hhttps://profrhozon.github.io/site/Econometria.html)
+:::
+
+O material para você reproduzir os exemplos usados nas aulas em arquivos do **Excel** estarão **também** no meu repositório do **Classroom**:
+
+- [Acesse o repositório “Econometria”](https://classroom.google.com/u/1/c/Nzg5MDgzNDE5NTQ4)
+
+<!-- O repo com as planilhas de exemplo estao prontas em https://github.com/rhozon/Introdu-o-Econometria-com-Excel -->
+
+Baixar os arquivos de dados no formato **.xlsx**.
+
+Ao final de cada aula, você terá as planilhas de exercícios para reproduzir.  
+
+Geralmente deixo os **links** nas apresentações e na apostila/apresentação ou html para você apenas clicar e baixar.
+
+
+::: {.callout-note appearance="simple"}
+*“A Econometria é muitíssimo interessante e nada complicada, pois hoje temos os computadores a nosso favor!”* — *O autor (grifo meu)*
+:::
+
+</font>
+
+## O que espero que você aprenda ao final do curso ? 
+
+<font size = 5>
+
+::: incremental
+- Que você seja capaz de começar a testar a teoria econômica com dados reais;
+- Que você saiba utilizar bem dados observados para fazer boas inferências e ter bons *insights* para seu negócio, análise ou pesquisa;
+- Que consiga compreender com maior clareza as relações empíricas entre as variáveis que deseja prever;
+- Se interessar cada vez mais por Econometria e buscar aprender **sempre** mais!
+:::
+
+&nbsp;
+
+![](https://s1.static.brasilescola.uol.com.br/be/conteudo/images/socrates-um-dos-principais-nomes-filosofia-5b1e925991192.jpg){width=6cm height=4cm fig-align="center"}
+
+<p style="text-align:center;"><em>"Só sei que nada sei."</em> — Sócrates</p>
+
+</font>
+
+
+## O que é Econometria ? 
+
+<font size = 5>
+
+Existem pelo menos quatro linhas de definição entre economistas para a econometria:
+
+::: incremental
+- A econometria como a **ciência de testar teorias econômicas**;
+- O **conjunto de ferramentas para prever** valores futuros de variáveis econômicas (vendas, crescimento do PIB, preços de ações, etc.);
+- O **processo de ajustar modelos econômicos matemáticos** a dados do mundo real;
+- A **ciência e arte de usar dados históricos** para criar **recomendações quantitativas** de políticas em governo e empresas.
+:::
+
+</font>
+
+
+
+
+## O método da econometria 
+
+<font size = 5>
+
+Como você escolheria entre as diferentes hipóteses ou modelos para um dado fenômeno? *(Granger, 1999, p. 58).*
+
+![](https://github.com/profrhozon/FAE_Econometrics/blob/main/metodoeconometria.png?raw=true){width=6cm height=9cm fig-align="center"}
+
+</font>
+
+## Os tipos de econometria
+
+<font size = 5>
+
+![](tiposdeeconometria.png){width=8cm height=3cm fig-align="center"}
+
+**Fonte:** Gujarati (2011, p. 34).
+
+::: {.callout-note appearance="simple"}
+*“É somente através da **econometria, a ciência de dados original**, que você pode conhecer o caminho da causa ao efeito.”* — Angrist (2008)
+:::
+
+</font>
+
+
+## Os tipos de econometria
+
+<font size = 5>
+
+![](https://github.com/profrhozon/FAE_Econometrics/blob/main/tiposdeeconometria.png?raw=true){width=12.5cm height=5cm fig-align="center"}
+
+**Fonte:** Gujarati (2011, p. 34).
+
+&nbsp;
+
+&nbsp;
+
+::: {.callout-note appearance="simple"}
+*“É somente através da **econometria, a ciência de dados original**, que você pode conhecer o caminho da causa ao efeito.”* — Angrist (2008)
+:::
+
+</font>
+
+
+## Econometria *versus* *data science*
+
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2EhRT2mOXm8?si=jl3FCoS4NHb2O0Ha" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</center>
+
+<font size = 3>
+
+*[Playlist do curso completo dele aqui](https://www.youtube.com/watch?v=WwW8y5dZs80&list=PL-uRhZ_p-BM5ovNRg-G6hDib27OCvcyW8)
+
+</font>
+
+<font size = 4>
+
+> _“Eu diria que a principal diferença é a abordagem do problema da previsão._  
+>  
+> _Os cientistas de dados geralmente se preocupam com as abordagens do tipo de ajuste de curva para a previsão. Portanto, qualquer modelo que se adapte bem aos dados servirá. Se é uma experiência passada, podemos estar interessados em usá-la para extrapolar para o futuro._  
+>  
+> _Grande parte da agenda de ciência de dados está ligada aos problemas de marketing de alguém. Você está tentando descobrir quem comprará algo, quem tomará alguma ação. A econometria, na minha opinião, lida com uma classe de problemas mais difícil._  
+>  
+> _Econometristas estão mais preocupados com relacionamentos causais. Em outras palavras, se manipularmos algo, por exemplo, seguro de saúde ou política monetária, como será o mundo em resposta a essa mudança?”_
+
+</font>
+
+<!-- ========================================== -->
+## Machine Learning, big data *vs* Econometria
+
+
+<font size = 5>
+
+Será que o *machine learning* e o *big data* estão mudando a econometria?
+
+> *“Dados são o novo petróleo.”* — [Clive Humby (2006)](https://bakertillybr.com.br/dados-novo-petroleo/#:~:text=Em%20tradu%C3%A7%C3%A3o%20livre%20para%20o,sido%20bastante%20citada%20no%20mercado.)
+
+
+…mas, muito além do conhecimento das ferramentas estatísticas e de *data science*, o profissional bem formado sempre será fundamental para abastecê-las; afinal, **informação nem sempre é conhecimento**.
+
+
+> *“Em alguns casos, estou um pouco preocupado com o fato de o grande volume de dados estar meio que se tornando uma distração.”* — [Josh Angrist, *Mastering Econometrics*](https://mru.org/courses/mastering-econometrics/are-machine-learning-and-big-data-changing-econometrics)
+
+
+</font>
+<!-- ========================================== -->
+
+
+
+<!-- ========================================== -->
+
+## Erros comuns na econometria aplicada
+
+<font size = 5>
+
+10 erros comuns na econometria aplicada
+
+::: incremental
+- Deixar de usar o bom senso e o conhecimento da teoria econômica.
+- Começar com as perguntas erradas sobre o fenômeno investigado.
+- Ignorar os trabalhos e contribuições de outros econometristas.
+- Não se familiarizar com os dados.
+- Complicar excessivamente o(s) modelo(s) (*Keep it simple, stupid!*).
+- Obsessão por medidas de melhor ajuste e significância estatística.
+- Esquecer da significância econômica.
+- Supor que seus resultados sejam robustos sempre.
+- Ser inflexível com as complexidades do mundo real.
+- Ignorar quando encontra resultados bizarros.
+:::
+
+</font>
+
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Porquê aprender econometria ?
+
+<font size = 5>
+
+Porquê aprender econometria impulsiona minha carreira ?
+
+
+
+> *“Bem, se você acha que a econometria é chata, devo dizer que seus professores falharam com você. Talvez você tenha sofrido um curso de econometria que basicamente trata a disciplina como um tipo de matemática aplicada — muito teórica, muito abstrata.”* — [Josh Angrist, *Mastering Econometrics*](https://mru.org/courses/mastering-econometrics/isnt-econometrics-boring)
+
+
+
+> *“Eu continuo dizendo que o trabalho mais sexy nos próximos dez anos será o dos estatísticos. As pessoas pensam que eu estou brincando, mas quem imaginaria que os engenheiros de computação teriam sido o trabalho mais sexy dos anos 90?”* — [Hal Varian, *The McKinsey Quarterly* (jan/2009)](https://flowingdata.com/2009/02/25/googles-chief-economist-hal-varian-on-statistics-and-data/#:~:text=Quotes%2C%20Statistics,sexy%20job%20of%20the%201990s%3F)
+
+
+</font>
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Saber econometria pode impulsionar sua carreira ?
+
+<font size = 5>
+
+> **Desde que começou seus estudos, a demanda por conhecimentos econométricos cresceu?**
+
+> *“Cresceu muito, e não só pra economistas. As instituições estão muito preocupadas em medir de forma correta os impactos das políticas adotadas, em elaborar estratégias e fazer previsões.”*
+
+> *“A concorrência é muito acirrada em alguns setores, então esse conhecimento específico é muito demandado — principalmente se a pessoa que conhece as técnicas também saiba traduzi-las para o dia a dia da empresa, já que nem todos vão saber ler um resultado.”* — [extrato de entrevista com a profa. Priscila Fernandes Ribeiro (INSPER)](https://www.napratica.org.br/como-entender-econometria-pode-ajudar-na-carreira/)
+
+</font>
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Oportunidade
+
+<font size = 5>
+
+Leia esse interessante post do blog *gustibuseconomia*:
+
+::: incremental
+- [“*Eu não preciso aprender Econometria!* – Uma aula sobre produtividade, atitude e, claro, econometria”](https://gustibuseconomia.com/2015/04/05/eu-nao-preciso-aprender-econometria/)
+:::
+
+</font>
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Exercício de reflexão
+
+<font size = 5>
+
+A importância de estudar econometria com uso de *softwares*
+
+Se você tivesse que calcular a **média** e o **desvio padrão** das alturas de uma amostra de um grupo específico de pessoas:
+
+</font>
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Exercício de reflexão
+
+<font size = 3>
+
+**Estaturas**
+
+| Estaturas   |
+|-------------|
+| 1metro72cm  |
+| 2metro06cm  |
+| 1metro86cm  |
+| 1metro65cm  |
+| 2metro08cm  |
+| 1metro93cm  |
+| 1metro78cm  |
+| 1metro,6cm  |
+| 1metro64cm  |
+| 1metro89cm  |
+| 1metro83cm  |
+| 2metro05cm  |
+| 1metro82cm  |
+| 1metro68cm  |
+| 1metro79cm  |
+| 2metro01cm  |
+| 1metro87cm  |
+| 1metro81cm  |
+| 2metro01cm  |
+| 1metro93cm  |
+
+</font>
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Exercício de reflexão
+
+&nbsp;
+
+<font size = 5>
+
+😟 …e você precisa calcular isso pois está prestando uma **prova de concurso público** em que o examinador **proíbe o uso de calculadoras e celulares**… 😟
+
+</font>
+
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+
+## Questão de reflexão
+
+<font size = 5>
+
+::: incremental
+- Quem hoje faz alguma estatística **sem o uso do computador**? Na prática, essa realidade só existiu no passado.
+- Mesmo sabendo operar softwares estatísticos, **sem interpretar os resultados** — ou, pior, **sem fazer as perguntas certas** antes de coletar dados e formular hipóteses — **não há diferença** em relação ao exercício anterior.
+:::
+
+</font>
+
+<!-- ========================================== -->
+
+## Os *softwares* mais usados pelos econometristas
+
+<font size = 5>
+
+::: incremental
+- **R** — [The R Project for Statistical Computing](https://www.r-project.org/)
+- [Stata](https://www.stata-brasil.com/software/stata.html/?utm_medium=adwords&utm_campaign=statabrazil&utm_source=software&gclid=CjwKCAjw9vn4BRBaEiwAh0muDGYqLoN1qEEPaMgP8f7-xCP_1KkebIqWJUWIzxt7IuxT60PfQl_zBhoCCSUQAvD_BwE)
+- [EViews](https://www.eviews.com/home.html)
+- [SPSS](https://www.ibm.com/analytics/spss-statistics-software)
+- [Matlab](https://www.mathworks.com/matlabcentral/answers/73735-what-does-it-mean-by-writing-idx-in-code)
+- [Python](https://www.kevinsheppard.com/files/teaching/python/notes/python_introduction_2019.pdf)
+- [SAS](https://www.sas.com/en_us/home.html)
+- [GAUSS](https://store.aptech.com/gauss-platform-category.html)
+- [Gretl](http://gretl.sourceforge.net/)
+- [LIMDEP](http://www.limdep.com/)
+- …
+:::
+
+</font>
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Os *softwares* estatísticos e o *big data*
+
+<font size = 5>
+
+
+> *“Economistas têm lidado historicamente com dados que se ajustavam a planilhas, mas isso tem mudado na medida em que novos dados se tornam disponíveis […]”* — [Hal Varian, *Big Data: New Tricks for Econometrics*](https://pubs.aeaweb.org/doi/pdf/10.1257/jep.28.2.3)
+
+
+::: incremental
+- Mas então **por qual razão eu preciso do Excel** para começar a aprender econometria??
+:::
+
+</font>
+<!-- ========================================== -->
+
+<!-- ========================================== -->
+## Comece aprendendo econometria com o Excel
+
+<font size = 5>
+
+::: incremental
+- O Excel e os softwares mencionados utilizam **matrizes** e **álgebra linear** para os cálculos de que precisamos.
+- O Excel é **muitíssimo popular** no mundo corporativo.
+- Iniciar econometria no Excel ajuda a **entender a lógica de cálculo** antes de migrar para softwares mais completos.
+- Começando pelo Excel, você avança para **fórmulas e cálculos mais complexos**, melhorando a leitura de **livros-texto** de econometria.
+:::
+
+
+> *“Sem dados você é apenas mais uma pessoa com uma opinião.”* — [W. Edwards Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming)
+
+</font>
+
+<!-- ========================================== -->
+
+
+
+
+<!-- ========================================== -->
+
+## Referências
+
+&nbsp;
+
+<font size = 4>
+
+::: {#refs}
+:::
+
+</font>
+
+<!-- ========================================== -->
+
+
+
+
+
+
+<!-- ========================================== -->
+
+<!-- ÚLTIMO SLIDE -->
+
+<!-- ========================================== -->
+
+## Obrigado!
+
+ 
+
+<font size = 6>
+
+::: {.callout-note appearance="simple"}
+## Rodrigo Hermont Ozon
+
+$\Rightarrow$ Agradecimentos à todos os alunos presentes e demais ouvintes:
+
+-   Meu perfil no [Google Scholar](https://scholar.google.com/citations?user=hPcIR9oAAAAJ&hl=en)
+-   Meu [CV Lattes](http://lattes.cnpq.br/3532649625879285)
+-   Meu [site com posts, tutoriais e artigos](https://rhozon.github.io/selecaodeprodutosnor/index.html)
+-   [Github Page do prof. RhOzon contendo instruções iniciais sobre a disciplina](https://profrhozon.github.io/site/Econometria.html) 
+-   Meu [perfil no LinkeDin](https://www.linkedin.com/in/rodrigohermontozon/)
+:::
+
+ 
+
+ 
+
+```{=html}
+
+<p style="font-family: times, serif; font-size:11pt; font-style:italic"; class="quote">
+
+"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.
+
+[... Capitalism requires] the perennial gale of Creative Destruction." Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011. 
+
+</p>
+
+```
+
+</font>
+
+
+<!-- ========================================== -->
+
+<!-- FIM DOS SLIDES -->
+
+<!-- ========================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

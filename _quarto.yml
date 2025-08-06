@@ -10,9 +10,10 @@ website:
     contents:
       - section: "Econometria"
         contents:
+          - href: IntroPresEconometrics.qmd
+            text: "Apresentação do nosso primeiro encontro"
           - href: Econometria.qmd
-            text: "Ementa e demais infos"
-            
+            text: "Ementa e demais infos"            
       - section: "Análise e Elaboração de Projetos de Investimento"
         contents:
           - href: EAPI.qmd

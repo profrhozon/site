@@ -19,24 +19,6 @@ format:
     subtitle-font-size: 8
 ---
 
-```{css, include=FALSE}
-
-.title {
-  font-size: 60px !important;
-  color: red !important;
-}
-
-.author {
-  font-size: 50px;
-  color: blue;
-}
-
-.date {
-  font-size: 50px;
-  color: green;
-}
-
-```
 
 ```{r setup, include=FALSE}
 
@@ -208,7 +190,7 @@ subplot(milho, soja, nrows = 2, shareX = TRUE)
 
 ::: {.callout-note appearance="simple" icon="false"}
 | Área de Ciência | Teoria | Pensadores |
-|------------------|-------------------------|------------------------------|
+|------------------------|------------------------|------------------------|
 | Microeconomia | Teoria da Demanda e do Consumidor | Walrás, Pareto, Arrow, Debreu, Samuelson, Hicks |
 | Microeconomia | Estruturas de Mercado | Porter, Chamberlin, Joan Robinson, Bain |
 | Microeconomia | Finanças Comportamentais | Daniel Kahneman, Amos Tversky, Robert Shiller |

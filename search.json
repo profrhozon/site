@@ -143,466 +143,278 @@
     ]
   },
   {
-    "objectID": "introportfoliogithubpages.html#rstudio",
-    "href": "introportfoliogithubpages.html#rstudio",
-    "title": "Crie seu portfolio numa Github Page",
-    "section": "🔹 RStudio",
-    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto (local, OneDrive, Google Drive, …) e marque as opções Create a git repository, Use renv with this project\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio: (opcional)\ninstall.packages(\"quarto\")\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nPara renderizar o site, rode:\nquarto::quarto_render()\nou no Terminal execute\nquarto render\nOu simplesmente clique no botão Render quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.\n\nObs.: Se encontrar alguma mensagem de erro como - The project is out-of-sync -- use renv::status() for details. em Background Jobs, no console do RStudio, digite:\nrenv::status()\nIsso mostrará o que precisa ser atualizado.\nEm seguida, para sincronizar pacotes, rode:\nrenv::restore()\nSe quiser atualizar todos os pacotes:\nrenv::update()\nDepois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:\nquarto::quarto_render()",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Criando seu portfolio numa Github page"
-    ]
-  },
-  {
-    "objectID": "introportfoliogithubpages.html#positron",
-    "href": "introportfoliogithubpages.html#positron",
-    "title": "Crie seu portfolio numa Github Page",
-    "section": "🔹 Positron",
-    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nFile &gt; New File &gt; Quarto Project &gt; Website Project.\nEscolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive…crie um nome pro seu subdir em Project Directory Name\nFile &gt; Open Recent &gt; e abra o subdir que você acabou de criar\nNote que vc terá no seu projeto os seguintes arquivos:\n\n\n_quarto.yml\nabout.qmd\nindex.qmd\nstyles.css\n\n\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nAbra qualquer um dos dois .qmd e execute ele clicando em Preview ou usando o atalho CTRL+Shift+K (Windows)\nRenderize o site:\nquarto render",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Criando seu portfolio numa Github page"
-    ]
-  },
-  {
-    "objectID": "introportfoliogithubpages.html#vscode",
-    "href": "introportfoliogithubpages.html#vscode",
-    "title": "Crie seu portfolio numa Github Page",
-    "section": "🔹 VSCode",
-    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render\nMaiores infos podem ser obtidas nesse link oficial do quarto.org ou p. ex. nesse vídeo aqui e aqui",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Criando seu portfolio numa Github page"
-    ]
-  },
-  {
-    "objectID": "EmentaRiskMng.html#fundamentos-de-risk-management",
-    "href": "EmentaRiskMng.html#fundamentos-de-risk-management",
-    "title": "Ementa Risk Management",
-    "section": "🔹 Fundamentos de Risk Management",
-    "text": "🔹 Fundamentos de Risk Management\n\nIntrodução ao conceito de risco\n\nTipos de risco: mercado, crédito, operacional e liquidez",
-    "crumbs": [
-      "Risk Management",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaRiskMng.html#medidas-de-risco",
-    "href": "EmentaRiskMng.html#medidas-de-risco",
-    "title": "Ementa Risk Management",
-    "section": "🔹 Medidas de Risco",
-    "text": "🔹 Medidas de Risco\n\nValue at Risk (VaR), Expected Shortfall (ES)\n\nBacktesting e stress testing",
-    "crumbs": [
-      "Risk Management",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaRiskMng.html#análise-de-portfólios",
-    "href": "EmentaRiskMng.html#análise-de-portfólios",
-    "title": "Ementa Risk Management",
-    "section": "🔹 Análise de Portfólios",
-    "text": "🔹 Análise de Portfólios\n\nCálculo de risco e retorno esperado\n\nFronteira eficiente e diversificação",
-    "crumbs": [
-      "Risk Management",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaRiskMng.html#simulação-de-monte-carlo",
-    "href": "EmentaRiskMng.html#simulação-de-monte-carlo",
-    "title": "Ementa Risk Management",
-    "section": "🔹 Simulação de Monte Carlo",
-    "text": "🔹 Simulação de Monte Carlo\n\nAplicação prática no Excel e Python\n\nCenários de risco e projeções",
-    "crumbs": [
-      "Risk Management",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaRiskMng.html#hedging-e-mitigação-de-riscos",
-    "href": "EmentaRiskMng.html#hedging-e-mitigação-de-riscos",
-    "title": "Ementa Risk Management",
-    "section": "🔹 Hedging e Mitigação de Riscos",
-    "text": "🔹 Hedging e Mitigação de Riscos",
-    "crumbs": [
-      "Risk Management",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaRiskMng.html#avaliação-de-performance-ajustada-ao-risco",
-    "href": "EmentaRiskMng.html#avaliação-de-performance-ajustada-ao-risco",
-    "title": "Ementa Risk Management",
-    "section": "🔹 Avaliação de Performance Ajustada ao Risco",
-    "text": "🔹 Avaliação de Performance Ajustada ao Risco",
-    "crumbs": [
-      "Risk Management",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html",
-    "href": "EmentaBigDataFinProj.html",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "",
-    "text": "*For portuguese-br version see the pdf file here.\n\\(\\Rightarrow\\) Preencha o Forms do Perfil dos Estudantes aqui!",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#our-first-meeting",
-    "href": "EmentaBigDataFinProj.html#our-first-meeting",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "️Our first meeting",
-    "text": "️Our first meeting\n\nDidatic contract\nContent of course presentation\nJustificative for financial ML/DS/Econometrics portfolio",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
-    "href": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "1️⃣ Creating GitHub Pages with Quarto",
-    "text": "1️⃣ Creating GitHub Pages with Quarto\n\nSetting up Quarto\nPublishing pages on GitHub Pages",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#generating-synthetic-data",
-    "href": "EmentaBigDataFinProj.html#generating-synthetic-data",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "2️⃣ Generating Synthetic Data",
-    "text": "2️⃣ Generating Synthetic Data\n\nIntroduction to synthetic data\nMethods and tools for simulated data creation",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
-    "href": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series",
-    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nDimensionality reduction techniques\nBuilding differentiated variables\nTechniques for stationarity analysis",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
-    "href": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "4️⃣ Forecasting Price Series in Basic Economic Theory",
-    "text": "4️⃣ Forecasting Price Series in Basic Economic Theory\n\nForecasting fundamentals\nPractical applications in price prediction",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
-    "href": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "5️⃣ Markowitz Theory & Multi-Objective Modeling",
-    "text": "5️⃣ Markowitz Theory & Multi-Objective Modeling\n\nIntroduction to Markowitz model\nImplementing a bi-objective model for risk-return balance",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
-    "href": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
-    "title": "Ementa Big Data for Finance Project",
-    "section": "6️⃣ Considering Investor Profiles in Decision Making",
-    "text": "6️⃣ Considering Investor Profiles in Decision Making\n\nAdjustments based on investor risk profiles\nStrategies for personalized financial decisions",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Ementa"
-    ]
-  },
-  {
-    "objectID": "EAPI.html",
-    "href": "EAPI.html",
-    "title": "Elaboração e Análise de Projetos de Investimentos",
-    "section": "",
-    "text": "Perfil dos alunos\n→ Questionário de perfil da turma\n\nEmentaAvaliaçõesCronogramaDisponibilização de conteúdo e interaçõesBibliografia básica\n\n\nA disciplina aborda todo o ciclo de vida de um projeto de investimento, desde a concepção da ideia até a decisão final de implementação. Os principais tópicos incluem:\n\nConceitos fundamentais de investimentos empresariais\n\nEstudos de mercado e projeções de demanda\n\nEstimativas de custos, receitas e estrutura de capital\n\nConstrução do fluxo de caixa livre do projeto\n\nCritérios de decisão econômica: VPL, TIR, Payback, Índice de Lucratividade\n\nAnálise de sensibilidade, cenários e simulação Monte Carlo\n\nAvaliação de riscos e incertezas\n\nAspectos contábeis, tributários e de financiamento\n\nElaboração do relatório de viabilidade (business case)\n\nAulas expositivas serão intercaladas com exercícios práticos em Excel em todos os encontros. No segundo horário de cada sexta-feira (laboratório 03, 7º andar) o aluno iniciará a lista da semana, que deverá ser finalizada e entregue até o próximo encontro.\n\nRessaltamos que o conteúdo e a velocidade das atividades ensino pedagógicas poderão adaptadas conforme especificidades de conhecimentos prévios dos alunos da turma.\n\n\n\nCada etapa da disciplina reúne:\n\nListas de exercícios em Excel (iniciadas em laboratório e entregues até a aula anterior à prova) – 40 %\n\nProvas sem consulta – interpretativa, sem acesso à internet ou computador – 60 %\n\n\n\n\n\n\n\n\n\n\n\nEtapa\nPeríodo das Listas\nInstrumento\nData\nPeso\n\n\n\n\nMódulo 1\nListas\nProva 1 (P1)\n26 / 09 / 2025\nListas 40 % + P1 60 %\n\n\nMódulo 2\nListas\nProva 2 (P2)\n28 / 11 / 2025\nListas 40 % + P2 60 %\n\n\nSubstitutiva\n—\nProva 3 (P3)¹\n12 / 12 / 2025\n—\n\n\n\n¹ P3 é opcional e serve para substituir a menor nota obtida entre P1 ou P2 (nota composta da etapa completa, já considerando listas + prova).\nPara um bom desempenho em cada prova, todas as listas correspondentes à etapa devem ter sido entregues dentro do prazo e feitas de acordo com o esperado e recomendado previamente.\n\n\n\n\n\n\n\n\n\n\n\nEncontro\nData\nTema principal\nAtividades / Entregas\n\n\n\n\n01\n08/08\nFundamentos de avaliação de projetos; apresentação da disciplina\nLista #1 (valor do dinheiro no tempo – Excel)\n\n\n02\n15/08\nTipos de projetos de investimento e ciclo de vida\nLista #2\n\n\n03\n22/08\nEstimativas de custos, receitas e construção do FCL\nLista #3\n\n\n04\n29/08\nMétodo do Valor Presente Líquido (VPL)\nLista #4\n\n\n05\n05/09\nMétodo da Taxa Interna de Retorno (TIR)\nLista #5\n\n\n06\n12/09\nPayback, Índice de Lucratividade e comparação de métodos\nLista #6\n\n\n07\n19/09\nAnálise de sensibilidade e cenários\nLista #7\n\n\n08\n26/09\nPROVA 1 (P1) – Capítulos 1 – 7 (Listas 40 % + P1 60 %)\n—\n\n\n09\n03/10\nSimulação de Monte Carlo aplicada a projetos\nLista #8\n\n\n10\n10/10\nCusto de capital, WACC e taxa mínima de atratividade (TMA)\nLista #9\n\n\n11\n17/10\nFinanciamento do projeto, estrutura de capital e alavancagem\nLista #10\n\n\n12\n24/10\nProjetos independentes, mutuamente excludentes e racionamento de capital\nLista #11\n\n\n13\n31/10\nEstudos de caso integrados (Capítulos 1 – 11)\nLista #12\n\n\n14\n28/11\nPROVA 2 (P2) – Capítulos 8 – 11 (Listas 40 % + P2 60 %)\n—\n\n\n15\n05/12\nRevisão geral em laboratório aberto\nLista #13 (revisão)\n\n\n16\n12/12\nPROVA 3 (P3) – Substitutiva (troca a menor nota entre P1/P2)\nEntrega final\n\n\n\n\n\n\nTodas as interações aluno–professor ocorrerão via Google Classroom: https://classroom.google.com/u/1/c/Nzg5MTE0MTEyMDU5\n\n\n\n\nLapponi (mais indicada) \\(\\Rightarrow\\) (Lapponi 2007)\n(Casarotto Filho 2002),\n(Holanda 1986),\n(Woiler and Mathias 2008),\n(Caloba 2002),\n(Helfert 2000),\n(Kotler 2012),\n(Ross et al. 2015),\n(Santos 2012)\n\n\n\n\n\n \n \n \n \n\n\n\n\n\n\n\nReferences\n\nCaloba, Geraldo. 2002. Análise de Investimentos: Tomada de Decisão Em Projetos Industriais. São Paulo: Atlas.\n\n\nCasarotto Filho, Nelson. 2002. Projeto de Negócio: Estratégias e Estudos de Viabilidade. São Paulo: Atlas.\n\n\nHelfert, Erich A. 2000. Técnicas de Análise Financeira. Porto Alegre: Bookman.\n\n\nHolanda, Nívio. 1986. Planejamento e Projetos. São Paulo: APEC.\n\n\nKotler, Philip. 2012. Administração de Marketing. São Paulo: Atlas.\n\n\nLapponi, J. C. 2007. Projetos de Investimento Na Empresa. Elsevier. https://books.google.com.br/books?id=kjKQPgAACAAJ.\n\n\nRoss, Stephen A. et al. 2015. Administração Financeira: Versão Brasileira de Corporate Finance. 10th ed. Porto Alegre: AMGH.\n\n\nSantos, José Joaquim dos. 2012. Fundamentos de Custos Para Formação Do Preço e Do Lucro. 5, revista, ampliada e modificada. São Paulo: Atlas.\n\n\nWoiler, S., and W. F. Mathias. 2008. Projetos: Planejamento, Elaboração e Análise. 2nd ed. São Paulo: Atlas.\n\nCitationBibTeX citation:@online{hermont_ozon,\n  author = {Hermont Ozon, Rodrigo},\n  title = {Elaboração e {Análise} de {Projetos} de {Investimentos}},\n  url = {https://fae.edu/cursos/66710715/ciencias-economicas.htm},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nHermont Ozon, Rodrigo. n.d. “Elaboração e Análise de Projetos de\nInvestimentos.” https://fae.edu/cursos/66710715/ciencias-economicas.htm.",
-    "crumbs": [
-      "Análise e Elaboração de Projetos de Investimento",
-      "Ementa e demais infos"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#objetivos-de-hoje",
-    "href": "Apres_encontro5.html#objetivos-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Objetivos de hoje",
-    "text": "Objetivos de hoje\n\n\nMostrar a importância de compreendermos umm pouco sobre Modelos causais vs. modelos de Machine Learning (black-box) na previsão de séries temporais de preços de ativos financeiros. Comparação de performance de modelos.\nAvançarmos na análise da performance básica do nosso portfólio selecionado (forneço um .qmd no Drive)",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#agenda-to-do-de-hoje",
-    "href": "Apres_encontro5.html#agenda-to-do-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Agenda (to do de hoje)",
-    "text": "Agenda (to do de hoje)\n\n\nIntrodução ao tema\nModelos causais vs. Modelos de Machine Learning\n\nDefinições e conceitos\nAplicações práticas\nComparação de performance\n\nApresentação do nosso .qmd para vocês adaptarem pra carteira de vocês e apresentarem com o Colab. Até a próxima sexta, vocês postam no site do grupo essa análise e apresentam.\nGrupos apresentam as análises obtidas com Colab em sala",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#introdução-ao-tema",
-    "href": "Apres_encontro5.html#introdução-ao-tema",
-    "title": "Big Data for Finance Project",
-    "section": "Introdução ao tema",
-    "text": "Introdução ao tema\n\n\nImportância da previsão precisa de séries temporais financeiras.\nDiferenças fundamentais entre modelos interpretáveis (causais) e modelos \"black-box\" (machine learning).\nNecessidade crescente de técnicas eficientes no contexto do Big Data Financeiro.\n\nReferência inicial:\n\nVarian, H. R. (2014). Big Data: New Tricks for Econometrics. Journal of Economic Perspectives, 28(2), 3–28.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#modelos-causais-definição-e-conceitos",
-    "href": "Apres_encontro5.html#modelos-causais-definição-e-conceitos",
-    "title": "Big Data for Finance Project",
-    "section": "Modelos causais: Definição e Conceitos",
-    "text": "Modelos causais: Definição e Conceitos\n\n\nEnfatizam relações explícitas de causa e efeito.\nModelos comuns:\n\nModelos VAR estruturais (Vector AutoRegression)\nModelos ARDL (AutoRegressive Distributed Lag)\nModelos estruturais com equações simultâneas\n\n\nImportância dos Modelos Causais\n\nInterpretabilidade clara: Facilitam entender exatamente como variáveis econômicas e financeiras influenciam umas às outras.\nDecisões baseadas em insights econômicos: Permitem políticas econômicas e estratégias financeiras direcionadas.\nRobustez em mudanças estruturais: São mais resilientes frente a mudanças de contexto, regime econômico ou eventos inesperados, por possuírem embasamento econômico explícito.\n\nPor que são mais úteis no contexto financeiro?\n\nDecisões financeiras exigem clareza sobre os efeitos das ações tomadas.\nEntender os mecanismos causais evita decisões baseadas em correlações espúrias.\nA previsibilidade estrutural proporciona segurança adicional em períodos de alta volatilidade econômica.\n\nCitação relevante:\n\nAngrist, J., & Pischke, J. (2009). Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton University Press.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#modelos-de-machine-learning-black-box",
-    "href": "Apres_encontro5.html#modelos-de-machine-learning-black-box",
-    "title": "Big Data for Finance Project",
-    "section": "Modelos de Machine Learning (black-box)",
-    "text": "Modelos de Machine Learning (black-box)\n\n\nBaseiam-se em complexidade computacional, sem exigir uma estrutura causal explícita.\nExemplos típicos:\n\nRedes Neurais Profundas (Deep Learning)\nRandom Forests\nGradient Boosting Machines (XGBoost, LightGBM)\n\n\nVantagens: - Alta capacidade preditiva. - Lida eficientemente com grandes volumes e alta dimensionalidade de dados.\nCitação relevante:\n\nGu, S., Kelly, B., & Xiu, D. (2020). Empirical asset pricing via machine learning. The Review of Financial Studies, 33(5), 2223–2273.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#comparação-de-performance",
-    "href": "Apres_encontro5.html#comparação-de-performance",
-    "title": "Big Data for Finance Project",
-    "section": "Comparação de Performance",
-    "text": "Comparação de Performance\n\nCritérios usuais de comparação:\n\nPrecisão de Previsão (RMSE, MAE)\nEstabilidade temporal dos resultados\nCapacidade de generalização (Out-of-sample)\n\nConclusões frequentes na literatura:\n\nModelos ML geralmente têm desempenho preditivo superior.\nModelos causais são preferidos quando interpretabilidade é crucial.\n\nArtigo sugerido para referência:\n\nMakridakis, S., Spiliotis, E., & Assimakopoulos, V. (2018). Statistical and Machine Learning forecasting methods: Concerns and ways forward. PloS One, 13(3).",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro5.html#obrigado",
-    "href": "Apres_encontro5.html#obrigado",
-    "title": "Big Data for Finance Project",
-    "section": "Obrigado!",
-    "text": "Obrigado!\n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkedIn",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quinto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro3.html#objetivos-de-hoje",
-    "href": "Apres_encontro3.html#objetivos-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Objetivos de hoje",
-    "text": "Objetivos de hoje\n \n\n\nFeature Engineering\nBásico para uma análise risco x retorno de uma carteira de ativos financeiros;\nEDA\n\nInicial pra avaliarmos como deveremos lidar com valores extremos e padrões distribucionais\n\nModelagem de Volatilidade\n\nO uso de log-retornos dia-a-dia\nO uso de desvio-padrão dos retornos (range de dias \\(\\Rightarrow\\) incompatível com os retornos diários)\nO uso de modelos da família GARCH pra modelar volatilidade (risco) dia a dia x retornos dia-a-dia",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "To do list terceiro encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro3.html#agenda-to-do-de-hoje",
-    "href": "Apres_encontro3.html#agenda-to-do-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Agenda (to do de hoje)",
-    "text": "Agenda (to do de hoje)\n\n\nAcessar o Google Drive da FAE e baixar, na pasta do nosso terceiro encontro, os arquivos:\n\nFeatEngFinancial.qmd (código-fonte)\n\n.html correspondente (para visualização rápida)\n\nRodar o arquivo .qmd na sua IDE (instalar pacotes e bibliotecas do R e Python, se necessário).\n\nFormar grupos de até 4 integrantes para trabalharem juntos ao longo da disciplina de projetos.\nApresentação: Prof. Rodrigo introduz o conteúdo do .qmd.\nAdaptar esse código do .qmd pra rodar num notebook do Colab em sala de aula sobre feature eng. e preparar pra upar o próximo post deste conteúdo na github page do seu grupo durante a semana;\nApresentações rápidas por grupo: Apresentar o site do grupo publicado na GitHub page e mostrar o conjunto de dados da carteira montada (15 mins por grupo)\n🚀 Para o próximo encontro:\nCada grupo deverá apresentar sua página no GitHub e publicar um post (usando R ou Python) mostrando como fez a feature eng pra carteira de ativos selecionada.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "To do list terceiro encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro3.html#obrigado",
-    "href": "Apres_encontro3.html#obrigado",
-    "title": "Big Data for Finance Project",
-    "section": "Obrigado!",
-    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "To do list terceiro encontro"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "Apres_encontro2.html#objetivos-de-hoje",
-    "href": "Apres_encontro2.html#objetivos-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Objetivos de hoje",
-    "text": "Objetivos de hoje\n \n\n\nUso de datasets públicos:\n\nMostrarei algumas opções de conjuntos de dados públicos free que refletem uma carteira/portfólio\n\nSeleção de Portfolio:\n\nEscolha os preços das ações de empresas que mais te interessam (pro grupo)\n\nGerando dados sintéticos:\n\nComo artificializar dados financeiros, quando considerados sensíveis e que se comportariam similarmente às séries temporais de preços no mercado financeiro",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "To do list segundo encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro2.html#agenda-to-do-de-hoje",
-    "href": "Apres_encontro2.html#agenda-to-do-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Agenda (to do de hoje)",
-    "text": "Agenda (to do de hoje)\n\n\nAcessar o Google Drive da FAE e baixar, na pasta do nosso segundo encontro, os arquivos:\n\nSintData.qmd (código-fonte)\n\n.html correspondente (para visualização rápida)\n\nRodar o arquivo .qmd na sua IDE (instalar pacotes e bibliotecas do R e Python, se necessário).\nFormar grupos de até 4 integrantes para trabalharem juntos ao longo da disciplina de projetos.\nApresentação: Prof. Rodrigo introduz o conteúdo do .qmd.\nEscolher e visualizar um dataset público, ou preferencialmente:\n\nMontar a carteira de investimentos do grupo, selecionando empresas de interesse.\n\nExplorar as APIs quantmod (R) ou yahooquery (Python) para coletar dados de mercado.\n\nAlternativa: Caso haja dificuldades com APIs, criar uma carteira fictícia com pelo menos 6 séries de preços (seis empresas diferentes) ou utilizar técnicas de geração de dados sintéticos.\nDocumentação inicial:\n\nJustificar a escolha do conjunto de dados, das empresas selecionadas ou da artificialização dos dados.\n\nCriar um primeiro post na GitHub Page do grupo.\n\nSe necessário, revisar o tutorial do primeiro encontro sobre como configurar a página.\n\nPlanilha de acompanhamento:\n\nNo final do .qmd, há um link para uma planilha do Google, que cada grupo deve preencher para registrar as escolhas iniciais.\n\n🚀 Para o próximo encontro:\nCada grupo deverá apresentar sua página no GitHub e publicar um post (usando R ou Python) justificando a seleção dos dados do projeto.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "To do list segundo encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro2.html#obrigado",
-    "href": "Apres_encontro2.html#obrigado",
-    "title": "Big Data for Finance Project",
-    "section": "Obrigado!",
-    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "To do list segundo encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro4.html#objetivos-de-hoje",
-    "href": "Apres_encontro4.html#objetivos-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Objetivos de hoje",
-    "text": "Objetivos de hoje\n \n\n\nTécnicas de redução de dimensionalidade em séries temporais financeiras. O impacto do Big Data na decisão humana.\nCase de aplicação de uso de redução de dimensionalidade em dados financeiros complexos em grande volume",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quarto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro4.html#agenda-to-do-de-hoje",
-    "href": "Apres_encontro4.html#agenda-to-do-de-hoje",
-    "title": "Big Data for Finance Project",
-    "section": "Agenda (to do de hoje)",
-    "text": "Agenda (to do de hoje)\n\n\nProf. Rodrigo H. Ozon apresenta o case\nGrupos apresentam o post de feature engineering e análises preliminares (15 mins por grupo)",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quarto encontro"
-    ]
-  },
-  {
-    "objectID": "Apres_encontro4.html#obrigado",
-    "href": "Apres_encontro4.html#obrigado",
-    "title": "Big Data for Finance Project",
-    "section": "Obrigado!",
-    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
-    "crumbs": [
-      "Big Data for Finance Project",
-      "Agenda quarto encontro"
-    ]
-  },
-  {
-    "objectID": "cv_test.html",
-    "href": "cv_test.html",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Economista (Econometria) e Data Scientist\n\n\n\n\nE-mail: rodrigoozon@yahoo.com.br\nWhatsapp: +55 (41) 98838-2904\nLinkedIn: rodrigohermontozon\nGoogle Scholar: Perfil\nPortfólio: rhozon.github.io\n\n\n\n\n\n\nAnálise de Dados & Econometria\nData Science & Machine Learning\nMarket Intelligence & Precificação\nPlanejamento Estratégico e Gerenciamento de Projetos\n\n\n\n\n\n\nLinguagens: R, Python, SQL, VBA, DAX, LaTeX, HTML/CSS\nFerramentas: Eviews, Stata, Power BI, Tableau, Google Data Studio\n\n\n\n\n\n\nPortuguês: Nativo\nInglês: Avançado\nEspanhol: Intermediário\n\n\n\n\n\nEconometrista e pesquisador Ph.D. com experiência em análise de dados, modelagem e apresentação de informações para apoiar decisões estratégicas. Atuou nos setores público e privado, com expertise em soluções digitais e liderança de projetos de inteligência analítica.\n\n\n\n\n\n\nCuritiba, PR – Jan 2025 a Presente\n\nCriação e gerenciamento de pipelines e processos de dados.\nDesenvolvimento de algoritmos customizados e modelos preditivos.\nColaboração com times de Data Science para otimização de estratégias.\n\n\n\n\nCuritiba, PR – Out 2024 a Dez 2024\n\nCoordenação de operações em inteligência pública e integração de sistemas.\nLiderança em iniciativas de desenvolvimento tecnológico e parcerias institucionais.\n\n\n\n\nCuritiba, PR – Abr 2023 a Out 2024\n\nConsultoria em análises preditivas e inferências estatísticas.\nSuporte ao desenvolvimento de modelos de machine learning e estratégias de negócio.\n\nOutras experiências relevantes fazem parte da trajetória profissional.\n\n\n\n\n\n\nPh.D. em Sistemas e Produção – PUCPR (2022-2027)\nMestrado em Desenvolvimento Econômico – UFPR (2011)\nBacharelado em Economia – UFPR (2007)\nTechGrad em Data Science – Univ. Cruzeiro do Sul (2022)\nLicenciatura em Matemática – UNESPAR (2002)\n\n\n\n\n\n\nCertificações Datacamp (2024 – Atual)\nData Science Professional Certificate – IBM (2020-2021)\nEconometrics: Methods and Applications – Erasmus University Rotterdam (2020)\nData Science Math Skills – Duke University (2020)\nMicrosoft Power BI para Data Science (2020)\n\n\n\n\n\nDiversas publicações e palestras em eventos acadêmicos e corporativos.\nConfira mais detalhes no Lattes."
-  },
-  {
-    "objectID": "cv_test.html#contato",
-    "href": "cv_test.html#contato",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "E-mail: rodrigoozon@yahoo.com.br\nWhatsapp: +55 (41) 98838-2904\nLinkedIn: rodrigohermontozon\nGoogle Scholar: Perfil\nPortfólio: rhozon.github.io"
-  },
-  {
-    "objectID": "cv_test.html#habilidades",
-    "href": "cv_test.html#habilidades",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Análise de Dados & Econometria\nData Science & Machine Learning\nMarket Intelligence & Precificação\nPlanejamento Estratégico e Gerenciamento de Projetos"
-  },
-  {
-    "objectID": "cv_test.html#competências-técnicas",
-    "href": "cv_test.html#competências-técnicas",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Linguagens: R, Python, SQL, VBA, DAX, LaTeX, HTML/CSS\nFerramentas: Eviews, Stata, Power BI, Tableau, Google Data Studio"
-  },
-  {
-    "objectID": "cv_test.html#idiomas",
-    "href": "cv_test.html#idiomas",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Português: Nativo\nInglês: Avançado\nEspanhol: Intermediário"
-  },
-  {
-    "objectID": "cv_test.html#perfil-profissional",
-    "href": "cv_test.html#perfil-profissional",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Econometrista e pesquisador Ph.D. com experiência em análise de dados, modelagem e apresentação de informações para apoiar decisões estratégicas. Atuou nos setores público e privado, com expertise em soluções digitais e liderança de projetos de inteligência analítica."
-  },
-  {
-    "objectID": "cv_test.html#experiência-profissional",
-    "href": "cv_test.html#experiência-profissional",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Curitiba, PR – Jan 2025 a Presente\n\nCriação e gerenciamento de pipelines e processos de dados.\nDesenvolvimento de algoritmos customizados e modelos preditivos.\nColaboração com times de Data Science para otimização de estratégias.\n\n\n\n\nCuritiba, PR – Out 2024 a Dez 2024\n\nCoordenação de operações em inteligência pública e integração de sistemas.\nLiderança em iniciativas de desenvolvimento tecnológico e parcerias institucionais.\n\n\n\n\nCuritiba, PR – Abr 2023 a Out 2024\n\nConsultoria em análises preditivas e inferências estatísticas.\nSuporte ao desenvolvimento de modelos de machine learning e estratégias de negócio.\n\nOutras experiências relevantes fazem parte da trajetória profissional."
-  },
-  {
-    "objectID": "cv_test.html#formação-acadêmica",
-    "href": "cv_test.html#formação-acadêmica",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Ph.D. em Sistemas e Produção – PUCPR (2022-2027)\nMestrado em Desenvolvimento Econômico – UFPR (2011)\nBacharelado em Economia – UFPR (2007)\nTechGrad em Data Science – Univ. Cruzeiro do Sul (2022)\nLicenciatura em Matemática – UNESPAR (2002)"
-  },
-  {
-    "objectID": "cv_test.html#certificações-e-cursos",
-    "href": "cv_test.html#certificações-e-cursos",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Certificações Datacamp (2024 – Atual)\nData Science Professional Certificate – IBM (2020-2021)\nEconometrics: Methods and Applications – Erasmus University Rotterdam (2020)\nData Science Math Skills – Duke University (2020)\nMicrosoft Power BI para Data Science (2020)"
-  },
-  {
-    "objectID": "cv_test.html#publicações-palestras",
-    "href": "cv_test.html#publicações-palestras",
-    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
-    "section": "",
-    "text": "Diversas publicações e palestras em eventos acadêmicos e corporativos.\nConfira mais detalhes no Lattes."
-  },
-  {
-    "objectID": "Econometria.html",
-    "href": "Econometria.html",
-    "title": "Econometria",
-    "section": "",
-    "text": "Perfil dos alunos\n→ Questionário de perfil da turma\n\nEmentaObjetivosAvaliaçõesCronogramaMetodologiaDisponibilização de conteúdo e interaçõesBibliografia básica\n\n\nA disciplina apresenta os fundamentos teóricos e práticos da Econometria, capacitando o estudante a:\n\nFormular, estimar e interpretar modelos de regressão linear e não-linear aplicados a problemas econômicos;\n\nDiagnosticar e corrigir falhas clássicas (multicolinearidade, heterocedasticidade, autocorrelação);\n\nUtilizar variáveis binárias, transformações funcionais e modelos polinomiais;\n\nAvaliar a qualidade dos modelos por meio de testes de hipóteses, intervalos de confiança, \\(R^2\\) (ajustado) e ANOVA;\n\nImplementar procedimentos de previsão e simulação com fins de apoio à decisão;\n\nCompreender a lógica de sistemas de equações simultâneas e métodos de estimação em dois estágios.\n\n\nAs aulas expositivo-dialogadas serão intercaladas com exercícios em laboratório de informática utilizando Excel, R e/ou Python.\n\n\n\n\nConceituar Econometria e situá-la na análise econômica aplicada.\n\nModelar relações econômicas usando técnicas de regressão simples e múltipla.\n\nAnalisar criticamente pressupostos, limitações e melhorias dos modelos.\n\nEstimular o uso de linguagens de programação e IA generativa pra códigos para estimação e validação empírica.\n\nDesenvolver capacidade de previsão e construção de cenários para tomada de decisão.\n\n\n\nCada etapa da disciplina reúne:\n\nListas de exercícios em Excel (iniciadas em laboratório e entregues até a aula anterior à prova) – 40 %\n\nProvas sem consulta – interpretativa, sem acesso à internet ou computador – 60 %\n\n\n\n\n\n\n\n\n\n\nComponente\nEstrutura\nData - referência\nPeso na nota\n\n\n\n\nN1\n• Listas de exercícios (4 pts)• Avaliação bimestral (6 pts)\n25 / 09 / 2025\n10 pts\n\n\nN2\n• Listas (4 pts)• Avaliação bimestral (6 pts)\n27 / 11 / 2025\n10 pts\n\n\nN3 (Substitutiva)\nProva única abrangendo todo o conteúdo\n11 / 12 / 2025\n10 pts • (substitui menor nota entre N1 ou N2)\n\n\n\nTodas as avaliações são individuais e sem consulta.\n\n\n\n\n\n\n\n\n\n\n\nEncontro\nData\nTema principal\nLocal\n\n\n\n\n1\n07/08\nIntrodução à Econometria: definições, método e especificação de modelos\n304\n\n\n2\n14/08\nNatureza da análise de regressão: relações estatísticas × determinísticas\n304\n\n\n3\n21/08\nRegressão bivariada: Função de Regressão Populacional (FRP) e estocasticidade\n304\n\n\n4\n28/08\nMQO no modelo de duas variáveis, Teorema de Gauss-Markov e \\(R^2\\)\n304\n\n\n5\n04/09\nIntervalos de confiança e testes de hipóteses nos coeficientes\n304\n\n\n6\n11/09\nExtensões do modelo: formas funcionais e elasticidades\n304\n\n\n7\n18/09\nRegressão múltipla: estimação e interpretação dos coeficientes\n304\n\n\n8\n25/09\nRegressão múltipla: inferência, teste \\(F\\), Chow e previsões\n304\n\n\n9\n02/10\nModelos com variáveis binárias: ANOVA, ANCOVA e efeitos de interação\n304\n\n\n10\n09/10\nMulticolinearidade: detecção e estratégias de correção\n304\n\n\n11\n16/10\nHeterocedasticidade: testes de White, Park, Glejser e MQG\n304\n\n\n12\n23/10\nAutocorrelação: testes Durbin-Watson, Breusch-Godfrey e correções\n304\n\n\n13\n30/10\nSistemas de equações simultâneas: identificação e MQ2E\n304\n\n\n14\n06/11\nProva N1 (conteúdo Aulas 1–13)\n304\n\n\n15\n13/11\nSeminários  / Apresentações de trabalhos aplicados\n304\n\n\n16\n27/11\nProva N2 (conteúdo Aulas 1–15)\n304\n\n\n17\n04/12\nRevisão geral & devolutiva\n304\n\n\n18\n11/12\nProva Substitutiva N3\n304\n\n\n\n\nRessaltamos que o conteúdo e a velocidade das atividades ensino pedagógicas poderão adaptadas conforme especificidades de conhecimentos prévios dos alunos da turma.\n\nNosso intervalo vai das 20:40 às 20:50 !\n\n\n\nAulas expositivo-dialogadas com resolução de exemplos na lousa.\n\nLaboratórios práticos semanais (R / Python) focados na estimação dos modelos abordados.\n\nEstudos de caso reais envolvendo dados macroeconômicos e financeiros.\n\nUso intensivo de Google Classroom para entrega de atividades, fóruns e feedback.\n\n\n\n\nTodas as interações aluno-professor ocorrerão via Google Classroom: https://classroom.google.com/u/1/c/Nzg5MDgzNDE5NTQ4\n\n\n\n\nGujarati (mais indicada) \\(\\Rightarrow\\) (Gujarati 2006)\n\n(Levine, Berenson, and Stephan 2008) — excelente para aplicações no Excel e reforço dos conceitos fundamentais\n\n(Pindyck and Rubinfeld 2004)\n\n(Hill, Griffiths, and Judge 2003)\n\n\nBibliografia complementar\n\n(Maddala 2003)\n\n(Stock and Watson 2004)\n\n(Morettin 2008)\n\n(Vasconcelos 2000)\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences\n\nGujarati, Damodar N. 2006. Econometria básica. 4th ed. Rio de Janeiro: Elsevier.\n\n\nHill, R. Carter, William E. Griffiths, and George G. Judge. 2003. Econometria. 2nd ed. São Paulo: Saraiva.\n\n\nLevine, David M., Mark L. Berenson, and David Stephan. 2008. Estatística: Teoria e Aplicações Usando o Microsoft Excel Em Português. Rio de Janeiro: LTC.\n\n\nMaddala, G. S. 2003. Introdução à Econometria. São Paulo: LTC.\n\n\nMorettin, Pedro A. 2008. Econometria Financeira: Um Curso Em séries Temporais Financeiras. São Paulo: Blucher.\n\n\nPindyck, Robert S., and Daniel L. Rubinfeld. 2004. Econometria: Modelos e Previsões. Rio de Janeiro: Elsevier.\n\n\nStock, James H., and Mark W. Watson. 2004. Econometria. São Paulo: Addison Wesley.\n\n\nVasconcelos, Marco Antônio S. 2000. Manual de Econometria: Nível Intermediário. São Paulo: Atlas.\n\nCitationBibTeX citation:@online{hermont_ozon,\n  author = {Hermont Ozon, Rodrigo},\n  title = {Econometria},\n  url = {https://fae.edu/cursos/66710715/ciencias-economicas.htm},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nHermont Ozon, Rodrigo. n.d. “Econometria.” https://fae.edu/cursos/66710715/ciencias-economicas.htm.",
+    "objectID": "IntroPresEconometrics.html#plano-de-estudo",
+    "href": "IntroPresEconometrics.html#plano-de-estudo",
+    "title": "Introdução à Econometria",
+    "section": "Plano de Estudo",
+    "text": "Plano de Estudo\n \n\nPré-Requisitos de conhecimento\nVamos começar com o que você NÃO precisa saber:\n\n\nNÃO será necessário o conhecimento de nenhuma linguagem de programação para o Excel (como VBA, macros, etc.).\nNÃO será preciso saber com muita profundidade as provas das formulações matemáticas ou matriciais.\nNÃO será necessário que você colete, limpe e monte os conjuntos de dados para analisá-los — as planilhas serão fornecidas.\n\n\nO que você deve conhecer previamente:\n\n\nEspera-se um conhecimento básico de MS Excel: inserir dados, utilizar menus e criar tabelas.\nQuando formos avançando no conteúdo, teremos que recorrer ao Google Colab, quando o Excel ficar extensivamente trabalhoso e pra isso, utilizaremos o Python ou o R! Mas fiquem tranquilos, não é necessário ser um expert nessas linguagens praquilo que precisaremos aqui!\nConhecimentos prévios  de teorias e conceitos de Economia e Negócios ajudam a gerar excelentes insights.",
     "crumbs": [
       "Econometria",
-      "Ementa e demais infos"
+      "Apresentação do nosso primeiro encontro"
     ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#plano-de-estudo-1",
+    "href": "IntroPresEconometrics.html#plano-de-estudo-1",
+    "title": "Introdução à Econometria",
+    "section": "Plano de Estudo",
+    "text": "Plano de Estudo\n\nComo funciona?\n\n\nAula expositiva com passagem de alguns conceitos brevemente teóricos.\nA cada avanço, você exercita no seu computador (Excel preferencialmente; também pode usar Google Sheets ou LibreOffice Calc) e quando avançarmos mais você poderá um Google Colab com o Python ou R !\nTodas as fontes e citações serão mencionadas no material; você é livre para consultá-las e se aprofundar.\nRecomenda-se dedicar pelo menos 30 minutos por dia para estudar por aqui.\nPara dúvidas, críticas, contribuições e sugestões, meus contatos estão no slide final desta apresentação. Interaja comigo!\nFaça todos os exercícios e assista a todas as aulas para obter a melhor experiência de aprendizado!",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#plano-de-estudo-material-de-apoio",
+    "href": "IntroPresEconometrics.html#plano-de-estudo-material-de-apoio",
+    "title": "Introdução à Econometria",
+    "section": "Plano de Estudo: Material de apoio",
+    "text": "Plano de Estudo: Material de apoio\n\n\n\nTodo o nosso conteúdo srá disponibilizado no Google Classroom, como descrito e instruído na Github Page do professor\n\n\nO material para você reproduzir os exemplos usados nas aulas em arquivos do Excel estarão também no meu repositório do Classroom:\n\nAcesse o repositório “Econometria”\n\n\nBaixar os arquivos de dados no formato .xlsx.\nAo final de cada aula, você terá as planilhas de exercícios para reproduzir.\nGeralmente deixo os links nas apresentações e na apostila/apresentação ou html para você apenas clicar e baixar.\n\n\n\n\n\n\n“A Econometria é muitíssimo interessante e nada complicada, pois hoje temos os computadores a nosso favor!” — O autor (grifo meu)",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#o-que-espero-que-você-aprenda-ao-final-do-curso",
+    "href": "IntroPresEconometrics.html#o-que-espero-que-você-aprenda-ao-final-do-curso",
+    "title": "Introdução à Econometria",
+    "section": "O que espero que você aprenda ao final do curso ?",
+    "text": "O que espero que você aprenda ao final do curso ?\n\n\n\nQue você seja capaz de começar a testar a teoria econômica com dados reais;\nQue você saiba utilizar bem dados observados para fazer boas inferências e ter bons insights para seu negócio, análise ou pesquisa;\nQue consiga compreender com maior clareza as relações empíricas entre as variáveis que deseja prever;\nSe interessar cada vez mais por Econometria e buscar aprender sempre mais!\n\n\n \n\n\n\n\n\n\n“Só sei que nada sei.” — Sócrates",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#o-que-é-econometria",
+    "href": "IntroPresEconometrics.html#o-que-é-econometria",
+    "title": "Introdução à Econometria",
+    "section": "O que é Econometria ?",
+    "text": "O que é Econometria ?\n\nExistem pelo menos quatro linhas de definição entre economistas para a econometria:\n\n\nA econometria como a ciência de testar teorias econômicas;\nO conjunto de ferramentas para prever valores futuros de variáveis econômicas (vendas, crescimento do PIB, preços de ações, etc.);\nO processo de ajustar modelos econômicos matemáticos a dados do mundo real;\nA ciência e arte de usar dados históricos para criar recomendações quantitativas de políticas em governo e empresas.",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#o-método-da-econometria",
+    "href": "IntroPresEconometrics.html#o-método-da-econometria",
+    "title": "Introdução à Econometria",
+    "section": "O método da econometria",
+    "text": "O método da econometria\n\nComo você escolheria entre as diferentes hipóteses ou modelos para um dado fenômeno? (Granger, 1999, p. 58).",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#os-tipos-de-econometria",
+    "href": "IntroPresEconometrics.html#os-tipos-de-econometria",
+    "title": "Introdução à Econometria",
+    "section": "Os tipos de econometria",
+    "text": "Os tipos de econometria\n\n\n\n\n\n\nFonte: Gujarati (2011, p. 34).\n\n\n\n\n\n\n“É somente através da econometria, a ciência de dados original, que você pode conhecer o caminho da causa ao efeito.” — Angrist (2008)",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#os-tipos-de-econometria-1",
+    "href": "IntroPresEconometrics.html#os-tipos-de-econometria-1",
+    "title": "Introdução à Econometria",
+    "section": "Os tipos de econometria",
+    "text": "Os tipos de econometria\n\n\n\n\n\n\nFonte: Gujarati (2011, p. 34).\n \n \n\n\n\n\n\n\n“É somente através da econometria, a ciência de dados original, que você pode conhecer o caminho da causa ao efeito.” — Angrist (2008)",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#econometria-versus-data-science",
+    "href": "IntroPresEconometrics.html#econometria-versus-data-science",
+    "title": "Introdução à Econometria",
+    "section": "Econometria versus data science",
+    "text": "Econometria versus data science\n\n\n\n\n\n*Playlist do curso completo dele aqui\n\n\n\n“Eu diria que a principal diferença é a abordagem do problema da previsão.\nOs cientistas de dados geralmente se preocupam com as abordagens do tipo de ajuste de curva para a previsão. Portanto, qualquer modelo que se adapte bem aos dados servirá. Se é uma experiência passada, podemos estar interessados em usá-la para extrapolar para o futuro.\nGrande parte da agenda de ciência de dados está ligada aos problemas de marketing de alguém. Você está tentando descobrir quem comprará algo, quem tomará alguma ação. A econometria, na minha opinião, lida com uma classe de problemas mais difícil.\nEconometristas estão mais preocupados com relacionamentos causais. Em outras palavras, se manipularmos algo, por exemplo, seguro de saúde ou política monetária, como será o mundo em resposta a essa mudança?”",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#machine-learning-big-data-vs-econometria",
+    "href": "IntroPresEconometrics.html#machine-learning-big-data-vs-econometria",
+    "title": "Introdução à Econometria",
+    "section": "Machine Learning, big data vs Econometria",
+    "text": "Machine Learning, big data vs Econometria\n\nSerá que o machine learning e o big data estão mudando a econometria?\n\n“Dados são o novo petróleo.” — Clive Humby (2006)\n\n…mas, muito além do conhecimento das ferramentas estatísticas e de data science, o profissional bem formado sempre será fundamental para abastecê-las; afinal, informação nem sempre é conhecimento.\n\n“Em alguns casos, estou um pouco preocupado com o fato de o grande volume de dados estar meio que se tornando uma distração.” — Josh Angrist, Mastering Econometrics",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#erros-comuns-na-econometria-aplicada",
+    "href": "IntroPresEconometrics.html#erros-comuns-na-econometria-aplicada",
+    "title": "Introdução à Econometria",
+    "section": "Erros comuns na econometria aplicada",
+    "text": "Erros comuns na econometria aplicada\n\n10 erros comuns na econometria aplicada\n\n\nDeixar de usar o bom senso e o conhecimento da teoria econômica.\nComeçar com as perguntas erradas sobre o fenômeno investigado.\nIgnorar os trabalhos e contribuições de outros econometristas.\nNão se familiarizar com os dados.\nComplicar excessivamente o(s) modelo(s) (Keep it simple, stupid!).\nObsessão por medidas de melhor ajuste e significância estatística.\nEsquecer da significância econômica.\nSupor que seus resultados sejam robustos sempre.\nSer inflexível com as complexidades do mundo real.\nIgnorar quando encontra resultados bizarros.",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#porquê-aprender-econometria",
+    "href": "IntroPresEconometrics.html#porquê-aprender-econometria",
+    "title": "Introdução à Econometria",
+    "section": "Porquê aprender econometria ?",
+    "text": "Porquê aprender econometria ?\n\nPorquê aprender econometria impulsiona minha carreira ?\n\n“Bem, se você acha que a econometria é chata, devo dizer que seus professores falharam com você. Talvez você tenha sofrido um curso de econometria que basicamente trata a disciplina como um tipo de matemática aplicada — muito teórica, muito abstrata.” — Josh Angrist, Mastering Econometrics\n\n\n“Eu continuo dizendo que o trabalho mais sexy nos próximos dez anos será o dos estatísticos. As pessoas pensam que eu estou brincando, mas quem imaginaria que os engenheiros de computação teriam sido o trabalho mais sexy dos anos 90?” — Hal Varian, The McKinsey Quarterly (jan/2009)",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#saber-econometria-pode-impulsionar-sua-carreira",
+    "href": "IntroPresEconometrics.html#saber-econometria-pode-impulsionar-sua-carreira",
+    "title": "Introdução à Econometria",
+    "section": "Saber econometria pode impulsionar sua carreira ?",
+    "text": "Saber econometria pode impulsionar sua carreira ?\n\n\nDesde que começou seus estudos, a demanda por conhecimentos econométricos cresceu?\n\n\n“Cresceu muito, e não só pra economistas. As instituições estão muito preocupadas em medir de forma correta os impactos das políticas adotadas, em elaborar estratégias e fazer previsões.”\n\n\n“A concorrência é muito acirrada em alguns setores, então esse conhecimento específico é muito demandado — principalmente se a pessoa que conhece as técnicas também saiba traduzi-las para o dia a dia da empresa, já que nem todos vão saber ler um resultado.” — extrato de entrevista com a profa. Priscila Fernandes Ribeiro (INSPER)",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#oportunidade",
+    "href": "IntroPresEconometrics.html#oportunidade",
+    "title": "Introdução à Econometria",
+    "section": "Oportunidade",
+    "text": "Oportunidade\n\nLeia esse interessante post do blog gustibuseconomia:\n\n\n“Eu não preciso aprender Econometria! – Uma aula sobre produtividade, atitude e, claro, econometria”",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#exercício-de-reflexão",
+    "href": "IntroPresEconometrics.html#exercício-de-reflexão",
+    "title": "Introdução à Econometria",
+    "section": "Exercício de reflexão",
+    "text": "Exercício de reflexão\n\nA importância de estudar econometria com uso de softwares\nSe você tivesse que calcular a média e o desvio padrão das alturas de uma amostra de um grupo específico de pessoas:",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#exercício-de-reflexão-1",
+    "href": "IntroPresEconometrics.html#exercício-de-reflexão-1",
+    "title": "Introdução à Econometria",
+    "section": "Exercício de reflexão",
+    "text": "Exercício de reflexão\n\nEstaturas\n\n\n\nEstaturas\n\n\n\n\n1metro72cm\n\n\n2metro06cm\n\n\n1metro86cm\n\n\n1metro65cm\n\n\n2metro08cm\n\n\n1metro93cm\n\n\n1metro78cm\n\n\n1metro,6cm\n\n\n1metro64cm\n\n\n1metro89cm\n\n\n1metro83cm\n\n\n2metro05cm\n\n\n1metro82cm\n\n\n1metro68cm\n\n\n1metro79cm\n\n\n2metro01cm\n\n\n1metro87cm\n\n\n1metro81cm\n\n\n2metro01cm\n\n\n1metro93cm",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#exercício-de-reflexão-2",
+    "href": "IntroPresEconometrics.html#exercício-de-reflexão-2",
+    "title": "Introdução à Econometria",
+    "section": "Exercício de reflexão",
+    "text": "Exercício de reflexão\n \n\n😟 …e você precisa calcular isso pois está prestando uma prova de concurso público em que o examinador proíbe o uso de calculadoras e celulares… 😟",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#questão-de-reflexão",
+    "href": "IntroPresEconometrics.html#questão-de-reflexão",
+    "title": "Introdução à Econometria",
+    "section": "Questão de reflexão",
+    "text": "Questão de reflexão\n\n\n\nQuem hoje faz alguma estatística sem o uso do computador? Na prática, essa realidade só existiu no passado.\nMesmo sabendo operar softwares estatísticos, sem interpretar os resultados — ou, pior, sem fazer as perguntas certas antes de coletar dados e formular hipóteses — não há diferença em relação ao exercício anterior.",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#os-softwares-mais-usados-pelos-econometristas",
+    "href": "IntroPresEconometrics.html#os-softwares-mais-usados-pelos-econometristas",
+    "title": "Introdução à Econometria",
+    "section": "Os softwares mais usados pelos econometristas",
+    "text": "Os softwares mais usados pelos econometristas\n\n\n\nR — The R Project for Statistical Computing\nStata\nEViews\nSPSS\nMatlab\nPython\nSAS\nGAUSS\nGretl\nLIMDEP\n…",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#os-softwares-estatísticos-e-o-big-data",
+    "href": "IntroPresEconometrics.html#os-softwares-estatísticos-e-o-big-data",
+    "title": "Introdução à Econometria",
+    "section": "Os softwares estatísticos e o big data",
+    "text": "Os softwares estatísticos e o big data\n\n\n“Economistas têm lidado historicamente com dados que se ajustavam a planilhas, mas isso tem mudado na medida em que novos dados se tornam disponíveis […]” — Hal Varian, Big Data: New Tricks for Econometrics\n\n\n\nMas então por qual razão eu preciso do Excel para começar a aprender econometria??",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#comece-aprendendo-econometria-com-o-excel",
+    "href": "IntroPresEconometrics.html#comece-aprendendo-econometria-com-o-excel",
+    "title": "Introdução à Econometria",
+    "section": "Comece aprendendo econometria com o Excel",
+    "text": "Comece aprendendo econometria com o Excel\n\n\n\nO Excel e os softwares mencionados utilizam matrizes e álgebra linear para os cálculos de que precisamos.\nO Excel é muitíssimo popular no mundo corporativo.\nIniciar econometria no Excel ajuda a entender a lógica de cálculo antes de migrar para softwares mais completos.\nComeçando pelo Excel, você avança para fórmulas e cálculos mais complexos, melhorando a leitura de livros-texto de econometria.\n\n\n\n“Sem dados você é apenas mais uma pessoa com uma opinião.” — W. Edwards Deming",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#referências",
+    "href": "IntroPresEconometrics.html#referências",
+    "title": "Introdução à Econometria",
+    "section": "Referências",
+    "text": "Referências\n \n\n\n\nAngrist, J., and J. S. Pischke. 2008. Mostly Harmless Econometrics: An Empiricist’s Companion.\n\n\nGrange, C. W. J. 1999. Empirical Modeling in Economics. Reino Unido: Cambridge University Press.\n\n\nGujarati, D. N., and D. N. Porter. 2011. Econometria básica. 5th ed. São Paulo.\n\n\nHoffmann, R. 2006. Estatı́stica Para Economistas. 4th ed. São Paulo.\n\n\nSartoris, A. 2013. Estatı́stica e Introdução à Econometria. 4th ed. São Paulo.",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "IntroPresEconometrics.html#obrigado",
+    "href": "IntroPresEconometrics.html#obrigado",
+    "title": "Introdução à Econometria",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos presentes e demais ouvintes:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nGithub Page do prof. RhOzon contendo instruções iniciais sobre a disciplina\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
+    "crumbs": [
+      "Econometria",
+      "Apresentação do nosso primeiro encontro"
+    ]
+  },
+  {
+    "objectID": "index.html#rodrigo-hermont-ozon",
+    "href": "index.html#rodrigo-hermont-ozon",
+    "title": "About the Professor",
+    "section": "Rodrigo Hermont Ozon",
+    "text": "Rodrigo Hermont Ozon\n  \n\n\n📌 Academic Profile\n\nEconomist and Master in Economic Development (UFPR)\nPh.D. Candidate in Industrial and Systems Engineering (PUCPR)\nProfessor of Finance, Data Science & Computational Programming at FAE Business School\nResearch Interests: Econometrics and Machine Learning, Financial Risk, Multiobjective Optim. in Finance, Financial Time Series Forecasting"
+  },
+  {
+    "objectID": "index.html#courses-and-materials",
+    "href": "index.html#courses-and-materials",
+    "title": "About the Professor",
+    "section": "📚 Courses and Materials",
+    "text": "📚 Courses and Materials\nHere are the available courses and learning materials:\n\n\n\n\n\n\nPay Attention\n\n\n\nFor complete materials, presentations, scripts and other, please see Google Classroom !\n\n\n\nEconometriaAnálise e Elaboração de Projetos de Investimento📊 Big Data for Finance Project📉 Risk Management🖥️ Programação Computacional\n\n\n\nEmenta e Conteúdo Progrmático\nSala no Classroom\n\nAtenção: Você precisa estar logado na sua conta @fae.edu para acessar o Classroom.\n\n\n\nEmenta e Conteúdo Progrmático\nSala no Classroom\n\nAtenção: Você precisa estar logado na sua conta @fae.edu para acessar o Classroom.\n\n\n\nEmenta e Conteúdo Programático\nCrie sua Github Page como Portfolio\n\n\\(\\Rightarrow\\) Fill my survey for students profile\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class.\n\n\n\nEmenta\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class.\n\n\n\nEmenta\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class."
+  },
+  {
+    "objectID": "index.html#contact-and-networks",
+    "href": "index.html#contact-and-networks",
+    "title": "About the Professor",
+    "section": "📢 Contact and Networks",
+    "text": "📢 Contact and Networks\nYou can find me on the following platforms:"
   },
   {
     "objectID": "EmentaProgComp.html#mindmap-da-disciplina",
@@ -704,25 +516,466 @@
     ]
   },
   {
-    "objectID": "index.html#rodrigo-hermont-ozon",
-    "href": "index.html#rodrigo-hermont-ozon",
-    "title": "About the Professor",
-    "section": "Rodrigo Hermont Ozon",
-    "text": "Rodrigo Hermont Ozon\n  \n\n\n📌 Academic Profile\n\nEconomist and Master in Economic Development (UFPR)\nPh.D. Candidate in Industrial and Systems Engineering (PUCPR)\nProfessor of Finance, Data Science & Computational Programming at FAE Business School\nResearch Interests: Econometrics and Machine Learning, Financial Risk, Multiobjective Optim. in Finance, Financial Time Series Forecasting"
+    "objectID": "Econometria.html",
+    "href": "Econometria.html",
+    "title": "Econometria",
+    "section": "",
+    "text": "Perfil dos alunos\n→ Questionário de perfil da turma\n\nEmentaObjetivosAvaliaçõesCronogramaMetodologiaDisponibilização de conteúdo e interaçõesBibliografia básica\n\n\nA disciplina apresenta os fundamentos teóricos e práticos da Econometria, capacitando o estudante a:\n\nFormular, estimar e interpretar modelos de regressão linear e não-linear aplicados a problemas econômicos;\n\nDiagnosticar e corrigir falhas clássicas (multicolinearidade, heterocedasticidade, autocorrelação);\n\nUtilizar variáveis binárias, transformações funcionais e modelos polinomiais;\n\nAvaliar a qualidade dos modelos por meio de testes de hipóteses, intervalos de confiança, \\(R^2\\) (ajustado) e ANOVA;\n\nImplementar procedimentos de previsão e simulação com fins de apoio à decisão;\n\nCompreender a lógica de sistemas de equações simultâneas e métodos de estimação em dois estágios.\n\n\nAs aulas expositivo-dialogadas serão intercaladas com exercícios em laboratório de informática utilizando Excel, R e/ou Python.\n\n\n\n\nConceituar Econometria e situá-la na análise econômica aplicada.\n\nModelar relações econômicas usando técnicas de regressão simples e múltipla.\n\nAnalisar criticamente pressupostos, limitações e melhorias dos modelos.\n\nEstimular o uso de linguagens de programação e IA generativa pra códigos para estimação e validação empírica.\n\nDesenvolver capacidade de previsão e construção de cenários para tomada de decisão.\n\n\n\nCada etapa da disciplina reúne:\n\nListas de exercícios em Excel (iniciadas em laboratório e entregues até a aula anterior à prova) – 40 %\n\nProvas sem consulta – interpretativa, sem acesso à internet ou computador – 60 %\n\n\n\n\n\n\n\n\n\n\nComponente\nEstrutura\nData - referência\nPeso na nota\n\n\n\n\nN1\n• Listas de exercícios (4 pts)• Avaliação bimestral (6 pts)\n25 / 09 / 2025\n10 pts\n\n\nN2\n• Listas (4 pts)• Avaliação bimestral (6 pts)\n27 / 11 / 2025\n10 pts\n\n\nN3 (Substitutiva)\nProva única abrangendo todo o conteúdo\n11 / 12 / 2025\n10 pts • (substitui menor nota entre N1 ou N2)\n\n\n\nTodas as avaliações são individuais e sem consulta.\n\n\n\n\n\n\n\n\n\n\n\nEncontro\nData\nTema principal\nLocal\n\n\n\n\n1\n07/08\nIntrodução à Econometria: definições, método e especificação de modelos\n304\n\n\n2\n14/08\nNatureza da análise de regressão: relações estatísticas × determinísticas\n304\n\n\n3\n21/08\nRegressão bivariada: Função de Regressão Populacional (FRP) e estocasticidade\n304\n\n\n4\n28/08\nMQO no modelo de duas variáveis, Teorema de Gauss-Markov e \\(R^2\\)\n304\n\n\n5\n04/09\nIntervalos de confiança e testes de hipóteses nos coeficientes\n304\n\n\n6\n11/09\nExtensões do modelo: formas funcionais e elasticidades\n304\n\n\n7\n18/09\nRegressão múltipla: estimação e interpretação dos coeficientes\n304\n\n\n8\n25/09\nRegressão múltipla: inferência, teste \\(F\\), Chow e previsões\n304\n\n\n9\n02/10\nModelos com variáveis binárias: ANOVA, ANCOVA e efeitos de interação\n304\n\n\n10\n09/10\nMulticolinearidade: detecção e estratégias de correção\n304\n\n\n11\n16/10\nHeterocedasticidade: testes de White, Park, Glejser e MQG\n304\n\n\n12\n23/10\nAutocorrelação: testes Durbin-Watson, Breusch-Godfrey e correções\n304\n\n\n13\n30/10\nSistemas de equações simultâneas: identificação e MQ2E\n304\n\n\n14\n06/11\nProva N1 (conteúdo Aulas 1–13)\n304\n\n\n15\n13/11\nSeminários  / Apresentações de trabalhos aplicados\n304\n\n\n16\n27/11\nProva N2 (conteúdo Aulas 1–15)\n304\n\n\n17\n04/12\nRevisão geral & devolutiva\n304\n\n\n18\n11/12\nProva Substitutiva N3\n304\n\n\n\n\nRessaltamos que o conteúdo e a velocidade das atividades ensino pedagógicas poderão adaptadas conforme especificidades de conhecimentos prévios dos alunos da turma.\n\nNosso intervalo vai das 20:40 às 20:50 !\n\n\n\nAulas expositivo-dialogadas com resolução de exemplos na lousa.\n\nLaboratórios práticos semanais (R / Python) focados na estimação dos modelos abordados.\n\nEstudos de caso reais envolvendo dados macroeconômicos e financeiros.\n\nUso intensivo de Google Classroom para entrega de atividades, fóruns e feedback.\n\n\n\n\nTodas as interações aluno-professor ocorrerão via Google Classroom: https://classroom.google.com/u/1/c/Nzg5MDgzNDE5NTQ4\n\n\n\n\nGujarati (mais indicada) \\(\\Rightarrow\\) (Gujarati 2006)\n\n(Levine, Berenson, and Stephan 2008) — excelente para aplicações no Excel e reforço dos conceitos fundamentais\n\n(Pindyck and Rubinfeld 2004)\n\n(Hill, Griffiths, and Judge 2003)\n\n\nBibliografia complementar\n\n(Maddala 2003)\n\n(Stock and Watson 2004)\n\n(Morettin 2008)\n\n(Vasconcelos 2000)\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferences\n\nGujarati, Damodar N. 2006. Econometria básica. 4th ed. Rio de Janeiro: Elsevier.\n\n\nHill, R. Carter, William E. Griffiths, and George G. Judge. 2003. Econometria. 2nd ed. São Paulo: Saraiva.\n\n\nLevine, David M., Mark L. Berenson, and David Stephan. 2008. Estatística: Teoria e Aplicações Usando o Microsoft Excel Em Português. Rio de Janeiro: LTC.\n\n\nMaddala, G. S. 2003. Introdução à Econometria. São Paulo: LTC.\n\n\nMorettin, Pedro A. 2008. Econometria Financeira: Um Curso Em séries Temporais Financeiras. São Paulo: Blucher.\n\n\nPindyck, Robert S., and Daniel L. Rubinfeld. 2004. Econometria: Modelos e Previsões. Rio de Janeiro: Elsevier.\n\n\nStock, James H., and Mark W. Watson. 2004. Econometria. São Paulo: Addison Wesley.\n\n\nVasconcelos, Marco Antônio S. 2000. Manual de Econometria: Nível Intermediário. São Paulo: Atlas.\n\nCitationBibTeX citation:@online{hermont_ozon,\n  author = {Hermont Ozon, Rodrigo},\n  title = {Econometria},\n  url = {https://fae.edu/cursos/66710715/ciencias-economicas.htm},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nHermont Ozon, Rodrigo. n.d. “Econometria.” https://fae.edu/cursos/66710715/ciencias-economicas.htm.",
+    "crumbs": [
+      "Econometria",
+      "Ementa e demais infos"
+    ]
   },
   {
-    "objectID": "index.html#courses-and-materials",
-    "href": "index.html#courses-and-materials",
-    "title": "About the Professor",
-    "section": "📚 Courses and Materials",
-    "text": "📚 Courses and Materials\nHere are the available courses and learning materials:\n\n\n\n\n\n\nPay Attention\n\n\n\nFor complete materials, presentations, scripts and other, please see Google Classroom !\n\n\n\nEconometriaAnálise e Elaboração de Projetos de Investimento📊 Big Data for Finance Project📉 Risk Management🖥️ Programação Computacional\n\n\n\nEmenta e Conteúdo Progrmático\nSala no Classroom\n\nAtenção: Você precisa estar logado na sua conta @fae.edu para acessar o Classroom.\n\n\n\nEmenta e Conteúdo Progrmático\nSala no Classroom\n\nAtenção: Você precisa estar logado na sua conta @fae.edu para acessar o Classroom.\n\n\n\nEmenta e Conteúdo Programático\nCrie sua Github Page como Portfolio\n\n\\(\\Rightarrow\\) Fill my survey for students profile\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class.\n\n\n\nEmenta\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class.\n\n\n\nEmenta\n\n\\(\\Rightarrow\\) Click here to join the class\nNote: You must be logged in with your @fae.edu account to access this class."
+    "objectID": "cv_test.html",
+    "href": "cv_test.html",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Economista (Econometria) e Data Scientist\n\n\n\n\nE-mail: rodrigoozon@yahoo.com.br\nWhatsapp: +55 (41) 98838-2904\nLinkedIn: rodrigohermontozon\nGoogle Scholar: Perfil\nPortfólio: rhozon.github.io\n\n\n\n\n\n\nAnálise de Dados & Econometria\nData Science & Machine Learning\nMarket Intelligence & Precificação\nPlanejamento Estratégico e Gerenciamento de Projetos\n\n\n\n\n\n\nLinguagens: R, Python, SQL, VBA, DAX, LaTeX, HTML/CSS\nFerramentas: Eviews, Stata, Power BI, Tableau, Google Data Studio\n\n\n\n\n\n\nPortuguês: Nativo\nInglês: Avançado\nEspanhol: Intermediário\n\n\n\n\n\nEconometrista e pesquisador Ph.D. com experiência em análise de dados, modelagem e apresentação de informações para apoiar decisões estratégicas. Atuou nos setores público e privado, com expertise em soluções digitais e liderança de projetos de inteligência analítica.\n\n\n\n\n\n\nCuritiba, PR – Jan 2025 a Presente\n\nCriação e gerenciamento de pipelines e processos de dados.\nDesenvolvimento de algoritmos customizados e modelos preditivos.\nColaboração com times de Data Science para otimização de estratégias.\n\n\n\n\nCuritiba, PR – Out 2024 a Dez 2024\n\nCoordenação de operações em inteligência pública e integração de sistemas.\nLiderança em iniciativas de desenvolvimento tecnológico e parcerias institucionais.\n\n\n\n\nCuritiba, PR – Abr 2023 a Out 2024\n\nConsultoria em análises preditivas e inferências estatísticas.\nSuporte ao desenvolvimento de modelos de machine learning e estratégias de negócio.\n\nOutras experiências relevantes fazem parte da trajetória profissional.\n\n\n\n\n\n\nPh.D. em Sistemas e Produção – PUCPR (2022-2027)\nMestrado em Desenvolvimento Econômico – UFPR (2011)\nBacharelado em Economia – UFPR (2007)\nTechGrad em Data Science – Univ. Cruzeiro do Sul (2022)\nLicenciatura em Matemática – UNESPAR (2002)\n\n\n\n\n\n\nCertificações Datacamp (2024 – Atual)\nData Science Professional Certificate – IBM (2020-2021)\nEconometrics: Methods and Applications – Erasmus University Rotterdam (2020)\nData Science Math Skills – Duke University (2020)\nMicrosoft Power BI para Data Science (2020)\n\n\n\n\n\nDiversas publicações e palestras em eventos acadêmicos e corporativos.\nConfira mais detalhes no Lattes."
   },
   {
-    "objectID": "index.html#contact-and-networks",
-    "href": "index.html#contact-and-networks",
-    "title": "About the Professor",
-    "section": "📢 Contact and Networks",
-    "text": "📢 Contact and Networks\nYou can find me on the following platforms:"
+    "objectID": "cv_test.html#contato",
+    "href": "cv_test.html#contato",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "E-mail: rodrigoozon@yahoo.com.br\nWhatsapp: +55 (41) 98838-2904\nLinkedIn: rodrigohermontozon\nGoogle Scholar: Perfil\nPortfólio: rhozon.github.io"
+  },
+  {
+    "objectID": "cv_test.html#habilidades",
+    "href": "cv_test.html#habilidades",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Análise de Dados & Econometria\nData Science & Machine Learning\nMarket Intelligence & Precificação\nPlanejamento Estratégico e Gerenciamento de Projetos"
+  },
+  {
+    "objectID": "cv_test.html#competências-técnicas",
+    "href": "cv_test.html#competências-técnicas",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Linguagens: R, Python, SQL, VBA, DAX, LaTeX, HTML/CSS\nFerramentas: Eviews, Stata, Power BI, Tableau, Google Data Studio"
+  },
+  {
+    "objectID": "cv_test.html#idiomas",
+    "href": "cv_test.html#idiomas",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Português: Nativo\nInglês: Avançado\nEspanhol: Intermediário"
+  },
+  {
+    "objectID": "cv_test.html#perfil-profissional",
+    "href": "cv_test.html#perfil-profissional",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Econometrista e pesquisador Ph.D. com experiência em análise de dados, modelagem e apresentação de informações para apoiar decisões estratégicas. Atuou nos setores público e privado, com expertise em soluções digitais e liderança de projetos de inteligência analítica."
+  },
+  {
+    "objectID": "cv_test.html#experiência-profissional",
+    "href": "cv_test.html#experiência-profissional",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Curitiba, PR – Jan 2025 a Presente\n\nCriação e gerenciamento de pipelines e processos de dados.\nDesenvolvimento de algoritmos customizados e modelos preditivos.\nColaboração com times de Data Science para otimização de estratégias.\n\n\n\n\nCuritiba, PR – Out 2024 a Dez 2024\n\nCoordenação de operações em inteligência pública e integração de sistemas.\nLiderança em iniciativas de desenvolvimento tecnológico e parcerias institucionais.\n\n\n\n\nCuritiba, PR – Abr 2023 a Out 2024\n\nConsultoria em análises preditivas e inferências estatísticas.\nSuporte ao desenvolvimento de modelos de machine learning e estratégias de negócio.\n\nOutras experiências relevantes fazem parte da trajetória profissional."
+  },
+  {
+    "objectID": "cv_test.html#formação-acadêmica",
+    "href": "cv_test.html#formação-acadêmica",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Ph.D. em Sistemas e Produção – PUCPR (2022-2027)\nMestrado em Desenvolvimento Econômico – UFPR (2011)\nBacharelado em Economia – UFPR (2007)\nTechGrad em Data Science – Univ. Cruzeiro do Sul (2022)\nLicenciatura em Matemática – UNESPAR (2002)"
+  },
+  {
+    "objectID": "cv_test.html#certificações-e-cursos",
+    "href": "cv_test.html#certificações-e-cursos",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Certificações Datacamp (2024 – Atual)\nData Science Professional Certificate – IBM (2020-2021)\nEconometrics: Methods and Applications – Erasmus University Rotterdam (2020)\nData Science Math Skills – Duke University (2020)\nMicrosoft Power BI para Data Science (2020)"
+  },
+  {
+    "objectID": "cv_test.html#publicações-palestras",
+    "href": "cv_test.html#publicações-palestras",
+    "title": "Curriculum Vitae - Rodrigo Hermont Ozon",
+    "section": "",
+    "text": "Diversas publicações e palestras em eventos acadêmicos e corporativos.\nConfira mais detalhes no Lattes."
+  },
+  {
+    "objectID": "Apres_encontro4.html#objetivos-de-hoje",
+    "href": "Apres_encontro4.html#objetivos-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Objetivos de hoje",
+    "text": "Objetivos de hoje\n \n\n\nTécnicas de redução de dimensionalidade em séries temporais financeiras. O impacto do Big Data na decisão humana.\nCase de aplicação de uso de redução de dimensionalidade em dados financeiros complexos em grande volume",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quarto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro4.html#agenda-to-do-de-hoje",
+    "href": "Apres_encontro4.html#agenda-to-do-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Agenda (to do de hoje)",
+    "text": "Agenda (to do de hoje)\n\n\nProf. Rodrigo H. Ozon apresenta o case\nGrupos apresentam o post de feature engineering e análises preliminares (15 mins por grupo)",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quarto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro4.html#obrigado",
+    "href": "Apres_encontro4.html#obrigado",
+    "title": "Big Data for Finance Project",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quarto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro2.html#objetivos-de-hoje",
+    "href": "Apres_encontro2.html#objetivos-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Objetivos de hoje",
+    "text": "Objetivos de hoje\n \n\n\nUso de datasets públicos:\n\nMostrarei algumas opções de conjuntos de dados públicos free que refletem uma carteira/portfólio\n\nSeleção de Portfolio:\n\nEscolha os preços das ações de empresas que mais te interessam (pro grupo)\n\nGerando dados sintéticos:\n\nComo artificializar dados financeiros, quando considerados sensíveis e que se comportariam similarmente às séries temporais de preços no mercado financeiro",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "To do list segundo encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro2.html#agenda-to-do-de-hoje",
+    "href": "Apres_encontro2.html#agenda-to-do-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Agenda (to do de hoje)",
+    "text": "Agenda (to do de hoje)\n\n\nAcessar o Google Drive da FAE e baixar, na pasta do nosso segundo encontro, os arquivos:\n\nSintData.qmd (código-fonte)\n\n.html correspondente (para visualização rápida)\n\nRodar o arquivo .qmd na sua IDE (instalar pacotes e bibliotecas do R e Python, se necessário).\nFormar grupos de até 4 integrantes para trabalharem juntos ao longo da disciplina de projetos.\nApresentação: Prof. Rodrigo introduz o conteúdo do .qmd.\nEscolher e visualizar um dataset público, ou preferencialmente:\n\nMontar a carteira de investimentos do grupo, selecionando empresas de interesse.\n\nExplorar as APIs quantmod (R) ou yahooquery (Python) para coletar dados de mercado.\n\nAlternativa: Caso haja dificuldades com APIs, criar uma carteira fictícia com pelo menos 6 séries de preços (seis empresas diferentes) ou utilizar técnicas de geração de dados sintéticos.\nDocumentação inicial:\n\nJustificar a escolha do conjunto de dados, das empresas selecionadas ou da artificialização dos dados.\n\nCriar um primeiro post na GitHub Page do grupo.\n\nSe necessário, revisar o tutorial do primeiro encontro sobre como configurar a página.\n\nPlanilha de acompanhamento:\n\nNo final do .qmd, há um link para uma planilha do Google, que cada grupo deve preencher para registrar as escolhas iniciais.\n\n🚀 Para o próximo encontro:\nCada grupo deverá apresentar sua página no GitHub e publicar um post (usando R ou Python) justificando a seleção dos dados do projeto.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "To do list segundo encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro2.html#obrigado",
+    "href": "Apres_encontro2.html#obrigado",
+    "title": "Big Data for Finance Project",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "To do list segundo encontro"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Apres_encontro3.html#objetivos-de-hoje",
+    "href": "Apres_encontro3.html#objetivos-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Objetivos de hoje",
+    "text": "Objetivos de hoje\n \n\n\nFeature Engineering\nBásico para uma análise risco x retorno de uma carteira de ativos financeiros;\nEDA\n\nInicial pra avaliarmos como deveremos lidar com valores extremos e padrões distribucionais\n\nModelagem de Volatilidade\n\nO uso de log-retornos dia-a-dia\nO uso de desvio-padrão dos retornos (range de dias \\(\\Rightarrow\\) incompatível com os retornos diários)\nO uso de modelos da família GARCH pra modelar volatilidade (risco) dia a dia x retornos dia-a-dia",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "To do list terceiro encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro3.html#agenda-to-do-de-hoje",
+    "href": "Apres_encontro3.html#agenda-to-do-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Agenda (to do de hoje)",
+    "text": "Agenda (to do de hoje)\n\n\nAcessar o Google Drive da FAE e baixar, na pasta do nosso terceiro encontro, os arquivos:\n\nFeatEngFinancial.qmd (código-fonte)\n\n.html correspondente (para visualização rápida)\n\nRodar o arquivo .qmd na sua IDE (instalar pacotes e bibliotecas do R e Python, se necessário).\n\nFormar grupos de até 4 integrantes para trabalharem juntos ao longo da disciplina de projetos.\nApresentação: Prof. Rodrigo introduz o conteúdo do .qmd.\nAdaptar esse código do .qmd pra rodar num notebook do Colab em sala de aula sobre feature eng. e preparar pra upar o próximo post deste conteúdo na github page do seu grupo durante a semana;\nApresentações rápidas por grupo: Apresentar o site do grupo publicado na GitHub page e mostrar o conjunto de dados da carteira montada (15 mins por grupo)\n🚀 Para o próximo encontro:\nCada grupo deverá apresentar sua página no GitHub e publicar um post (usando R ou Python) mostrando como fez a feature eng pra carteira de ativos selecionada.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "To do list terceiro encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro3.html#obrigado",
+    "href": "Apres_encontro3.html#obrigado",
+    "title": "Big Data for Finance Project",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "To do list terceiro encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#objetivos-de-hoje",
+    "href": "Apres_encontro5.html#objetivos-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Objetivos de hoje",
+    "text": "Objetivos de hoje\n\n\nMostrar a importância de compreendermos umm pouco sobre Modelos causais vs. modelos de Machine Learning (black-box) na previsão de séries temporais de preços de ativos financeiros. Comparação de performance de modelos.\nAvançarmos na análise da performance básica do nosso portfólio selecionado (forneço um .qmd no Drive)",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#agenda-to-do-de-hoje",
+    "href": "Apres_encontro5.html#agenda-to-do-de-hoje",
+    "title": "Big Data for Finance Project",
+    "section": "Agenda (to do de hoje)",
+    "text": "Agenda (to do de hoje)\n\n\nIntrodução ao tema\nModelos causais vs. Modelos de Machine Learning\n\nDefinições e conceitos\nAplicações práticas\nComparação de performance\n\nApresentação do nosso .qmd para vocês adaptarem pra carteira de vocês e apresentarem com o Colab. Até a próxima sexta, vocês postam no site do grupo essa análise e apresentam.\nGrupos apresentam as análises obtidas com Colab em sala",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#introdução-ao-tema",
+    "href": "Apres_encontro5.html#introdução-ao-tema",
+    "title": "Big Data for Finance Project",
+    "section": "Introdução ao tema",
+    "text": "Introdução ao tema\n\n\nImportância da previsão precisa de séries temporais financeiras.\nDiferenças fundamentais entre modelos interpretáveis (causais) e modelos \"black-box\" (machine learning).\nNecessidade crescente de técnicas eficientes no contexto do Big Data Financeiro.\n\nReferência inicial:\n\nVarian, H. R. (2014). Big Data: New Tricks for Econometrics. Journal of Economic Perspectives, 28(2), 3–28.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#modelos-causais-definição-e-conceitos",
+    "href": "Apres_encontro5.html#modelos-causais-definição-e-conceitos",
+    "title": "Big Data for Finance Project",
+    "section": "Modelos causais: Definição e Conceitos",
+    "text": "Modelos causais: Definição e Conceitos\n\n\nEnfatizam relações explícitas de causa e efeito.\nModelos comuns:\n\nModelos VAR estruturais (Vector AutoRegression)\nModelos ARDL (AutoRegressive Distributed Lag)\nModelos estruturais com equações simultâneas\n\n\nImportância dos Modelos Causais\n\nInterpretabilidade clara: Facilitam entender exatamente como variáveis econômicas e financeiras influenciam umas às outras.\nDecisões baseadas em insights econômicos: Permitem políticas econômicas e estratégias financeiras direcionadas.\nRobustez em mudanças estruturais: São mais resilientes frente a mudanças de contexto, regime econômico ou eventos inesperados, por possuírem embasamento econômico explícito.\n\nPor que são mais úteis no contexto financeiro?\n\nDecisões financeiras exigem clareza sobre os efeitos das ações tomadas.\nEntender os mecanismos causais evita decisões baseadas em correlações espúrias.\nA previsibilidade estrutural proporciona segurança adicional em períodos de alta volatilidade econômica.\n\nCitação relevante:\n\nAngrist, J., & Pischke, J. (2009). Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton University Press.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#modelos-de-machine-learning-black-box",
+    "href": "Apres_encontro5.html#modelos-de-machine-learning-black-box",
+    "title": "Big Data for Finance Project",
+    "section": "Modelos de Machine Learning (black-box)",
+    "text": "Modelos de Machine Learning (black-box)\n\n\nBaseiam-se em complexidade computacional, sem exigir uma estrutura causal explícita.\nExemplos típicos:\n\nRedes Neurais Profundas (Deep Learning)\nRandom Forests\nGradient Boosting Machines (XGBoost, LightGBM)\n\n\nVantagens: - Alta capacidade preditiva. - Lida eficientemente com grandes volumes e alta dimensionalidade de dados.\nCitação relevante:\n\nGu, S., Kelly, B., & Xiu, D. (2020). Empirical asset pricing via machine learning. The Review of Financial Studies, 33(5), 2223–2273.",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#comparação-de-performance",
+    "href": "Apres_encontro5.html#comparação-de-performance",
+    "title": "Big Data for Finance Project",
+    "section": "Comparação de Performance",
+    "text": "Comparação de Performance\n\nCritérios usuais de comparação:\n\nPrecisão de Previsão (RMSE, MAE)\nEstabilidade temporal dos resultados\nCapacidade de generalização (Out-of-sample)\n\nConclusões frequentes na literatura:\n\nModelos ML geralmente têm desempenho preditivo superior.\nModelos causais são preferidos quando interpretabilidade é crucial.\n\nArtigo sugerido para referência:\n\nMakridakis, S., Spiliotis, E., & Assimakopoulos, V. (2018). Statistical and Machine Learning forecasting methods: Concerns and ways forward. PloS One, 13(3).",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "Apres_encontro5.html#obrigado",
+    "href": "Apres_encontro5.html#obrigado",
+    "title": "Big Data for Finance Project",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos, futuros Data Scientists:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nMeu perfil no LinkedIn",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Agenda quinto encontro"
+    ]
+  },
+  {
+    "objectID": "EAPI.html",
+    "href": "EAPI.html",
+    "title": "Elaboração e Análise de Projetos de Investimentos",
+    "section": "",
+    "text": "Perfil dos alunos\n→ Questionário de perfil da turma\n\nEmentaAvaliaçõesCronogramaDisponibilização de conteúdo e interaçõesBibliografia básica\n\n\nA disciplina aborda todo o ciclo de vida de um projeto de investimento, desde a concepção da ideia até a decisão final de implementação. Os principais tópicos incluem:\n\nConceitos fundamentais de investimentos empresariais\n\nEstudos de mercado e projeções de demanda\n\nEstimativas de custos, receitas e estrutura de capital\n\nConstrução do fluxo de caixa livre do projeto\n\nCritérios de decisão econômica: VPL, TIR, Payback, Índice de Lucratividade\n\nAnálise de sensibilidade, cenários e simulação Monte Carlo\n\nAvaliação de riscos e incertezas\n\nAspectos contábeis, tributários e de financiamento\n\nElaboração do relatório de viabilidade (business case)\n\nAulas expositivas serão intercaladas com exercícios práticos em Excel em todos os encontros. No segundo horário de cada sexta-feira (laboratório 03, 7º andar) o aluno iniciará a lista da semana, que deverá ser finalizada e entregue até o próximo encontro.\n\nRessaltamos que o conteúdo e a velocidade das atividades ensino pedagógicas poderão adaptadas conforme especificidades de conhecimentos prévios dos alunos da turma.\n\n\n\nCada etapa da disciplina reúne:\n\nListas de exercícios em Excel (iniciadas em laboratório e entregues até a aula anterior à prova) – 40 %\n\nProvas sem consulta – interpretativa, sem acesso à internet ou computador – 60 %\n\n\n\n\n\n\n\n\n\n\n\nEtapa\nPeríodo das Listas\nInstrumento\nData\nPeso\n\n\n\n\nMódulo 1\nListas\nProva 1 (P1)\n26 / 09 / 2025\nListas 40 % + P1 60 %\n\n\nMódulo 2\nListas\nProva 2 (P2)\n28 / 11 / 2025\nListas 40 % + P2 60 %\n\n\nSubstitutiva\n—\nProva 3 (P3)¹\n12 / 12 / 2025\n—\n\n\n\n¹ P3 é opcional e serve para substituir a menor nota obtida entre P1 ou P2 (nota composta da etapa completa, já considerando listas + prova).\nPara um bom desempenho em cada prova, todas as listas correspondentes à etapa devem ter sido entregues dentro do prazo e feitas de acordo com o esperado e recomendado previamente.\n\n\n\n\n\n\n\n\n\n\n\nEncontro\nData\nTema principal\nAtividades / Entregas\n\n\n\n\n01\n08/08\nFundamentos de avaliação de projetos; apresentação da disciplina\nLista #1 (valor do dinheiro no tempo – Excel)\n\n\n02\n15/08\nTipos de projetos de investimento e ciclo de vida\nLista #2\n\n\n03\n22/08\nEstimativas de custos, receitas e construção do FCL\nLista #3\n\n\n04\n29/08\nMétodo do Valor Presente Líquido (VPL)\nLista #4\n\n\n05\n05/09\nMétodo da Taxa Interna de Retorno (TIR)\nLista #5\n\n\n06\n12/09\nPayback, Índice de Lucratividade e comparação de métodos\nLista #6\n\n\n07\n19/09\nAnálise de sensibilidade e cenários\nLista #7\n\n\n08\n26/09\nPROVA 1 (P1) – Capítulos 1 – 7 (Listas 40 % + P1 60 %)\n—\n\n\n09\n03/10\nSimulação de Monte Carlo aplicada a projetos\nLista #8\n\n\n10\n10/10\nCusto de capital, WACC e taxa mínima de atratividade (TMA)\nLista #9\n\n\n11\n17/10\nFinanciamento do projeto, estrutura de capital e alavancagem\nLista #10\n\n\n12\n24/10\nProjetos independentes, mutuamente excludentes e racionamento de capital\nLista #11\n\n\n13\n31/10\nEstudos de caso integrados (Capítulos 1 – 11)\nLista #12\n\n\n14\n28/11\nPROVA 2 (P2) – Capítulos 8 – 11 (Listas 40 % + P2 60 %)\n—\n\n\n15\n05/12\nRevisão geral em laboratório aberto\nLista #13 (revisão)\n\n\n16\n12/12\nPROVA 3 (P3) – Substitutiva (troca a menor nota entre P1/P2)\nEntrega final\n\n\n\n\n\n\nTodas as interações aluno–professor ocorrerão via Google Classroom: https://classroom.google.com/u/1/c/Nzg5MTE0MTEyMDU5\n\n\n\n\nLapponi (mais indicada) \\(\\Rightarrow\\) (Lapponi 2007)\n(Casarotto Filho 2002),\n(Holanda 1986),\n(Woiler and Mathias 2008),\n(Caloba 2002),\n(Helfert 2000),\n(Kotler 2012),\n(Ross et al. 2015),\n(Santos 2012)\n\n\n\n\n\n \n \n \n \n\n\n\n\n\n\n\nReferences\n\nCaloba, Geraldo. 2002. Análise de Investimentos: Tomada de Decisão Em Projetos Industriais. São Paulo: Atlas.\n\n\nCasarotto Filho, Nelson. 2002. Projeto de Negócio: Estratégias e Estudos de Viabilidade. São Paulo: Atlas.\n\n\nHelfert, Erich A. 2000. Técnicas de Análise Financeira. Porto Alegre: Bookman.\n\n\nHolanda, Nívio. 1986. Planejamento e Projetos. São Paulo: APEC.\n\n\nKotler, Philip. 2012. Administração de Marketing. São Paulo: Atlas.\n\n\nLapponi, J. C. 2007. Projetos de Investimento Na Empresa. Elsevier. https://books.google.com.br/books?id=kjKQPgAACAAJ.\n\n\nRoss, Stephen A. et al. 2015. Administração Financeira: Versão Brasileira de Corporate Finance. 10th ed. Porto Alegre: AMGH.\n\n\nSantos, José Joaquim dos. 2012. Fundamentos de Custos Para Formação Do Preço e Do Lucro. 5, revista, ampliada e modificada. São Paulo: Atlas.\n\n\nWoiler, S., and W. F. Mathias. 2008. Projetos: Planejamento, Elaboração e Análise. 2nd ed. São Paulo: Atlas.\n\nCitationBibTeX citation:@online{hermont_ozon,\n  author = {Hermont Ozon, Rodrigo},\n  title = {Elaboração e {Análise} de {Projetos} de {Investimentos}},\n  url = {https://fae.edu/cursos/66710715/ciencias-economicas.htm},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nHermont Ozon, Rodrigo. n.d. “Elaboração e Análise de Projetos de\nInvestimentos.” https://fae.edu/cursos/66710715/ciencias-economicas.htm.",
+    "crumbs": [
+      "Análise e Elaboração de Projetos de Investimento",
+      "Ementa e demais infos"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html",
+    "href": "EmentaBigDataFinProj.html",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "",
+    "text": "*For portuguese-br version see the pdf file here.\n\\(\\Rightarrow\\) Preencha o Forms do Perfil dos Estudantes aqui!",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#our-first-meeting",
+    "href": "EmentaBigDataFinProj.html#our-first-meeting",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "️Our first meeting",
+    "text": "️Our first meeting\n\nDidatic contract\nContent of course presentation\nJustificative for financial ML/DS/Econometrics portfolio",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
+    "href": "EmentaBigDataFinProj.html#creating-github-pages-with-quarto",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "1️⃣ Creating GitHub Pages with Quarto",
+    "text": "1️⃣ Creating GitHub Pages with Quarto\n\nSetting up Quarto\nPublishing pages on GitHub Pages",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#generating-synthetic-data",
+    "href": "EmentaBigDataFinProj.html#generating-synthetic-data",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "2️⃣ Generating Synthetic Data",
+    "text": "2️⃣ Generating Synthetic Data\n\nIntroduction to synthetic data\nMethods and tools for simulated data creation",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
+    "href": "EmentaBigDataFinProj.html#feature-engineering-key-metrics-for-financial-time-series",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series",
+    "text": "3️⃣ Feature Engineering & Key Metrics for Financial Time Series\n\nDimensionality reduction techniques\nBuilding differentiated variables\nTechniques for stationarity analysis",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
+    "href": "EmentaBigDataFinProj.html#forecasting-price-series-in-basic-economic-theory",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "4️⃣ Forecasting Price Series in Basic Economic Theory",
+    "text": "4️⃣ Forecasting Price Series in Basic Economic Theory\n\nForecasting fundamentals\nPractical applications in price prediction",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
+    "href": "EmentaBigDataFinProj.html#markowitz-theory-multi-objective-modeling",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "5️⃣ Markowitz Theory & Multi-Objective Modeling",
+    "text": "5️⃣ Markowitz Theory & Multi-Objective Modeling\n\nIntroduction to Markowitz model\nImplementing a bi-objective model for risk-return balance",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
+    "href": "EmentaBigDataFinProj.html#considering-investor-profiles-in-decision-making",
+    "title": "Ementa Big Data for Finance Project",
+    "section": "6️⃣ Considering Investor Profiles in Decision Making",
+    "text": "6️⃣ Considering Investor Profiles in Decision Making\n\nAdjustments based on investor risk profiles\nStrategies for personalized financial decisions",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#fundamentos-de-risk-management",
+    "href": "EmentaRiskMng.html#fundamentos-de-risk-management",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Fundamentos de Risk Management",
+    "text": "🔹 Fundamentos de Risk Management\n\nIntrodução ao conceito de risco\n\nTipos de risco: mercado, crédito, operacional e liquidez",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#medidas-de-risco",
+    "href": "EmentaRiskMng.html#medidas-de-risco",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Medidas de Risco",
+    "text": "🔹 Medidas de Risco\n\nValue at Risk (VaR), Expected Shortfall (ES)\n\nBacktesting e stress testing",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#análise-de-portfólios",
+    "href": "EmentaRiskMng.html#análise-de-portfólios",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Análise de Portfólios",
+    "text": "🔹 Análise de Portfólios\n\nCálculo de risco e retorno esperado\n\nFronteira eficiente e diversificação",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#simulação-de-monte-carlo",
+    "href": "EmentaRiskMng.html#simulação-de-monte-carlo",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Simulação de Monte Carlo",
+    "text": "🔹 Simulação de Monte Carlo\n\nAplicação prática no Excel e Python\n\nCenários de risco e projeções",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#hedging-e-mitigação-de-riscos",
+    "href": "EmentaRiskMng.html#hedging-e-mitigação-de-riscos",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Hedging e Mitigação de Riscos",
+    "text": "🔹 Hedging e Mitigação de Riscos",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "EmentaRiskMng.html#avaliação-de-performance-ajustada-ao-risco",
+    "href": "EmentaRiskMng.html#avaliação-de-performance-ajustada-ao-risco",
+    "title": "Ementa Risk Management",
+    "section": "🔹 Avaliação de Performance Ajustada ao Risco",
+    "text": "🔹 Avaliação de Performance Ajustada ao Risco",
+    "crumbs": [
+      "Risk Management",
+      "Ementa"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#rstudio",
+    "href": "introportfoliogithubpages.html#rstudio",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 RStudio",
+    "text": "🔹 RStudio\n\nAbra o RStudio.\nVá para File &gt; New Project &gt; New Directory &gt; Quarto Website.\nEscolha um nome e um local para o projeto (local, OneDrive, Google Drive, …) e marque as opções Create a git repository, Use renv with this project\nClique em Create Project.\nInstale os pacotes necessários no console do RStudio: (opcional)\ninstall.packages(\"quarto\")\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nPara renderizar o site, rode:\nquarto::quarto_render()\nou no Terminal execute\nquarto render\nOu simplesmente clique no botão Render quando estiver com o arquivo index.qmd ou about.qmd abertos para visualizar um preview do site.\n\nObs.: Se encontrar alguma mensagem de erro como - The project is out-of-sync -- use renv::status() for details. em Background Jobs, no console do RStudio, digite:\nrenv::status()\nIsso mostrará o que precisa ser atualizado.\nEm seguida, para sincronizar pacotes, rode:\nrenv::restore()\nSe quiser atualizar todos os pacotes:\nrenv::update()\nDepois de resolver os problemas dos pacotes, tente renderizar o site no RStudio:\nquarto::quarto_render()",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#positron",
+    "href": "introportfoliogithubpages.html#positron",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 Positron",
+    "text": "🔹 Positron\n\nBaixe e instale o Positron: https://positron.dev/ ou em https://github.com/posit-dev/positron\nFile &gt; New File &gt; Quarto Project &gt; Website Project.\nEscolha o diretório onde pretende salvar o seu projeto, local, OneDrive, Google Drive…crie um nome pro seu subdir em Project Directory Name\nFile &gt; Open Recent &gt; e abra o subdir que você acabou de criar\nNote que vc terá no seu projeto os seguintes arquivos:\n\n\n_quarto.yml\nabout.qmd\nindex.qmd\nstyles.css\n\n\nEdite o arquivo quarto.yml e da linha 1 a 3 copie e cole o codigo abaixo:\nproject:\n  type: website\n  output-dir: \".\"\nAbra qualquer um dos dois .qmd e execute ele clicando em Preview ou usando o atalho CTRL+Shift+K (Windows)\nRenderize o site:\nquarto render",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
+  },
+  {
+    "objectID": "introportfoliogithubpages.html#vscode",
+    "href": "introportfoliogithubpages.html#vscode",
+    "title": "Crie seu portfolio numa Github Page",
+    "section": "🔹 VSCode",
+    "text": "🔹 VSCode\n\nBaixe e instale o Quarto se ainda não tiver: https://quarto.org/\nAbra a pasta do projeto (File &gt; Open Folder).\nInstale a extensão do Quarto:\n\nVá em Extensions (Ctrl + Shift + X).\nPesquise por “Quarto” e instale.\n\nPara renderizar o site, abra o terminal e rode:\nquarto render\nMaiores infos podem ser obtidas nesse link oficial do quarto.org ou p. ex. nesse vídeo aqui e aqui",
+    "crumbs": [
+      "Big Data for Finance Project",
+      "Criando seu portfolio numa Github page"
+    ]
   },
   {
     "objectID": "mindmap_test.html",
