@@ -670,6 +670,195 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "AEPI_Pres.html#plano-de-estudo",
+    "href": "AEPI_Pres.html#plano-de-estudo",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Plano de Estudo",
+    "text": "Plano de Estudo\n \n\n\nVer Ementário e demais informações em Site prof. RhOzon\nResponder o questionário de perfil em Google Forms (usuário FAE)"
+  },
+  {
+    "objectID": "AEPI_Pres.html#perguntas",
+    "href": "AEPI_Pres.html#perguntas",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Perguntas",
+    "text": "Perguntas\n\n\nDefinir “projeto de investimento” com exemplos do dia a dia (empresa, governo, pessoal).\nO que você definiria como “projetos de investimento” com alguns exemplos de seu dia a dia (empresa, governo, pessoal).\nEnfatizar que a análise é preventiva: melhor gastar tempo analisando do que desperdiçar dinheiro em projeto ruim.\nPerguntar se os alunos já ouviram falar em viabilidade econômica ou estudo de viabilidade – relacionar com o que faremos no curso."
+  },
+  {
+    "objectID": "AEPI_Pres.html#o-que-é-análise-de-projetos-de-investimento",
+    "href": "AEPI_Pres.html#o-que-é-análise-de-projetos-de-investimento",
+    "title": "Análise de Projetos de Investimento",
+    "section": "O que é Análise de Projetos de Investimento?",
+    "text": "O que é Análise de Projetos de Investimento?\n\n\nProjeto de investimento: qualquer iniciativa que exige recursos agora para gerar resultados futuros (ex.: abrir um negócio, expandir uma fábrica, construir uma estrada).\nAnálise de projetos: processo de avaliar a viabilidade desses projetos – estimando custos, receitas e riscos – para decidir se valem a pena.\nEm outras palavras, buscamos prever retorno e risco de um projeto antes de investir.\nPergunta central: “Este projeto trará benefícios que justificam o investimento?”"
+  },
+  {
+    "objectID": "AEPI_Pres.html#por-que-analisar-antes-de-investir",
+    "href": "AEPI_Pres.html#por-que-analisar-antes-de-investir",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Por que analisar antes de investir?",
+    "text": "Por que analisar antes de investir?\n\n\n\nEvitar prejuízos: decisões mal embasadas destroem valor (Damodaran 2012; Neto 2016).\nAlocar capital escasso nas melhores alternativas (orçamento de capital).\nReduzir incertezas com cenários e sensibilidade (disciplinar o otimismo).\nComunicar a decisão de forma técnica e transparente (governança).\n\n\n\n“O risco vem de não saber o que você está fazendo.” — (Buffett 1996)"
+  },
+  {
+    "objectID": "AEPI_Pres.html#objetivos-de-aprendizagem",
+    "href": "AEPI_Pres.html#objetivos-de-aprendizagem",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Objetivos de aprendizagem",
+    "text": "Objetivos de aprendizagem\n\nAo final do curso, você será capaz de:\n\n\nEstruturar fluxos de caixa (CAPEX, OPEX, impostos, depreciação, capital de giro).\nCalcular e interpretar VPL, TIR, MIRR, Payback (simples e descontado), IBC.\nEstimar TMA / WACC em nível introdutório (Damodaran 2012; Copeland, Koller, and Murrin 2010).\nConduzir análise de sensibilidade e cenários (otimista/base/pessimista).\nElaborar relatório de viabilidade claro, com premissas justificadas e referências."
+  },
+  {
+    "objectID": "AEPI_Pres.html#dinâmica-da-disciplina",
+    "href": "AEPI_Pres.html#dinâmica-da-disciplina",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Dinâmica da Disciplina",
+    "text": "Dinâmica da Disciplina\n\n\n\nAulas expositivas curtas + mão na massa em Excel (principal).\nDemonstrações opcionais em Google Colab (Python) para automatizar/simular.\nEstudos de caso e exercícios progressivos (individuais e em duplas).\nProjeto final: análise de viabilidade com planilha e sumário executivo.\nParticipação e ética acadêmica contam (citar fontes!)."
+  },
+  {
+    "objectID": "AEPI_Pres.html#materiais-e-organização",
+    "href": "AEPI_Pres.html#materiais-e-organização",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Materiais e Organização",
+    "text": "Materiais e Organização\n\n\n\nPlanilhas-modelo e datasets no Classroom/Drive.\nLeituras-base: (Lapponi 2007; Woiler and Mathias 1996; Filho and Kopittke 2010; Brealey, Myers, and Allen 2019; Ross et al. 2022; Damodaran 2012; Boardman et al. 2018).\nComplementos: relatórios setoriais, IBGE, BACEN, ANEEL/ANP/ANTT (conforme caso).\nVídeos recomendados (Damodaran, Robert Schiller (coursera)) para revisão extra-classe."
+  },
+  {
+    "objectID": "AEPI_Pres.html#roteiro-do-semestre-macro",
+    "href": "AEPI_Pres.html#roteiro-do-semestre-macro",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Roteiro do Semestre (macro)",
+    "text": "Roteiro do Semestre (macro)\n\n\n\nFundamentos: valor do dinheiro no tempo, TMA/WACC, fluxos.\nMétricas: VPL, TIR, MIRR, Payback, IBC — prós/limitações.\nModelagem: CAPEX/OPEX, impostos, depreciação, capital de giro.\nMercado: demanda, preço, concorrência (visão introdutória).\nRisco: sensibilidade, cenários; noções de simulação.\nProjeto final: aplicação integral e apresentação."
+  },
+  {
+    "objectID": "AEPI_Pres.html#valor-do-dinheiro-no-tempo-tvm",
+    "href": "AEPI_Pres.html#valor-do-dinheiro-no-tempo-tvm",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Valor do Dinheiro no Tempo (TVM)",
+    "text": "Valor do Dinheiro no Tempo (TVM)\n\n\n\nDesconto: trazer fluxos futuros ao presente.\nCapitalização: levar valores presentes ao futuro.\nTMA: custo de oportunidade do capital.\nWACC (noções): média ponderada do custo da dívida e do capital próprio (Damodaran 2012; Copeland, Koller, and Murrin 2010)."
+  },
+  {
+    "objectID": "AEPI_Pres.html#principais-indicadores-visão-rápida",
+    "href": "AEPI_Pres.html#principais-indicadores-visão-rápida",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Principais Indicadores (visão rápida)",
+    "text": "Principais Indicadores (visão rápida)\n\n\nVPL: soma dos fluxos descontados − investimento inicial.\n\nRegra: aceitar projetos com VPL &gt; 0 (criam valor).\n\nTIR: taxa que zera o VPL.\n\nCuidado com múltiplas TIRs e rankings inconsistentes (Brealey, Myers, and Allen 2019).\n\nMIRR: TIR modificada (reinvestimento à TMA).\nPayback: tempo de recuperação (simples e descontado).\nIBC/CBR: benefício-custo (comum em setor público) (Boardman et al. 2018)."
+  },
+  {
+    "objectID": "AEPI_Pres.html#vpl-x-tir-quando-divergem",
+    "href": "AEPI_Pres.html#vpl-x-tir-quando-divergem",
+    "title": "Análise de Projetos de Investimento",
+    "section": "VPL x TIR: quando divergem?",
+    "text": "VPL x TIR: quando divergem?\n\n\n\nProjetos mutuamente excludentes1 e tamanhos distintos → VPL é preferível (maximiza valor absoluto).\nFluxos não convencionais podem gerar múltiplas TIRs.\nTaxas de reinvestimento implícitas diferem: TIR assume reinvestir à TIR; VPL assume reinvestir à TMA (Brealey, Myers, and Allen 2019; Damodaran 2012).\n\n\n\nSão alternativas de investimento que competem pelo mesmo objetivo ou recurso, de modo que escolher uma elimina as demais. Exemplos: instalar a fábrica na cidade A ou B; comprar a máquina X ou Y. Implicação prática: quando os projetos diferem em tamanho e calendário de fluxos, priorize a comparação pelo VPL; a TIR pode induzir a rankings inconsistentes."
+  },
+  {
+    "objectID": "AEPI_Pres.html#estrutura-do-fluxo-de-caixa",
+    "href": "AEPI_Pres.html#estrutura-do-fluxo-de-caixa",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Estrutura do Fluxo de Caixa",
+    "text": "Estrutura do Fluxo de Caixa\n\n\nCAPEX: investimento inicial (máquinas, obras, TI).\n\nOPEX: custos/despesas operacionais.\n\nDepreciação (não-caixa) → impacto fiscal.\n\nCapital de giro: estoques, contas a receber/pagar.\n\nImpostos: IR/CSLL, ISS/ICMS (conforme caso).\n\nValor residual: venda de ativos/recuperação de giro ao final."
+  },
+  {
+    "objectID": "AEPI_Pres.html#mini-exemplo-conceitual",
+    "href": "AEPI_Pres.html#mini-exemplo-conceitual",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Mini-exemplo (conceitual)",
+    "text": "Mini-exemplo (conceitual)\n\n\n\n\nAno\nFluxo (R$)\nObservação\n\n\n\n\n0\n-100.000\nCAPEX + giro\n\n\n1\n30.000\nFC operacional líquido\n\n\n2\n35.000\nFC operacional líquido\n\n\n3\n40.000\nFC + residual 10.000\n\n\n\n\nCalcule VPL a 12% a.a.; compare TIR e Payback (desc.).\nEm sala: Excel com =VPL(), =NPV(), =TIR(), =XNPV()."
+  },
+  {
+    "objectID": "AEPI_Pres.html#opcional-cálculo-rápido-em-r",
+    "href": "AEPI_Pres.html#opcional-cálculo-rápido-em-r",
+    "title": "Análise de Projetos de Investimento",
+    "section": "(Opcional) Cálculo rápido em R",
+    "text": "(Opcional) Cálculo rápido em R\n\n\n\nMostrar código\nfc  &lt;- c(-100000, 30000, 35000, 50000)  # último inclui residual 10k\n\ntma &lt;- 0.12\n\nvpl &lt;- sum(fc / (1 + tma)^(0:(length(fc)-1)))\n\ntir &lt;- uniroot(function(r) sum(fc / (1 + r)^(0:(length(fc)-1))), c(0,1))$root\n\nlist(VPL = round(vpl, 2), TIR_aprox = round(tir, 4))\n\n\n$VPL\n[1] -9723.49\n\n$TIR_aprox\n[1] 0.0671\n\n\n\nDemonstração apenas; Excel será a ferramenta principal.\n\n\n\nMostrar código\n# Fluxos de caixa e taxa mínima de atratividade (TMA)\nfc = [-100000, 30000, 35000, 50000]  # último inclui residual de 10k\ntma = 0.12\n\ndef npv(rate, cashflows):\n    \"\"\"Valor Presente Líquido (VPL).\"\"\"\n    return sum(cf / (1 + rate) ** t for t, cf in enumerate(cashflows))\n\ndef irr_bisection(cashflows, low=0.0, high=1.0, tol=1e-8, max_iter=100):\n    \"\"\"\n    TIR aproximada via bissecção (equivalente ao uniroot do R no intervalo [low, high]).\n    Ajuste o intervalo se necessário (ex.: IRR &gt; 100% ou negativa).\n    \"\"\"\n    f_low = npv(low, cashflows)\n    f_high = npv(high, cashflows)\n    if f_low * f_high &gt; 0:\n        raise ValueError(\"NPV tem o mesmo sinal nas extremidades; amplie o intervalo de busca.\")\n\n    for _ in range(max_iter):\n        mid = (low + high) / 2.0\n        f_mid = npv(mid, cashflows)\n        if abs(f_mid) &lt; tol:\n            return mid\n        if f_low * f_mid &lt; 0:\n            high, f_high = mid, f_mid\n        else:\n            low, f_low = mid, f_mid\n    return (low + high) / 2.0  # retorno após máx. iterações\n\nvpl = npv(tma, fc)\ntir = irr_bisection(fc, low=0.0, high=1.0)\n\nresultado = {\"VPL\": round(vpl, 2), \"TIR_aprox\": round(tir, 4)}\nprint(resultado)\n\n\n{'TIR_aprox': 0.0671, 'VPL': -9723.49}"
+  },
+  {
+    "objectID": "AEPI_Pres.html#análise-de-sensibilidade",
+    "href": "AEPI_Pres.html#análise-de-sensibilidade",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Análise de Sensibilidade",
+    "text": "Análise de Sensibilidade\n\n\n\nUnivariada: variar 1 premissa (preço ↑/↓ 10%) e observar VPL.\nTornado: ranking do impacto no VPL por variável.\nElasticidades simples: quanto 1% em volume/preço altera o VPL?\nCenários: otimista / base / pessimista (múltiplas variáveis).\n\n\n\n“Planos simples e robustos vencem projeções excessivamente precisas.” — (Flyvbjerg 2014)"
+  },
+  {
+    "objectID": "AEPI_Pres.html#risco-e-incerteza",
+    "href": "AEPI_Pres.html#risco-e-incerteza",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Risco e Incerteza",
+    "text": "Risco e Incerteza\n\n\n\nRisco (probabilidades conhecidas) × Incerteza (Knightiana) (Knight 1921).\nViés do otimismo e overconfidence em projeções (Kahneman 2011).\nMitigar: estimativas bottom-up, benchmarks, sanity checks.\nGovernança: stage-gates, peer review, post-mortems."
+  },
+  {
+    "objectID": "AEPI_Pres.html#projetos-públicos-x-privados",
+    "href": "AEPI_Pres.html#projetos-públicos-x-privados",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Projetos Públicos x Privados",
+    "text": "Projetos Públicos x Privados\n\n\nPrivados: maximizar valor ao acionista (VPL/TIR).\n\nPúblicos: análise custo–benefício (ACB) e impacto social; uso de IBC/CBR, shadow prices e externalidades (Boardman et al. 2018).\n\nPPP/Concessões: repartição de riscos, matriz de riscos, garantias."
+  },
+  {
+    "objectID": "AEPI_Pres.html#aspectos-mercadológicos-visão-rápida",
+    "href": "AEPI_Pres.html#aspectos-mercadológicos-visão-rápida",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Aspectos Mercadológicos (visão rápida)",
+    "text": "Aspectos Mercadológicos (visão rápida)\n\n\n\nDemanda: tamanho de mercado, crescimento, share esperado.\nPreço: posicionamento, sensibilidade, competição.\nConcorrência: barreiras à entrada, diferenciação.\nOperação: capacidade, curva de aprendizado, produtividade.\n\n\n\n“Sem dados você é só mais uma pessoa com opinião.” — (Deming 1986)"
+  },
+  {
+    "objectID": "AEPI_Pres.html#financiamento-e-estrutura-de-capital-noções",
+    "href": "AEPI_Pres.html#financiamento-e-estrutura-de-capital-noções",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Financiamento e Estrutura de Capital (noções)",
+    "text": "Financiamento e Estrutura de Capital (noções)\n\n\n\nDívida × Capital próprio: trade-offs (custo, risco, controle).\nWACC: pondera custos pela participação na estrutura (Damodaran 2012).\nEfeito do endividamento no VPL (escudo fiscal / risco financeiro).\nProject finance (noções): SPV, garantias, non-recourse."
+  },
+  {
+    "objectID": "AEPI_Pres.html#erros-comuns-na-análise",
+    "href": "AEPI_Pres.html#erros-comuns-na-análise",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Erros Comuns na Análise",
+    "text": "Erros Comuns na Análise\n\n\n\nMisturar nominal × real (e taxa coerente).\n\nIgnorar capital de giro e valor residual.\n\nUsar TIR em fluxos não convencionais (múltiplas TIRs).\n\nExagerar premissas de volume/preço sem benchmark.\n\nNão testar sensibilidade e cenários.\n\nConfundir lucro contábil com fluxo de caixa."
+  },
+  {
+    "objectID": "AEPI_Pres.html#atividade-1-excel-rápida-exemplo",
+    "href": "AEPI_Pres.html#atividade-1-excel-rápida-exemplo",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Atividade 1 — Excel (rápida) (Exemplo)",
+    "text": "Atividade 1 — Excel (rápida) (Exemplo)\n\nNÃO PRECISA ENTREGAR ESTA!\n\n\nBaixe a planilha “AP1_fluxo_base.xlsx” (Classroom).\nPreencha CAPEX, OPEX e impostos conforme enunciado.\nCalcule VPL (12% a.a.), TIR, Payback (desc.).\nEntregue planilha + 3 respostas de interpretação."
+  },
+  {
+    "objectID": "AEPI_Pres.html#bônus-vídeo-para-revisão",
+    "href": "AEPI_Pres.html#bônus-vídeo-para-revisão",
+    "title": "Análise de Projetos de Investimento",
+    "section": "(Bônus) Vídeo para revisão",
+    "text": "(Bônus) Vídeo para revisão\n\n\nPlaylist do prof. (Damodaran 2012) sobre finanças corporativas aqui"
+  },
+  {
+    "objectID": "AEPI_Pres.html#projeto-de-investimento-guia-resumo",
+    "href": "AEPI_Pres.html#projeto-de-investimento-guia-resumo",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Projeto de Investimento — Guia (resumo)",
+    "text": "Projeto de Investimento — Guia (resumo)\n\n\n\nTema: descreva problema, proposta e hipóteses.\nModelagem: FC (CAPEX, OPEX, impostos, giro, residual).\nTMA/WACC: justificar taxa usada e fontes.\nMétricas: VPL, TIR/MIRR, Payback (desc.), IBC (se aplicável).\nRisco: sensibilidade (tornado) e cenários.\nEntrega: planilha + sumário executivo (2–3 págs)."
+  },
+  {
+    "objectID": "AEPI_Pres.html#como-mandar-bem-na-disciplina",
+    "href": "AEPI_Pres.html#como-mandar-bem-na-disciplina",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Como mandar bem na disciplina",
+    "text": "Como mandar bem na disciplina\n\n\n\nOrganize sua planilha (abas, nomes, validações).\nDocumente premissas (fonte, data, justificativa).\nFaça checks: ligações, sinais, coerência temporal.\nVersione arquivos (datas no nome; Drive/Git opcional).\nInterprete: número sem contexto não decide."
+  },
+  {
+    "objectID": "AEPI_Pres.html#encerramento-do-encontro-1",
+    "href": "AEPI_Pres.html#encerramento-do-encontro-1",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Encerramento do Encontro 1",
+    "text": "Encerramento do Encontro 1\n\n\nResumo: fundamentos, indicadores, estrutura de FC, risco.\n\nPara casa: Leitura inicial (Lapponi 2007) (cap. introdutório).\n\nPróxima aula: modelagem introdutória e revisões rápidas de finanças."
+  },
+  {
+    "objectID": "AEPI_Pres.html#referências",
+    "href": "AEPI_Pres.html#referências",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Referências",
+    "text": "Referências\n \n\n\n\nBoardman, Anthony E., David H. Greenberg, Aidan R. Vining, and David L. Weimer. 2018. Cost-Benefit Analysis: Concepts and Practice. 5th ed. Cambridge: Cambridge University Press.\n\n\nBrealey, Richard A., Stewart C. Myers, and Franklin Allen. 2019. Principles of Corporate Finance. 13th ed. New York: McGraw-Hill.\n\n\nBuffett, Warren. 1996. “Berkshire Hathaway Shareholder Letters (Quote on Risk).” https://www.berkshirehathaway.com/letters/letters.html.\n\n\nCopeland, Tom, Tim Koller, and Jack Murrin. 2010. Valuation: Measuring and Managing the Value of Companies. 5th ed. Hoboken: Wiley.\n\n\nDamodaran, Aswath. 2012. Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. 3rd ed. Hoboken: Wiley.\n\n\nDeming, W. Edwards. 1986. Out of the Crisis. Cambridge: MIT Press.\n\n\nFilho, N. Casarotto, and B. H. Kopittke. 2010. Análise de Investimentos. 10th ed. São Paulo: Atlas.\n\n\nFlyvbjerg, Bent. 2014. Megaprojects and Risk: An Anatomy of Ambition. Oxford: Oxford University Press.\n\n\nGraham, Benjamin. 2006. The Intelligent Investor. Revised. New York: HarperBusiness.\n\n\nKahneman, Daniel. 2011. Thinking, Fast and Slow. New York: Farrar, Straus; Giroux.\n\n\nKnight, Frank H. 1921. Risk, Uncertainty and Profit. Boston: Houghton Mifflin.\n\n\nLapponi, Juan Carlos. 2007. Projetos de Investimento Na Empresa. Rio de Janeiro: Campus/Elsevier.\n\n\nNeto, Alexandre Assaf. 2016. Finanças Corporativas e Valor. 7th ed. São Paulo: Atlas.\n\n\nRoss, Stephen A., Randolph W. Westerfield, Jeffrey Jaffe, and Bradford D. Jordan. 2022. Corporate Finance. 13th ed. New York: McGraw-Hill.\n\n\nWoiler, Sergio, and Walter F. Mathias. 1996. Projetos: Planejamento, Elaboração e análise. São Paulo: Atlas."
+  },
+  {
+    "objectID": "AEPI_Pres.html#obrigado",
+    "href": "AEPI_Pres.html#obrigado",
+    "title": "Análise de Projetos de Investimento",
+    "section": "Obrigado!",
+    "text": "Obrigado!\n \n\n\n\n\n\n\n\nRodrigo Hermont Ozon\n\n\n\\(\\Rightarrow\\) Agradecimentos à todos os alunos presentes e demais ouvintes:\n\nMeu perfil no Google Scholar\nMeu CV Lattes\nMeu site com posts, tutoriais e artigos\nGithub Page do prof. RhOzon contendo instruções iniciais sobre a disciplina\nMeu perfil no LinkeDin\n\n\n\n\n \n \n\n\n\n\"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.\n\n[... Capitalism requires] the perennial gale of Creative Destruction.\" Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011."
+  },
+  {
     "objectID": "Apres_encontro3.html#objetivos-de-hoje",
     "href": "Apres_encontro3.html#objetivos-de-hoje",
     "title": "Big Data for Finance Project",

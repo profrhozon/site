@@ -1,0 +1,501 @@
+---
+title: "Análise de Projetos de Investimento"
+subtitle: "***Apresentação de Abertura da Disciplina***"
+author: <a href="https://rhozon.github.io/portcv/cv.html">Rodrigo Hermont Ozon</a>
+author-meta: "<a href='https://rhozon.github.io/portcv/cv.html'>Rodrigo Hermont Ozon</a>"
+date: "2025-08-08"
+title-slide-attributes:
+#    data-background-image: "https://raw.githubusercontent.com/rhozon/Doutorado/main/fae_bckground.png"
+    data-background-size: contain
+    data-background-opacity: "number"
+format:
+  revealjs:
+    incremental: true   
+    slide-number: true
+    footnotes-hover: true   # <- tooltip ao passar o mouse
+    citations-hover: true   # (opcional) tooltip p/ citações
+    crossrefs-hover: true   # (opcional) tooltip p/ refs internas
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    css: stylespres.css
+    subtitle-font-size: 8
+    code-fold: true          # <- dobra o código por padrão
+    code-summary: "Mostrar código"
+    code-tools: true         # <- botão global "Mostrar/ocultar todo o código" (opcional
+bibliography: references3.bib       # <-- aqui
+nocite: |
+  @*
+---
+
+
+```{r setup, include=FALSE}
+
+start_time <- Sys.time()
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	comment = NA
+)
+knitr::opts_chunk$set(comment = NA)    # Remove all coments # of R outputs
+knitr::opts_chunk$set(warning = FALSE) # Remove all warnings # of R outputs
+knitr::opts_chunk$set(message = FALSE) # Remove all messages # of R outputs
+
+```
+
+## Plano de Estudo 
+ 
+
+<font size = 5>
+
+- Ver Ementário e demais informações em [Site prof. RhOzon](https://profrhozon.github.io/site/EAPI.html)
+
+- Responder o questionário de perfil em [Google Forms (usuário FAE)](https://docs.google.com/forms/d/e/1FAIpQLSfbfmVNrgUNKH2EaexVY-jzUM6y5d7QDfxPkHg2NPTwTochuQ/viewform?usp=header)
+
+</font>
+
+
+## Perguntas 
+
+<font size = 5>
+
+- Definir “projeto de investimento” com exemplos do dia a dia (empresa, governo, pessoal).
+- O que você definiria como "projetos de investimento" com alguns exemplos de seu dia a dia (empresa, governo, pessoal).
+- Enfatizar que a análise é **preventiva**: melhor gastar tempo analisando do que desperdiçar dinheiro em projeto ruim.
+- Perguntar se os alunos já ouviram falar em **viabilidade econômica** ou **estudo de viabilidade** – relacionar com o que faremos no curso.
+
+</font>
+
+
+## O que é Análise de Projetos de Investimento?
+
+<font size = 5>
+
+- **Projeto de investimento:** qualquer iniciativa que exige recursos agora para gerar resultados futuros (ex.: abrir um negócio, expandir uma fábrica, construir uma estrada).
+- **Análise de projetos:** processo de avaliar a **viabilidade** desses projetos – estimando custos, receitas e riscos – para decidir se valem a pena.
+- Em outras palavras, buscamos prever **retorno** e **risco** de um projeto antes de investir.
+- *Pergunta central:* *“Este projeto trará benefícios que justificam o investimento?”*
+
+</font>
+
+## Por que analisar antes de investir?
+<font size = 5>
+
+::: incremental
+- **Evitar prejuízos:** decisões mal embasadas destroem valor [@Damodaran2012; @AssafNeto2016].
+- **Alocar capital escasso** nas **melhores alternativas** (orçamento de capital).
+- **Reduzir incertezas** com cenários e sensibilidade (disciplinar o otimismo).
+- **Comunicar** a decisão de forma técnica e transparente (governança).
+:::
+
+> *“O risco vem de não saber o que você está fazendo.”* — [@Buffett1996]  
+
+</font>
+
+## Objetivos de aprendizagem
+<font size = 5>
+
+Ao final do curso, você será capaz de:
+
+::: incremental
+- Estruturar **fluxos de caixa** (CAPEX, OPEX, impostos, depreciação, **capital de giro**).
+- Calcular e **interpretar** VPL, TIR, **MIRR**, Payback (simples e **descontado**), **IBC**.
+- Estimar **TMA / WACC** em nível introdutório [@Damodaran2012; @CopelandKollerMurrin2010].
+- Conduzir **análise de sensibilidade** e **cenários** (otimista/base/pessimista).
+- Elaborar **relatório de viabilidade** claro, com premissas justificadas e referências.
+:::
+
+</font>
+
+## Dinâmica da Disciplina
+<font size = 5>
+
+::: incremental
+- **Aulas expositivas curtas** + **mão na massa** em **Excel** (principal).
+- **Demonstrações opcionais** em **Google Colab (Python)** para automatizar/simular.
+- **Estudos de caso** e exercícios progressivos (individuais e em duplas).
+- **Projeto final**: análise de viabilidade com planilha e sumário executivo.
+- **Participação** e **ética acadêmica** contam (citar fontes!).
+:::
+
+</font>
+
+## Materiais e Organização
+<font size = 5>
+
+::: incremental
+- **Planilhas-modelo** e **datasets** no Classroom/Drive.
+- Leituras-base: [@Lapponi2007; @WoilerMathias1996; @CasarottoKopittke2010; @BrealeyMyersAllen2019; @RossWesterfieldJaffe2022; @Damodaran2012; @Boardman2018].
+- Complementos: relatórios setoriais, IBGE, BACEN, ANEEL/ANP/ANTT (conforme caso).
+- Vídeos recomendados (Damodaran, Robert Schiller (coursera)) para revisão extra-classe.
+:::
+
+</font>
+
+
+## Roteiro do Semestre (macro)
+<font size = 5>
+
+::: incremental
+1. **Fundamentos**: valor do dinheiro no tempo, TMA/WACC, fluxos.
+2. **Métricas**: VPL, TIR, **MIRR**, Payback, **IBC** — prós/limitações.
+3. **Modelagem**: CAPEX/OPEX, impostos, depreciação, capital de giro.
+4. **Mercado**: demanda, preço, concorrência (visão introdutória).
+5. **Risco**: sensibilidade, cenários; noções de simulação.
+6. **Projeto final**: aplicação integral e apresentação.
+:::
+
+</font>
+
+## Valor do Dinheiro no Tempo (TVM)
+<font size = 5>
+
+::: incremental
+- **Desconto**: trazer fluxos futuros ao presente.
+- **Capitalização**: levar valores presentes ao futuro.
+- **TMA**: custo de oportunidade do capital.
+- **WACC** (noções): média ponderada do custo da dívida e do capital próprio [@Damodaran2012; @CopelandKollerMurrin2010].
+:::
+
+</font>
+
+## Principais Indicadores (visão rápida)
+<font size = 5>
+
+- **VPL**: soma dos fluxos descontados − investimento inicial.  
+  - *Regra*: aceitar projetos com **VPL > 0** (criam valor).
+- **TIR**: taxa que zera o VPL.  
+  - Cuidado com **múltiplas TIRs** e **rankings inconsistentes** [@BrealeyMyersAllen2019].
+- **MIRR**: TIR modificada (reinvestimento à TMA).
+- **Payback**: tempo de recuperação (simples e **descontado**).
+- **IBC/CBR**: benefício-custo (comum em **setor público**) [@Boardman2018].
+
+</font>
+
+## VPL x TIR: quando divergem?
+<font size = 5>
+
+::: incremental
+- Projetos **mutuamente excludentes**^[São alternativas de investimento que competem pelo mesmo objetivo ou recurso, de modo que **escolher uma elimina** as demais. Exemplos: instalar a fábrica na cidade A **ou** B; comprar a máquina X **ou** Y. Implicação prática: quando os projetos diferem em **tamanho** e **calendário de fluxos**, priorize a comparação pelo **VPL**; a **TIR** pode induzir a rankings inconsistentes.] e tamanhos distintos → **VPL** é preferível (maximiza valor absoluto).
+- Fluxos **não convencionais** podem gerar **múltiplas TIRs**.
+- **Taxas de reinvestimento** implícitas diferem: TIR assume reinvestir à TIR; VPL assume reinvestir à **TMA** [@BrealeyMyersAllen2019; @Damodaran2012].
+:::
+
+</font>
+
+## Estrutura do Fluxo de Caixa
+<font size = 5>
+
+- **CAPEX**: investimento inicial (máquinas, obras, TI).  
+- **OPEX**: custos/despesas operacionais.  
+- **Depreciação** (não-caixa) → impacto **fiscal**.  
+- **Capital de giro**: estoques, contas a receber/pagar.  
+- **Impostos**: IR/CSLL, ISS/ICMS (conforme caso).  
+- **Valor residual**: venda de ativos/recuperação de giro ao final.
+
+</font>
+
+## *Mini-exemplo* (conceitual)
+<font size = 5>
+
+| Ano | Fluxo (R$) | Observação |
+|-----|------------|------------|
+| 0   | -100.000   | CAPEX + giro |
+| 1   | 30.000     | FC operacional líquido |
+| 2   | 35.000     | FC operacional líquido |
+| 3   | 40.000     | FC + **residual** 10.000 |
+
+- Calcule **VPL** a 12% a.a.; compare **TIR** e **Payback (desc.)**.
+- Em sala: **Excel** com `=VPL()`, `=NPV()`, `=TIR()`, `=XNPV()`.
+
+</font>
+
+## (Opcional) Cálculo rápido em R
+<font size = 5>
+
+```{r}
+
+fc  <- c(-100000, 30000, 35000, 50000)  # último inclui residual 10k
+
+tma <- 0.12
+
+vpl <- sum(fc / (1 + tma)^(0:(length(fc)-1)))
+
+tir <- uniroot(function(r) sum(fc / (1 + r)^(0:(length(fc)-1))), c(0,1))$root
+
+list(VPL = round(vpl, 2), TIR_aprox = round(tir, 4))
+
+```
+
+- Demonstração apenas; Excel será a ferramenta principal.
+
+```{python}
+
+# Fluxos de caixa e taxa mínima de atratividade (TMA)
+fc = [-100000, 30000, 35000, 50000]  # último inclui residual de 10k
+tma = 0.12
+
+def npv(rate, cashflows):
+    """Valor Presente Líquido (VPL)."""
+    return sum(cf / (1 + rate) ** t for t, cf in enumerate(cashflows))
+
+def irr_bisection(cashflows, low=0.0, high=1.0, tol=1e-8, max_iter=100):
+    """
+    TIR aproximada via bissecção (equivalente ao uniroot do R no intervalo [low, high]).
+    Ajuste o intervalo se necessário (ex.: IRR > 100% ou negativa).
+    """
+    f_low = npv(low, cashflows)
+    f_high = npv(high, cashflows)
+    if f_low * f_high > 0:
+        raise ValueError("NPV tem o mesmo sinal nas extremidades; amplie o intervalo de busca.")
+
+    for _ in range(max_iter):
+        mid = (low + high) / 2.0
+        f_mid = npv(mid, cashflows)
+        if abs(f_mid) < tol:
+            return mid
+        if f_low * f_mid < 0:
+            high, f_high = mid, f_mid
+        else:
+            low, f_low = mid, f_mid
+    return (low + high) / 2.0  # retorno após máx. iterações
+
+vpl = npv(tma, fc)
+tir = irr_bisection(fc, low=0.0, high=1.0)
+
+resultado = {"VPL": round(vpl, 2), "TIR_aprox": round(tir, 4)}
+print(resultado)
+
+
+```
+
+
+</font>
+
+## Análise de Sensibilidade
+<font size = 5>
+
+::: incremental
+- **Univariada**: variar 1 premissa (preço ↑/↓ 10%) e observar VPL.
+- **Tornado**: ranking do impacto no VPL por variável.
+- **Elasticidades** simples: quanto 1% em volume/preço altera o VPL?
+- **Cenários**: otimista / base / pessimista (múltiplas variáveis).
+:::
+
+> *“Planos simples e robustos vencem projeções excessivamente precisas.”* — [@Flyvbjerg2014]
+
+</font>
+
+## Risco e Incerteza
+<font size = 5>
+
+::: incremental
+- **Risco** (probabilidades conhecidas) × **Incerteza** (*Knightiana*) [@Knight1921].
+- **Viés do otimismo** e *overconfidence* em projeções [@Kahneman2011].
+- **Mitigar**: estimativas *bottom-up*, *benchmarks*, *sanity checks*.
+- **Governança**: *stage-gates*, *peer review*, *post-mortems*.
+:::
+
+</font>
+
+## Projetos Públicos x Privados
+<font size = 5>
+
+- **Privados**: maximizar **valor ao acionista** (VPL/TIR).  
+- **Públicos**: **análise custo–benefício (ACB)** e **impacto social**; uso de **IBC/CBR**, *shadow prices* e externalidades [@Boardman2018].  
+- **PPP/Concessões**: repartição de riscos, matriz de riscos, garantias.
+
+</font>
+
+## Aspectos Mercadológicos (visão rápida)
+<font size = 5>
+
+::: incremental
+- **Demanda**: tamanho de mercado, crescimento, *share* esperado.
+- **Preço**: posicionamento, sensibilidade, competição.
+- **Concorrência**: barreiras à entrada, diferenciação.
+- **Operação**: capacidade, curva de aprendizado, produtividade.
+:::
+
+> *“Sem dados você é só mais uma pessoa com opinião.”* — [@Deming1986]
+
+</font>
+
+## Financiamento e Estrutura de Capital (noções)
+<font size = 5>
+
+::: incremental
+- **Dívida** × **Capital próprio**: *trade-offs* (custo, risco, controle).
+- **WACC**: pondera custos pela participação na estrutura [@Damodaran2012].
+- Efeito do **endividamento** no VPL (escudo fiscal / risco financeiro).
+- *Project finance* (noções): *SPV*, garantias, *non-recourse*.
+:::
+
+</font>
+
+## Erros Comuns na Análise
+<font size = 5>
+
+::: incremental
+- Misturar **nominal × real** (e taxa coerente).  
+- Ignorar **capital de giro** e **valor residual**.  
+- Usar **TIR** em fluxos não convencionais (múltiplas TIRs).  
+- Exagerar premissas de **volume/preço** sem *benchmark*.  
+- Não testar **sensibilidade** e **cenários**.  
+- Confundir **lucro contábil** com **fluxo de caixa**.
+:::
+
+</font>
+
+## Atividade 1 — Excel (rápida) (Exemplo)
+
+<font size = 5>
+
+**NÃO PRECISA ENTREGAR ESTA!**
+
+::: incremental
+- Baixe a planilha **“AP1_fluxo_base.xlsx”** (Classroom).
+- Preencha CAPEX, OPEX e impostos conforme enunciado.
+- Calcule **VPL (12% a.a.)**, **TIR**, **Payback (desc.)**.
+- Entregue planilha + 3 respostas de **interpretação**.
+:::
+
+</font>
+
+
+
+## (Bônus) Vídeo para revisão
+<font size = 5>
+
+
+- [Playlist do prof. [@Damodaran2012] sobre finanças corporativas aqui](https://www.youtube.com/watch?v=Tdu0QPfoYZQ&list=PLUkh9m2BorqnDenjSLZ2DHIXrdxoN4Bn_&index=2)  
+
+
+</font>
+
+## Projeto de Investimento — Guia (resumo)
+<font size = 5>
+
+::: incremental
+- **Tema**: descreva **problema**, **proposta** e **hipóteses**.
+- **Modelagem**: FC (CAPEX, OPEX, impostos, giro, residual).
+- **TMA/WACC**: justificar taxa usada e fontes.
+- **Métricas**: VPL, TIR/MIRR, Payback (desc.), IBC (se aplicável).
+- **Risco**: sensibilidade (tornado) e cenários.
+- **Entrega**: planilha + **sumário executivo** (2–3 págs).
+:::
+
+</font>
+
+## Como mandar bem na disciplina
+<font size = 5>
+
+::: incremental
+- **Organize** sua planilha (abas, nomes, validações).
+- **Documente** premissas (fonte, data, justificativa).
+- Faça **checks**: ligações, sinais, coerência temporal.
+- **Versione** arquivos (datas no nome; Drive/Git opcional).
+- **Interprete**: número sem contexto **não decide**.
+:::
+
+</font>
+
+
+## Encerramento do Encontro 1
+<font size = 5>
+
+- **Resumo**: fundamentos, indicadores, estrutura de FC, risco.  
+- **Para casa**: Leitura inicial [@Lapponi2007] (cap. introdutório).  
+- **Próxima aula**: modelagem introdutória e revisões rápidas de finanças.
+
+</font>
+
+
+
+
+<!-- ========================================== -->
+
+## Referências
+
+&nbsp;
+
+<font size = 4>
+
+::: {#refs}
+:::
+
+</font>
+
+<!-- ========================================== -->
+
+
+
+
+
+
+<!-- ========================================== -->
+
+<!-- ÚLTIMO SLIDE -->
+
+<!-- ========================================== -->
+
+## Obrigado!
+
+ 
+
+<font size = 6>
+
+::: {.callout-note appearance="simple"}
+## Rodrigo Hermont Ozon
+
+$\Rightarrow$ Agradecimentos à todos os alunos presentes e demais ouvintes:
+
+-   Meu perfil no [Google Scholar](https://scholar.google.com/citations?user=hPcIR9oAAAAJ&hl=en)
+-   Meu [CV Lattes](http://lattes.cnpq.br/3532649625879285)
+-   Meu [site com posts, tutoriais e artigos](https://rhozon.github.io/selecaodeprodutosnor/index.html)
+-   [Github Page do prof. RhOzon contendo instruções iniciais sobre a disciplina](https://profrhozon.github.io/site/Econometria.html) 
+-   Meu [perfil no LinkeDin](https://www.linkedin.com/in/rodrigohermontozon/)
+:::
+
+ 
+
+ 
+
+```{=html}
+
+<p style="font-family: times, serif; font-size:11pt; font-style:italic"; class="quote">
+
+"Situations emerge in the process of creative destruction in which many firms may have to perish that nevertheless would be able to live on vigorously and usefully if they could weather a particular storm.
+
+[... Capitalism requires] the perennial gale of Creative Destruction." Schumpeter, Joseph A. (1994) [1942]. Capitalism, Socialism and Democracy. London: Routledge. pp. 82–83. ISBN 978-0-415-10762-4. Retrieved 23 November 2011. 
+
+</p>
+
+```
+
+</font>
+
+
+<!-- ========================================== -->
+
+<!-- FIM DOS SLIDES -->
+
+<!-- ========================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

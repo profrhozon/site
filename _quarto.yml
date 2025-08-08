@@ -18,7 +18,8 @@ website:
         contents:
           - href: EAPI.qmd
             text: "Ementa e demais infos"
-            
+          - href: EAPI_pres.qmd
+            text: "Apres. Primeiro Encontro"            
       - section: "Big Data for Finance Project"
         contents:
           - href: EmentaBigDataFinProj.qmd
