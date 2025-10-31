@@ -91,25 +91,27 @@ Para um bom desempenho em cada prova, todas as listas correspondentes à etapa d
 
 ## Cronograma {#cronograma}
 
-| Encontro | Data   | Tema principal                                                      | Atividades / Entregas |
-|:-------: |:-----: |--------------------------------------------------------------------|-----------------------|
-| 01 | 08/08 | Fundamentos de avaliação de projetos; apresentação da disciplina          | Lista #1 (valor do dinheiro no tempo – Excel) |
-| 02 | 15/08 | Tipos de projetos de investimento e ciclo de vida                         | Lista #2 |
-| 03 | 22/08 | Estimativas de custos, receitas e construção do FCL                       | Lista #3 |
-| 04 | 29/08 | **Método do Valor Presente Líquido (VPL)**                                | Lista #4 |
-| 05 | 05/09 | **Método da Taxa Interna de Retorno (TIR)**                               | Lista #5 |
-| 06 | 12/09 | Payback, Índice de Lucratividade e comparação de métodos                  | Lista #6 |
-| 07 | 19/09 | Análise de sensibilidade e cenários                                       | Lista #7 |
-| **08** | **26/09** | **PROVA 1 (P1)** – Capítulos 1 – 7 *(Listas 40 % + P1 60 %)*         | — |
-| 09 | 03/10 | **Simulação de Monte Carlo** aplicada a projetos                          | Lista #8 |
-| 10 | 10/10 | Custo de capital, WACC e taxa mínima de atratividade (TMA)                | Lista #9 |
-| 11 | 17/10 | Financiamento do projeto, estrutura de capital e alavancagem              | Lista #10 |
-| 12 | 24/10 | Projetos independentes, mutuamente excludentes e racionamento de capital  | Lista #11 |
-| 13 | 31/10 | Estudos de caso integrados (Capítulos 1 – 11)                             | Lista #12 |
-| **14** | **28/11** | **PROVA 2 (P2)** – Capítulos 8 – 11 *(Listas 40 % + P2 60 %)*         | — |
-| 15 | 05/12 | Revisão geral em laboratório aberto                                       | Lista #13 (revisão) |
-| **16** | **12/12** | **PROVA 3 (P3) – Substitutiva** *(troca a menor nota entre P1/P2)*   | Entrega final |
-
+| Encontro | Data   | Tema principal                                                      |
+|:-------: |:-----: |--------------------------------------------------------------------|
+| 01 | 08/08 | Fundamentos de avaliação de projetos; apresentação da disciplina          |
+| 02 | 15/08 | Tipos de projetos de investimento e ciclo de vida                         |
+| 03 | 22/08 | Estimativas de custos, receitas e construção do FCL                       |
+| 04 | 29/08 | **Método do Valor Presente Líquido (VPL)**                                |
+| 05 | 05/09 | **Método da Taxa Interna de Retorno (TIR)**                               |
+| 06 | 12/09 | Payback, Índice de Lucratividade e comparação de métodos                  |
+| 07 | 19/09 | Análise de sensibilidade e cenários                                       |
+| **08** | **26/09** | **PROVA 1 (P1)** – Capítulos 1 – 7 *(Listas 40 % + P1 60 %)*         |
+| 09 | 03/10 | **Simulação de Monte Carlo** aplicada a projetos                          |
+| 10 | 10/10 | Custo de capital, WACC e taxa mínima de atratividade (TMA)                |
+| 11 | 17/10 | Financiamento do projeto, estrutura de capital e alavancagem              |
+| 12 | 24/10 | Projetos independentes, mutuamente excludentes e racionamento de capital  |
+| 13 | 31/10 | **Seleção de Projetos sob Incerteza:** Monte Carlo para fluxos de caixa e análise de viabilidade |
+| 14 | 07/11 | **Monte Carlo Setorial:** Aplicações em Farmacêutica, Agronegócio, Tecnologia e Serviços com distribuições realistas |
+| 15 | 14/11 | **VPLI e TIRI:** Análise incremental com taxa de reinvestimento variável e simulação estocástica |
+| 16 | 21/11 | **Implementação Profissional:** Dashboard completo de análise, correlações e relatórios executivos |
+| **17** | **28/11** | **PROVA 2 (P2)** – Capítulos 8 – 16 *(Listas 40 % + P2 60 %)*         |
+| 18 | 05/12 | Revisão geral em laboratório aberto                                       |
+| **19** | **12/12** | **PROVA 3 (P3) – Substitutiva** *(troca a menor nota entre P1/P2)*   |
 
 ## Disponibilização de conteúdo e interações {#classroom}
 
