@@ -42,6 +42,11 @@ website:
           - href: EmentaRiskMng.qmd
             text: "Ementa"
 
+      - section: "Economia Empresarial"
+        contents:
+          - href: EmentaEconEmpresarial.qmd
+            text: "Syllabus"
+
       - section: "Programação Computacional"
         contents:
           - href: EmentaProgComp.qmd

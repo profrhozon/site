@@ -1,11 +1,18 @@
 ---
 title: "Ementa Risk Management"
+subtitle: "Curso de Mercado Financeiro -- FAE Business School, 2026/1"
+author: "Prof. Rodrigo Hermont Ozon"
+date: last-modified
 format:
   html:
     self-contained: true
     toc: true
+    toc-depth: 3
     code-fold: true
     df-print: paged
+    css:
+      - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    theme: cosmo
 editor: visual
 ---
 
@@ -15,141 +22,226 @@ editor: visual
 
 ------------------------------------------------------------------------
 
+# Informacoes Gerais
 
+|  |  |
+|:-----------------------------------|:-----------------------------------|
+| **Curso** | Mercado Financeiro |
+| **Disciplina** | Risk Management |
+| **Carga Horaria** | 72 horas-aula (14 encontros tematicos + avaliacoes) |
+| **Horario** | Quintas-feiras, das 19h as 22h30 |
+| **Ferramentas** | Excel (primario), R e Python (complementares) |
+| **Semestre** | 2026/1 |
+| **Professor** | Rodrigo Hermont Ozon |
+| **Contato** | [GitHub](https://github.com/rhozon) \| [LinkedIn](https://www.linkedin.com/in/rodrigohermontozon/) \| [Lattes](http://lattes.cnpq.br/3532649625879285) |
 
-# 📌 Informações Gerais
+------------------------------------------------------------------------
 
-- **Curso:** Mercado Financeiro  
-- **Disciplina:** Risk Management  
-- **Carga Horária:** 72 horas-aula (24 encontros de 3,5 horas cada)  
-- **Horário:** Quartas-feiras, das 19h às 22h30  
-- **Ferramentas Utilizadas:** Excel e Python/R  
+# Descricao da Disciplina
 
----
+A disciplina **Risk Management** capacita os alunos a desenvolverem projetos praticos de analise e gestao de riscos financeiros aplicados a **commodities agricolas** e ativos do mercado financeiro. Utilizando o Excel como ferramenta principal e R/Python para calculos avancados, os alunos exploram desde fundamentos de risco ate modelos fatoriais, passando por otimizacao de portfolios, metricas de performance ajustadas ao risco e backtesting.
 
-# 📖 Descrição da Disciplina
+O fio condutor do curso e a construcao progressiva de um **portfolio de commodities agricolas** (milho, trigo, soja, boi gordo, farelo de soja) com dados reais do Yahoo Finance, permitindo ao aluno vivenciar todo o ciclo de gestao quantitativa de riscos.
 
-A disciplina **Risk Management** tem como objetivo capacitar os alunos a desenvolverem projetos práticos de análise e gestão de riscos financeiros, utilizando principalmente o Excel e introdução ao Python ou R para cálculos mais avançados. Os alunos irão explorar medidas de risco, modelagem de portfólios e simulação de cenários, aplicando conceitos fundamentais em casos reais.
+------------------------------------------------------------------------
 
----
+# Objetivos
 
-# 🎯 Objetivos
+-   Compreender e aplicar conceitos de gestao de riscos financeiros em contextos reais
+-   Construir e otimizar portfolios utilizando o modelo de Markowitz e suas extensoes
+-   Calcular e interpretar metricas de risco (VaR, Expected Shortfall) e performance (Sharpe, Sortino, Treynor, Alfa de Jensen, M-squared)
+-   Gerar cenarios prospectivos e validar modelos via backtesting
+-   Utilizar Excel, R e Python como ferramentas de analise quantitativa de risco
+-   Compreender modelos fatoriais (CAPM, Fama-French) e suas implicacoes para gestao de risco
 
-- Aplicar conceitos de Risk Management para medir e gerenciar riscos financeiros  
-- Desenvolver habilidades práticas no Excel para análise de dados e simulação  
-- Utilizar Excel, Python/R para simulação de Monte Carlo e modelagem de portfólios  
-- Construir dashboards interativos e relatórios gerenciais de risco  
+------------------------------------------------------------------------
 
----
+# Competencias Desenvolvidas
 
-# 🏆 Competências Desenvolvidas
+-   Identificacao e mensuracao de riscos de mercado em portfolios de ativos
+-   Modelagem de portfolios e calculo de metricas ajustadas ao risco
+-   Simulacao de Monte Carlo para projecoes e analise de cenarios
+-   Geracao de cenarios futuros com modelos de series temporais
+-   Validacao de modelos via backtesting (MAE, RMSE, MDD)
+-   Comunicacao e apresentacao de resultados analiticos
 
-- Identificação e mensuração de riscos de mercado, crédito e operacional  
-- Modelagem de portfólios e cálculo de métricas ajustadas ao risco  
-- Simulação de Monte Carlo para projeções de risco  
-- Comunicação e apresentação de resultados analíticos  
+------------------------------------------------------------------------
 
----
+# Conteudo Programatico
 
-# 📚 Conteúdo Programático
+## Bloco I -- Fundamentos (Encontros 1 a 5)
 
-## 🔹 Fundamentos de Risk Management  
-- Introdução ao conceito de risco  
-- Tipos de risco: mercado, crédito, operacional e liquidez  
+### Fundamentos de Risk Management
 
-## 🔹 Medidas de Risco  
-- Value at Risk (VaR), Expected Shortfall (ES)  
-- Backtesting e stress testing  
+-   Risco vs. incerteza; risco vs. aleatoriedade
+-   Tipos de risco: mercado, credito, operacional, liquidez
+-   Breve historia da gestao de risco
 
-## 🔹 Análise de Portfólios  
-- Cálculo de risco e retorno esperado  
-- Fronteira eficiente e diversificação  
+### Avaliacao de Projetos sob Risco
 
-## 🔹 Simulação de Monte Carlo  
-- Aplicação prática no Excel e Python  
-- Cenários de risco e projeções  
+-   Distribuicao Normal: usos e limitacoes
+-   Analise estatica, de sensibilidade e de cenarios
+-   Simulacao de Monte Carlo em projetos de investimento
 
-## 🔹 Hedging e Mitigação de Riscos  
-## 🔹 Avaliação de Performance Ajustada ao Risco  
+### Decision Making sob Risco
 
----
+-   Tabelas de payoff e arvores de decisao
+-   Criterios: Maximax, Maximin, VME, POE
+-   Relacao risco/retorno; utilidade
 
-# 🗓️ **Cronograma de Aulas 2025**
+### Series Temporais Financeiras
 
-[Obtenha a planilha (sujeita a alterações no decorrer do curso) aqui](https://github.com/profrhozon/site/raw/refs/heads/main/Planilha%20de%20Cronograma%20Disciplinas%20FAE.xlsx)
+-   Log-retornos de series de precos
+-   Momentos estatisticos: media, variancia, assimetria, curtose
+-   Testes de normalidade (Jarque-Bera, Shapiro-Wilk) e estacionariedade (KPSS)
+-   QQ-Plots e analise distribucional
 
-| **Data** | **Conteúdo Programado** | **Entrega Associada** | **Horas/Aula (encontros)** | **Obs.** |
-|----------|-------------------------|------------------------|---------------------------|----------|
-| 26/02/2025 | Apresentação da disciplina e programação do conteúdo. Aplicação de um forms/questionário do perfil dos alunos. Introdução aos conceitos de risco x incerteza; Risco em Perspectiva (risco x aleatoriedade); Risco Financeiro; Uma breve história da Gestão de Risco; Por quê Gerenciar Riscos?; Gestão Quant de Riscos e seus desafios | Forms respondido do perfil dos alunos | 4 | |
-| 05/03/2025 | **Feriado - Quarta-feira de cinzas** | | | **Feriado** |
-| 12/03/2025 | Avaliação de projetos de investimento em condições de risco x incerteza; Distribuição Normal usos e suas limitações; Métodos de Avaliação considerando o risco | Lista 0: Exercícios teórico-práticos sobre a discussão pertinente do conteúdo do curso | 4 | |
-| 12/03/2025 | Análise Estática e Análise de Sensibilidade; Análise de Cenários; Simulação de Monte Carlo | Exercícios Computacionais (Excel): Lista 1 sobre risco em projetos de investimento | 4 | |
-| 19/03/2025 | Decision Making considerando Risco; Tabela de Retorno (payoff) e Árvore de Decisão; Teorema de Bayes; Critérios de Decisão (Maximax, Maximin); Valor Monetário Esperado; Perda de Oportunidade Esperada; Relação Risco/Retorno; Decision Making com Informações da Amostra; Utilidade | Exercícios Computacionais (Excel): Lista 2 sobre risco em projetos de investimento | 4 | |
-| 26/03/2025 | Intro a séries temporais financeiras. Investimentos Univariados e seus riscos e retornos; Log-Retornos de séries de preços; Distribuições; Média, Variância e Dist. Normal; Assimetria e Curtose; Testes Estatísticos de Normalidade | Exercícios Computacionais (Excel): Lista 3 sobre Decision Making | 4 | |
-| 02/04/2025 | Portfolio Investing; Calculando os retornos do portfólio; Portfólio com pesos idênticos; Correlação e Covariância dos ativos do portfólio; O Desvio-Padrão da Carteira | Exercícios Computacionais (Excel): Lista 4 sobre séries financeiras | 4 | |
-| 09/04/2025 | Intro ao modelo de Markowitz. Seleção de Carteiras e Teoria de Markowitz; Risco de uma Carteira; Efeitos da Correlação sobre o Risco do Portfólio | Exercícios Computacionais (Excel): Lista 5 sobre portfolio investing | 4 | |
-| 16/04/2025 | Composição e aplicação da P1 | Exercícios Computacionais (Excel): Lista 6 sobre modelo de Markowitz básico | 4 | |
-| 23/04/2025 | Determinação do Retorno Esperado e do Risco de um Portfólio; Ativos com correlação nula; Conjunto de Combinações de Carteiras; Fronteira Eficiente | Exercícios Computacionais (Excel): Lista 7 sobre modelo de Markowitz e Fronteira Eficiente | 4 | |
-| 30/04/2025 | Índice de Sharpe, Sortino, Entropia de Shannon; Portfólio do Máximo Sharpe; Portfólio de volatilidade mínima global | | 4 | **Sem entrega associada** |
-| 07/05/2025 | Novas Medidas de Risco-Retorno: Razão de Treynor; Alfa de Jensen; Razão de Informação ou Tracking Error; M² (Medida de Modigliani-Modigliani) | Exercícios Computacionais (Excel): Lista 8 sobre o uso dos índices de Sharpe, Sortino, Entropia de Shannon | 4 | |
-| 14/05/2025 | Avaliação de performance do portfólio (backtesting); Restrições Avançadas na Otimização; Backtesting de Estratégias de Portfólio (rolling windows) | | 4 | **Sem entrega associada** |
-| 21/05/2025 | Factor Investing: O CAPM; Excesso de Retornos; Cálculo do beta com a covariância; Beta com CAPM | Exercícios Computacionais (Excel): Lista 9 sobre avaliação da performance do portfólio | 4 | |
-| 28/05/2025 | Fama-French 3-factor model; O Alfa e Eficiência de Mercado | | 4 | **Sem entrega associada** |
-| 04/06/2025 | Value-at-Risk: Estimando o risco de cauda; Drawdown histórico; VaR histórico; Expected Shortfall histórico; VaR dinâmico e CVar quantílico | Exercícios teóricos sobre o modelo de Fama-French, Eficiência de Mercado e Alfa | 4 | |
-| 11/06/2025 | VaR paramétrico; Estimativas de Riscos Escaláveis; Random Walks e o Andar do Bêbado; Simulando Random Walks; Monte Carlo VaR | | 4 | **Sem entrega associada** |
-| 18/06/2025 | Composição e aplicação da P2 | 60% P2 + 40% Mini projetos/exercícios computacionais | 4 | |
-| 25/06/2025 | Aula de Revisão do Conteúdo, feedbacks e devolutivas. Resumo para caso necessite de prova substitutiva | Entrega da última lista sobre VaR e Random Walks; Monte Carlo | 4 | |
-| 02/07/2025 | Aplicação Substitutiva | | | |
-| 09/07/2025 | **Recesso do corpo docente** | **Recesso do corpo docente** | | |
-| 16/07/2025 | **Recesso do corpo docente** | **Recesso do corpo docente** | | |
+### Portfolio Investing e Markowitz
 
+-   Retornos do portfolio e pesos
+-   Correlacao e covariancia entre ativos
+-   Modelo de Markowitz: fronteira eficiente e portfolio de minima variancia
+-   Otimizacao com e sem ponderacao por probabilidade (cenarios economicos)
 
+## Bloco II -- Metricas e Modelos Avancados (Encontros 7 a 12)
 
+### VaR e Expected Shortfall
 
----
+-   Value at Risk (VaR) historico e parametrico
+-   Expected Shortfall (CVaR)
+-   Interpretacao e aplicacao pratica
 
-# 🎓 Metodologia
+### Geracao de Cenarios Futuros
 
-A disciplina será ministrada de forma prática, com aulas expositivas, exercícios computacionais e estudos de caso. O uso do Excel será prioritário para a maioria das análises, com introdução ao Python ou o R para cálculos avançados ou muito trabalhosos no Excel.
+-   Bootstrap com quebras estruturais (fpp3/fable)
+-   Classificacao de cenarios: pessimista, mais provavel, otimista
+-   Media e desvio-padrao por cenario
 
----
+### Metricas de Performance de Portfolios
 
-# 📊 Critérios de Avaliação
+-   Indice de Sharpe e Sortino
+-   Entropia de Shannon como medida de diversificacao
+-   Portfolio tangente (maximo Sharpe) e GMV (minima variancia global)
+-   M-squared (Modigliani-Modigliani)
+-   Tracking Error e Information Ratio
+-   Beta, Alfa de Jensen e Razao de Treynor
 
-- **Provas teóricas e práticas:** 60%  
-- **Exercícios computacionais e listas de exercícios:** 40%  
+### Backtesting
 
----
+-   Validacao out-of-sample (22 dias uteis)
+-   MAE, RMSE, Maximum Drawdown (MDD)
+-   Violacoes de VaR e analise de aderencia
+-   Regressao previsto vs. realizado (beta e alfa de validacao)
 
-# 📖 Referências Bibliográficas
+### Modelos Fatoriais
 
-- **Benninga, Simon.** *Financial Modeling*. MIT Press, 2014.  
-- **Daróczi, Gergely; Berlinger, Edina.** *Introduction to R for Quantitative Finance*. Packt Publishing, 2013.  
-- **Glasserman, Paul.** *Monte Carlo Methods in Financial Engineering*. Springer, 2003.  
-- **Hilpisch, Yves.** *Python for Finance: Analyze Big Financial Data*. O'Reilly Media, 2018.  
-- **Hull, John C.** *Risk Management and Financial Institutions*. Wiley, 2018.  
-- **Jorion, Philippe.** *Value at Risk: The New Benchmark for Managing Financial Risk*. McGraw-Hill, 2006.  
-- **McNeil, Alexander J.; Frey, Rüdiger; Embrechts, Paul.** *Quantitative Risk Management: Concepts, Techniques, and Tools*. Princeton University Press, 2015.  
+-   CAPM: Security Market Line, beta e excesso de retorno
+-   Fama-French 3-Factor Model (MKT-RF, SMB, HML)
+-   Hipotese de Mercado Eficiente (fraca, semi-forte, forte)
+-   Significancia do alfa e implicacoes praticas
 
----
+------------------------------------------------------------------------
 
-📌 **Mapa Mental da Disciplina:**  
-🔗 [Risk Management Mind Map](https://whimsical.com/risk-management-mind-map-5X2jrXK5stNpYzeQkmHFoY)
+# Cronograma de Aulas 2026/1
 
+::: callout-tip
+## Nota
 
+Cronograma sujeito a alteracoes no decorrer do curso. As entregas associadas serao detalhadas em aula.
+:::
 
-# Questionário a respeito do perfil dos alunos
+| Nr. | Data | Conteudo Programado | Entrega Associada |
+|:----------------:|:-----------------|:-----------------|:-----------------|
+| **1** | qui 19/02/2026 | Apresentacao da disciplina. Formulario de perfil dos alunos. Introducao: risco vs. incerteza; risco financeiro; breve historia da gestao de risco; gestao quantitativa de riscos e seus desafios | Formulario de perfil respondido |
+| **2** | qui 26/02/2026 | Avaliacao de projetos sob risco e incerteza. Distribuicao Normal: usos e limitacoes. Analise estatica, de sensibilidade e de cenarios. Simulacao de Monte Carlo | Lista 1: Exercicios sobre risco em projetos de investimento |
+| **3** | qui 05/03/2026 | Decision Making sob risco: payoff tables, arvores de decisao, Maximax, Maximin, VME, POE, relacao risco/retorno. Modelo de Markowitz: otimizacao de portfolios, fronteira eficiente | Lista 2: Exercicios sobre Decision Making |
+| **4** | qui 12/03/2026 | Analise de risco com Simulacao de Monte Carlo aplicada a portfolios. Markowitz com Monte Carlo. Arvores de decisao e criterios de decisao avancados | Lista 3: Exercicios computacionais (Excel) |
+| **5** | qui 19/03/2026 | Series temporais financeiras: log-retornos, momentos estatisticos, testes de normalidade (Jarque-Bera, Shapiro-Wilk), estacionariedade (KPSS), QQ-Plots. Portfolio investing: correlacao, covariancia e risco do portfolio | Lista 4: Exercicios sobre series financeiras |
+| **6** | qui 26/03/2026 | **Revisao geral dos Encontros 1-5. Preparacao para P1** | Lista 5: Exercicios sobre Markowitz e fronteira eficiente |
+|  | qui 02/04/2026 | **Recesso -- Quinta-feira Santa** |  |
+|  | qui 09/04/2026 | **P1 -- Prova 1** | **60% P1 + 40% Listas** |
+| **7** | qui 16/04/2026 | Geracao de cenarios futuros via bootstrap com quebras estruturais. Classificacao: pessimista, mais provavel, otimista. VaR e Expected Shortfall (CVaR): calculo e interpretacao |  |
+| **8** | qui 23/04/2026 | Indices de Sharpe, Sortino e Entropia de Shannon. Portfolio tangente (maximo Sharpe) e GMV (minima variancia global). Solucoes analiticas e computacionais | Lista 6: Exercicios sobre VaR, CVaR e cenarios |
+| **9** | qui 30/04/2026 | M-squared (Modigliani-Modigliani), Tracking Error, Information Ratio. CAPM: Beta, Alfa de Jensen, Razao de Treynor | Lista 7: Exercicios sobre Sharpe, Sortino, Entropia |
+| **10** | qui 07/05/2026 | Backtesting: validacao out-of-sample, MAE, RMSE, Maximum Drawdown, violacoes de VaR. Regressao previsto vs. realizado | Lista 8: Exercicios sobre metricas de performance |
+| **11** | qui 14/05/2026 | Factor Investing: CAPM aplicado, Security Market Line, excesso de retornos. Fama-French 3-Factor Model (MKT-RF, SMB, HML) | Lista 9: Exercicios sobre backtesting |
+| **12** | qui 21/05/2026 | Hipotese de Mercado Eficiente (fraca, semi-forte, forte). Significancia do alfa no modelo Fama-French. Aplicacoes com dados reais e simulados |  |
+| **13** | qui 28/05/2026 | **Revisao geral dos Encontros 7-12. Preparacao para P2** | Lista 10: Exercicios sobre Fama-French e EMH |
+|  | qui 04/06/2026 | **Feriado -- Corpus Christi** |  |
+|  | qui 11/06/2026 | **P2 -- Prova 2** | **60% P2 + 40% Listas** |
+| **14** | qui 18/06/2026 | Devolutiva da P2. Breve revisao geral para P3 |  |
+|  | qui 25/06/2026 | **P3 -- Prova Substitutiva** |  |
+|  | qua 01/07/2026 | *Sem aula -- deadline para lancamento da P3* |  |
 
-- [Preencha o formulário aqui!](https://docs.google.com/forms/d/e/1FAIpQLSeLHVGwem5w8t_uv9cgST6r7UhviNYTEuVZ1Ac9Eqqutm3u-w/viewform?usp=dialog)
+------------------------------------------------------------------------
 
+# Metodologia
+
+A disciplina e ministrada de forma **pratica e aplicada**, combinando:
+
+-   **Aulas expositivas dialogadas** com fundamentacao teorica
+-   **Exercicios computacionais** em Excel (primario), R e Python (complementares)
+-   **Estudos de caso** com dados reais de commodities agricolas (Yahoo Finance)
+-   **Listas de exercicios** progressivas que acompanham o conteudo de cada encontro
+-   **Projetos de portfolio** construidos ao longo do semestre
+
+------------------------------------------------------------------------
+
+# Criterios de Avaliacao
+
+| Componente                              | Peso |
+|:----------------------------------------|:----:|
+| **Provas (P1 e P2)**                    | 60%  |
+| **Listas de exercicios computacionais** | 40%  |
+
+::: callout-important
+## P3 -- Prova Substitutiva
+
+A P3 substitui a menor nota entre P1 e P2. Conteudo: toda a materia do semestre.
+:::
+
+------------------------------------------------------------------------
+
+# Referencias Bibliograficas
+
+-   **Benninga, Simon.** *Financial Modeling*. MIT Press, 2014.
+-   **Daroczi, Gergely; Berlinger, Edina.** *Introduction to R for Quantitative Finance*. Packt Publishing, 2013.
+-   **Gleiser, Ilan.** *Caos e Complexidade: a evolucao do pensamento economico*. Elsevier, 2014.
+-   **Glasserman, Paul.** *Monte Carlo Methods in Financial Engineering*. Springer, 2003.
+-   **Hilpisch, Yves.** *Python for Finance: Analyze Big Financial Data*. O'Reilly Media, 2018.
+-   **Hull, John C.** *Risk Management and Financial Institutions*. Wiley, 2018.
+-   **Hult, Henrik et al.** *Risk and Portfolio Analysis: Principles and Methods*. Springer, 2012.
+-   **Jorion, Philippe.** *Value at Risk: The New Benchmark for Managing Financial Risk*. McGraw-Hill, 2006.
+-   **Levine, David M.; Stephan, David F.; Szabat, Kathryn A.** *Statistics for Managers Using Microsoft Excel*. Pearson, 2019.
+-   **Lima, Fabiano Guasti.** *Analise de Riscos*. Amazon, 2020.
+-   **McNeil, Alexander J.; Frey, Rudiger; Embrechts, Paul.** *Quantitative Risk Management: Concepts, Techniques, and Tools*. Princeton University Press, 2015.
+-   **Morettin, Pedro A.** *Econometria Financeira*. Blucher, 2017.
+
+------------------------------------------------------------------------
+
+Mapa Mental da Disciplina: [Risk Management Mind Map](https://whimsical.com/risk-management-mind-map-5X2jrXK5stNpYzeQkmHFoY)
+
+------------------------------------------------------------------------
+
+# Questionario -- Perfil dos Alunos
+
+-   [Preencha o formulario aqui!](https://docs.google.com/forms/d/e/1FAIpQLSeLHVGwem5w8t_uv9cgST6r7UhviNYTEuVZ1Ac9Eqqutm3u-w/viewform?usp=dialog)
 
 ```{=html}
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLHVGwem5w8t_uv9cgST6r7UhviNYTEuVZ1Ac9Eqqutm3u-w/viewform?embedded=true" width="640" height="4392" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLHVGwem5w8t_uv9cgST6r7UhviNYTEuVZ1Ac9Eqqutm3u-w/viewform?embedded=true" width="640" height="4392" frameborder="0" marginheight="0" marginwidth="0">Carregando...</iframe>
 ```
 
+------------------------------------------------------------------------
 
+::: callout-note
+## Sobre o Professor
 
+**Rodrigo Hermont Ozon** -- Economista, professor na FAE Business School. Apaixonado por econometria e aplicacoes de modelos economicos a problemas reais.
 
-
+-   [GitHub](https://github.com/rhozon)
+-   [LinkedIn](https://www.linkedin.com/in/rodrigohermontozon/)
+-   [Lattes](http://lattes.cnpq.br/3532649625879285)
+-   [E-mail](mailto:rodrigoozon@yahoo.com.br)
+-   [Site do professor](https://profrhozon.github.io/site/)
+:::

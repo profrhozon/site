@@ -1,0 +1,273 @@
+---
+title: "Business Economics Syllabus"
+subtitle: "Economics Program -- FAE Business School, 2026/1"
+author: "Prof. Rodrigo Hermont Ozon"
+date: last-modified
+format:
+  html:
+    self-contained: true
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    df-print: paged
+    css:
+      - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
+    theme: cosmo
+editor: visual
+---
+
+------------------------------------------------------------------------
+
+<left> ![](https://raw.githubusercontent.com/profrhozon/site/main/logo_FAE.png){width="15%"} </left>
+
+------------------------------------------------------------------------
+
+# General Information
+
+|  |  |
+|:-----------------------------------|:-----------------------------------|
+| **Program** | Economics |
+| **Course** | Business Economics (*Economia Empresarial*) |
+| **Workload** | 72 class-hours (15 thematic sessions + exams) |
+| **Schedule** | Tuesdays, 7:00 PM -- 10:00 PM |
+| **Tools** | Excel (primary), R and Python (supplementary) |
+| **Semester** | 2026/1 |
+| **Instructor** | Rodrigo Hermont Ozon |
+| **Contact** | [GitHub](https://github.com/rhozon) \| [LinkedIn](https://www.linkedin.com/in/rodrigohermontozon/) \| [Lattes](http://lattes.cnpq.br/3532649625879285) |
+
+------------------------------------------------------------------------
+
+# Course Description
+
+**Business Economics** equips students with the analytical tools to understand demand formation, supply behavior, and market dynamics by integrating traditional microeconomic theory with contemporary approaches from **economic complexity** and **network economics**.
+
+The course combines solid theoretical foundations --- consumer theory, production theory, cost analysis, and market structures --- with practical applications that connect microeconomics to real-world business decisions.
+
+::: callout-important
+## What Makes This Course Different
+
+The course opens with **economic complexity and network economics** (Hidalgo & Hausmann, Coase, Penrose) *before* diving into traditional microeconomic theory. This allows students to understand markets as **interconnected systems** from the very beginning. At the end, the study of oligopolies and digital platforms closes the loop, connecting theory and practice in the context of contemporary markets.
+:::
+
+------------------------------------------------------------------------
+
+# Learning Objectives
+
+-   Understand the firm as an economic unit and its role within interconnected markets
+-   Analyze demand formation through consumer theory and its determinants
+-   Interpret elasticities and apply them to pricing strategies
+-   Understand production theory and the formation of business costs
+-   Derive supply curves from cost analysis
+-   Analyze different market structures and their competitive implications
+-   Apply concepts of economic complexity and network economics to business analysis
+-   Develop basic quantitative analyses in R or Excel for managerial practice
+
+------------------------------------------------------------------------
+
+# Competencies Developed
+
+-   Critical analysis of markets and competitive structures
+-   Understanding of price and equilibrium quantity determinants
+-   Application of elasticity concepts for pricing decisions
+-   Cost analysis and productive efficiency assessment
+-   Identification of market power and competitive strategies
+-   Systemic view of markets as interconnected networks
+-   Evidence-based economic communication and argumentation
+
+------------------------------------------------------------------------
+
+# Course Content
+
+## Block I -- Demand and Equilibrium (Sessions 1--6) $\rightarrow$ Exam 1
+
+### The Firm, Markets, and Networks
+
+-   The concept of the firm and economic decision-making (Coase, Penrose)
+-   Markets as interconnected networks
+-   Introduction to the Atlas of Economic Complexity
+
+### Economic Complexity and Capabilities
+
+-   Hidalgo & Hausmann's framework
+-   Product space and revealed comparative advantages
+-   The Brazilian case: commodity exports and productive diversification
+
+### Consumer Theory and Demand Formation
+
+-   Preferences and indifference curves
+-   Cardinal and ordinal utility; marginal utility
+-   Budget constraint and optimal consumer choice
+-   Income and substitution effects
+-   Types of goods: normal, inferior, Giffen, substitutes, and complements
+-   Discussion: how do digital platforms exploit revealed preferences?
+
+### Elasticities and Pricing Applications
+
+-   Price elasticity of demand
+-   Income elasticity and cross-price elasticity
+-   Elasticity--revenue relationship
+-   Applications in dynamic pricing
+
+### Market Equilibrium and Welfare
+
+-   Supply and demand: price and quantity determination
+-   Consumer and producer surplus
+-   Allocative efficiency and social welfare
+
+## Block II -- Production, Costs, and Market Structures (Sessions 8--14) $\rightarrow$ Exam 2
+
+### Production Theory
+
+-   Production function: definition and representation
+-   Short run: total, average, and marginal product
+-   Law of diminishing marginal returns
+-   Long run: isoquants and MRTS
+-   Returns to scale and the connection to capabilities
+
+### Cost Theory and Supply Formation
+
+-   Concepts: fixed, variable, total, average, and marginal costs
+-   Isocost lines and cost minimization
+-   Short-run and long-run cost curves
+-   Economies of scale and scope
+-   Derivation of the supply curve
+
+### Market Structures
+
+-   Perfect competition: characteristics and equilibrium
+-   Monopoly: market power, profit maximization, price discrimination
+-   Antitrust policy: CADE and competition defense in Brazil
+-   Oligopoly: Cournot and Bertrand models, introduction to game theory
+
+### Network Economics and Digital Platforms
+
+-   Network externalities
+-   Lock-in effects and switching costs
+-   Winner-takes-all markets
+-   Cases: Google, Uber, iFood, and digital platforms
+
+------------------------------------------------------------------------
+
+# Class Schedule -- 2026/1
+
+::: callout-tip
+## Note
+
+Schedule subject to changes during the semester. Associated deliverables will be detailed in class.
+:::
+
+| Nr. | Date | Scheduled Content |
+|:----------------------:|:-----------------------|:-----------------------|
+| **1** | Tue 02/24/2026 | Introduction: The Firm, Markets, and Networks. Coase and Penrose. Markets as interconnected networks. Atlas of Economic Complexity -- why economists need to understand linkages |
+| **2** | Tue 03/03/2026 | Economic Complexity and Capabilities. Hidalgo & Hausmann: product space, revealed comparative advantages. Brazilian case: commodity exports and productive diversification |
+| **3** | Tue 03/10/2026 | Consumer Theory I: Preferences, cardinal and ordinal utility, indifference curves. Discussion: how do digital platforms exploit revealed preferences? |
+| **4** | Tue 03/17/2026 | Consumer Theory II: Budget constraint, optimal choice. Income and substitution effects. Normal, inferior, Giffen goods; substitutes and complements |
+| **5** | Tue 03/24/2026 | Elasticities and Pricing: Price, income, and cross elasticities. Elasticity--revenue relationship. Dynamic pricing applications |
+| **6** | Tue 03/31/2026 | Market Equilibrium and Welfare: Supply $\times$ Demand, price formation, consumer and producer surplus. Allocative efficiency |
+| **7** | Tue 04/07/2026 | Brief review of sessions 1--6. Preparation for Exam 1 |
+|  | Tue 04/14/2026 | **Exam 1 (P1)** |
+|  | Tue 04/21/2026 | *Holiday -- Tiradentes (No class)* |
+| **8** | Tue 04/28/2026 | Production Theory -- Short Run: Production function, total, average, and marginal product. Law of diminishing marginal returns |
+| **9** | Tue 05/05/2026 | Production Theory -- Long Run: Isoquants, MRTS, returns to scale. Connection to capabilities: what allows a firm to scale? |
+| **10** | Tue 05/12/2026 | Cost Theory I: Fixed, variable, total, average, and marginal costs. Isocost and cost minimization |
+| **11** | Tue 05/19/2026 | Cost Theory II and Supply: Short-run and long-run cost curves. Economies of scale and scope. Derivation of the supply curve |
+| **12** | Tue 05/26/2026 | Perfect Competition: Characteristics, production decisions, short-run and long-run equilibrium. Discussion: does perfect competition exist in practice? |
+| **13** | Tue 06/02/2026 | Monopoly and Market Power: Profit maximization, deadweight loss, price discrimination. Cases: CADE and competition defense in Brazil |
+| **14** | Tue 06/09/2026 | Oligopoly, Network Economics, and Platforms: Cournot, Bertrand, game theory. Network externalities, lock-in, winner-takes-all (Google, Uber, iFood) |
+|  | Tue 06/16/2026 | **Exam 2 (P2)** |
+| **15** | Tue 06/23/2026 | Exam 2 feedback and brief review for Exam 3 |
+|  | Tue 06/30/2026 | **Exam 3 (P3) -- Make-up/Final** |
+|  | Wed 07/01/2026 | *No class -- Deadline for P3 grade submission* |
+
+------------------------------------------------------------------------
+
+# Methodology
+
+The course is delivered through **dialogued lectures** combined with practical activities:
+
+-   **Theoretical exposition** of fundamental concepts with visual support
+-   **Real-world case studies** from the Brazilian and international context
+-   **Problem-solving exercises** and applied practice
+-   **Quantitative applications** in R or Excel (supplementary)
+-   **Group debates** on market structures and competition
+-   **Analysis of digital platforms** and contemporary markets as a connecting thread
+
+The approach emphasizes connecting microeconomic theory with practical applications, using examples from real companies and markets. Active participation and critical thinking are highly valued.
+
+------------------------------------------------------------------------
+
+# Assessment Criteria
+
+| Component                                 | Weight |
+|:------------------------------------------|:------:|
+| **Exams (P1 and P2)**                     |  60%   |
+| **Applied study guides (exercise lists)** |  40%   |
+
+::: callout-important
+## Exam 3 (P3) -- Make-up/Final
+
+P3 is a make-up/final exam, per FAE Business School institutional regulations. Content covers the entire semester.
+:::
+
+### Assessment Breakdown
+
+| Exam | Content | Date | Composition |
+|:----------------:|:-----------------|:-----------------|:-----------------|
+| **P1** | Sessions 1--6 | 04/14/2026 | 60% exam + 40% exercise lists (applied study guide for P1) |
+| **P2** | Sessions 8--14 | 06/16/2026 | 60% exam + 40% exercise lists (applied study guide for P2) |
+| **P3** | All content | 06/30/2026 | Make-up/final per institutional regulations |
+
+------------------------------------------------------------------------
+
+# References
+
+## Core Textbooks
+
+-   **Mankiw, N. G.** (2021). *Principles of Microeconomics*. 4th ed. (Brazilian edition). Cengage Learning.
+-   **Pindyck, R. S., & Rubinfeld, D. L.** (2014). *Microeconomics*. 8th ed. Pearson.
+-   **Vasconcellos, M. A. S., & Braga, M. B.** (2023). *Economia Micro e Macro*. 7th ed. Atlas.
+
+## Complementary References
+
+-   **Varian, H. R.** (2015). *Intermediate Microeconomics: A Modern Approach*. 9th ed. GEN Atlas.
+-   **Nicholson, W., & Snyder, C.** (2019). *Microeconomic Theory: Basic Principles and Extensions*. Cengage Learning.
+-   **Baye, M. R.** (2010). *Managerial Economics and Business Strategy*. 6th ed. AMGH.
+-   **Mankiw, N. G.** (2019). *Principles of Economics*. 8th ed. Cengage Learning.
+-   **Rossetti, J. P.** (2016). *Introdução à Economia*. 21st ed. Atlas.
+-   **Gremaud, A. P., Pinho, D. B., & Vasconcellos, M. A. S.** (2017). *Manual de Economia*. 7th ed. Saraiva Uni.
+
+## Economic Complexity and Networks
+
+-   **Hidalgo, C. A.** (2021). *Why Information Grows: The Evolution of Order, from Atoms to Economies*. Basic Books.
+-   **Hausmann, R., et al.** (2014). *The Atlas of Economic Complexity: Mapping Paths to Prosperity*. MIT Press. Available at: [atlas.cid.harvard.edu](https://atlas.cid.harvard.edu/)
+-   **Coase, R. H.** (1937). The Nature of the Firm. *Economica*, 4(16), 386--405.
+-   **Penrose, E. T.** (1959). *The Theory of the Growth of the Firm*. Oxford: Basil Blackwell.
+-   **Kupfer, D., & Hasenclever, L.** (2020). *Economia Industrial*. 3rd ed. GEN Atlas.
+-   **Tirole, J.** (1988). *The Theory of Industrial Organization*. MIT Press.
+
+## Online Resources
+
+-   [Atlas of Economic Complexity](https://atlas.cid.harvard.edu/) (Harvard Growth Lab)
+-   [Observatory of Economic Complexity (OEC)](https://oec.world/)
+-   [CADE -- Administrative Council for Economic Defense](https://www.gov.br/cade/)
+-   [IPEA -- Institute for Applied Economic Research](https://www.ipea.gov.br/)
+
+------------------------------------------------------------------------
+
+# Student Profile Questionnaire
+
+-   [Fill out the form here!](https://docs.google.com/forms/d/e/1FAIpQLScIOZJLIU7akuF0io0uG9E0FQBD4yofQ-7AWD7-a51-puIpCw/viewform?usp=dialog) *(link to be updated)*
+
+------------------------------------------------------------------------
+
+::: callout-note
+## About the Instructor
+
+**Rodrigo Hermont Ozon** -- Economist (UFPR) and Mathematician (UNESPAR/FaFi), with a Master's in Economic Development (UFPR) and doctoral candidate in Production Engineering and Systems (PUCPR). Researches multi-objective portfolio optimization, financial econometrics, fuzzy multi-criteria decision-making, and applied artificial intelligence. Data Science consultant helping companies with data-driven decision-making. Professor at FAE Business School in the Data Science for Business, Economics, and Financial Markets programs.
+
+-   [GitHub](https://github.com/rhozon)
+-   [LinkedIn](https://www.linkedin.com/in/rodrigohermontozon/)
+-   [Lattes](http://lattes.cnpq.br/3532649625879285)
+-   [E-mail](mailto:rodrigoozon@yahoo.com.br)
+-   [Instructor's website](https://profrhozon.github.io/site/)
+:::
