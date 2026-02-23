@@ -168,7 +168,7 @@ Cronograma sujeito a alteracoes no decorrer do curso. As entregas associadas ser
 | **12** | qui 21/05/2026 | Hipotese de Mercado Eficiente (fraca, semi-forte, forte). Significancia do alfa no modelo Fama-French. Aplicacoes com dados reais e simulados |  |
 | **13** | qui 28/05/2026 | **Revisao geral dos Encontros 7-12. Preparacao para P2** | Lista 10: Exercicios sobre Fama-French e EMH |
 |  | qui 04/06/2026 | **Feriado -- Corpus Christi** |  |
-|  | qui 11/06/2026 | **P2 -- Prova 2** | **60% P2 + 40% Listas** |
+|  | qua 10/06/2026 | **P2 -- Prova 2** | **60% P2 + 40% Listas** |
 | **14** | qui 18/06/2026 | Devolutiva da P2. Breve revisao geral para P3 |  |
 |  | qui 25/06/2026 | **P3 -- Prova Substitutiva** |  |
 |  | qua 01/07/2026 | *Sem aula -- deadline para lancamento da P3* |  |
