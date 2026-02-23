@@ -152,7 +152,7 @@ Cronograma sujeito a alteracoes no decorrer do curso. As entregas associadas ser
 
 | Nr. | Data | Conteudo Programado | Entrega Associada |
 |:----------------:|:-----------------|:-----------------|:-----------------|
-| **1** | qui 19/02/2026 | Apresentacao da disciplina. Formulario de perfil dos alunos. Introducao: risco vs. incerteza; risco financeiro; breve historia da gestao de risco; gestao quantitativa de riscos e seus desafios | Formulario de perfil respondido |
+| **1** | qui 26/02/2026 | Apresentacao da disciplina. Formulario de perfil dos alunos. Introducao: risco vs. incerteza; risco financeiro; breve historia da gestao de risco; gestao quantitativa de riscos e seus desafios | Formulario de perfil respondido |
 | **2** | qui 26/02/2026 | Avaliacao de projetos sob risco e incerteza. Distribuicao Normal: usos e limitacoes. Analise estatica, de sensibilidade e de cenarios. Simulacao de Monte Carlo | Lista 1: Exercicios sobre risco em projetos de investimento |
 | **3** | qui 05/03/2026 | Decision Making sob risco: payoff tables, arvores de decisao, Maximax, Maximin, VME, POE, relacao risco/retorno. Modelo de Markowitz: otimizacao de portfolios, fronteira eficiente | Lista 2: Exercicios sobre Decision Making |
 | **4** | qui 12/03/2026 | Analise de risco com Simulacao de Monte Carlo aplicada a portfolios. Markowitz com Monte Carlo. Arvores de decisao e criterios de decisao avancados | Lista 3: Exercicios computacionais (Excel) |
