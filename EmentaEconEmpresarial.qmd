@@ -174,7 +174,7 @@ Schedule subject to changes during the semester. Associated deliverables will be
 | **12** | Tue 05/26/2026 | Perfect Competition: Characteristics, production decisions, short-run and long-run equilibrium. Discussion: does perfect competition exist in practice? |
 | **13** | Tue 06/02/2026 | Monopoly and Market Power: Profit maximization, deadweight loss, price discrimination. Cases: CADE and competition defense in Brazil |
 | **14** | Tue 06/09/2026 | Oligopoly, Network Economics, and Platforms: Cournot, Bertrand, game theory. Network externalities, lock-in, winner-takes-all (Google, Uber, iFood) |
-|  | Tue 06/16/2026 | **Exam 2 (P2)** |
+|  | Wed 06/10/2026 | **Exam 2 (P2)** |
 | **15** | Tue 06/23/2026 | Exam 2 feedback and brief review for Exam 3 |
 |  | Tue 06/30/2026 | **Exam 3 (P3) -- Make-up/Final** |
 |  | Wed 07/01/2026 | *No class -- Deadline for P3 grade submission* |
@@ -214,7 +214,7 @@ P3 is a make-up/final exam, per FAE Business School institutional regulations. C
 | Exam | Content | Date | Composition |
 |:----------------:|:-----------------|:-----------------|:-----------------|
 | **P1** | Sessions 1--6 | 04/14/2026 | 60% exam + 40% exercise lists (applied study guide for P1) |
-| **P2** | Sessions 8--14 | 06/16/2026 | 60% exam + 40% exercise lists (applied study guide for P2) |
+| **P2** | Sessions 8--14 | 06/10/2026 | 60% exam + 40% exercise lists (applied study guide for P2) |
 | **P3** | All content | 06/30/2026 | Make-up/final per institutional regulations |
 
 ------------------------------------------------------------------------
